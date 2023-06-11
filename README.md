@@ -6,7 +6,7 @@
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ![image of the amiresponsive testing]()
 
@@ -14,7 +14,7 @@
 >
 > Amiresponsive image missing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 The live website can be found here: ***live website link***
 
@@ -22,7 +22,7 @@ The live website can be found here: ***live website link***
 >
 > Live website link missing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ## CONTENTS
 
@@ -73,7 +73,7 @@ The live website can be found here: ***live website link***
 > Table of contents need to be edited to reflect each section properly
 > New sections might need to be added to table of contents as the development goes
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ## User Experience
 
@@ -85,7 +85,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Client Goals
 
@@ -102,7 +102,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### User Stories
 
@@ -139,7 +139,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Agile Development
 
@@ -151,7 +151,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 <br>
 
@@ -171,7 +171,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Colour Scheme
 
@@ -190,7 +190,7 @@ The live website can be found here: ***live website link***
 >
 > Missing colour palette image
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Typography
 
@@ -209,7 +209,7 @@ The live website can be found here: ***live website link***
 >
 > Font styles need to be included here
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Imagery
 
@@ -242,7 +242,7 @@ The live website can be found here: ***live website link***
 >
 > Any images used throughout the application need to be presented here
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Wireframes
 
@@ -262,7 +262,7 @@ The live website can be found here: ***live website link***
 > This section needs editing
 > Wireframe images need to be added
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Database and ERD
 
@@ -280,7 +280,7 @@ The live website can be found here: ***live website link***
 > This section needs editing
 > ERD diagran needs to be added
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 </details>
 
@@ -314,7 +314,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ## Future Implementations
 
@@ -322,7 +322,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Ideas for later
 
@@ -338,7 +338,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 <br>
 
@@ -358,7 +358,7 @@ The live website can be found here: ***live website link***
 >
 > This section might need editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Frameworks, libraries and other external tools
 
@@ -373,7 +373,7 @@ The live website can be found here: ***live website link***
 >
 > This section needs editing
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Validators
 
@@ -388,7 +388,7 @@ The live website can be found here: ***live website link***
 >
 > Validator results will be included in TESTS.md later during development
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 <br>
 
@@ -576,7 +576,7 @@ The live website can be found here: ***live website link***
 >
 > consider editing the forking section to be more detailed
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 Use forking, when you want to contribute to an existing project, by creating a copy of the original repository
 
@@ -594,7 +594,7 @@ Use forking, when you want to contribute to an existing project, by creating a c
 >
 > consider editing the forking section to be more detailed
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 Use cloning, when you want to work on a project locally and make changes without affecting the remote repository
 
@@ -616,7 +616,7 @@ Use cloning, when you want to work on a project locally and make changes without
 > TESTS.md is yet to be created
 > TESTS.md contains comments like this for what needs to be included
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ## Testing
 
@@ -635,7 +635,7 @@ Accessibility testing, responsiveness testing validating and manual testing can 
 >  * stackoverflow 
 >  * any external source of helping material
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ### Media
 
@@ -650,7 +650,7 @@ Accessibility testing, responsiveness testing validating and manual testing can 
 >    * favicon
 >    * placeholder images
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 ###  Acknowledgments
 
@@ -659,6 +659,6 @@ Accessibility testing, responsiveness testing validating and manual testing can 
 > Things to include:
 >  * credit for mentor and tutor support during development
 >
-> ***delete this section before deployment***
+> ***delete this quote before deployment***
 
 <hr>
