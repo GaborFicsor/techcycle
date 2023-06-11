@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <!-- top left link that takes the user to the homepage -->
+        <a class="navbar-brand" href="">
+            TechCycle
+        </a>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+
+                <!-- link to homepage -->
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/' %} active {% endif %}"
+                        href="">Home</a>
+                </li>
+
+                <!-- link to recipes -->
+                <li class="nav-item">
+                    <a class="nav-link {% if 'recipes' in request.path %} active {% endif %}"
+                        href="">Recipes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
