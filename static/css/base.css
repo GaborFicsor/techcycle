@@ -8,6 +8,30 @@ body {
     font-family: 'Lato';
 }
 
+/* colours */
+
+.white {
+    background-color: #fff;
+}
+
+.light-b {
+    background: #0091AD;
+}
+
+.dark-b {
+    background-color: #011936;
+}
+
+.red {
+    background-color: #ed254e;
+}
+
+.grey {
+    background-color: #465362;
+}
+
+/* colours */
+
 .hero-image-container {
     background: url('/media/hero_image_landing.jpg') no-repeat center center fixed;
     background-size: cover;
