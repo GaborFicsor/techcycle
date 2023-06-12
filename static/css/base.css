@@ -3,11 +3,28 @@ html {
 }
 
 body {
-    background: url('/media/hero_image_landing.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
+    padding-top: 72px;
     color: #555;
     font-family: 'Lato';
+}
+
+.hero-image-container {
+    background: url('/media/hero_image_landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 72px;
 }
 
 /* from Bulma */
@@ -75,7 +92,4 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
 }
