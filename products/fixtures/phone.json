@@ -6,8 +6,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 509,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "SE (2022)",
             "sim": "Dual Sim",
@@ -21,7 +21,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -31,8 +32,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 335,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "11",
             "sim": "Dual Sim",
@@ -46,7 +47,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -56,8 +58,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 479,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "11 Pro Max",
             "sim": "Dual Sim",
@@ -71,7 +73,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -81,8 +84,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 800,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "12",
             "sim": "Dual Sim",
@@ -96,7 +99,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -106,8 +110,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 800,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "12 Mini",
             "sim": "Dual Sim",
@@ -121,7 +125,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -131,8 +136,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 647,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "12 Pro",
             "sim": "Dual Sim",
@@ -146,7 +151,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -156,8 +162,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 530,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "13 Mini",
             "sim": "Dual Sim",
@@ -171,7 +177,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -181,8 +188,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 627,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "13",
             "sim": "Dual Sim",
@@ -196,7 +203,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -206,8 +214,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 825,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "13 Pro",
             "sim": "Dual Sim",
@@ -221,7 +229,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -231,8 +240,8 @@
             "category": 2,
             "brand": "Apple",
             "price": 730,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "iPhone",
             "model": "14",
             "sim": "Dual Sim",
@@ -246,7 +255,8 @@
             "camera_rear": "12 MP",
             "os": "iOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -256,8 +266,8 @@
             "category": 2,
             "brand": "Samsung",
             "price": 499,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy",
             "model": "S22",
             "sim": "Dual Sim",
@@ -271,7 +281,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -281,8 +292,8 @@
             "category": 2,
             "brand": "Samsung",
             "price": 715,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy",
             "model": "S22 Ultra",
             "sim": "Dual Sim",
@@ -296,7 +307,8 @@
             "camera_rear": "108 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -306,8 +318,8 @@
             "category": 2,
             "brand": "Samsung",
             "price": 279,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy",
             "model": "A53",
             "sim": "Dual Sim",
@@ -321,7 +333,8 @@
             "camera_rear": "64 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -331,8 +344,8 @@
             "category": 2,
             "brand": "Samsung",
             "price": 730,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy",
             "model": "S23",
             "sim": "Dual Sim",
@@ -346,7 +359,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -356,8 +370,8 @@
             "category": 2,
             "brand": "Samsung",
             "price": 415,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy",
             "model": "A54",
             "sim": "Dual Sim",
@@ -371,7 +385,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -381,8 +396,8 @@
             "category": 2,
             "brand": "Xiaomi",
             "price": 349,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Redmi",
             "model": "Note 12 Pro",
             "sim": "Dual Sim",
@@ -396,7 +411,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -406,8 +422,8 @@
             "category": 2,
             "brand": "Xiaomi",
             "price": 345,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "12",
             "model": "Lite",
             "sim": "Dual Sim",
@@ -421,7 +437,8 @@
             "camera_rear": "108 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -431,8 +448,8 @@
             "category": 2,
             "brand": "Xiaomi",
             "price": 165,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Redmi",
             "model": "10",
             "sim": "Dual Sim",
@@ -446,7 +463,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -456,8 +474,8 @@
             "category": 2,
             "brand": "Xiaomi",
             "price": 249,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Redmi",
             "model": "K60",
             "sim": "Dual Sim",
@@ -471,7 +489,8 @@
             "camera_rear": "64 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -481,8 +500,8 @@
             "category": 2,
             "brand": "Xiaomi",
             "price": 413,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Mi",
             "model": "11T Pro",
             "sim": "Dual Sim",
@@ -496,7 +515,8 @@
             "camera_rear": "108 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -506,8 +526,8 @@
             "category": 2,
             "brand": "Oppo",
             "price": 515,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Reno",
             "model": "8 Pro",
             "sim": "Dual Sim",
@@ -521,7 +541,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -531,8 +552,8 @@
             "category": 2,
             "brand": "Oppo",
             "price": 449,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Find",
             "model": "X5 Pro",
             "sim": "Dual Sim",
@@ -546,7 +567,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -556,8 +578,8 @@
             "category": 2,
             "brand": "Google",
             "price": 500,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Pixel",
             "model": "7",
             "sim": "Dual Sim",
@@ -571,7 +593,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -581,8 +604,8 @@
             "category": 2,
             "brand": "Google",
             "price": 669,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Pixel",
             "model": "7 Pro",
             "sim": "Dual Sim",
@@ -596,7 +619,8 @@
             "camera_rear": "50 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -605,9 +629,9 @@
         "fields": {
             "category": 2,
             "brand": "Google",
-            "price": "",
-            "sale": "",
-            "sale_price": "",
+            "price": 450,
+            "sale": false,
+            "sale_price": null,
             "series": "Pixel",
             "model": "7A",
             "sim": "Dual Sim",
@@ -621,7 +645,8 @@
             "camera_rear": "12.2 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -631,8 +656,8 @@
             "category": 2,
             "brand": "Huawei",
             "price": 525,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Mate",
             "model": "50 Pro",
             "sim": "Dual Sim",
@@ -646,7 +671,8 @@
             "camera_rear": "64 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -656,8 +682,8 @@
             "category": 2,
             "brand": "Huawei",
             "price": 270,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Nova",
             "model": "10 SE",
             "sim": "Dual Sim",
@@ -671,7 +697,8 @@
             "camera_rear": "108 MP",
             "os": "Android",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     }
 ]
