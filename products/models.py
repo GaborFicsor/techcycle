@@ -68,5 +68,11 @@ class Laptop(models.Model):
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 
+    def set_sale_price(self, *args, **kwargs):
+        if self.sale:
+            self.sale_price = self.price * 0.95
+        else:
+            self.sale_price = None
+
     def __str__(self):
         return f'{self.brand} {self.series} {self.model}'
