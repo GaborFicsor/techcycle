@@ -3,7 +3,6 @@ from .models import Category, Laptop, Phone, Smartwatch, Console
 
 
 
-
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
