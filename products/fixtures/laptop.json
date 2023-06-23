@@ -11,7 +11,7 @@
             "model": "15 M515DA-BQ722WS",
             "series": "VivoBook",
             "color": "Silver",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7 Quad Core",
             "ssd": "Yes",
@@ -30,7 +30,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -45,7 +46,7 @@
             "model": "5511 SE",
             "series": "G15",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i7",
             "ssd": "Yes",
@@ -64,7 +65,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -79,7 +81,7 @@
             "model": "P1511CEA",
             "series": "ExpertBook",
             "color": "Silver",
-            "type": "Business Laptop",
+            "label": "Business Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i3",
             "ssd": "Yes",
@@ -98,7 +100,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -113,7 +116,7 @@
             "model": "13 Slate OLED",
             "series": "VivoBook",
             "color": "Black",
-            "type": "2 in 1 Laptop",
+            "label": "2 in 1 Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Pentium Quad Core",
             "ssd": "",
@@ -132,7 +135,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -147,7 +151,7 @@
             "model": "14ITL6",
             "series": "IdeaPad",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -166,7 +170,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -181,7 +186,7 @@
             "model": "B4MW-423IN",
             "series": "Modern 14",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5 Hexa Core",
             "ssd": "Yes",
@@ -200,7 +205,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -215,7 +221,7 @@
             "model": "3400",
             "series": "Vostro",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -234,7 +240,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -249,7 +256,7 @@
             "model": "10SCXR-1616IN",
             "series": "GF63 Thin",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Hexa Core i5",
             "ssd": "Yes",
@@ -268,7 +275,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -283,7 +291,7 @@
             "model": "2021",
             "series": "Macbook Pro M1",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Apple",
             "cpu_name": "M1",
             "ssd": "Yes",
@@ -302,7 +310,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -317,7 +326,7 @@
             "model": "2020",
             "series": "MacBook Air M1",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Apple",
             "cpu_name": "M1",
             "ssd": "Yes",
@@ -336,7 +345,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -351,7 +361,7 @@
             "model": "E15",
             "series": "ThinkPad E15",
             "color": "Black",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -370,7 +380,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -385,7 +396,7 @@
             "model": "Inspiron 5518",
             "series": "Inspiron 5518",
             "color": "Silver",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -405,7 +416,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -420,7 +432,7 @@
             "model": "15-EC2048AX",
             "series": "Pavilion Gaming",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5 Hexa Core",
             "ssd": "Yes",
@@ -439,7 +451,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -454,7 +467,7 @@
             "model": "F15 FX506LH-HN258T",
             "series": "TUF Gaming",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -473,7 +486,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -488,7 +502,7 @@
             "model": "15-EC2150AX",
             "series": "Pavilion Gaming",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5 Hexa Core",
             "ssd": "Yes",
@@ -507,7 +521,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -522,7 +537,7 @@
             "model": "3511",
             "series": "Inspiron",
             "color": "Black",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -541,7 +556,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -556,7 +572,7 @@
             "model": "X413EA-EB532WS",
             "series": "VivoBook",
             "color": "Black",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -575,7 +591,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -590,7 +607,7 @@
             "model": "5515",
             "series": "G15",
             "color": "Silver",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5 Hexa Core",
             "ssd": "Yes",
@@ -609,7 +626,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -624,7 +642,7 @@
             "model": "A315-57G",
             "series": "Aspire 3",
             "color": "Black",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "",
@@ -643,7 +661,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -658,7 +677,7 @@
             "model": "K15 OLED",
             "series": "VivoBook",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5 Hexa Core",
             "ssd": "Yes",
@@ -677,7 +696,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -692,7 +712,7 @@
             "model": "Helios 300",
             "series": "Predator ",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i9",
             "ssd": "Yes",
@@ -711,7 +731,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -726,7 +747,7 @@
             "model": "G513QE-HN108T",
             "series": "ROG Strix",
             "color": "Silver",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7 Octa Core",
             "ssd": "Yes",
@@ -745,7 +766,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -760,7 +782,7 @@
             "model": "3i",
             "series": "Ideapad Slim ",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -779,7 +801,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -794,7 +817,7 @@
             "model": "Pro 16X OLED",
             "series": "VivoBook",
             "color": "Black",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 9 Octa Core",
             "ssd": "Yes",
@@ -813,7 +836,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -828,7 +852,7 @@
             "model": "3400",
             "series": "Vostro",
             "color": "Black",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i3",
             "ssd": "Yes",
@@ -847,7 +871,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -862,7 +887,7 @@
             "model": "XL12",
             "series": "X1",
             "color": "Green",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i7",
             "ssd": "Yes",
@@ -881,7 +906,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -896,7 +922,7 @@
             "model": "5",
             "series": "Ideapad Slim",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -915,7 +941,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -930,7 +957,7 @@
             "model": "A15 FA566IC-HN008T",
             "series": "TUF Gaming A15",
             "color": "Silver",
-            "type": "Gaming Laptop",
+            "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7 Octa Core",
             "ssd": "Yes",
@@ -949,7 +976,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -964,7 +992,7 @@
             "model": "du3060TX",
             "series": "15s",
             "color": "Black",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "",
@@ -983,7 +1011,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -998,7 +1027,7 @@
             "model": "5518",
             "series": "Inspiron",
             "color": "Silver",
-            "type": "Thin and Light Laptop",
+            "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -1017,7 +1046,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -1032,7 +1062,7 @@
             "model": "7501",
             "series": "Inpiron",
             "color": "Silver",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -1051,7 +1081,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -1066,7 +1097,7 @@
             "model": "3511",
             "series": "Inspiron",
             "color": "Silver",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -1085,7 +1116,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     },
     {
@@ -1100,7 +1132,7 @@
             "model": "15IML05",
             "series": "Ideapad 3",
             "color": "Silver",
-            "type": "Laptop",
+            "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
             "ssd": "Yes",
@@ -1119,7 +1151,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "No",
-            "image": ""
+            "image": "",
+            "image_url": ""
         }
     }
 ]

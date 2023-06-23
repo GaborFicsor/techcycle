@@ -10,3 +10,63 @@ class Category(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
+
+class Laptop(models.Model):
+
+    CHOICES = [
+        ('yes', 'Yes'),
+        ('no', 'No'),
+    ]
+
+    SIZES = [
+        (11, 11),
+        (12, 12),
+        (13, 13),
+        (14, 14),
+        (15, 15),
+        (16, 16),
+        (17, 17)
+    ]
+
+    CORES = [
+        (2, 2),
+        (4, 4),
+        (6, 6),
+        (8, 8),
+        (10, 10),
+        (12, 12)
+
+    ]
+
+    category = models.ForeignKey('Category', null=True, on_delete=models.SET_NULL)
+    brand = models.CharField(max_length=254)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    sale = models.BooleanField(default=False)
+    sale_price = models.DecimalField(max_digits=8, decimal_places=2)
+    model = models.CharField(max_length=254)
+    series = models.CharField(max_length=254)
+    color = models.CharField(max_length=254)
+    label = models.CharField(max_length=254)
+    cpu_brand = models.CharField(max_length=254)
+    cpu_name = models.CharField(max_length=254)
+    ssd = models.CharField(max_length=254)
+    storage_size = models.CharField(max_length=254)
+    ram = models.CharField(max_length=254)
+    cpu_variant = models.CharField(max_length=254)
+    gpu = models.CharField(max_length=254)
+    cores = models.PositiveIntegerField(choices=CORES)
+    os = models.CharField(max_length=254)
+    usb = models.CharField(max_length=254)
+    hdmi = models.CharField(max_length=254)
+    touchscreen = models.CharField(max_length=254, choices=CHOICES)
+    screen_size = models.PositiveIntegerField(choices=SIZES)
+    dimensions = models.CharField(max_length=254)
+    weight = models.CharField(max_length=254)
+    finger_print_sensor = models.CharField(max_length=254, choices=CHOICES)
+    keyboard = models.CharField(max_length=254)
+    backlit = models.CharField(max_length=254, choices=CHOICES)
+    image = models.ImageField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
