@@ -42,14 +42,14 @@ class Laptop(models.Model):
     brand = models.CharField(max_length=254)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     sale = models.BooleanField(default=False)
-    sale_price = models.DecimalField(max_digits=8, decimal_places=2)
+    sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2)
     model = models.CharField(max_length=254)
     series = models.CharField(max_length=254)
     color = models.CharField(max_length=254)
     label = models.CharField(max_length=254)
     cpu_brand = models.CharField(max_length=254)
     cpu_name = models.CharField(max_length=254)
-    ssd = models.CharField(max_length=254)
+    ssd = models.CharField(max_length=254, choices=CHOICES)
     storage_size = models.CharField(max_length=254)
     ram = models.CharField(max_length=254)
     cpu_variant = models.CharField(max_length=254)
@@ -69,4 +69,4 @@ class Laptop(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.brand} {self.series} {self.model}'

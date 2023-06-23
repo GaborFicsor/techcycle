@@ -6,8 +6,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 600,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "15 M515DA-BQ722WS",
             "series": "VivoBook",
             "color": "Silver",
@@ -30,8 +30,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -41,8 +41,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 1150,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "5511 SE",
             "series": "G15",
             "color": "Black",
@@ -65,8 +65,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -76,8 +76,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 395,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "P1511CEA",
             "series": "ExpertBook",
             "color": "Silver",
@@ -100,8 +100,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -111,8 +111,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 472,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "13 Slate OLED",
             "series": "VivoBook",
             "color": "Black",
@@ -135,8 +135,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -146,8 +146,8 @@
             "category": 1,
             "brand": "Lenovo",
             "price": 560,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "14ITL6",
             "series": "IdeaPad",
             "color": "Silver",
@@ -170,8 +170,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -181,8 +181,8 @@
             "category": 1,
             "brand": "MSI",
             "price": 495,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "B4MW-423IN",
             "series": "Modern 14",
             "color": "Silver",
@@ -205,8 +205,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -216,8 +216,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 613,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "3400",
             "series": "Vostro",
             "color": "Silver",
@@ -240,8 +240,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -251,8 +251,8 @@
             "category": 1,
             "brand": "MSI",
             "price": 605,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "10SCXR-1616IN",
             "series": "GF63 Thin",
             "color": "Black",
@@ -275,8 +275,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -286,8 +286,8 @@
             "category": 1,
             "brand": "Apple",
             "price": 2485,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "2021",
             "series": "Macbook Pro M1",
             "color": "Silver",
@@ -310,8 +310,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -321,8 +321,8 @@
             "category": 1,
             "brand": "Apple",
             "price": 1133,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "2020",
             "series": "MacBook Air M1",
             "color": "Silver",
@@ -345,8 +345,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -356,8 +356,8 @@
             "category": 1,
             "brand": "Lenovo",
             "price": 748,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "E15",
             "series": "ThinkPad E15",
             "color": "Black",
@@ -380,8 +380,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -391,8 +391,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 790,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "Inspiron 5518",
             "series": "Inspiron 5518",
             "color": "Silver",
@@ -403,7 +403,6 @@
             "storage_size": "512 GB",
             "ram": "16 GB",
             "cpu_variant": "11300H",
-            "Expandable Memory": "Up to 32 GB",
             "gpu": "Intel Integrated Iris X",
             "cores": 4,
             "os": "Windows 10 Home",
@@ -416,8 +415,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -427,8 +426,8 @@
             "category": 1,
             "brand": "HP",
             "price": 860,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "15-EC2048AX",
             "series": "Pavilion Gaming",
             "color": "Black",
@@ -451,8 +450,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -462,8 +461,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 660,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "F15 FX506LH-HN258T",
             "series": "TUF Gaming",
             "color": "Black",
@@ -486,8 +485,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -497,8 +496,8 @@
             "category": 1,
             "brand": "HP",
             "price": 649,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "15-EC2150AX",
             "series": "Pavilion Gaming",
             "color": "Black",
@@ -521,8 +520,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -532,8 +531,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 781,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "3511",
             "series": "Inspiron",
             "color": "Black",
@@ -556,8 +555,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -567,8 +566,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 615,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "X413EA-EB532WS",
             "series": "VivoBook",
             "color": "Black",
@@ -591,8 +590,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -602,8 +601,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 918,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "5515",
             "series": "G15",
             "color": "Silver",
@@ -626,8 +625,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -637,8 +636,8 @@
             "category": 1,
             "brand": "Acer",
             "price": 506,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "A315-57G",
             "series": "Aspire 3",
             "color": "Black",
@@ -661,8 +660,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -672,8 +671,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 649,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "K15 OLED",
             "series": "VivoBook",
             "color": "Silver",
@@ -696,8 +695,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -707,8 +706,8 @@
             "category": 1,
             "brand": "Acer",
             "price": 1540,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "Helios 300",
             "series": "Predator ",
             "color": "Black",
@@ -731,8 +730,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -742,8 +741,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 1122,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "G513QE-HN108T",
             "series": "ROG Strix",
             "color": "Silver",
@@ -766,8 +765,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -777,8 +776,8 @@
             "category": 1,
             "brand": "Lenovo",
             "price": 561,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "3i",
             "series": "Ideapad Slim ",
             "color": "Silver",
@@ -801,8 +800,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -812,8 +811,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 1436,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "Pro 16X OLED",
             "series": "VivoBook",
             "color": "Black",
@@ -836,8 +835,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -847,8 +846,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 385,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "3400",
             "series": "Vostro",
             "color": "Black",
@@ -871,8 +870,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -882,8 +881,8 @@
             "category": 1,
             "brand": "Infinix",
             "price": 561,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "XL12",
             "series": "X1",
             "color": "Green",
@@ -906,8 +905,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -917,8 +916,8 @@
             "category": 1,
             "brand": "Lenovo",
             "price": 737,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "5",
             "series": "Ideapad Slim",
             "color": "Silver",
@@ -941,8 +940,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -952,8 +951,8 @@
             "category": 1,
             "brand": "ASUS",
             "price": 1012,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "A15 FA566IC-HN008T",
             "series": "TUF Gaming A15",
             "color": "Silver",
@@ -976,8 +975,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -987,8 +986,8 @@
             "category": 1,
             "brand": "HP",
             "price": 600,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "du3060TX",
             "series": "15s",
             "color": "Black",
@@ -1011,8 +1010,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -1022,8 +1021,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 792,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "5518",
             "series": "Inspiron",
             "color": "Silver",
@@ -1046,8 +1045,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -1057,8 +1056,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 835,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "7501",
             "series": "Inpiron",
             "color": "Silver",
@@ -1081,8 +1080,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -1092,8 +1091,8 @@
             "category": 1,
             "brand": "DELL",
             "price": 659,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "3511",
             "series": "Inspiron",
             "color": "Silver",
@@ -1116,8 +1115,8 @@
             "finger_print_sensor": "No",
             "keyboard": "English",
             "backlit": "Yes",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     },
     {
@@ -1127,8 +1126,8 @@
             "category": 1,
             "brand": "Lenovo",
             "price": 605,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "model": "15IML05",
             "series": "Ideapad 3",
             "color": "Silver",
@@ -1151,8 +1150,8 @@
             "finger_print_sensor": "Yes",
             "keyboard": "English",
             "backlit": "No",
-            "image": "",
-            "image_url": ""
+            "image": null,
+            "image_url": null
         }
     }
 ]
