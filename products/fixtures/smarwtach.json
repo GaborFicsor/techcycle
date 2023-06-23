@@ -6,8 +6,8 @@
             "category": 3,
             "brand": "Apple",
             "price": 250,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Watch",
             "model": "SE",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -19,7 +19,8 @@
             "gps": "yes",
             "os": "WatchOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     },
     {
@@ -29,8 +30,8 @@
             "category": 3,
             "brand": "Apple",
             "price": 340,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Watch",
             "model": "Series 7",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -42,7 +43,8 @@
             "gps": "yes",
             "os": "WatchOS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     },
     {
@@ -52,8 +54,8 @@
             "category": 3,
             "brand": "Samsung",
             "price": 200,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy Watch",
             "model": "4",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -65,7 +67,8 @@
             "gps": "yes",
             "os": "Wear OS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     },
     {
@@ -75,8 +78,8 @@
             "category": 3,
             "brand": "Samsung",
             "price": 150,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Galaxy Watch",
             "model": "Active 2",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -88,7 +91,8 @@
             "gps": "yes",
             "os": "Tizen OS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     },
     {
@@ -98,8 +102,8 @@
             "category": 3,
             "brand": "Garmin",
             "price": 413,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Forerunner",
             "model": "945",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -111,7 +115,8 @@
             "gps": "yes",
             "os": "Garmin OS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     },
     {
@@ -121,8 +126,8 @@
             "category": 3,
             "brand": "Garmin",
             "price": 200,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Venu",
             "model": "2",
             "connectivity": "Bluetooth, Wi-Fi",
@@ -134,7 +139,8 @@
             "gps": "yes",
             "os": "Garmin OS",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
       }
     }
 ]

@@ -107,3 +107,32 @@ class Phone(models.Model):
 
     def __str__(self):
         return f'{self.brand} {self.series} {self.model}'
+
+class Smartwatch(models.Model):
+
+    CHOICES = [
+        ('yes', 'Yes'),
+        ('no', 'No'),
+    ]
+
+    category = models.ForeignKey('Category', null=True, on_delete=models.SET_NULL)
+    brand = models.CharField(max_length=254)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    sale = models.BooleanField(default=False)
+    sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2)
+    series = models.CharField(max_length=254)
+    model = models.CharField(max_length=254)
+    connectivity = models.CharField(max_length=254)
+    display = models.CharField(max_length=254)
+    screen_size = models.DecimalField(max_digits=4, decimal_places=2)
+    resolution = models.CharField(max_length=254)
+    water_resistance = models.CharField(max_length=254)
+    heart_rate_monitor = models.CharField(max_length=254, choices=CHOICES)
+    gps = models.CharField(max_length=254, choices=CHOICES) 
+    os = models.CharField(max_length=254)
+    color = models.CharField(max_length=254)
+    image = models.ImageField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.brand} {self.series} {self.model}'
