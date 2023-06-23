@@ -1,0 +1,210 @@
+[
+    {
+        "pk": 1,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Sony",
+            "price": 250,
+            "sale": "",
+            "sale_price": "",
+            "series": "PlayStation",
+            "model": "4",
+            "storage_size": "500 GB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 2,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Sony",
+            "price": 300,
+            "sale": "",
+            "sale_price": "",
+            "series": "PlayStation",
+            "model": "4 Slim",
+            "storage_size": "500 GB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 3,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Sony",
+            "price": 350,
+            "sale": "",
+            "sale_price": "",
+            "series": "PlayStation",
+            "model": "4 Pro",
+            "storage_size": "1 TB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 4,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Sony",
+            "price": 399,
+            "sale": "",
+            "sale_price": "",
+            "series": "PlayStation",
+            "model": "5 (digital edition)",
+            "storage_size": "1 TB",
+            "color": "white",
+            "image": ""
+        }
+    },
+        {
+        "pk": 5,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Sony",
+            "price": 499,
+            "sale": "",
+            "sale_price": "",
+            "series": "PlayStation",
+            "model": "5",
+            "storage_size": "1 TB",
+            "color": "white",
+            "image": ""
+        }
+    },
+        {
+        "pk": 6,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Microsoft",
+            "price": 225,
+            "sale": "",
+            "sale_price": "",
+            "series": "Xbox",
+            "model": "One",
+            "storage_size": "500 GB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 7,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Microsoft",
+            "price": 250,
+            "sale": "",
+            "sale_price": "",
+            "series": "Xbox",
+            "model": "One S",
+            "storage_size": "500 GB",
+            "color": "white",
+            "image": ""
+        }
+    },
+        {
+        "pk": 8,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Microsoft",
+            "price": 300,
+            "sale": "",
+            "sale_price": "",
+            "series": "Xbox",
+            "model": "One X",
+            "storage_size": "1 TB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 9,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Microsoft",
+            "price": 300,
+            "sale": "",
+            "sale_price": "",
+            "series": "Xbox",
+            "model": "Series S",
+            "storage_size": "500 GB",
+            "color": "white",
+            "image": ""
+        }
+    },
+        {
+        "pk": 10,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Microsoft",
+            "price": 499,
+            "sale": "",
+            "sale_price": "",
+            "series": "Xbox",
+            "model": "Series X",
+            "storage_size": "1 TB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 11,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Nintendo",
+            "price": 299,
+            "sale": "",
+            "sale_price": "",
+            "series": "Switch",
+            "model": "Standard",
+            "storage_size": "32 GB",
+            "color": "black",
+            "image": ""
+        }
+    },
+        {
+        "pk": 12,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Nintendo",
+            "price": 199,
+            "sale": "",
+            "sale_price": "",
+            "series": "Switch",
+            "model": "Lite",
+            "storage_size": "32 GB",
+            "color": "blue",
+            "image": ""
+        }
+    },
+        {
+        "pk": 13,
+        "model": "products.console",
+        "fields": {
+            "category": 4,
+            "brand": "Nintendo",
+            "price": 349,
+            "sale": "",
+            "sale_price": "",
+            "series": "Switch",
+            "model": "Oled",
+            "storage_size": "64 GB",
+            "color": "white",
+            "image": ""
+        }
+    }
+]

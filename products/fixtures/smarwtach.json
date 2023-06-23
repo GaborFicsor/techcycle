@@ -1,0 +1,140 @@
+[
+    {
+        "pk": 1,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Apple",
+            "price": 250,
+            "sale": "",
+            "sale_price": "",
+            "series": "Watch",
+            "model": "SE",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Retina",
+            "screen_size": 1.57,
+            "resolution": "394 x 324",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "WatchOS",
+            "color": "black",
+            "image": ""
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Apple",
+            "price": 340,
+            "sale": "",
+            "sale_price": "",
+            "series": "Watch",
+            "model": "Series 7",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Retina",
+            "screen_size": 1.9,
+            "resolution": "396 x 484",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "WatchOS",
+            "color": "black",
+            "image": ""
+      }
+    },
+    {
+        "pk": 3,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Samsung",
+            "price": 200,
+            "sale": "",
+            "sale_price": "",
+            "series": "Galaxy Watch",
+            "model": "4",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Amoled",
+            "screen_size": 1.4,
+            "resolution": "450 x 450",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "Wear OS",
+            "color": "black",
+            "image": ""
+      }
+    },
+    {
+        "pk": 4,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Samsung",
+            "price": 150,
+            "sale": "",
+            "sale_price": "",
+            "series": "Galaxy Watch",
+            "model": "Active 2",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Super Amoled",
+            "screen_size": 1.4,
+            "resolution": "360 x 360",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "Tizen OS",
+            "color": "black",
+            "image": ""
+      }
+    },
+    {
+        "pk": 5,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Garmin",
+            "price": 413,
+            "sale": "",
+            "sale_price": "",
+            "series": "Forerunner",
+            "model": "945",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Transflective",
+            "screen_size": 1.2,
+            "resolution": "240 x 240",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "Garmin OS",
+            "color": "black",
+            "image": ""
+      }
+    },
+    {
+        "pk": 6,
+        "model": "products.smartwatch",
+        "fields": {
+            "category": 3,
+            "brand": "Garmin",
+            "price": 200,
+            "sale": "",
+            "sale_price": "",
+            "series": "Venu",
+            "model": "2",
+            "connectivity": "Bluetooth, Wi-Fi",
+            "display": "Amoled",
+            "screen_size": 1.3,
+            "resolution": "416 x 416",
+            "water_resistance": "50 M",
+            "heart_rate_monitor": "yes",
+            "gps": "yes",
+            "os": "Garmin OS",
+            "color": "black",
+            "image": ""
+      }
+    }
+]
