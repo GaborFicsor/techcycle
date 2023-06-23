@@ -136,3 +136,26 @@ class Smartwatch(models.Model):
 
     def __str__(self):
         return f'{self.brand} {self.series} {self.model}'
+
+class Console(models.Model):
+
+    BRAND = [
+        ('Microsoft', 'Microsoft'),
+        ('Sony', 'Sony'),
+        ('Nintendo', 'Nintendo'),
+    ]
+
+    category = models.ForeignKey('Category', null=True, on_delete=models.SET_NULL)
+    brand = models.CharField(max_length=254, choices=BRAND)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    sale = models.BooleanField(default=False)
+    sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2)
+    series = models.CharField(max_length=254)
+    model = models.CharField(max_length=254)
+    storage_size = models.CharField(max_length=254)
+    color = models.CharField(max_length=254)
+    image = models.ImageField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.brand} {self.series} {self.model}'

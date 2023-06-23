@@ -6,13 +6,14 @@
             "category": 4,
             "brand": "Sony",
             "price": 250,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "PlayStation",
             "model": "4",
             "storage_size": "500 GB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -22,13 +23,14 @@
             "category": 4,
             "brand": "Sony",
             "price": 300,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "PlayStation",
             "model": "4 Slim",
             "storage_size": "500 GB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -38,13 +40,14 @@
             "category": 4,
             "brand": "Sony",
             "price": 350,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "PlayStation",
             "model": "4 Pro",
             "storage_size": "1 TB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -54,13 +57,14 @@
             "category": 4,
             "brand": "Sony",
             "price": 399,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "PlayStation",
             "model": "5 (digital edition)",
             "storage_size": "1 TB",
             "color": "white",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -70,13 +74,14 @@
             "category": 4,
             "brand": "Sony",
             "price": 499,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "PlayStation",
             "model": "5",
             "storage_size": "1 TB",
             "color": "white",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -86,13 +91,14 @@
             "category": 4,
             "brand": "Microsoft",
             "price": 225,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Xbox",
             "model": "One",
             "storage_size": "500 GB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -102,13 +108,14 @@
             "category": 4,
             "brand": "Microsoft",
             "price": 250,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Xbox",
             "model": "One S",
             "storage_size": "500 GB",
             "color": "white",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -118,13 +125,14 @@
             "category": 4,
             "brand": "Microsoft",
             "price": 300,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Xbox",
             "model": "One X",
             "storage_size": "1 TB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -134,13 +142,14 @@
             "category": 4,
             "brand": "Microsoft",
             "price": 300,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Xbox",
             "model": "Series S",
             "storage_size": "500 GB",
             "color": "white",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -150,13 +159,14 @@
             "category": 4,
             "brand": "Microsoft",
             "price": 499,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Xbox",
             "model": "Series X",
             "storage_size": "1 TB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -166,13 +176,14 @@
             "category": 4,
             "brand": "Nintendo",
             "price": 299,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Switch",
             "model": "Standard",
             "storage_size": "32 GB",
             "color": "black",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -182,13 +193,14 @@
             "category": 4,
             "brand": "Nintendo",
             "price": 199,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Switch",
             "model": "Lite",
             "storage_size": "32 GB",
             "color": "blue",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     },
         {
@@ -198,13 +210,14 @@
             "category": 4,
             "brand": "Nintendo",
             "price": 349,
-            "sale": "",
-            "sale_price": "",
+            "sale": false,
+            "sale_price": null,
             "series": "Switch",
             "model": "Oled",
             "storage_size": "64 GB",
             "color": "white",
-            "image": ""
+            "image": null,
+            "image_url": null
         }
     }
 ]
