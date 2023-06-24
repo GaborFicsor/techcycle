@@ -2,21 +2,59 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
+<div class="container">
 
-                {{ laptops }}
-
-            </div>
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Laptops</h2>
         </div>
     </div>
+
+    <div class="row">
+        {% for laptop in laptops %}
+        <div class="col-6">
+            <div class="row">
+                <div class="container mt-4 p-4">
+                    <div class="card d-flex align-items-stretch border-0 mb-3 p-3" style="max-width:540px;">
+                        <div class="row g-0">
+                            <div class="col-md-6 text-center">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                            </div>
+
+                            <div class="col-md-6 border-left">
+                                <div class="card-body">
+                                    <h5 class="card-title text-sm">
+                                        {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li>{{ laptop.cpu_brand }} {{ laptop.cpu_name}}</li>
+                                        <li>{{ laptop.ram }}</li>
+                                        <li>{{ laptop.storage_size}}</li>
+                                        <li>{{ laptop.screen_size }}"</li>
+                                    </ul>
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">€{{ laptop.price }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+<div class="d-flex" style="height: 200px;">
+    <div class="vr"></div>
+</div>
 {% endblock %}

@@ -48,6 +48,41 @@ body {
 
 /* footer mishmash */
 
+/* card */
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+    transition: box-shadow 500ms;
+}
+
+.text-sm {
+    font-size: 1.2rem;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.lead {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 0;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
+}
+
+.divider {
+    border-left: 1px solid;
+}
+
 /* colours */
 
 .white {
