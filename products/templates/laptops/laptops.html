@@ -20,21 +20,26 @@
 
     <div class="row">
         {% for laptop in laptops %}
-        <div class="col-6">
-            <div class="row">
-                <div class="container mt-4 p-4">
-                    <div class="card d-flex align-items-stretch border-0 mb-3 p-3" style="max-width:540px;">
+        <div class="col-12 col-lg-6">
+            <div class="row custom-margin">
+                <div class="container p-4">
+                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
                         <div class="row g-0">
-                            <div class="col-md-6 text-center">
+                            <div class="col-6 text-center">
                                 <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                             </div>
-
-                            <div class="col-md-6 border-left">
+                            <div class="sale">
+                                sale
+                            </div>
+                            <div class="stock">
+                                in stock
+                            </div>
+                            <div class="col-6 position-relative border-left">
                                 <div class="card-body">
-                                    <h5 class="card-title text-sm">
+                                    <h5 class="card-title h-3 text-sm">
                                         {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
                                     </h5>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled text-muted d-none d-md-block">
                                         <li>{{ laptop.cpu_brand }} {{ laptop.cpu_name}}</li>
                                         <li>{{ laptop.ram }}</li>
                                         <li>{{ laptop.storage_size}}</li>

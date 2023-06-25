@@ -4,8 +4,9 @@ html {
 
 body {
     padding-top: 72px;
-    color: #555;
+    color: #011936;
     font-family: 'Lato';
+    background-color: #F5F5F5;
 }
 
 /* footer mishmash */
@@ -56,14 +57,30 @@ body {
     transition: box-shadow 500ms;
 }
 
+.h-3 {
+    height: 3rem;
+}
+
 .text-sm {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .price {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 6%;
+}
+
+.sale {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.stock {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
 }
 
 .lead {
@@ -72,7 +89,6 @@ body {
 
 .card-body {
     padding: 0;
-    position: relative;
 }
 
 .card:hover {
@@ -195,6 +211,12 @@ html {
     /* .header-container {
         padding-top: 164px;
     } */
+}
 
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .custom-margin {
+        margin-left: 7.5%;
+    }
 
 }
