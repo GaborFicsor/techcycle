@@ -14,11 +14,103 @@
     <section class="scroll-section hero-image-container row">
         <div class="col"></div>
     </section>
-    <section class="scroll-section row">
-        <h2>Categories</h2>
-    </section>
-    <section class="scroll-section row">
-        <h2>Frequently Asked Questions</h2>
-    </section>
+
 </main>
+
+<main class="container">
+    <section class="container row">
+        {% for laptop in laptops %}
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="row custom-margin">
+                <div class="container p-4">
+                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
+                        <div class="row g-0">
+                            <div class="col-12 text-center">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center user-select-none">
+                        {{ laptop.brand }} {{ laptop.series }}
+                    </div>
+                    <div class="text-center user-select-none">
+                        {{ laptop.model }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+</main>
+
+<section class="black text-grey offer-container d-none d-md-block">
+    <div class="container pt-5">
+        <div class="col-12">
+            <div class="row text-center">
+                <div class="col-4">
+                    <i class="circle-icon fa-solid fa-heart"></i>
+                    <p class="p-4">Pre-loved products: Discover a curated selection of gently used items, ready to find a new home.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon fa-solid fa-truck"></i>
+                    <p class="p-4">Enjoy free domestic shipping on all orders: No minimum purchase required, just sit back and let
+                        us take care of the delivery.</p>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon fa-solid fa-credit-card"></i>
+                    <p class="p-4">Shop with confidence: Our secure payment system ensures your personal information is protected
+                        throughout the transaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="black text-grey offer-container d-md-none">
+    <div class="container p-5 text-center">
+        <div class="col-12 pb-5">
+            <h4>We offer...</h4>
+        </div>
+        <div class="col-12">
+            <div class="row text-center">
+                <div class="col-4">
+                    <i class="circle-icon-small fa-solid fa-heart"></i>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon-small fa-solid fa-truck"></i>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon-small fa-solid fa-credit-card"></i>
+                </div>
+            </div>
+        </div>
+        <div id="words" class="col-12 pt-5">
+            <h4>Sustainability</h4>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script type="text/javascript">
+    (function () {
+        let words = [
+            "<h4>Sustainability</h4>",
+            "<h4>Free Domestic Shipping</h4>",
+            "<h4>12 month warranty</h4>",
+            "<h4>Secure Payment</h4>"
+        ],
+            i = 0;
+        setInterval(function () {
+            $('#words').fadeOut(function () {
+                $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+            });
+        }, 3000)
+    })();
+</script>
 {% endblock %}

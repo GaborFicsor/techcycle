@@ -44,11 +44,12 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="bg-white fixed-top">
+        <div class="container">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>TechCycle</strong></h2>
+                <a href="{% url 'home' %}" class="nav-link main-logo-link text-dark-b">
+                    <h2 class="logo-font my-0"><strong>TechCycle</strong></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -57,21 +58,20 @@
                         <input class="form-control" type="text" name="q"
                             placeholder="Search">
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-outline-primary">search</button>
+                            <button type="button" class="btn search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <ul class="list-inline list-unstyled text-center text-dark-b text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div>
                                     <i class="fas fa-user fa-lg"></i>
                                 </div>
-                                <p class="my-0">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -89,16 +89,9 @@
                     </li>
                     <li class="list-inline-item">
                         <a href=""
-                            class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
+                            class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                    $0.00
-                                    {% endif %}
-                                </p>
                             </div>
                         </a>
                     </li>
@@ -106,7 +99,7 @@
             </div>
         </div>
         <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <nav class="navbar navbar-expand-lg w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -115,6 +108,7 @@
                 {% include 'includes/navbar.html' %}
             </nav>
         </div>
+    </div>
     </header>
     {% if messages %}
     <div class="message-container"></div>
@@ -128,7 +122,7 @@
     {% endblock %}
 
     <!-- newsletter section -->
-    <section class="red text-white">
+    <section class="bg-warning text-black">
         <div class="container p-4">
 
             <!-- newsletter heading title -->
@@ -152,7 +146,7 @@
 
                         <!-- submit button -->
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-outline-light my-2">
+                            <button type="submit" class="btn btn-outline-dark my-2">
                                 Subscribe
                             </button>
                         </div>
