@@ -9,6 +9,12 @@ body {
     background-color: #F5F5F5;
 }
 
+.index-h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
 /* footer mishmash */
 
 .payment-icon {
@@ -102,7 +108,7 @@ body {
 /* offer */
 
 .circle-icon {
-    color:#e0e0e0;
+    color:#ffffff;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -114,7 +120,7 @@ body {
 }
 
 .circle-icon-small {
-    color:#e0e0e0;
+    color:#ffffff;
     width: 55px;
     height: 55px;
     border-radius: 50%;

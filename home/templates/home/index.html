@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -63,10 +63,9 @@
     </a>
 </div>
 
-
-
 <main class="container">
-    <section class="container row">
+    <h2 class="index-h2">Featured</h2>
+    <section class="row">
         {% for laptop in laptops %}
         <div class="col-12 col-md-6 col-lg-3">
             <div class="row custom-margin">
@@ -95,66 +94,73 @@
 <section class="text-white forest">
     <div class="container p-4">
         <div class="border-white">
-        <div class="col-12 text-center">
-            <h4 class="pt-2 display-4">
-                <strong>Why choose TechCycle?</strong>
-            </h4>
-        </div>
-        <div class="col-12">
-            <div class="row">
-                <div class="col-12 col-md-6 p-3">
-                    <p>Buying used electronics save a significant amount of money compared to purchasing brand
-                        new devices.</p>
-                </div>
-                <div class="col-12 col-md-6 p-3">
-                    <p>Each device undergoes thorough inspections and repairs to meet our strict standards,
-                        guaranteeing reliable performance.</p>
+            <div class="col-12 text-center">
+                <h4 class="pt-2 display-4">
+                    <strong>Why choose TechCycle?</strong>
+                </h4>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-3">
+                        <p>By Buying used electronics, you save a significant amount of money compared to purchasing brand
+                            new devices.</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-3">
+                        <p>Each device undergoes thorough inspections and repairs to meet our strict standards,
+                            guaranteeing reliable performance.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12">
-            <div class="row">
-                <div class="col-12 col-md-6 p-3">
-                    <p>
-                        By giving a second life to these devices, you contribute to the preservation of our planet's
-                        resources and minimize the carbon footprint associated with manufacturing new products.</p>
-                </div>
-                <div class="col-12 col-md-6 p-3">
-                    <p>Our dedicated customer service team is ready to assist you throughout your purchase journey and
-                        address any concerns or inquiries.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<!-- faq section -->
-<section>
-    {% for faq in faqs %}
-    <div class="container">
-        <div id="accordion">
-            <div class="accordion-item">
-                <div class="accordion-header" id="heading{{ faq.id }}">
-                    <h5 class="mb-0">
-                        <a class="btn btn-accordion stretched-link collapsed" data-toggle="collapse"
-                            data-target="#collapse{{ faq.id }}" aria-expanded="true"
-                            aria-controls="collapse{{ faq.id }}">
-                            {{ faq.question }}
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}"
-                    data-parent="#accordion">
-                    <div class="accordion-body">
-                        {{ faq.answer }}
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-3">
+                        <p>
+                            By giving a second life to these devices, you contribute to the preservation of our planet's
+                            resources and minimize the carbon footprint associated with manufacturing new products.</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-3">
+                        <p>Our dedicated customer service team is ready to assist you throughout your purchase journey
+                            and
+                            address any concerns or inquiries.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% endfor %}
+</section>
+
+<!-- faq section -->
+<section class="my-5">
+    <div class="container">
+        <div class="col-12">
+            <h2 class="index-h2">Frequently asked questions</h2>
+        </div>
+        {% for faq in faqs %}
+        <div class="col-12">
+            <div id="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" id="heading{{ faq.id }}">
+                        <h5 class="mb-0">
+                            <a class="btn btn-accordion stretched-link collapsed" data-toggle="collapse"
+                                data-target="#collapse{{ faq.id }}" aria-expanded="true"
+                                aria-controls="collapse{{ faq.id }}">
+                                {{ faq.question }}
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}"
+                        data-parent="#accordion">
+                        <div class="accordion-body">
+                            {{ faq.answer }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
 </section>
 <!-- faq section -->
 
@@ -185,24 +191,28 @@
 
 <section class="text-dark-b my-4 d-none d-lg-block">
     <div class="container p-4">
-        <div class="row text-center">
-            <div class="col-4">
-                <i class="circle-icon dark-b fa-solid fa-heart"></i>
-                <p class="p-4">Pre-loved products: Discover a curated selection of gently used items, ready to find a
-                    new home.
-                </p>
-            </div>
-            <div class="col-4">
-                <i class="circle-icon dark-b fa-solid fa-truck"></i>
-                <p class="p-4">Enjoy free domestic shipping on all orders: No minimum purchase required, just sit back
-                    and let
-                    us take care of the delivery.</p>
-            </div>
-            <div class="col-4">
-                <i class="circle-icon dark-b fa-solid fa-credit-card"></i>
-                <p class="p-4">Shop with confidence: Our secure payment system ensures your personal information is
-                    protected
-                    throughout the transaction</p>
+        <div class="col-12">
+            <div class="row text-center">
+                <div class="col-4">
+                    <i class="circle-icon dark-b fa-solid fa-heart"></i>
+                    <p class="p-4">Pre-loved products: Discover a curated selection of gently used items, ready to find
+                        a
+                        new home.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon dark-b fa-solid fa-truck"></i>
+                    <p class="p-4">Enjoy free domestic shipping on all orders: No minimum purchase required, just sit
+                        back
+                        and let
+                        us take care of the delivery.</p>
+                </div>
+                <div class="col-4">
+                    <i class="circle-icon dark-b fa-solid fa-credit-card"></i>
+                    <p class="p-4">Shop with confidence: Our secure payment system ensures your personal information is
+                        protected
+                        throughout the transaction</p>
+                </div>
             </div>
         </div>
     </div>
