@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    padding-top: 72px;
+    padding-top: 80px;
     color: #011936;
     font-family: 'Lato';
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
 }
 
 /* footer mishmash */
@@ -101,12 +101,8 @@ body {
 
 /* offer */
 
-.offer-container {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 35%, rgba(65,65,65,1) 100%);
-}
-
 .circle-icon {
-    background: #4f4f4f;
+    color:#e0e0e0;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -118,9 +114,9 @@ body {
 }
 
 .circle-icon-small {
-    background: #4f4f4f;
-    width: 60px;
-    height: 60px;
+    color:#e0e0e0;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     text-align: center;
     line-height: 100px;
@@ -187,6 +183,7 @@ body {
 
 /* colours */
 
+
 /* nav */
 
 .search-button {
@@ -204,6 +201,10 @@ body {
 .hero-image-container {
     background: url('/media/hero_image_landing.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+.vh-75 {
+    height: 75vh;
 }
 
 .vh-50 {
@@ -286,9 +287,9 @@ html {
         z-index: 1030;
     }
 
-    /* .header-container {
-        padding-top: 164px;
-    } */
+    .body {
+        padding-top: 118px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
