@@ -3,9 +3,9 @@ from .models import FAQ
 
 
 class FAQAdmin(admin.ModelAdmin):
-    list_display = {
+    list_display = (
         'question',
         'answer',
-    }
+    )
 
 admin.site.register(FAQ, FAQAdmin)

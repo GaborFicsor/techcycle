@@ -12,55 +12,56 @@
 {% block content %}
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <picture>
-            <source media="(max-width: 799px)" srcset="/media/slide-console.png">
-            <source media="(min-width: 992px)" srcset="/media/slide-console-large.png">
-            <img class="d-block w-100" src="/media/slide-console.png" alt="">
-        </picture>
-        <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <picture>
-            <source media="(max-width: 799px)" srcset="/media/slide-blue-screen.png">
-            <source media="(min-width: 992px)" srcset="/media/slide-blue-screen-large.png">
-            <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="">
-        </picture>
-        <div class="carousel-caption d-none d-md-block">
-            <a href="https://www.google.co.uk/" target="_blank"><button type="button" class="btn btn-default">Read More</button></a>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            
-          </div>
-      </div>
-      <div class="carousel-item">
-        <picture>
-            <source media="(max-width: 799px)" srcset="/media/slide-sale.png">
-            <source media="(min-width: 992px)" srcset="/media/slide-sale-large.png">
-            <img class="d-block w-100" src="/media/slide-sale.png" alt="">
-        </picture>
-        <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-      </div>
+        <div class="carousel-item active">
+            <picture>
+                <source media="(max-width: 799px)" srcset="/media/slide-console.png">
+                <source media="(min-width: 992px)" srcset="/media/slide-console-large.png">
+                <img class="d-block w-100" src="/media/slide-console.png" alt="">
+            </picture>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <picture>
+                <source media="(max-width: 799px)" srcset="/media/slide-blue-screen.png">
+                <source media="(min-width: 992px)" srcset="/media/slide-blue-screen-large.png">
+                <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="">
+            </picture>
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://www.google.co.uk/" target="_blank"><button type="button" class="btn btn-default">Read
+                        More</button></a>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <picture>
+                <source media="(max-width: 799px)" srcset="/media/slide-sale.png">
+                <source media="(min-width: 992px)" srcset="/media/slide-sale-large.png">
+                <img class="d-block w-100" src="/media/slide-sale.png" alt="">
+            </picture>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
-  </div>
+</div>
 
 
 
@@ -91,24 +92,71 @@
 
 </main>
 
-<section class="vh-50">
+<section class="text-white forest">
     <div class="container p-4">
-    <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              {{ faq.question }}
-            </button>
-          </h5>
+        <div class="border-white">
+        <div class="col-12 text-center">
+            <h4 class="pt-2 display-4">
+                <strong>Why choose TechCycle?</strong>
+            </h4>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-              {{ faq.answer }}
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3">
+                    <p>Buying used electronics save a significant amount of money compared to purchasing brand
+                        new devices.</p>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <p>Each device undergoes thorough inspections and repairs to meet our strict standards,
+                        guaranteeing reliable performance.</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3">
+                    <p>
+                        By giving a second life to these devices, you contribute to the preservation of our planet's
+                        resources and minimize the carbon footprint associated with manufacturing new products.</p>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <p>Our dedicated customer service team is ready to assist you throughout your purchase journey and
+                        address any concerns or inquiries.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    </div>
 </section>
+
+<!-- faq section -->
+<section>
+    {% for faq in faqs %}
+    <div class="container">
+        <div id="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" id="heading{{ faq.id }}">
+                    <h5 class="mb-0">
+                        <a class="btn btn-accordion stretched-link collapsed" data-toggle="collapse"
+                            data-target="#collapse{{ faq.id }}" aria-expanded="true"
+                            aria-controls="collapse{{ faq.id }}">
+                            {{ faq.question }}
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}"
+                    data-parent="#accordion">
+                    <div class="accordion-body">
+                        {{ faq.answer }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+<!-- faq section -->
 
 
 <section class="text-dark-b my-4 d-lg-none">
@@ -137,23 +185,26 @@
 
 <section class="text-dark-b my-4 d-none d-lg-block">
     <div class="container p-4">
-            <div class="row text-center">
-                <div class="col-4">
-                    <i class="circle-icon dark-b fa-solid fa-heart"></i>
-                    <p class="p-4">Pre-loved products: Discover a curated selection of gently used items, ready to find a new home.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <i class="circle-icon dark-b fa-solid fa-truck"></i>
-                    <p class="p-4">Enjoy free domestic shipping on all orders: No minimum purchase required, just sit back and let
-                        us take care of the delivery.</p>
-                </div>
-                <div class="col-4">
-                    <i class="circle-icon dark-b fa-solid fa-credit-card"></i>
-                    <p class="p-4">Shop with confidence: Our secure payment system ensures your personal information is protected
-                        throughout the transaction</p>
-                </div>
+        <div class="row text-center">
+            <div class="col-4">
+                <i class="circle-icon dark-b fa-solid fa-heart"></i>
+                <p class="p-4">Pre-loved products: Discover a curated selection of gently used items, ready to find a
+                    new home.
+                </p>
             </div>
+            <div class="col-4">
+                <i class="circle-icon dark-b fa-solid fa-truck"></i>
+                <p class="p-4">Enjoy free domestic shipping on all orders: No minimum purchase required, just sit back
+                    and let
+                    us take care of the delivery.</p>
+            </div>
+            <div class="col-4">
+                <i class="circle-icon dark-b fa-solid fa-credit-card"></i>
+                <p class="p-4">Shop with confidence: Our secure payment system ensures your personal information is
+                    protected
+                    throughout the transaction</p>
+            </div>
+        </div>
     </div>
 </section>
 
