@@ -27,7 +27,7 @@ def laptop_detail(request, laptop_id):
 def phones(request):
     """A view to show all phones"""
 
-    phones = Phones.objects.all()
+    phones = Phone.objects.all()
 
     context = {
         'phones': phones
@@ -38,10 +38,10 @@ def phones(request):
 def phone_detail(request, phone_id):
     """A view to show an individual detailed page for phones"""
 
-    phone = get_object_or_404(phone, pk=phone_id)
+    phone = get_object_or_404(Phone, pk=phone_id)
 
     context = {
         'phone': phone
     }
 
-    return render(request, 'laptops/laptop_detail.html', context)
+    return render(request, 'phones/phone_detail.html', context)

@@ -4,7 +4,7 @@
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
-        <div class="col"></div>
+        <div class="col"> Phones</div>
     </div>
 </div>
 {% endblock %}
@@ -14,19 +14,19 @@
 
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">Laptops</h2>
+            <h2 class="logo-font">Phones</h2>
         </div>
     </div>
 
     <div class="row">
-        {% for laptop in laptops %}
+        {% for phone in phones %}
         <div class="d-none d-md-block col-12 col-lg-6">
             <div class="row custom-margin">
                 <div class="container p-4">
                     <div class="card border-0 mb-3 p-3" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-6 text-center">
-                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                <a href="{% url 'phone_detail' phone.id %}">
                                     <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                                 </a>
                             </div>
@@ -39,16 +39,16 @@
                             <div class="col-6 position-relative border-left">
                                 <div class="card-body">
                                     <h5 class="card-title h-3 text-sm">
-                                        {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
+                                        {{ phone.brand }} {{ phone.series}} {{ phone.model }}
                                     </h5>
                                     <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ laptop.cpu_brand }} {{ laptop.cpu_name}}</li>
-                                        <li>{{ laptop.ram }}</li>
-                                        <li>{{ laptop.storage_size}}</li>
-                                        <li>{{ laptop.screen_size }}"</li>
+                                        <li>{{ phone.cpu_brand }} {{ phone.cpu_name}}</li>
+                                        <li>{{ phone.ram }}</li>
+                                        <li>{{ phone.storage_size}}</li>
+                                        <li>{{ phone.screen_size }}"</li>
                                     </ul>
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ laptop.price }}</p>
+                                        <p class="lead font-weight-bold text-right">€{{ phone.price }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
             </div>
         </div>
         {% endfor %}
-        {% for laptop in laptops %}
+        {% for phone in phones %}
         <div class="d-md-none col-12 col-lg-6">
             <div class="row">
                 <div class="container p-4">
@@ -71,15 +71,15 @@
                                 <div class="card-body">
                                     <div>
                                         <h5 class="card-title h-3 border-bottom text-truncate">
-                                            {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
+                                            {{ phone.brand }} {{ phone.series}} {{ phone.model }}
                                         </h5>
                                     </div>
                                     <div >
-                                        <p class="text-muted border-bottom h-3 text-truncate">{{ laptop.cpu_brand }} {{ laptop.cpu_name}} |
-                                            {{ laptop.ram }} | {{ laptop.storage_size}} | {{ laptop.screen_size }}"</p>
+                                        <p class="text-muted border-bottom h-3 text-truncate">{{ phone.cpu_brand }} {{ phone.cpu_name}} |
+                                            {{ phone.ram }} | {{ phone.storage_size}} | {{ phone.screen_size }}"</p>
                                     </div>
                                     <div>
-                                        <p class="lead text-right">{{ laptop.price }}</p>
+                                        <p class="lead text-right">{{ phone.price }}</p>
                                     </div>
                                 </div>
                             </div>
