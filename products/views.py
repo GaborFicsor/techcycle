@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Laptop
+from .models import Laptop, Phone
 
 
 def laptops(request):
@@ -20,6 +20,28 @@ def laptop_detail(request, laptop_id):
 
     context = {
         'laptop': laptop
+    }
+
+    return render(request, 'laptops/laptop_detail.html', context)
+
+def phones(request):
+    """A view to show all phones"""
+
+    phones = Phones.objects.all()
+
+    context = {
+        'phones': phones
+    }
+
+    return render(request, 'phones/phones.html', context)
+
+def phone_detail(request, phone_id):
+    """A view to show an individual detailed page for phones"""
+
+    phone = get_object_or_404(phone, pk=phone_id)
+
+    context = {
+        'phone': phone
     }
 
     return render(request, 'laptops/laptop_detail.html', context)
