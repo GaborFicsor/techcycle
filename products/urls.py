@@ -8,4 +8,6 @@ urlpatterns = [
     path('phones/<phone_id>', views.phone_detail, name='phone_detail'),
     path('smartwatches', views.smartwatches, name='smartwatches'),
     path('smartwatches/<smartwatch_id>', views.smartwatch_detail, name='smartwatch_detail'),
+    path('consoles', views.consoles, name='consoles'),
+    path('consoles/<console>', views.console_detail, name='console_detail'),
 ]
