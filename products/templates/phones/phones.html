@@ -4,7 +4,7 @@
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
-        <div class="col"> Phones</div>
+        <div class="col"></div>
     </div>
 </div>
 {% endblock %}
@@ -42,7 +42,6 @@
                                         {{ phone.brand }} {{ phone.series}} {{ phone.model }}
                                     </h5>
                                     <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ phone.cpu_brand }} {{ phone.cpu_name}}</li>
                                         <li>{{ phone.ram }}</li>
                                         <li>{{ phone.storage_size}}</li>
                                         <li>{{ phone.screen_size }}"</li>
@@ -75,7 +74,7 @@
                                         </h5>
                                     </div>
                                     <div >
-                                        <p class="text-muted border-bottom h-3 text-truncate">{{ phone.cpu_brand }} {{ phone.cpu_name}} |
+                                        <p class="text-muted border-bottom h-3 text-truncate">
                                             {{ phone.ram }} | {{ phone.storage_size}} | {{ phone.screen_size }}"</p>
                                     </div>
                                     <div>
