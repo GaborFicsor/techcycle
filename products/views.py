@@ -1,6 +1,44 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Laptop, Phone, Smartwatch, Console
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
+from .models import Laptop, Phone, Smartwatch, Console, Category
 
+
+def search(request):
+    categories = Category.objects.all()
+    laptops = Laptop.objects.all()
+    phones = Phone.objects.all()
+    smartwatches = Smartwatch.objects.all()
+    consoles = Console.objects.all()
+
+    products = list(laptops) + list(phones) + list (smartwatches) +list(consoles)
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria")
+                return redirect(reverse('laptops'))
+
+            queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query) 
+            laptops = laptops.filter(
+                Q(label__icontains=query) | Q(cpu_name__icontains=query) | Q(gpu__icontains=query) | Q(os__icontains=query)
+            )
+            phones = phones.filter(queries)
+            smartwatches = smartwatches.filter(queries)
+            consoles = consoles.filter(queries)
+
+    
+    context = {
+        'products': products,
+        'laptops': laptops,
+        'phones': phones,
+        'smartwatches': smartwatches,
+        'consoles': consoles,
+        'search_term': query,
+    }
+
+    return render(request, 'search/search.html', context)
 
 def laptops(request):
     """A view to show all laptops"""
@@ -8,7 +46,7 @@ def laptops(request):
     laptops = Laptop.objects.all()
 
     context = {
-        'laptops': laptops
+        'laptops': laptops,
     }
 
     return render(request, 'laptops/laptops.html', context)

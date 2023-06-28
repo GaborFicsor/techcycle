@@ -10,4 +10,5 @@ urlpatterns = [
     path('smartwatches/<smartwatch_id>', views.smartwatch_detail, name='smartwatch_detail'),
     path('consoles', views.consoles, name='consoles'),
     path('consoles/<console_id>', views.console_detail, name='console_detail'),
+    path('search', views.search, name='search'),
 ]

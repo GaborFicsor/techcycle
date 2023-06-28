@@ -1,0 +1,69 @@
+{% for phone in phones %}
+<div class="d-none d-md-block col-12 col-lg-6">
+    <div class="row custom-margin">
+        <div class="container p-4">
+            <div class="card border-0 mb-3 p-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-6 text-center">
+                        <a href="{% url 'phone_detail' phone.id %}">
+                            <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sale">
+                        sale
+                    </div>
+                    <div class="stock">
+                        in stock
+                    </div>
+                    <div class="col-6 position-relative border-left">
+                        <div class="card-body">
+                            <h5 class="card-title h-3 text-sm">
+                                {{ phone.brand }} {{ phone.series}} {{ phone.model }}
+                            </h5>
+                            <ul class="list-unstyled text-muted d-none d-md-block">
+                                <li>{{ phone.ram }}</li>
+                                <li>{{ phone.storage_size}}</li>
+                                <li>{{ phone.screen_size }}"</li>
+                            </ul>
+                            <div class="price">
+                                <p class="lead font-weight-bold text-right">€{{ phone.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% for phone in phones %}
+<div class="d-md-none col-12 col-lg-6">
+    <div class="row">
+        <div class="container p-4">
+            <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-12 text-center">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                    </div>
+                    <div class="col-12 position-relative">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title h-3 border-bottom text-truncate">
+                                    {{ phone.brand }} {{ phone.series}} {{ phone.model }}
+                                </h5>
+                            </div>
+                            <div>
+                                <p class="text-muted border-bottom h-3 text-truncate">
+                                    {{ phone.ram }} | {{ phone.storage_size}} | {{ phone.screen_size }}"</p>
+                            </div>
+                            <div>
+                                <p class="lead text-right">{{ phone.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

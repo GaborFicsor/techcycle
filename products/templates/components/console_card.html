@@ -1,0 +1,68 @@
+{% for console in consoles %}
+<div class="d-none d-md-block col-12 col-lg-6">
+    <div class="row custom-margin">
+        <div class="container p-4">
+            <div class="card border-0 mb-3 p-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-6 text-center">
+                        <a href="{% url 'console_detail' console.id  %}">
+                            <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sale">
+                        sale
+                    </div>
+                    <div class="stock">
+                        in stock
+                    </div>
+                    <div class="col-6 position-relative border-left">
+                        <div class="card-body">
+                            <h5 class="card-title h-3 text-sm">
+                                {{ console.brand }} {{ console.series}} {{ console.model }}
+                            </h5>
+                            <ul class="list-unstyled text-muted d-none d-md-block">
+                                <li>{{ console.storage_size }}</li>
+                                <li>{{ console.color }}</li>
+                            </ul>
+                            <div class="price">
+                                <p class="lead font-weight-bold text-right">€{{ console.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% for console in consoles %}
+<div class="d-md-none col-12 col-lg-6">
+    <div class="row">
+        <div class="container p-4">
+            <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-12 text-center">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                    </div>
+                    <div class="col-12 position-relative">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title h-3 border-bottom text-truncate">
+                                    {{ console.brand }} {{ console.series}} {{ console.model }}
+                                </h5>
+                            </div>
+                            <div>
+                                <p class="text-muted border-bottom h-3 text-truncate">
+                                    {{ console.storage_size }} | {{ console.color }}</p>
+                            </div>
+                            <div>
+                                <p class="lead text-right">{{ console.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
