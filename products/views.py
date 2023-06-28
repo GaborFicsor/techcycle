@@ -67,3 +67,25 @@ def smartwatch_detail(request, smartwatch_id):
     }
 
     return render(request, 'smartwatches/smartwatch_detail.html', context)
+
+def consoles(request):
+    """A view to show all consoles"""
+
+    consoles = Consoles.objects.all()
+
+    context = {
+        'consoles': consoles
+    }
+
+    return render(request, 'consoles/consoles.html', context)
+
+def console_detail(request, Console):
+    """A view to show an individual detailed page for consoles"""
+
+    console = get_object_or_404(Console, pk=Console_id)
+
+    context = {
+        'console': console
+    }
+
+    return render(request, 'console/console.html', context)
