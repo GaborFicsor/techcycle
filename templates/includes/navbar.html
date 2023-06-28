@@ -7,9 +7,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="{% url 'laptops' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'laptops' %}?label=Gaming Laptop" class="dropdown-item">Gaming Laptops</a>
+                <a href="{% url 'laptops' %}?brand=Apple" class="dropdown-item">Apple Laptops</a>
+                <a href="{% url 'laptops' %}" class="dropdown-item">All Laptops</a>
             </div>
         </li>
 
@@ -20,9 +20,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="{% url 'phones' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'phones' %}?brand=Samsung" class="dropdown-item">Samsung Phones</a>
+                <a href="{% url 'phones' %}?brand=Apple" class="dropdown-item">iPhones</a>
+                <a href="{% url 'phones' %}" class="dropdown-item">All Phones</a>
             </div>
         </li>
 
@@ -33,9 +33,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="{% url 'smartwatches' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'smartwatches' %}?brand=Samsung" class="dropdown-item">Galaxy Watch</a>
+                <a href="{% url 'smartwatches' %}?brand=Apple" class="dropdown-item">Apple Watch</a>
+                <a href="{% url 'smartwatches' %}" class="dropdown-item">All Watches</a>
             </div>
 
         <li class="nav-item dropdown">
@@ -44,9 +44,9 @@
                 Gaming Consoles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
+                <a href="{% url 'consoles' %}?brand=Nintendo" class="dropdown-item">Nintendo</a>
+                <a href="{% url 'consoles' %}?series=PlayStation" class="dropdown-item">PlayStation</a>
+                <a href="{% url 'consoles' %}?series=Xbox" class="dropdown-item">Xbox</a>
                 <a href="{% url 'consoles' %}" class="dropdown-item">All Products</a>
             </div>
         </li>

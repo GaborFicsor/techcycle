@@ -45,6 +45,16 @@ def laptops(request):
 
     laptops = Laptop.objects.all()
 
+    if request.GET:
+        if 'brand' in request.GET:
+            brand = request.GET['brand']
+            laptops = Laptop.objects.filter(brand=brand)
+
+    if request.GET:
+        if 'label' in request.GET:
+            label = request.GET['label']
+            laptops = Laptop.objects.filter(label=label)
+
     context = {
         'laptops': laptops,
     }
@@ -66,6 +76,11 @@ def phones(request):
     """A view to show all phones"""
 
     phones = Phone.objects.all()
+
+    if request.GET:
+        if 'brand' in request.GET:
+            brand = request.GET['brand']
+            phones = Phone.objects.filter(brand=brand)
 
     context = {
         'phones': phones
@@ -89,6 +104,11 @@ def smartwatches(request):
 
     smartwatches = Smartwatch.objects.all()
 
+    if request.GET:
+        if 'brand' in request.GET:
+            brand = request.GET['brand']
+            smartwatches = Smartwatch.objects.filter(brand=brand)
+
     context = {
         'smartwatches': smartwatches
     }
@@ -110,6 +130,14 @@ def consoles(request):
     """A view to show all consoles"""
 
     consoles = Console.objects.all()
+
+    if request.GET:
+        if 'series' in request.GET:
+            series = request.GET['series']
+            consoles = Console.objects.filter(series=series)
+        elif 'brand' in request.GET:
+            brand = request.GET['brand']
+            consoles = Console.objects.filter(brand=brand)
 
     context = {
         'consoles': consoles
