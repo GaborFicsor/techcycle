@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
+{% block page.header %}
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -10,7 +10,146 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<section>
 
-</div>
+    <!-- container -->
+    <div class="container p-4">
+
+        <!-- row for the name for the laptop -->
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-white p-4 shadow mb-4">
+                    <h2>{{ laptop.brand }} {{ laptop.series }} {{ laptop.model }} {{ laptop.label }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the image and specifications -->
+        <div class="row mb-4">
+            <div class="col-12 col-lg-6 text-center">
+                <div class="bg-white shadow">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-resized" src="/media/noimage.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Specifications</h3>
+                    </div>
+
+                    <div class="bg-white p-4">
+                        <dl>
+                            <div class="d-flex justify-content-between">
+                                <dt class="font-weight-bold">CPU:</dt>
+                                <dd>{{ laptop.cpu_brand }} {{ laptop.cpu_name }} {{ laptop.cpu_variant }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Cores:</dt>
+                                <dd>{{ laptop.cores }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>RAM:</dt>
+                                <dd>{{ laptop.ram }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Storage:</dt>
+                                <dd>{{ laptop.storage_size }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>GPU:</dt>
+                                <dd>{{ laptop.gpu }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>OS:</dt>
+                                <dd>{{ laptop.os }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the button -->
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-white p-4 shadow mb-4">
+                    button
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the features and extra details -->
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Features</h3>
+                    </div>
+                    <div class="bg-white p-4 d-flex align-items-stretch">
+                        <dl>
+                            <div class="d-flex justify-content-between">
+                                <dt>Color:</dt>
+                                <dd>{{ laptop.color }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Screen Size:</dt>
+                                <dd>{{ laptop.screen_size }}"</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Weight:</dt>
+                                <dd>{{ laptop.weight }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Keyboard:</dt>
+                                <dd>{{ laptop.keyboard }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Dimensions:</dt>
+                                <dd>{{ laptop.dimensions }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Extras</h3>
+                    </div>
+                    <div class="bg-white p-4">
+                        <dl>
+                            <div class="d-flex justify-content-between">
+                                <dt>HDMI:</dt>
+                                <dd>{{ laptop.hdmi }} {{ laptop.cpu_name }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>USB:</dt>
+                                <dd>{{ laptop.usb }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>SSD:</dt>
+                                <dd>{{ laptop.ssd }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Touchscreen:</dt>
+                                <dd>{{ laptop.touchscreen }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Backlit Keyboard:</dt>
+                                <dd>{{ laptop.backlit }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Finger Print Sensor: </dt>
+                                <dd>{{ laptop.finger_print_sensor }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 {% endblock %}

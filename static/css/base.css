@@ -353,6 +353,15 @@ html {
     border: 1px solid black !important;
 }
 
+/* laptop details */
+
+.img-resized {
+    height: 345px;
+    width: auto;
+}
+
+/* laptop details */
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -370,7 +379,7 @@ html {
         z-index: 1030;
     }
 
-    .body {
+    body {
         padding-top: 118px;
     }
 }
