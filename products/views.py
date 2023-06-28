@@ -60,7 +60,7 @@ def smartwatches(request):
 def smartwatch_detail(request, smartwatch_id):
     """A view to show an individual detailed page for smartwatch"""
 
-    smartwatch = get_object_or_404(Smartwatchs, pk=smartwatch_id)
+    smartwatch = get_object_or_404(Smartwatch, pk=smartwatch_id)
 
     context = {
         'smartwatch': smartwatch

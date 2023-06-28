@@ -6,4 +6,6 @@ urlpatterns = [
     path('laptops/<laptop_id>', views.laptop_detail, name='laptop_detail'),
     path('phones', views.phones, name='phones'),
     path('phones/<phone_id>', views.phone_detail, name='phone_detail'),
+    path('smartwatches', views.smartwatches, name='smartwatches'),
+    path('smartwatches/<smartwatch_id>', views.smartwatch_detail, name='smartwatch_detail'),
 ]
