@@ -79,13 +79,13 @@ def consoles(request):
 
     return render(request, 'consoles/consoles.html', context)
 
-def console_detail(request, Console):
+def console_detail(request, console_id):
     """A view to show an individual detailed page for consoles"""
 
-    console = get_object_or_404(Console, pk=Console_id)
+    console = get_object_or_404(Console, pk=console_id)
 
     context = {
         'console': console
     }
 
-    return render(request, 'console/console.html', context)
+    return render(request, 'consoles/console_detail.html', context)
