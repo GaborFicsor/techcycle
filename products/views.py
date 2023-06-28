@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Laptop, Phone, Smartwatch
+from .models import Laptop, Phone, Smartwatch, Console
 
 
 def laptops(request):
@@ -71,7 +71,7 @@ def smartwatch_detail(request, smartwatch_id):
 def consoles(request):
     """A view to show all consoles"""
 
-    consoles = Consoles.objects.all()
+    consoles = Console.objects.all()
 
     context = {
         'consoles': consoles

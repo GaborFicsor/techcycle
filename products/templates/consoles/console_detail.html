@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page.header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section>
+
+    <!-- container -->
+    <div class="container p-4">
+
+        <!-- row for the name for the smartwatch -->
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-white p-4 shadow mb-4">
+                    <h2>{{ smartwatch.brand }} {{ smartwatch.series }} {{ smartwatch.model }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the image and specifications -->
+        <div class="row mb-4">
+            <div class="col-12 col-lg-6 text-center">
+                <div class="bg-white shadow">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-resized" src="/media/noimage.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Specifications</h3>
+                    </div>
+
+                    <div class="bg-white p-4">
+                        <dl>
+                            <div class="d-flex justify-content-between">
+                                <dt>Display:</dt>
+                                <dd>{{ smartwatch.display }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Resolution:</dt>
+                                <dd>{{ smartwatch.resolution }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Screen Size:</dt>
+                                <dd>{{ smartwatch.screen_size }}"</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>OS:</dt>
+                                <dd>{{ smartwatch.os }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Connectivity:</dt>
+                                <dd>{{ smartwatch.connectivity }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Color:</dt>
+                                <dd>{{ smartwatch.color }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the button -->
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-white p-4 shadow mb-4">
+                    button
+                </div>
+            </div>
+        </div>
+
+        <!-- row for the features and extra details -->
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Extras</h3>
+                    </div>
+                    <div class="bg-white p-4">
+                        <dl>
+                            <div class="d-flex justify-content-between">
+                                <dt>Water Resistance:</dt>
+                                <dd>{{ smartwatch.water_resistance }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>Heart Rate Monitor:</dt>
+                                <dd>{{ smartwatch.heart_rate_monitor }}</dd>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <dt>GPS:</dt>
+                                <dd>{{ smartwatch.gps }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="shadow">
+                    <div class="dark-b text-white p-4">
+                        <h3>Extras</h3>
+                    </div>
+                    <div class="bg-white p-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
