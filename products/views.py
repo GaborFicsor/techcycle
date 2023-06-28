@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Laptop
 
 
@@ -12,3 +12,14 @@ def laptops(request):
     }
 
     return render(request, 'laptops/laptops.html', context)
+
+def laptop_detail(request, laptop_id):
+    """A view to show an individual detailed page for laptops"""
+
+    laptop = get_object_or_404(Laptop, pk=laptop_id)
+
+    context = {
+        'laptop': laptop
+    }
+
+    return render(request, 'laptops/laptop_detail.html', context)
