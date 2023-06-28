@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Laptop, Phone
+from .models import Laptop, Phone, Smartwatch
 
 
 def laptops(request):
@@ -45,3 +45,25 @@ def phone_detail(request, phone_id):
     }
 
     return render(request, 'phones/phone_detail.html', context)
+
+def smartwatches(request):
+    """A view to show all smartwatches"""
+
+    smartwatches = Smartwatch.objects.all()
+
+    context = {
+        'smartwatches': smartwatches
+    }
+
+    return render(request, 'smartwatches/smartwatches.html', context)
+
+def smartwatch_detail(request, smartwatch_id):
+    """A view to show an individual detailed page for smartwatch"""
+
+    smartwatch = get_object_or_404(Smartwatchs, pk=smartwatch_id)
+
+    context = {
+        'smartwatch': smartwatch
+    }
+
+    return render(request, 'smartwatches/smartwatch_detail.html', context)
