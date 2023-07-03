@@ -1,30 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
+<!-- content container -->
 {% block content %}
 <div class="container">
 
+    <!-- product heading -->
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Consoles</h2>
         </div>
     </div>
 
+    <!-- row for products-->
     <div class="row">
+
+        <!-- console card for each console on medium screens and above -->
         {% for console in consoles %}
         <div class="d-none d-md-block col-12 col-lg-6">
             <div class="row custom-margin">
                 <div class="container p-4">
+
+                    <!-- card image -->
                     <div class="card border-0 mb-3 p-3" style="max-width:540px;">
                         <div class="row g-0">
+
+                            <!-- console image -->
                             <div class="col-6 text-center">
                                 {% if console.image %}
                                 <a href="{% url 'console_detail' console.id %}">
@@ -32,29 +33,53 @@
                                 </a>
                                 {% else %}
                                 <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
-                                        alt="">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                                 </a>
                                 {% endif %}
                             </div>
+
+                            <!-- if the console is on sale display a red box-->
+                            {% if console.sale %}
                             <div class="sale">
                                 sale
                             </div>
-                            <div class="stock">
-                                in stock
+                            {% endif %}
+
+                            <!-- if the console is on sale display a red box-->
+                            {% if console.sale %}
+                            <div class="sale">
+                                sale
                             </div>
+                            {% endif %}
+
+                            <!-- card body for console details -->
                             <div class="col-6 position-relative border-left">
                                 <div class="card-body">
+
+                                    <!-- console name -->
                                     <h5 class="card-title h-3 text-sm">
                                         {{ console.brand }} {{ console.series}} {{ console.model }}
                                     </h5>
+
+                                    <!-- console specifiactions and details -->
                                     <ul class="list-unstyled text-muted d-none d-md-block">
                                         <li>{{ console.storage_size }}</li>
                                         <li>{{ console.color }}</li>
+                                        <li>{{ console.get_stock_status }}</li>
                                     </ul>
+
+                                    <!-- if console is on sale show discounted price, else show regular price -->
+                                    {% if console.sale %}
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right text-red">€{{ console.sale_price }}
+                                        </p>
+                                    </div>
+                                    {% else %}
                                     <div class="price">
                                         <p class="lead font-weight-bold text-right">€{{ console.price }}</p>
                                     </div>
+                                    {% endif %}
+
                                 </div>
                             </div>
                         </div>
@@ -62,38 +87,60 @@
                 </div>
             </div>
         </div>
+
+        <!-- console card for each console on screens below medium -->
         {% endfor %}
         {% for console in consoles %}
         <div class="d-md-none col-12 col-lg-6">
             <div class="row">
                 <div class="container p-4">
+
+                    <!-- card image -->
                     <div class="card border-0 mb-3 p-4" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-12 text-center">
+
+                                <!-- console image -->
                                 {% if console.image %}
                                 <a href="{% url 'console_detail' console.id %}">
                                     <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
-                                        alt="">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                                 </a>
                                 {% endif %}
+
+                                <!-- if the console is on sale display a red box-->
+                                {% if console.sale %}
+                                <div class="sale">
+                                    sale
+                                </div>
+                                {% endif %}
                             </div>
+
+                            <!-- card body for console details -->
                             <div class="col-12 position-relative">
                                 <div class="card-body">
-                                    <div>
-                                        <h5 class="card-title h-3 border-bottom text-truncate">
-                                            {{ console.brand }} {{ console.series}} {{ console.model }}
-                                        </h5>
-                                    </div>
-                                    <div >
-                                        <p class="text-muted border-bottom h-3 text-truncate">
-                                            {{ console.storage_size }} | {{ console.color }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="lead text-right">{{ console.price }}</p>
+
+                                    <!-- console name -->
+                                    <h5 class="card-title h-3 border-bottom text-truncate">
+                                        {{ console.brand }} {{ console.series}} {{ console.model }}
+                                    </h5>
+
+                                    <!-- console specifiactions and details -->
+                                    <p class="text-muted border-bottom h-3 text-truncate">
+                                        {{ console.storage_size }} | {{ console.color }}</p>
+
+                                    <!-- if console is on sale show discounted price, else show regular price -->
+                                    <div class="d-flex justify-content-between">
+                                        <span>{{ console.get_stock_status }}</span>
+                                        {% if console.sale %}
+                                        <span class="lead text-red">{{ console.sale_price }}</span>
+                                        {% else %}
+                                        <span class="lead">{{ console.price }}</span>
+                                        {% endif %}
+
                                     </div>
                                 </div>
                             </div>
@@ -104,9 +151,5 @@
         </div>
         {% endfor %}
     </div>
-
-</div>
-<div class="d-flex" style="height: 200px;">
-    <div class="vr"></div>
 </div>
 {% endblock %}

@@ -79,14 +79,12 @@ body {
 
 .sale {
     position: absolute;
-    top: 2%;
+    top: -3%;
     left: 2%;
-}
-
-.stock {
-    position: absolute;
-    bottom: 2%;
-    left: 2%;
+    background-color: #ed254e;;
+    color:#fff;
+    border-radius: 1rem;
+    padding: 0 1rem;
 }
 
 .lead {
