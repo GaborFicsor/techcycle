@@ -9,132 +9,6 @@ body {
     background-color: #F5F5F5;
 }
 
-.index-h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-weight: bold;
-}
-
-/* footer mishmash */
-
-.payment-icon {
-    width: 50px;
-    height: auto;
-}
-
-.margin {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.power-icon {
-    width: 100px;
-    height: 100px;
-    filter: contrast(0%);
-}
-
-.power-icon:hover {
-    filter: contrast(100%);
-    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 53));
-}
-
-.aws {
-    margin-top: 5px;
-}
-
-.aws:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(70, 20, 220));
-}
-
-.django:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 53));
-}
-
-.stripe:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(70, 20, 220));
-}
-
-/* footer mishmash */
-
-/* card */
-
-.card {
-    border-radius: 1rem;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
-    transition: box-shadow 500ms;
-}
-
-.h-3 {
-    height: 3rem;
-}
-
-.text-sm {
-    font-size: 1rem;
-}
-
-.price {
-    position: absolute;
-    bottom: 0;
-    right: 6%;
-}
-
-.sale {
-    position: absolute;
-    top: -3%;
-    left: 2%;
-    background-color: #ed254e;;
-    color:#fff;
-    border-radius: 1rem;
-    padding: 0 1rem;
-}
-
-.lead {
-    margin-bottom: 0;
-}
-
-.card-body {
-    padding: 0;
-}
-
-.card:hover {
-    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
-}
-
-.divider {
-    border-left: 1px solid;
-}
-
-/* offer */
-
-.circle-icon {
-    color:#ffffff;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 30px;
-    font-size: 2.5em;
-}
-
-.circle-icon-small {
-    color:#ffffff;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 15px;
-    font-size: 1.5em;
-}
-
-/* offer */
-
-#words {
-    font-style: italic;
-}
-
 /* colours */
 
 .white {
@@ -187,6 +61,172 @@ body {
 
 /* colours */
 
+/* headings */
+
+.index-h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+/* headings */
+
+/* buttons */
+
+.btn-clear {
+    color: #011936;
+    border-color: #011936;
+}
+
+.btn-clear:hover {
+    color: #fff;
+    background-color: #011936;
+    border-color: #011936;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #011936;
+    border-color: #011936;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #0091AD;
+    border-color: #0091AD;
+}
+
+/* buttons  */
+
+/* card */
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+    transition: box-shadow 500ms;
+}
+
+.h-3 {
+    height: 3rem;
+}
+
+.text-sm {
+    font-size: 1rem;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+}
+
+.sale {
+    position: absolute;
+    top: -3%;
+    left: 2%;
+    background-color: #ed254e;;
+    color:#fff;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.lead {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
+}
+
+.divider {
+    border-left: 1px solid;
+}
+
+/* card */
+
+/* offer */
+
+.circle-icon {
+    color:#ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+    font-size: 2.5em;
+}
+
+.circle-icon-small {
+    color:#ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+/* offer */
+
+/* footer mishmash */
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+}
+
+.margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.power-icon {
+    width: 100px;
+    height: 100px;
+    filter: contrast(0%);
+}
+
+.power-icon:hover {
+    filter: contrast(100%);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 53));
+}
+
+.aws {
+    margin-top: 5px;
+}
+
+.aws:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(70, 20, 220));
+}
+
+.django:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 53));
+}
+
+.stripe:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(70, 20, 220));
+}
+
+/* footer mishmash */
+
+/* dynamic text with javascript on small screen sizes */
+
+#words {
+    font-style: italic;
+}
+
+/* dynamic text with javascript on small screen sizes */
+
+
+/* why choose us section */
+
 .border-white {
     border: 1px solid white;
 }
@@ -201,9 +241,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  /* Additional styling for the body */
-  /* Add other styling properties as needed */
 }
+
+/* why choose us section */
 
 /* accordion */
 
@@ -252,18 +292,21 @@ body {
     color: #e0e0e0;
 }
 
-
 /* accordion */
+
+/* nav */
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+}
+
 .navbar-toggler{
-  border: none;
+    border: none;
 }
+
 .navbar-toggler:focus{
-  box-shadow: none;
+    box-shadow: none;
 }
-/* nav */
 
 .search-button {
     color:#ffffff;
@@ -277,12 +320,7 @@ body {
 
 /* nav */
 
-.hero-image-container {
-    background: url('/media/hero_image_landing.jpg') no-repeat center no-repeat fixed;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+/* custom height */
 
 .vh-75 {
     height: 75vh;
@@ -296,16 +334,11 @@ body {
     height: 25vh;
 }
 
-.scroll-section {
-    height: 50vh;
-}
+/* custom height */
 
-html {
-    scroll-snap-type: y mandatory;
-    scroll-padding-top: 88px;
-}
 
 /* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -343,22 +376,12 @@ html {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
+/* from Bulma */
 
 .border-black {
     border: 1px solid black !important;
 }
 
-/* laptop details */
-
-.img-resized {
-    height: 345px;
-    width: auto;
-}
-
-/* laptop details */
 
 /* -------------------------------- Media Queries */
 
