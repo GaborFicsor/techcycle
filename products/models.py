@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from decimal import Decimal
 
 
 class Category(models.Model):
@@ -39,7 +40,7 @@ class Product(models.Model):
     stock_excellent = models.PositiveIntegerField(default=0)
     
     def get_total_stock(self):
-        return self.stock_acceptable + self.stock_good + self.stock_excellent
+            return self.stock_acceptable + self.stock_good + self.stock_excellent
 
     def get_stock_status(self):
         total_stock = self.get_total_stock()
@@ -49,7 +50,7 @@ class Product(models.Model):
             return 'Out of stock'
         else:
             return 'In stock'
-
+            
     def save(self, *args, **kwargs):
         # Check the condition of the product
         condition = self.condition
@@ -63,6 +64,7 @@ class Product(models.Model):
             elif condition == 'excellent':
                 self.stock_excellent += 1
 
+        self.sale_price = self.price * Decimal('0.95')
         super().save(*args, **kwargs)
 
 
