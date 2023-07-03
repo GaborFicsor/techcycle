@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "smartphones",
+            "name": "laptops",
             "friendly_name": "Laptops"
         }
     },
@@ -11,7 +11,7 @@
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "laptops",
+            "name": "phones",
             "friendly_name": "Phones"
         }
     },

@@ -1,15 +1,28 @@
 [
     {
-        "pk": 1,
-        "model": "products.phone",
+        "pk": 32,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "SE (2022)",
+            "color": "black",
+            "condition": "good",
             "price": 509,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "SE (2022)",
+            "image": "appleiphonese2022.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -19,23 +32,33 @@
             "resolution": "750 x 1334",
             "camera_front": "7 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 2,
-        "model": "products.phone",
+        "pk": 33,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "11",
+            "color": "black",
+            "condition": "good",
             "price": 335,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "11",
+            "image": "appleiphone11.jpg",
+            "image_url": null,
+            "stock_acceptable": 2,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A13 Bionic , Hexa Core",
             "ram": "4 GB",
@@ -45,23 +68,33 @@
             "resolution": "828 x 1792",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 3,
-        "model": "products.phone",
+        "pk": 34,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "11 Pro Max",
+            "color": "black",
+            "condition": "good",
             "price": 479,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "11 Pro Max",
+            "image": "appleiphone11promax.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A13 Bionic , Hexa Core",
             "ram": "4 GB",
@@ -71,23 +104,33 @@
             "resolution": "1242 x 2688",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 4,
-        "model": "products.phone",
+        "pk": 35,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "12",
+            "color": "black",
+            "condition": "good",
             "price": 800,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "12",
+            "image": "appleiphone12.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -97,23 +140,33 @@
             "resolution": "1170 x 2532",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 5,
-        "model": "products.phone",
+        "pk": 36,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "12 Mini",
+            "color": "black",
+            "condition": "good",
             "price": 800,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "12 Mini",
+            "image": "appleiphone12mini.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -123,23 +176,33 @@
             "resolution": "1080 x 2340",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 6,
-        "model": "products.phone",
+        "pk": 37,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "12 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 647,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "12 Pro",
+            "image": "appleiphone12pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -149,23 +212,33 @@
             "resolution": "1284 x 2778",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 7,
-        "model": "products.phone",
+        "pk": 38,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "13 Mini",
+            "color": "black",
+            "condition": "good",
             "price": 530,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "13 Mini",
+            "image": "appleiphone13mini.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -175,23 +248,33 @@
             "resolution": "1080 x 2340",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 8,
-        "model": "products.phone",
+        "pk": 39,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "13",
+            "color": "black",
+            "condition": "good",
             "price": 627,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "13",
+            "image": "appleiphone13.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -201,23 +284,33 @@
             "resolution": "1170 x 2532",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 9,
-        "model": "products.phone",
+        "pk": 40,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "13 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 825,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "13 Pro",
+            "image": "appleiphone13pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -227,23 +320,33 @@
             "resolution": "1170 x 2532",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 10,
-        "model": "products.phone",
+        "pk": 41,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Apple",
+            "series": "iPhone",
+            "model": "14",
+            "color": "black",
+            "condition": "good",
             "price": 730,
             "sale": false,
             "sale_price": null,
-            "series": "iPhone",
-            "model": "14",
+            "image": "appleiphone14.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -253,23 +356,33 @@
             "resolution": "1170 x 2532",
             "camera_front": "12 MP",
             "camera_rear": "12 MP",
-            "os": "iOS",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "iOS"
         }
     },
     {
-        "pk": 11,
-        "model": "products.phone",
+        "pk": 42,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Samsung",
+            "series": "Galaxy",
+            "model": "S22",
+            "color": "black",
+            "condition": "good",
             "price": 499,
             "sale": false,
             "sale_price": null,
-            "series": "Galaxy",
-            "model": "S22",
+            "image": "samsunggalaxys22.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -279,23 +392,33 @@
             "resolution": "1080 x 2340",
             "camera_front": "12 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 12,
-        "model": "products.phone",
+        "pk": 43,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Samsung",
+            "series": "Galaxy",
+            "model": "S22 Ultra",
+            "color": "black",
+            "condition": "good",
             "price": 715,
             "sale": false,
             "sale_price": null,
-            "series": "Galaxy",
-            "model": "S22 Ultra",
+            "image": "samsunggalaxys22ultra.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "12 GB",
@@ -305,23 +428,33 @@
             "resolution": "1440 x 3080",
             "camera_front": "40 MP",
             "camera_rear": "108 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 13,
-        "model": "products.phone",
+        "pk": 44,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Samsung",
+            "series": "Galaxy",
+            "model": "A53",
+            "color": "black",
+            "condition": "good",
             "price": 279,
             "sale": false,
             "sale_price": null,
-            "series": "Galaxy",
-            "model": "A53",
+            "image": "samsunggalaxya53.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Exynos 1280, Octa Core",
             "ram": "6 GB",
@@ -331,23 +464,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "32 MP",
             "camera_rear": "64 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 14,
-        "model": "products.phone",
+        "pk": 45,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Samsung",
+            "series": "Galaxy",
+            "model": "S23",
+            "color": "black",
+            "condition": "good",
             "price": 730,
             "sale": false,
             "sale_price": null,
-            "series": "Galaxy",
-            "model": "S23",
+            "image": "samsunggalaxys23.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -357,23 +500,33 @@
             "resolution": "1080 x 2340",
             "camera_front": "12 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 15,
-        "model": "products.phone",
+        "pk": 46,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Samsung",
+            "series": "Galaxy",
+            "model": "A54",
+            "color": "black",
+            "condition": "good",
             "price": 415,
             "sale": false,
             "sale_price": null,
-            "series": "Galaxy",
-            "model": "A54",
+            "image": "samsunggalaxya54.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Exynos 1380, Octa Core",
             "ram": "6 GB",
@@ -383,23 +536,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "12 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 16,
-        "model": "products.phone",
+        "pk": 47,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Xiaomi",
+            "series": "Redmi",
+            "model": "Note 12 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 349,
             "sale": false,
             "sale_price": null,
-            "series": "Redmi",
-            "model": "Note 12 Pro",
+            "image": "xiaomiredminote12pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Dimensity 1080, Octa Core",
             "ram": "8 GB",
@@ -409,23 +572,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "8 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 17,
-        "model": "products.phone",
+        "pk": 48,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Xiaomi",
+            "series": "12",
+            "model": "Lite",
+            "color": "black",
+            "condition": "good",
             "price": 345,
             "sale": false,
             "sale_price": null,
-            "series": "12",
-            "model": "Lite",
+            "image": "xiaomi12lite.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 778G, Octa Core",
             "ram": "6 GB",
@@ -435,23 +608,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "8 MP",
             "camera_rear": "108 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 18,
-        "model": "products.phone",
+        "pk": 49,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Xiaomi",
+            "series": "Redmi",
+            "model": "10",
+            "color": "black",
+            "condition": "good",
             "price": 165,
             "sale": false,
             "sale_price": null,
-            "series": "Redmi",
-            "model": "10",
+            "image": "xiaomiredmi12.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 680, Octa Core",
             "ram": "4 GB",
@@ -461,23 +644,33 @@
             "resolution": "720 x 1600",
             "camera_front": "5 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 19,
-        "model": "products.phone",
+        "pk": 50,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Xiaomi",
+            "series": "Redmi",
+            "model": "K60",
+            "color": "black",
+            "condition": "good",
             "price": 249,
             "sale": false,
             "sale_price": null,
-            "series": "Redmi",
-            "model": "K60",
+            "image": "xiaomiredmik60.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -487,23 +680,33 @@
             "resolution": "1440 x 3200",
             "camera_front": "16 MP",
             "camera_rear": "64 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 20,
-        "model": "products.phone",
+        "pk": 51,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Xiaomi",
+            "series": "Mi",
+            "model": "11T Pro",
+            "color": "black",
+            "condition": "good",
             "price": 413,
             "sale": false,
             "sale_price": null,
-            "series": "Mi",
-            "model": "11T Pro",
+            "image": "xiaomimi11tpro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 888, Octa Core",
             "ram": "8 GB",
@@ -513,23 +716,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "16 MP",
             "camera_rear": "108 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 21,
-        "model": "products.phone",
+        "pk": 52,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Oppo",
+            "series": "Reno",
+            "model": "8 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 515,
             "sale": false,
             "sale_price": null,
-            "series": "Reno",
-            "model": "8 Pro",
+            "image": "opporeno8pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Dimensity 8100-Max, Octa Core",
             "ram": "12 GB",
@@ -539,23 +752,33 @@
             "resolution": "1080 x 2412",
             "camera_front": "32 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 22,
-        "model": "products.phone",
+        "pk": 53,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Oppo",
+            "series": "Find",
+            "model": "X5 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 449,
             "sale": false,
             "sale_price": null,
-            "series": "Find",
-            "model": "X5 Pro",
+            "image": "oppofindx5pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -565,23 +788,33 @@
             "resolution": "1440 x 3216",
             "camera_front": "32 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 23,
-        "model": "products.phone",
+        "pk": 54,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Google",
+            "series": "Pixel",
+            "model": "7",
+            "color": "black",
+            "condition": "good",
             "price": 500,
             "sale": false,
             "sale_price": null,
-            "series": "Pixel",
-            "model": "7",
+            "image": "googlepixel7.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "8 GB",
@@ -591,23 +824,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "10.8 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 24,
-        "model": "products.phone",
+        "pk": 55,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Google",
+            "series": "Pixel",
+            "model": "7 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 669,
             "sale": false,
             "sale_price": null,
-            "series": "Pixel",
-            "model": "7 Pro",
+            "image": "googlepixel7.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "12 GB",
@@ -617,23 +860,33 @@
             "resolution": "1440 x 3120",
             "camera_front": "10.8 MP",
             "camera_rear": "50 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 25,
-        "model": "products.phone",
+        "pk": 56,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Google",
+            "series": "Pixel",
+            "model": "7A",
+            "color": "black",
+            "condition": "good",
             "price": 450,
             "sale": false,
             "sale_price": null,
-            "series": "Pixel",
-            "model": "7A",
+            "image": "googlepixel7.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "6 GB",
@@ -643,23 +896,33 @@
             "resolution": "1080 x 2400",
             "camera_front": "8 MP",
             "camera_rear": "12.2 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 26,
-        "model": "products.phone",
+        "pk": 57,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Huawei",
+            "series": "Mate",
+            "model": "50 Pro",
+            "color": "black",
+            "condition": "good",
             "price": 525,
             "sale": false,
             "sale_price": null,
-            "series": "Mate",
-            "model": "50 Pro",
+            "image": "huaweimate50pro.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Kirin 9000E, Octa Core",
             "ram": "8 GB",
@@ -669,23 +932,33 @@
             "resolution": "1440 x 3200",
             "camera_front": "13 MP",
             "camera_rear": "64 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     },
     {
-        "pk": 27,
-        "model": "products.phone",
+        "pk": 58,
+        "model": "products.product",
         "fields": {
-            "category": 2,
             "brand": "Huawei",
+            "series": "Nova",
+            "model": "10 SE",
+            "color": "black",
+            "condition": "good",
             "price": 270,
             "sale": false,
             "sale_price": null,
-            "series": "Nova",
-            "model": "10 SE",
+            "image": "huaweinova10se.jpg",
+            "image_url": null,
+            "stock_acceptable": 1,
+            "stock_good": 1,
+            "stock_excellent": 1
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.phone",
+        "fields": {
+            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 680, Octa Core",
             "ram": "8 GB",
@@ -695,10 +968,7 @@
             "resolution": "1080 x 2160",
             "camera_front": "16 MP",
             "camera_rear": "108 MP",
-            "os": "Android",
-            "color": "black",
-            "image": null,
-            "image_url": null
+            "os": "Android"
         }
     }
 ]
