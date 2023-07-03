@@ -65,9 +65,12 @@ def laptop_detail(request, laptop_id):
     """A view to show an individual detailed page for laptops"""
 
     laptop = get_object_or_404(Laptop, pk=laptop_id)
+    condition = laptop.condition
 
     context = {
-        'laptop': laptop
+        'laptop': laptop,
+        'condition': condition
+
     }
 
     return render(request, 'laptops/laptop_detail.html', context)
