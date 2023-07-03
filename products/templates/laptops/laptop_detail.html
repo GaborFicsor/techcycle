@@ -13,16 +13,14 @@
 <section>
 
     <!-- container -->
-    <div class="container p-4">
+    <div class="container p-4 bg-white">
 
         <!-- row for the name for the laptop -->
         <div class="row">
             <div class="col-12">
-                <div class="bg-white p-4 shadow mb-4">
+                <div class="bg-white p-4 mb-4">
                     <h2>{{ laptop.brand }} {{ laptop.series }} {{ laptop.model }} {{ laptop.label }}</h2>
-                    <p>Stock - Acceptable {{ laptop.condition }} </p>
-                    <p>Stock - Good {{ stock.laptop_good }}</p>
-                    <p>Stock - Excellent {{ stock.excellent }} </p>
+                    <p>{{ laptop.get_stock_status }}</p>
                 </div>
             </div>
         </div>
@@ -44,7 +42,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="shadow">
+                <div class="">
                     <div class="dark-b text-white p-4">
                         <h3>Specifications</h3>
                     </div>
@@ -81,19 +79,10 @@
             </div>
         </div>
 
-        <!-- row for the button -->
-        <div class="row">
-            <div class="col-12">
-                <div class="bg-white p-4 shadow mb-4">
-                    button
-                </div>
-            </div>
-        </div>
-
         <!-- row for the features and extra details -->
         <div class="row">
             <div class="col-12 col-lg-6">
-                <div class="shadow">
+                <div class="">
                     <div class="dark-b text-white p-4">
                         <h3>Features</h3>
                     </div>
@@ -124,7 +113,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-4">
-                <div class="shadow">
+                <div class="">
                     <div class="dark-b text-white p-4">
                         <h3>Extras</h3>
                     </div>

@@ -38,6 +38,18 @@ class Product(models.Model):
     stock_good = models.PositiveIntegerField(default=0)
     stock_excellent = models.PositiveIntegerField(default=0)
     
+    def get_total_stock(self):
+        return self.stock_acceptable + self.stock_good + self.stock_excellent
+
+    def get_stock_status(self):
+        total_stock = self.get_total_stock()
+        if total_stock <= 2:
+            return 'Low stock'
+        elif total_stock == 0:
+            return 'Out of stock'
+        else:
+            return 'In stock'
+
     def save(self, *args, **kwargs):
         # Check the condition of the product
         condition = self.condition
