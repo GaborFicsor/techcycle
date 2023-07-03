@@ -1,11 +1,23 @@
 from django.contrib import admin
-from .models import Category, Laptop, Phone, Smartwatch, Console
+from .models import Category, Laptop, Phone, Smartwatch, Console, Product
 
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
+        'name',
+    )
+
+class ProductAdmin(admin.ModelAdmin):
+    list_display = (
+        'brand',
+        'series',
+        'model'
+    )
+
+class ConditionAdmin(admin.ModelAdmin):
+    list_display = (
         'name',
     )
 
@@ -19,8 +31,6 @@ class LaptopAdmin(admin.ModelAdmin):
         'cpu_name',
         'storage_size',
         'ram',
-        'sale',
-        'price',
     )
     
 
@@ -31,8 +41,6 @@ class PhoneAdmin(admin.ModelAdmin):
         'model',
         'storage_size',
         'ram',
-        'sale',
-        'price',
     )
     
 
@@ -41,10 +49,7 @@ class SmartwatchAdmin(admin.ModelAdmin):
         'brand',
         'series',
         'model',
-        'sale',
-        'price',
     )
-    
 
 class ConsoleAdmin(admin.ModelAdmin):
     list_display = (
@@ -52,8 +57,9 @@ class ConsoleAdmin(admin.ModelAdmin):
         'series',
         'model',
         'storage_size',
-        'sale',
-        'price',
+        'stock_acceptable',
+        'stock_good',
+        'stock_excellent'
     )
 
 admin.site.register(Category, CategoryAdmin)
@@ -61,3 +67,4 @@ admin.site.register(Laptop, LaptopAdmin)
 admin.site.register(Phone, PhoneAdmin)
 admin.site.register(Smartwatch, SmartwatchAdmin)
 admin.site.register(Console, ConsoleAdmin)
+admin.site.register(Product, ProductAdmin)
