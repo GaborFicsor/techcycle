@@ -28,9 +28,16 @@
         <div class="row mb-4">
             <div class="col-12 col-lg-6 text-center">
                 <div class="bg-white shadow">
-                    <a href="#">
-                        <img class="card-img-top img-fluid img-resized" src="/media/noimage.png" alt="">
+                    {% if smartwatch.image %}
+                    <a href="{{ smartwatch.img.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="">
                     </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png"
+                            alt="">
+                    </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-12 col-lg-6">

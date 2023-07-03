@@ -26,9 +26,16 @@
                     <div class="card border-0 mb-3 p-3" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-6 text-center">
-                                <a href="{% url 'console_detail' console.id  %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                {% if console.image %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
                                 </a>
+                                {% else %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
+                                        alt="">
+                                </a>
+                                {% endif %}
                             </div>
                             <div class="sale">
                                 sale
@@ -63,7 +70,16 @@
                     <div class="card border-0 mb-3 p-4" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-12 text-center">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                {% if console.image %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
+                                        alt="">
+                                </a>
+                                {% endif %}
                             </div>
                             <div class="col-12 position-relative">
                                 <div class="card-body">

@@ -26,9 +26,16 @@
                     <div class="card border-0 mb-3 p-3" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-6 text-center">
+                                {% if laptop.image %}
                                 <a href="{% url 'laptop_detail' laptop.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
                                 </a>
+                                {% else %}
+                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
+                                        alt="">
+                                </a>
+                                {% endif %}
                             </div>
                             <div class="sale">
                                 sale
@@ -65,7 +72,16 @@
                     <div class="card border-0 mb-3 p-4" style="max-width:540px;">
                         <div class="row g-0">
                             <div class="col-12 text-center">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                {% if laptop.image %}
+                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png"
+                                        alt="">
+                                </a>
+                                {% endif %}
                             </div>
                             <div class="col-12 position-relative">
                                 <div class="card-body">

@@ -20,6 +20,9 @@
             <div class="col-12">
                 <div class="bg-white p-4 shadow mb-4">
                     <h2>{{ laptop.brand }} {{ laptop.series }} {{ laptop.model }} {{ laptop.label }}</h2>
+                    <p>Stock - Acceptable {{ laptop.condition }} </p>
+                    <p>Stock - Good {{ stock.laptop_good }}</p>
+                    <p>Stock - Excellent {{ stock.excellent }} </p>
                 </div>
             </div>
         </div>
@@ -28,9 +31,16 @@
         <div class="row mb-4">
             <div class="col-12 col-lg-6 text-center">
                 <div class="bg-white shadow">
-                    <a href="#">
-                        <img class="card-img-top img-fluid img-resized" src="/media/noimage.png" alt="">
+                    {% if laptop.image %}
+                    <a href="{{ laptop.img.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
                     </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png"
+                            alt="">
+                    </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-12 col-lg-6">
