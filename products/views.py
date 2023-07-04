@@ -6,7 +6,10 @@ from .models import Laptop, Phone, Smartwatch, Console, Category, Product
 
 def all_products(request):
 
-    query= None
+    query = None
+    sort = None
+    direction = None
+
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
     smartwatches = Smartwatch.objects.all()
@@ -32,13 +35,15 @@ def all_products(request):
             phones = phones.filter(Q(category__name__icontains=query) | queries)
             smartwatches = smartwatches.filter(Q(category__name__icontains=query) | queries)
             consoles = consoles.filter(Q(category__name__icontains=query) | queries)
-            
+    
+    current_sorting = f'{sort}_{direction}'
     context = {
         'laptops': laptops,
         'phones': phones,
         'smartwatches': smartwatches,
         'consoles': consoles,
         'search_term': query,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
@@ -53,10 +58,15 @@ def laptops(request):
             brand = request.GET['brand']
             laptops = Laptop.objects.filter(brand=brand)
 
-    if request.GET:
         if 'label' in request.GET:
             label = request.GET['label']
             laptops = Laptop.objects.filter(label=label)
+    
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+        if sortkey == 'price':
+            laptops = laptops.order_by('price')
 
     context = {
         'laptops': laptops,
@@ -88,6 +98,12 @@ def phones(request):
             brand = request.GET['brand']
             phones = Phone.objects.filter(brand=brand)
 
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+        if sortkey == 'price':
+            phones = phones.order_by('price')
+
     context = {
         'phones': phones
     }
@@ -114,6 +130,12 @@ def smartwatches(request):
         if 'brand' in request.GET:
             brand = request.GET['brand']
             smartwatches = Smartwatch.objects.filter(brand=brand)
+
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+        if sortkey == 'price':
+            smartwatches = smartwatches.order_by('price')
 
     context = {
         'smartwatches': smartwatches
@@ -144,6 +166,12 @@ def consoles(request):
         elif 'brand' in request.GET:
             brand = request.GET['brand']
             consoles = Console.objects.filter(brand=brand)
+
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+        if sortkey == 'price':
+            consoles = consoles.order_by('price')
 
     context = {
         'consoles': consoles
