@@ -1,6 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'products' %}">
+                All Products
+            </a>
+        </li>
+        <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true">
                 Laptops
@@ -47,9 +52,20 @@
                 <a href="{% url 'consoles' %}?brand=Nintendo" class="dropdown-item">Nintendo</a>
                 <a href="{% url 'consoles' %}?series=PlayStation" class="dropdown-item">PlayStation</a>
                 <a href="{% url 'consoles' %}?series=Xbox" class="dropdown-item">Xbox</a>
-                <a href="{% url 'consoles' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'consoles' %}" class="dropdown-item">All Consoles</a>
             </div>
         </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true">
+                sale
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="{% url 'laptops' %}?label=Gaming Laptop" class="dropdown-item">Gaming Laptops</a>
+                <a href="{% url 'laptops' %}?brand=Apple" class="dropdown-item">Apple Laptops</a>
+                <a href="{% url 'laptops' %}" class="dropdown-item">All Laptops</a>
+            </div>
         </li>
     </ul>
 </div>
