@@ -156,13 +156,3 @@ class Smartwatch(Product):
 class Console(Product):
     category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     storage_size = models.CharField(max_length=50)
-
-# @receiver(post_save, sender=Product)
-# def update_stock(sender, instance, **kwargs):
-#     # Retrieve the selected condition for the product
-#     condition_name = instance.condition.name
-
-#     # Update the stock for the selected condition
-#     condition = Condition.objects.get(name=condition_name)
-#     condition.stock += 1
-#     condition.save()

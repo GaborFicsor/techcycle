@@ -1,19 +1,30 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Laptop, Phone, Smartwatch, Console, Category
+from .models import Laptop, Phone, Smartwatch, Console, Category, Product
 
 
 def all_products(request):
+
+    query= None
     categories = Category.objects.all()
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
     smartwatches = Smartwatch.objects.all()
     consoles = Console.objects.all()
+    products = Product.objects.all()
 
     products = list(laptops) + list(phones) + list (smartwatches) +list(consoles)
 
     if request.GET:
+
+        if 'sale' in request.GET:
+            sale = request.GET['sale']
+            laptops = Laptop.objects.filter(sale=True)
+            phones = Phone.objects.filter(sale=True)
+            smartwatches = Smartwatch.objects.filter(sale=True)
+            consoles = Console.objects.filter(sale=True)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
