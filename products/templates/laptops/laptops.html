@@ -13,7 +13,6 @@
     </div>
 
     <!-- filter for brands -->
-
     <div class="row">
         <div class="col text-center mt-3 ">
             {% for brand in brands %}
@@ -21,11 +20,11 @@
                 {{ brand }}
             </a>
         {% endfor %}
-        <button id="reset" value="reseet" class="btn btn-dark">Reset</button>
+        <button id="reset" class="btn btn-dark">Reset</button>
         </div>
     </div>
 
-
+    <!-- sorting dropdown menu for price ascend/descend -->
     <div class="row mx-1 pt-3">
         <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
             <div class="sort-select-wrapper w-50">
@@ -36,17 +35,16 @@
                 </select>
             </div>
         </div>
+
+        <!-- amount of laptops displayed -->
         <div class="col-12 col-md-6 order-md-first">
             <p class="text-muted mt-3 text-center text-md-left">
 
                 {{ laptops|length }} results
             </p>
         </div>
-
     </div>
     
-
-
 
     <!-- row for laptops-->
     <div class="row">
@@ -55,6 +53,10 @@
         {% include 'components/laptop_card.html' %}
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
 <script type="text/javascript">
     $('#sort-selector').change(function() {
         var selector = $(this)
@@ -90,4 +92,5 @@
     });
 </script>
 {% endblock %}
+
 
