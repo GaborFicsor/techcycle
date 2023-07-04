@@ -4,7 +4,44 @@ from django.db.models import Q
 from .models import Laptop, Phone, Smartwatch, Console, Category
 
 
-def search(request):
+# def search(request):
+#     categories = Category.objects.all()
+#     laptops = Laptop.objects.all()
+#     phones = Phone.objects.all()
+#     smartwatches = Smartwatch.objects.all()
+#     consoles = Console.objects.all()
+
+#     products = list(laptops) + list(phones) + list (smartwatches) +list(consoles)
+
+#     if request.GET:
+#         if 'q' in request.GET:
+#             query = request.GET['q']
+#             if not query:
+#                 messages.error(request, "You didn't enter any search criteria")
+#                 return redirect(reverse('laptops'))
+
+#             queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query) 
+#             laptops = laptops.filter(
+#                 Q(label__icontains=query) | Q(cpu_name__icontains=query) | Q(gpu__icontains=query) | Q(os__icontains=query)
+#             )
+#             phones = phones.filter(queries)
+#             smartwatches = smartwatches.filter(queries)
+#             consoles = consoles.filter(queries)
+
+    
+#     context = {
+#         'products': products,
+#         'laptops': laptops,
+#         'phones': phones,
+#         'smartwatches': smartwatches,
+#         'consoles': consoles,
+#         'search_term': query,
+#     }
+
+#     return render(request, 'search/search.html', context)
+
+
+def all_products(request):
     categories = Category.objects.all()
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
@@ -13,20 +50,20 @@ def search(request):
 
     products = list(laptops) + list(phones) + list (smartwatches) +list(consoles)
 
-    if request.GET:
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria")
-                return redirect(reverse('laptops'))
+    # if request.GET:
+    #     if 'q' in request.GET:
+    #         query = request.GET['q']
+    #         if not query:
+    #             messages.error(request, "You didn't enter any search criteria")
+    #             return redirect(reverse('laptops'))
 
-            queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query) 
-            laptops = laptops.filter(
-                Q(label__icontains=query) | Q(cpu_name__icontains=query) | Q(gpu__icontains=query) | Q(os__icontains=query)
-            )
-            phones = phones.filter(queries)
-            smartwatches = smartwatches.filter(queries)
-            consoles = consoles.filter(queries)
+    #         queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query) 
+    #         laptops = laptops.filter(
+    #             Q(label__icontains=query) | Q(cpu_name__icontains=query) | Q(gpu__icontains=query) | Q(os__icontains=query)
+    #         )
+    #         phones = phones.filter(queries)
+    #         smartwatches = smartwatches.filter(queries)
+    #         consoles = consoles.filter(queries)
 
     
     context = {
@@ -35,10 +72,9 @@ def search(request):
         'phones': phones,
         'smartwatches': smartwatches,
         'consoles': consoles,
-        'search_term': query,
     }
 
-    return render(request, 'search/search.html', context)
+    return render(request, 'products/products.html', context)
 
 def laptops(request):
     """A view to show all laptops"""
