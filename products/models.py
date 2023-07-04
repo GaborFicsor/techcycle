@@ -135,6 +135,9 @@ class Phone(Product):
 
 class Smartwatch(Product):
 
+    class Meta:
+        verbose_name_plural = 'Smartwatches'
+
     category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     connectivity = models.CharField(max_length=50)
     display = models.CharField(max_length=50)
