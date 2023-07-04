@@ -9,6 +9,7 @@ def all_products(request):
     query = None
     sort = None
     direction = None
+    categories = Category.objects.values_list('friendly_name', flat=True).distinct()
 
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
@@ -23,6 +24,10 @@ def all_products(request):
             phones = Phone.objects.filter(sale=True)
             smartwatches = Smartwatch.objects.filter(sale=True)
             consoles = Console.objects.filter(sale=True)
+        
+        if 'category' in request.GET:
+            category = request.GET
+            Product.objects.filter(category=category)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -42,6 +47,7 @@ def all_products(request):
         'smartwatches': smartwatches,
         'consoles': consoles,
         'search_term': query,
+        'categories': categories,
     }
 
     return render(request, 'products/products.html', context)
@@ -52,6 +58,7 @@ def laptops(request):
     sort = None
     direction = None
     laptops = Laptop.objects.all()
+    brands = Laptop.objects.values_list('brand', flat=True).distinct()
 
     if request.GET:
         if 'brand' in request.GET:
@@ -76,6 +83,7 @@ def laptops(request):
     context = {
         'laptops': laptops,
         'current_sorting': current_sorting,
+        'brands': brands,
     }
 
     return render(request, 'laptops/laptops.html', context)
@@ -88,8 +96,7 @@ def laptop_detail(request, laptop_id):
 
     context = {
         'laptop': laptop,
-        'condition': condition
-
+        'condition': condition,
     }
 
     return render(request, 'laptops/laptop_detail.html', context)
@@ -100,6 +107,7 @@ def phones(request):
     sort = None
     direction = None
     phones = Phone.objects.all()
+    brands = Phone.objects.values_list('brand', flat=True).distinct()
 
     if request.GET:
         if 'brand' in request.GET:
@@ -119,6 +127,7 @@ def phones(request):
     context = {
         'phones': phones,
         'current_sorting': current_sorting,
+        'brands': brands,
     }
 
     return render(request, 'phones/phones.html', context)
@@ -140,6 +149,7 @@ def smartwatches(request):
     sort = None
     direction = None
     smartwatches = Smartwatch.objects.all()
+    brands = Smartwatch.objects.values_list('brand', flat=True).distinct()
 
     if request.GET:
         if 'brand' in request.GET:
@@ -159,6 +169,7 @@ def smartwatches(request):
     context = {
         'smartwatches': smartwatches,
         'current_sorting': current_sorting,
+        'brands': brands,
     }
 
     return render(request, 'smartwatches/smartwatches.html', context)
@@ -180,6 +191,7 @@ def consoles(request):
     sort = None
     direction = None
     consoles = Console.objects.all()
+    brands = Console.objects.values_list('brand', flat=True).distinct()
 
     if request.GET:
         if 'series' in request.GET:
@@ -202,6 +214,7 @@ def consoles(request):
     context = {
         'consoles': consoles,
         'current_sorting': current_sorting,
+        'brands': brands,
     }
 
     return render(request, 'consoles/consoles.html', context)

@@ -12,10 +12,82 @@
         </div>
     </div>
 
-    <!-- row for products-->
+    <!-- filter for brands -->
+
     <div class="row">
+        <div class="col text-center mt-3 ">
+            {% for brand in brands %}
+            <a class="btn btn-clear brands" href="{% url 'laptops' %}?brand={{brand}}">
+                {{ brand }}
+            </a>
+        {% endfor %}
+        <button id="reset" value="reseet" class="btn btn-dark">Reset</button>
+        </div>
+    </div>
+
+
+    <div class="row mx-1 pt-3">
+        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+            <div class="sort-select-wrapper w-50">
+                <select id="sort-selector" class="custom-select custom-select-sm border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Low</option>
+                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price High</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 order-md-first">
+            <p class="text-muted mt-3 text-center text-md-left">
+
+                {{ laptops|length }} results
+            </p>
+        </div>
+
+    </div>
+    
+
+
+
+    <!-- row for laptops-->
+    <div class="row">
+
         <!-- laptop card for each laptop on medium screens and above -->
         {% include 'components/laptop_card.html' %}
     </div>
 </div>
+<script type="text/javascript">
+    $('#sort-selector').change(function() {
+        var selector = $(this)
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if(selectedVal != "reset"){
+            var sort = selectedVal.split("_")[0]
+            var direction = selectedVal.split("_")[1]
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+
+    $('#reset').click(function() {
+        var currentUrl = new URL(window.location);
+        var searchParams = currentUrl.searchParams;
+        var brand = currentUrl.searchParams.get("brand");
+        var brandParam = "brand=" + brand;
+
+        if (searchParams.has("brand")) {
+            currentUrl.searchParams.delete("brand");
+            window.location.replace(currentUrl);
+        }
+    });
+</script>
 {% endblock %}
+

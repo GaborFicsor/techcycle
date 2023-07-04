@@ -12,7 +12,19 @@
         </div>
     </div>
 
-    <!-- row for products-->
+    <!-- filter for brands -->
+    <div class="row">
+        <div class="col text-center mt-3">
+            {% for brand in brands %}
+            <a class="btn btn-clear" href="{% url 'consoles' %}?brand={{brand}}">
+                {{ brand }}
+            </a>
+        {% endfor %}
+        <a class="btn btn-dark" href="{% url 'consoles' %}">Reset</a>
+        </div>
+    </div>
+
+    <!-- row for consoles-->
     <div class="row">
 
         <!-- console card for each console on medium screens and above -->

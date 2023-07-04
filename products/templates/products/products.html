@@ -11,6 +11,18 @@
     </div>
 
     <div class="row">
+        <div class="col text-center mt-3">
+            {% for category in categories %}
+
+            <a class="btn btn-clear" href="{% url 'products' %}?category={{category}}">
+                {{ category }}
+            </a>
+            not working!!!!
+        {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
         {% include 'components/laptop_card.html' %}
         {% include 'components/phone_card.html' %}
         {% include 'components/console_card.html' %}

@@ -12,13 +12,23 @@
         </div>
     </div>
 
-    <!-- row for products-->
+    <!-- filter for brands -->
+    <div class="row">
+        <div class="col text-center mt-3">
+            {% for brand in brands %}
+            <a class="btn btn-clear" href="{% url 'phones' %}?brand={{brand}}">
+                {{ brand }}
+            </a>
+        {% endfor %}
+        <a class="btn btn-dark" href="{% url 'phones' %}">Reset</a>
+        </div>
+    </div>
+
+    <!-- row for phones-->
     <div class="row">
 
         <!-- phone card for each phone on medium screens and above -->
         {% include 'components/phone_card.html' %}
     </div>
-
 </div>
-
 {% endblock %}
