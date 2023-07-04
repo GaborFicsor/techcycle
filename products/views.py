@@ -36,14 +36,12 @@ def all_products(request):
             smartwatches = smartwatches.filter(Q(category__name__icontains=query) | queries)
             consoles = consoles.filter(Q(category__name__icontains=query) | queries)
     
-    current_sorting = f'{sort}_{direction}'
     context = {
         'laptops': laptops,
         'phones': phones,
         'smartwatches': smartwatches,
         'consoles': consoles,
         'search_term': query,
-        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
@@ -73,8 +71,11 @@ def laptops(request):
                     sortkey = f'-{sortkey}'
             laptops = laptops.order_by(sortkey)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'laptops': laptops,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'laptops/laptops.html', context)
@@ -114,8 +115,10 @@ def phones(request):
                     sortkey = f'-{sortkey}'
             phones = phones.order_by(sortkey)
 
+    current_sorting = f'{sort}_{direction}'
     context = {
-        'phones': phones
+        'phones': phones,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'phones/phones.html', context)
@@ -152,8 +155,10 @@ def smartwatches(request):
                     sortkey = f'-{sortkey}'
             smartwatches = smartwatches.order_by(sortkey)
 
+    current_sorting = f'{sort}_{direction}'
     context = {
-        'smartwatches': smartwatches
+        'smartwatches': smartwatches,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'smartwatches/smartwatches.html', context)
@@ -192,8 +197,10 @@ def consoles(request):
                     sortkey = f'-{sortkey}'
             consoles = consoles.order_by(sortkey)
 
+    current_sorting = f'{sort}_{direction}'
     context = {
-        'consoles': consoles
+        'consoles': consoles,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'consoles/consoles.html', context)
