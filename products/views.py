@@ -60,15 +60,18 @@ def laptops(request):
             brand = request.GET['brand']
             laptops = Laptop.objects.filter(brand=brand)
 
-        elif 'label' in request.GET:
+        if 'label' in request.GET:
             label = request.GET['label']
             laptops = Laptop.objects.filter(label=label)
     
-        elif 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'price':
-                laptops = laptops.order_by('price')
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            laptops = laptops.order_by(sortkey)
 
     context = {
         'laptops': laptops,
@@ -102,11 +105,14 @@ def phones(request):
             brand = request.GET['brand']
             phones = Phone.objects.filter(brand=brand)
 
-        elif 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'price':
-                phones = phones.order_by('price')
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            phones = phones.order_by(sortkey)
 
     context = {
         'phones': phones
@@ -137,11 +143,14 @@ def smartwatches(request):
             brand = request.GET['brand']
             smartwatches = Smartwatch.objects.filter(brand=brand)
 
-        elif 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'price':
-                smartwatches = smartwatches.order_by('price')
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            smartwatches = smartwatches.order_by(sortkey)
 
     context = {
         'smartwatches': smartwatches
@@ -171,14 +180,17 @@ def consoles(request):
         if 'series' in request.GET:
             series = request.GET['series']
             consoles = Console.objects.filter(series=series)
-        elif 'brand' in request.GET:
+        if 'brand' in request.GET:
             brand = request.GET['brand']
             consoles = Console.objects.filter(brand=brand)
-        elif 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'price':
-                consoles = consoles.order_by('price')
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            consoles = consoles.order_by(sortkey)
 
     context = {
         'consoles': consoles
