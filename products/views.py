@@ -7,14 +7,10 @@ from .models import Laptop, Phone, Smartwatch, Console, Category, Product
 def all_products(request):
 
     query= None
-    categories = Category.objects.all()
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
     smartwatches = Smartwatch.objects.all()
     consoles = Console.objects.all()
-    products = Product.objects.all()
-
-    products = list(laptops) + list(phones) + list (smartwatches) +list(consoles)
 
     if request.GET:
 
@@ -32,15 +28,12 @@ def all_products(request):
                 return redirect(reverse('products'))
 
             queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query)
-            laptops = laptops.filter(queries)
-            phones = phones.filter(queries)
-            smartwatches = smartwatches.filter(queries)
-            consoles = consoles.filter(queries)
+            laptops = laptops.filter(Q(category__name__icontains=query) | queries)
+            phones = phones.filter(Q(category__name__icontains=query) | queries)
+            smartwatches = smartwatches.filter(Q(category__name__icontains=query) | queries)
+            consoles = consoles.filter(Q(category__name__icontains=query) | queries)
             
-
-    
     context = {
-        'products': products,
         'laptops': laptops,
         'phones': phones,
         'smartwatches': smartwatches,
