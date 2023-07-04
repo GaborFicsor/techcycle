@@ -51,6 +51,8 @@ def all_products(request):
 def laptops(request):
     """A view to show all laptops"""
 
+    sort = None
+    direction = None
     laptops = Laptop.objects.all()
 
     if request.GET:
@@ -58,15 +60,15 @@ def laptops(request):
             brand = request.GET['brand']
             laptops = Laptop.objects.filter(brand=brand)
 
-        if 'label' in request.GET:
+        elif 'label' in request.GET:
             label = request.GET['label']
             laptops = Laptop.objects.filter(label=label)
     
-        if 'sort' in request.GET:
+        elif 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-        if sortkey == 'price':
-            laptops = laptops.order_by('price')
+            if sortkey == 'price':
+                laptops = laptops.order_by('price')
 
     context = {
         'laptops': laptops,
@@ -91,6 +93,8 @@ def laptop_detail(request, laptop_id):
 def phones(request):
     """A view to show all phones"""
 
+    sort = None
+    direction = None
     phones = Phone.objects.all()
 
     if request.GET:
@@ -98,11 +102,11 @@ def phones(request):
             brand = request.GET['brand']
             phones = Phone.objects.filter(brand=brand)
 
-        if 'sort' in request.GET:
+        elif 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-        if sortkey == 'price':
-            phones = phones.order_by('price')
+            if sortkey == 'price':
+                phones = phones.order_by('price')
 
     context = {
         'phones': phones
@@ -124,6 +128,8 @@ def phone_detail(request, phone_id):
 def smartwatches(request):
     """A view to show all smartwatches"""
 
+    sort = None
+    direction = None
     smartwatches = Smartwatch.objects.all()
 
     if request.GET:
@@ -131,11 +137,11 @@ def smartwatches(request):
             brand = request.GET['brand']
             smartwatches = Smartwatch.objects.filter(brand=brand)
 
-        if 'sort' in request.GET:
+        elif 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-        if sortkey == 'price':
-            smartwatches = smartwatches.order_by('price')
+            if sortkey == 'price':
+                smartwatches = smartwatches.order_by('price')
 
     context = {
         'smartwatches': smartwatches
@@ -157,6 +163,8 @@ def smartwatch_detail(request, smartwatch_id):
 def consoles(request):
     """A view to show all consoles"""
 
+    sort = None
+    direction = None
     consoles = Console.objects.all()
 
     if request.GET:
@@ -166,12 +174,11 @@ def consoles(request):
         elif 'brand' in request.GET:
             brand = request.GET['brand']
             consoles = Console.objects.filter(brand=brand)
-
-        if 'sort' in request.GET:
+        elif 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-        if sortkey == 'price':
-            consoles = consoles.order_by('price')
+            if sortkey == 'price':
+                consoles = consoles.order_by('price')
 
     context = {
         'consoles': consoles
