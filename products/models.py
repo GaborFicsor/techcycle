@@ -39,6 +39,9 @@ class Product(models.Model):
     stock_good = models.PositiveIntegerField(default=0)
     stock_excellent = models.PositiveIntegerField(default=0)
     
+    def name(self):
+        return f"{self.brand} {self.series} {self.model}"
+
     def get_total_stock(self):
             return self.stock_acceptable + self.stock_good + self.stock_excellent
 
