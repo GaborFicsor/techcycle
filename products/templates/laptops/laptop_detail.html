@@ -19,8 +19,18 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 mb-4">
-                    <h2>{{ laptop.brand }} {{ laptop.series }} {{ laptop.model }} {{ laptop.label }}</h2>
+                    <h2>{{ laptop.name }} {{ laptop.label }}</h2>
                     <p>{{ laptop.get_stock_status }}</p>
+                    <p>
+                        <a href="{% url 'laptops' %}">
+                            {{ laptop.category.friendly_name }}
+                        </a>
+                    </p>
+                    <p>
+                        <a href="{% url 'laptops'%}?label={{ laptop.label }}">
+                            {{ laptop.label }}
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
