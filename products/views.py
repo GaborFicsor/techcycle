@@ -61,7 +61,7 @@ def laptops(request):
         if 'label' in request.GET:
             label = request.GET['label']
             laptops = Laptop.objects.filter(label=label)
-    
+
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -196,6 +196,7 @@ def consoles(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             consoles = consoles.order_by(sortkey)
+
 
     current_sorting = f'{sort}_{direction}'
     context = {
