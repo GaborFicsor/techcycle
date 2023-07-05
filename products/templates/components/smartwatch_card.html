@@ -41,7 +41,6 @@
                                         <li>{{ smartwatch.display }} display</li>
                                         <li>{{ smartwatch.screen_size }}"</li>
                                         <li>{{ smartwatch.resolution }}</li>
-                                        <li>{{ smartwatch.get_stock_status }}</li>
                                     </ul>
 
                                     <!-- if smartwatch is on sale show discounted price, else show regular price -->
@@ -110,7 +109,6 @@
 
                                     <!-- if smartwatch is on sale show discounted price, else show regular price -->
                                     <div class="d-flex justify-content-between">
-                                        <span>{{ smartwatch.get_stock_status }}</span>
                                         {% if smartwatch.sale %}
                                         <span class="lead text-red">{{ smartwatch.sale_price }}</span>
                                         {% else %}

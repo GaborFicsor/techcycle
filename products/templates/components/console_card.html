@@ -40,7 +40,6 @@
                                     <ul class="list-unstyled text-muted d-none d-md-block">
                                         <li>{{ console.storage_size }}</li>
                                         <li>{{ console.color }}</li>
-                                        <li>{{ console.get_stock_status }}</li>
                                     </ul>
 
                                     <!-- if console is on sale show discounted price, else show regular price -->
@@ -109,7 +108,6 @@
 
                                     <!-- if console is on sale show discounted price, else show regular price -->
                                     <div class="d-flex justify-content-between">
-                                        <span>{{ console.get_stock_status }}</span>
                                         {% if console.sale %}
                                         <span class="lead text-red">{{ console.sale_price }}</span>
                                         {% else %}

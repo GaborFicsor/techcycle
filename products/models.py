@@ -2,6 +2,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from decimal import Decimal
+from django.db.models import Sum
 
 
 class Category(models.Model):
@@ -41,7 +42,7 @@ class Product(models.Model):
         return f"{self.brand} {self.series} {self.model}"
 
     def get_total_stock(self):
-            return self.inventory.condition + self.inventory.stock_count
+        return self.inventory.condition + self.inventory.stock_count
 
     def get_stock_status(self):
         total_stock = self.inventory.get_total_stock()
@@ -156,7 +157,14 @@ class Inventory(models.Model):
         return f"{self.product.brand} {self.product.series} {self.product.model}"
 
     def __str__(self):
-        return f"{self.product.brand} {self.product.series} {self.product.model} - {self.condition}"
+        return f"{self.condition}"
+
+    def stock(self):
+        return self.get_condition_display()
+
+    def get_condition_display(self):
+        return dict(self.CONDITION_CHOICES).get(self.condition)
+
 
     def increase_stock(self, quantity=1):
         self.stock_count += quantity

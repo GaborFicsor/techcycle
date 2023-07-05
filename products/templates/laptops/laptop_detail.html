@@ -19,9 +19,17 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 mb-4">
-                    <h2>{{ laptop.name }} {{ laptop.label }}</h2>
-                    <h1>{{ inventory.name }}</h1>
-                    <p>Stock Count: {{ laptop.inventory.stock_count }}</p>
+                    <h2>Inventory</h2>
+                    <ul>
+                      {% for inventory in inventory %}
+
+                        {{ inventory.stock }}
+
+                      {% empty %}
+                        <li>This item is out of stock</li>
+                      {% endfor %}
+                    </ul>
+                    <br>
                     <p>
                         <a href="{% url 'laptops' %}">
                             {{ laptop.category.friendly_name }}

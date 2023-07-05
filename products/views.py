@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
+from django.db.models import Sum
 
 
 def all_products(request):
@@ -25,9 +26,6 @@ def all_products(request):
             smartwatches = Smartwatch.objects.filter(sale=True)
             consoles = Console.objects.filter(sale=True)
         
-        if 'category' in request.GET:
-            category = request.GET
-            Product.objects.filter(category=category)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -94,12 +92,11 @@ def laptop_detail(request, laptop_id):
     """A view to show an individual detailed page for laptops"""
 
     laptop = get_object_or_404(Laptop, pk=laptop_id)
-    condition = laptop.condition
+    inventory = laptop.inventory_set.all()
 
     context = {
         'laptop': laptop,
-        'condition': condition,
-        'inventory': inventory
+        'inventory': inventory,
     }
 
     return render(request, 'laptops/laptop_detail.html', context)

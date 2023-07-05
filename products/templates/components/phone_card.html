@@ -41,7 +41,6 @@
                                         <li>{{ phone.ram }}</li>
                                         <li>{{ phone.storage_size}}</li>
                                         <li>{{ phone.screen_size }}"</li>
-                                        <li>{{ phone.get_stock_status }}</li>
                                     </ul>
 
                                     <!-- if phone is on sale show discounted price, else show regular price -->
@@ -109,7 +108,6 @@
 
                                     <!-- if phone is on sale show discounted price, else show regular price -->
                                     <div class="d-flex justify-content-between">
-                                        <span>{{ phone.get_stock_status }}</span>
                                         {% if phone.sale %}
                                         <span class="lead text-red">{{ phone.sale_price }}</span>
                                         {% else %}
