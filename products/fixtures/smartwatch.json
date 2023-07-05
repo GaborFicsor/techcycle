@@ -3,6 +3,7 @@
         "pk": 59,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Apple",
             "series": "Watch",
             "model": "SE",
@@ -12,17 +13,13 @@
             "sale": false,
             "sale_price": null,
             "image": "applewatchse.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 59,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Retina",
             "screen_size": 1.57,
@@ -38,6 +35,7 @@
         "pk": 60,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Apple",
             "series": "Watch",
             "model": "Series 7",
@@ -47,17 +45,13 @@
             "sale": false,
             "sale_price": null,
             "image": "applewatchseries7.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 60,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Retina",
             "screen_size": 1.9,
@@ -73,6 +67,7 @@
         "pk": 61,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Samsung",
             "series": "Galaxy Watch",
             "model": "4",
@@ -82,17 +77,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxywatchactive2.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 61,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Amoled",
             "screen_size": 1.4,
@@ -108,6 +99,7 @@
         "pk": 62,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Samsung",
             "series": "Galaxy Watch",
             "model": "Active 2",
@@ -117,17 +109,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxywatchactive2.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 62,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Super Amoled",
             "screen_size": 1.4,
@@ -143,6 +131,7 @@
         "pk": 63,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Garmin",
             "series": "Forerunner",
             "model": "945",
@@ -152,17 +141,13 @@
             "sale": false,
             "sale_price": null,
             "image": "garminforerunner945.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 63,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Transflective",
             "screen_size": 1.2,
@@ -178,6 +163,7 @@
         "pk": 64,
         "model": "products.product",
         "fields": {
+            "category": 3,
             "brand": "Garmin",
             "series": "Venu",
             "model": "2",
@@ -187,17 +173,13 @@
             "sale": false,
             "sale_price": null,
             "image": "garminvenu2.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 64,
         "model": "products.smartwatch",
         "fields": {
-            "category": 3,
             "connectivity": "Bluetooth, Wi-Fi",
             "display": "Amoled",
             "screen_size": 1.3,

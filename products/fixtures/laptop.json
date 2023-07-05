@@ -3,6 +3,7 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "VivoBook",
             "model": "15 M515DA-BQ722WS",
@@ -12,17 +13,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusvivobook15m515.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 1,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7",
@@ -48,6 +45,7 @@
         "pk": 2,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "G15",
             "model": "5511 SE",
@@ -57,17 +55,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellg155511.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 2,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i7",
@@ -93,6 +87,7 @@
         "pk": 3,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "ExpertBook",
             "model": "P1511CEA",
@@ -102,17 +97,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusexpertbookp15.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 3,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Business Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i3",
@@ -138,6 +129,7 @@
         "pk": 4,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "VivoBook",
             "model": "13 Slate OLED",
@@ -147,17 +139,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusvivobook13slateoled.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 4,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "2 in 1 Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Pentium",
@@ -183,6 +171,7 @@
         "pk": 5,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Lenovo",
             "series": "IdeaPad",
             "model": "14ITL6",
@@ -192,17 +181,13 @@
             "sale": false,
             "sale_price": null,
             "image": "lenovoideapad14itl6.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 5,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -228,6 +213,7 @@
         "pk": 6,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "MSI",
             "series": "Modern 14",
             "model": "B4MW-423IN",
@@ -237,17 +223,13 @@
             "sale": false,
             "sale_price": null,
             "image": "msimodern14b4mw.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 6,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5",
@@ -273,6 +255,7 @@
         "pk": 7,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "Vostro",
             "model": "3400 (i5)",
@@ -282,17 +265,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellvostro3400i5.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 7,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -318,6 +297,7 @@
         "pk": 8,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "MSI",
             "series": "GF63 Thin",
             "model": "10SCXR-1616IN",
@@ -327,17 +307,13 @@
             "sale": false,
             "sale_price": null,
             "image": "msigf63thin.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 8,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "i5",
@@ -363,6 +339,7 @@
         "pk": 9,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Apple",
             "series": "Macbook Pro M1",
             "model": "2021",
@@ -372,17 +349,13 @@
             "sale": false,
             "sale_price": null,
             "image": "applemacbookprom1.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 9,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Apple",
             "cpu_name": "M1",
@@ -408,6 +381,7 @@
         "pk": 10,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Apple",
             "series": "MacBook Air M1",
             "model": "2020",
@@ -417,17 +391,13 @@
             "sale": false,
             "sale_price": null,
             "image": "applemacbookairm1.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 10,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Apple",
             "cpu_name": "M1",
@@ -453,6 +423,7 @@
         "pk": 11,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Lenovo",
             "series": "ThinkPad",
             "model": "E15",
@@ -462,17 +433,13 @@
             "sale": false,
             "sale_price": null,
             "image": "lenovothinkpade15.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 11,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -498,6 +465,7 @@
         "pk": 12,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "Inspiron",
             "model": "5518",
@@ -507,17 +475,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellinspiron5518.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 12,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -543,6 +507,7 @@
         "pk": 13,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "HP",
             "series": "Pavilion Gaming",
             "model": "15-EC2048AX",
@@ -552,17 +517,13 @@
             "sale": false,
             "sale_price": null,
             "image": "hppaviliongaming15ec2048.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 13,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5",
@@ -588,6 +549,7 @@
         "pk": 14,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "TUF Gaming",
             "model": "F15 FX506LH-HN258T",
@@ -597,17 +559,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asustufgamingf15.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 14,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -633,6 +591,7 @@
         "pk": 15,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "HP",
             "series": "Pavilion Gaming",
             "model": "15-EC2150AX",
@@ -642,17 +601,13 @@
             "sale": false,
             "sale_price": null,
             "image": "hppaviliongaming15ec2150.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 15,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5",
@@ -678,6 +633,7 @@
         "pk": 16,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "Inspiron",
             "model": "3511",
@@ -687,17 +643,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellinspiron3511.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 16,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -723,6 +675,7 @@
         "pk": 17,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "VivoBook",
             "model": "X413EA-EB532WS",
@@ -732,17 +685,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusvivobookx413ea.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 17,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -768,6 +717,7 @@
         "pk": 18,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "G15",
             "model": "5515",
@@ -777,17 +727,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellg155515.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 18,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5",
@@ -814,6 +760,7 @@
         "pk": 19,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Acer",
             "series": "Aspire 3",
             "model": "A315-57G",
@@ -823,17 +770,13 @@
             "sale": false,
             "sale_price": null,
             "image": "aceraspirea3a315.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 19,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -859,6 +802,7 @@
         "pk": 20,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "VivoBook",
             "model": "K15 OLED",
@@ -868,17 +812,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusvivobookk15oled.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 20,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 5",
@@ -904,6 +844,7 @@
         "pk": 21,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Acer",
             "series": "Predator",
             "model": "Helios 300",
@@ -913,17 +854,13 @@
             "sale": false,
             "sale_price": null,
             "image": "acerpredatorhelios300.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 21,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i9",
@@ -949,6 +886,7 @@
         "pk": 22,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "ROG Strix",
             "model": "G513QE-HN108T",
@@ -958,17 +896,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusrogstrixg513qe.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 22,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7",
@@ -994,6 +928,7 @@
         "pk": 23,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Lenovo",
             "series": "Ideapad Slim",
             "model": "3i",
@@ -1003,17 +938,13 @@
             "sale": false,
             "sale_price": null,
             "image": "lenovoideapadslim3i.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 23,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -1039,6 +970,7 @@
         "pk": 24,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "VivoBook",
             "model": "Pro 16X OLED",
@@ -1048,17 +980,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asusvivobookpro16xoled.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 24,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 9",
@@ -1084,6 +1012,7 @@
         "pk": 25,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "Vostro",
             "model": "3400 (i3)",
@@ -1093,17 +1022,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellvostro3400i3.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 25,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i3",
@@ -1129,6 +1054,7 @@
         "pk": 26,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Infinix",
             "series": "X1",
             "model": "XL12",
@@ -1138,17 +1064,13 @@
             "sale": false,
             "sale_price": null,
             "image": "infinixx1xl12.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 26,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i7",
@@ -1174,6 +1096,7 @@
         "pk": 27,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Lenovo",
             "series": "Ideapad Slim",
             "model": "5",
@@ -1183,17 +1106,13 @@
             "sale": false,
             "sale_price": null,
             "image": "lenovoideapadslim5.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 27,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -1219,6 +1138,7 @@
         "pk": 28,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "ASUS",
             "series": "TUF Gaming",
             "model": "A15 FA566IC-HN008T",
@@ -1228,17 +1148,13 @@
             "sale": false,
             "sale_price": null,
             "image": "asustufgaminga15.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 28,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Gaming Laptop",
             "cpu_brand": "AMD",
             "cpu_name": "Ryzen 7",
@@ -1264,6 +1180,7 @@
         "pk": 29,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "HP",
             "series": "15s",
             "model": "du3060TX",
@@ -1273,17 +1190,13 @@
             "sale": false,
             "sale_price": null,
             "image": "hp15sdu3060tx.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 29,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Thin and Light Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -1309,6 +1222,7 @@
         "pk": 30,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "DELL",
             "series": "Inpiron",
             "model": "7501",
@@ -1318,17 +1232,13 @@
             "sale": false,
             "sale_price": null,
             "image": "dellinspiron7501.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 30,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",
@@ -1354,6 +1264,7 @@
         "pk": 31,
         "model": "products.product",
         "fields": {
+            "category": 1,
             "brand": "Lenovo",
             "series": "Ideapad 3",
             "model": "15IML05",
@@ -1363,17 +1274,13 @@
             "sale": false,
             "sale_price": null,
             "image": "lenovoideapad315iml05.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 31,
         "model": "products.laptop",
         "fields": {
-            "category": 1,
             "label": "Laptop",
             "cpu_brand": "Intel",
             "cpu_name": "Core i5",

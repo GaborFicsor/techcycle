@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Laptop, Phone, Smartwatch, Console, Product
+from .models import Category, Laptop, Phone, Smartwatch, Console, Product, Inventory
 
 
 
@@ -7,6 +7,12 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
+    )
+
+class InventoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'condition',
     )
 
 class ProductAdmin(admin.ModelAdmin):
@@ -57,9 +63,6 @@ class ConsoleAdmin(admin.ModelAdmin):
         'series',
         'model',
         'storage_size',
-        'stock_acceptable',
-        'stock_good',
-        'stock_excellent'
     )
 
 admin.site.register(Category, CategoryAdmin)
@@ -68,3 +71,4 @@ admin.site.register(Phone, PhoneAdmin)
 admin.site.register(Smartwatch, SmartwatchAdmin)
 admin.site.register(Console, ConsoleAdmin)
 admin.site.register(Product, ProductAdmin)
+admin.site.register(Inventory, InventoryAdmin)

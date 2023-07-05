@@ -25,6 +25,7 @@ class Product(models.Model):
         ('good', 'Good'),
         ('excellent', 'Excellent'),
     )
+    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     brand = models.CharField(max_length=50)
     series = models.CharField(max_length=50)
     model = models.CharField(max_length=50)
@@ -35,40 +36,30 @@ class Product(models.Model):
     condition = models.CharField(max_length=20, choices=CHOICES, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    stock_acceptable = models.PositiveIntegerField(default=0)
-    stock_good = models.PositiveIntegerField(default=0)
-    stock_excellent = models.PositiveIntegerField(default=0)
     
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
 
     def get_total_stock(self):
-            return self.stock_acceptable + self.stock_good + self.stock_excellent
+            return self.inventory.condition + self.inventory.stock_count
 
     def get_stock_status(self):
-        total_stock = self.get_total_stock()
+        total_stock = self.inventory.get_total_stock()
         if total_stock <= 2:
             return 'Low stock'
         elif total_stock == 0:
             return 'Out of stock'
         else:
             return 'In stock'
-            
-    def save(self, *args, **kwargs):
-        # Check the condition of the product
-        condition = self.condition
-        
-        # Increment the corresponding stock field based on the condition
-        if condition:
-            if condition == 'acceptable':
-                self.stock_acceptable += 1
-            elif condition == 'good':
-                self.stock_good += 1
-            elif condition == 'excellent':
-                self.stock_excellent += 1
 
-        self.sale_price = self.price * Decimal('0.95')
-        super().save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+            is_new_product = not self.pk
+
+            super().save(*args, **kwargs)
+
+            if is_new_product:
+                Inventory.objects.create(product=self, condition=self.condition, stock_count=1)
+
 
 
 class Laptop(Product):
@@ -92,7 +83,6 @@ class Laptop(Product):
         (12, 12)
     ]
 
-    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     label = models.CharField(max_length=50)
     cpu_brand = models.CharField(max_length=50)
     cpu_name = models.CharField(max_length=50)
@@ -114,7 +104,6 @@ class Laptop(Product):
     backlit = models.BooleanField(default=False)
 
 
-
 class Phone(Product):
 
     OS = [
@@ -122,7 +111,6 @@ class Phone(Product):
         ('iOS', 'iOS')
     ]
     
-    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     sim = models.CharField(max_length=50)
     cpu = models.CharField(max_length=50)
     ram = models.CharField(max_length=50)
@@ -135,13 +123,11 @@ class Phone(Product):
     os = models.CharField(max_length=50, choices=OS)
 
 
-
 class Smartwatch(Product):
 
     class Meta:
         verbose_name_plural = 'Smartwatches'
 
-    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     connectivity = models.CharField(max_length=50)
     display = models.CharField(max_length=50)
     screen_size = models.DecimalField(max_digits=4, decimal_places=2)
@@ -152,7 +138,39 @@ class Smartwatch(Product):
     os = models.CharField(max_length=50)
 
 
-
 class Console(Product):
-    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
     storage_size = models.CharField(max_length=50)
+
+class Inventory(models.Model):
+    CONDITION_CHOICES = (
+        ('acceptable', 'Acceptable'),
+        ('good', 'Good'),
+        ('excellent', 'Excellent'),
+    )
+
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    condition = models.CharField(max_length=20, choices=CONDITION_CHOICES)
+    stock_count = models.PositiveIntegerField(default=0)
+
+    def name(self):
+        return f"{self.product.brand} {self.product.series} {self.product.model}"
+
+    def __str__(self):
+        return f"{self.product.brand} {self.product.series} {self.product.model} - {self.condition}"
+
+    def increase_stock(self, quantity=1):
+        self.stock_count += quantity
+        self.save()
+
+    def decrease_stock(self, quantity=1):
+        if self.stock_count >= quantity:
+            self.stock_count -= quantity
+            self.save()
+
+    def get_stock_count(self):
+        return self.stock_count
+
+@receiver(post_save, sender=Console)
+def create_inventory(sender, instance, created, **kwargs):
+    if created:
+        Inventory.objects.create(console=instance)

@@ -20,7 +20,8 @@
             <div class="col-12">
                 <div class="bg-white p-4 mb-4">
                     <h2>{{ laptop.name }} {{ laptop.label }}</h2>
-                    <p>{{ laptop.get_stock_status }}</p>
+                    <h1>{{ inventory.name }}</h1>
+                    <p>Stock Count: {{ laptop.inventory.stock_count }}</p>
                     <p>
                         <a href="{% url 'laptops' %}">
                             {{ laptop.category.friendly_name }}

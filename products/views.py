@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Laptop, Phone, Smartwatch, Console, Category, Product
+from .models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 
 
 def all_products(request):
@@ -59,6 +59,7 @@ def laptops(request):
     direction = None
     laptops = Laptop.objects.all()
     brands = Laptop.objects.values_list('brand', flat=True).distinct()
+    inventory = Inventory.objects.all()
 
     if request.GET:
         if 'brand' in request.GET:
@@ -84,6 +85,7 @@ def laptops(request):
         'laptops': laptops,
         'current_sorting': current_sorting,
         'brands': brands,
+        'inventory': inventory,
     }
 
     return render(request, 'laptops/laptops.html', context)
@@ -97,6 +99,7 @@ def laptop_detail(request, laptop_id):
     context = {
         'laptop': laptop,
         'condition': condition,
+        'inventory': inventory
     }
 
     return render(request, 'laptops/laptop_detail.html', context)
@@ -108,6 +111,7 @@ def phones(request):
     direction = None
     phones = Phone.objects.all()
     brands = Phone.objects.values_list('brand', flat=True).distinct()
+
 
     if request.GET:
         if 'brand' in request.GET:
@@ -128,6 +132,7 @@ def phones(request):
         'phones': phones,
         'current_sorting': current_sorting,
         'brands': brands,
+
     }
 
     return render(request, 'phones/phones.html', context)

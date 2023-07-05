@@ -3,6 +3,7 @@
         "pk": 32,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "SE (2022)",
@@ -12,17 +13,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphonese2022.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 32,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -39,6 +36,7 @@
         "pk": 33,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "11",
@@ -48,17 +46,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone11.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 33,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A13 Bionic , Hexa Core",
             "ram": "4 GB",
@@ -75,6 +69,7 @@
         "pk": 34,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "11 Pro Max",
@@ -84,17 +79,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone11promax.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 34,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A13 Bionic , Hexa Core",
             "ram": "4 GB",
@@ -111,6 +102,7 @@
         "pk": 35,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "12",
@@ -120,17 +112,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone12.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 35,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -147,6 +135,7 @@
         "pk": 36,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "12 Mini",
@@ -156,17 +145,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone12mini.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 36,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -183,6 +168,7 @@
         "pk": 37,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "12 Pro",
@@ -192,17 +178,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone12pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 37,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A14 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -219,6 +201,7 @@
         "pk": 38,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "13 Mini",
@@ -228,17 +211,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone13mini.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 38,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -255,6 +234,7 @@
         "pk": 39,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "13",
@@ -264,17 +244,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone13.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 39,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "4 GB",
@@ -291,6 +267,7 @@
         "pk": 40,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "13 Pro",
@@ -300,17 +277,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone13pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 40,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -327,6 +300,7 @@
         "pk": 41,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Apple",
             "series": "iPhone",
             "model": "14",
@@ -336,17 +310,13 @@
             "sale": false,
             "sale_price": null,
             "image": "appleiphone14.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 41,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "A15 Bionic, Hexa Core",
             "ram": "6 GB",
@@ -363,6 +333,7 @@
         "pk": 42,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Samsung",
             "series": "Galaxy",
             "model": "S22",
@@ -372,17 +343,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxys22.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 42,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -399,6 +366,7 @@
         "pk": 43,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Samsung",
             "series": "Galaxy",
             "model": "S22 Ultra",
@@ -408,17 +376,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxys22ultra.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 43,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "12 GB",
@@ -435,6 +399,7 @@
         "pk": 44,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Samsung",
             "series": "Galaxy",
             "model": "A53",
@@ -444,17 +409,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxya53.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 44,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Exynos 1280, Octa Core",
             "ram": "6 GB",
@@ -471,6 +432,7 @@
         "pk": 45,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Samsung",
             "series": "Galaxy",
             "model": "S23",
@@ -480,17 +442,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxys23.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 45,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -507,6 +465,7 @@
         "pk": 46,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Samsung",
             "series": "Galaxy",
             "model": "A54",
@@ -516,17 +475,13 @@
             "sale": false,
             "sale_price": null,
             "image": "samsunggalaxya54.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 46,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Exynos 1380, Octa Core",
             "ram": "6 GB",
@@ -543,6 +498,7 @@
         "pk": 47,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Xiaomi",
             "series": "Redmi",
             "model": "Note 12 Pro",
@@ -552,17 +508,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xiaomiredminote12pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 47,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Dimensity 1080, Octa Core",
             "ram": "8 GB",
@@ -579,6 +531,7 @@
         "pk": 48,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Xiaomi",
             "series": "12",
             "model": "Lite",
@@ -588,17 +541,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xiaomi12lite.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 48,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 778G, Octa Core",
             "ram": "6 GB",
@@ -615,6 +564,7 @@
         "pk": 49,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Xiaomi",
             "series": "Redmi",
             "model": "10",
@@ -624,17 +574,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xiaomiredmi12.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 49,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 680, Octa Core",
             "ram": "4 GB",
@@ -651,6 +597,7 @@
         "pk": 50,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Xiaomi",
             "series": "Redmi",
             "model": "K60",
@@ -660,17 +607,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xiaomiredmik60.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 50,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -687,6 +630,7 @@
         "pk": 51,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Xiaomi",
             "series": "Mi",
             "model": "11T Pro",
@@ -696,17 +640,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xiaomimi11tpro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 51,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 888, Octa Core",
             "ram": "8 GB",
@@ -723,6 +663,7 @@
         "pk": 52,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Oppo",
             "series": "Reno",
             "model": "8 Pro",
@@ -732,17 +673,13 @@
             "sale": false,
             "sale_price": null,
             "image": "opporeno8pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 52,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Dimensity 8100-Max, Octa Core",
             "ram": "12 GB",
@@ -759,6 +696,7 @@
         "pk": 53,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Oppo",
             "series": "Find",
             "model": "X5 Pro",
@@ -768,17 +706,13 @@
             "sale": false,
             "sale_price": null,
             "image": "oppofindx5pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 53,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 8, Octa Core",
             "ram": "8 GB",
@@ -795,6 +729,7 @@
         "pk": 54,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Google",
             "series": "Pixel",
             "model": "7",
@@ -804,17 +739,13 @@
             "sale": false,
             "sale_price": null,
             "image": "googlepixel7.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 54,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "8 GB",
@@ -831,6 +762,7 @@
         "pk": 55,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Google",
             "series": "Pixel",
             "model": "7 Pro",
@@ -840,17 +772,13 @@
             "sale": false,
             "sale_price": null,
             "image": "googlepixel7.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 55,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "12 GB",
@@ -867,6 +795,7 @@
         "pk": 56,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Google",
             "series": "Pixel",
             "model": "7A",
@@ -876,17 +805,13 @@
             "sale": false,
             "sale_price": null,
             "image": "googlepixel7.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 56,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Google Tensor G2, Octa Core",
             "ram": "6 GB",
@@ -903,6 +828,7 @@
         "pk": 57,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Huawei",
             "series": "Mate",
             "model": "50 Pro",
@@ -912,17 +838,13 @@
             "sale": false,
             "sale_price": null,
             "image": "huaweimate50pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 57,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Kirin 9000E, Octa Core",
             "ram": "8 GB",
@@ -939,6 +861,7 @@
         "pk": 58,
         "model": "products.product",
         "fields": {
+            "category": 2,
             "brand": "Huawei",
             "series": "Nova",
             "model": "10 SE",
@@ -948,17 +871,13 @@
             "sale": false,
             "sale_price": null,
             "image": "huaweinova10se.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 58,
         "model": "products.phone",
         "fields": {
-            "category": 2,
             "sim": "Dual Sim",
             "cpu": "Snapdragon 680, Octa Core",
             "ram": "8 GB",

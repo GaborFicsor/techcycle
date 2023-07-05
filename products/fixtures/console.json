@@ -3,6 +3,7 @@
         "pk": 65,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Sony",
             "series": "PlayStation",
             "model": "4",
@@ -12,17 +13,13 @@
             "sale": false,
             "sale_price": null,
             "image": "ps4fat.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 65,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
     },
@@ -30,6 +27,7 @@
         "pk": 66,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Sony",
             "series": "PlayStation",
             "model": "4 Slim",
@@ -39,17 +37,13 @@
             "sale": false,
             "sale_price": null,
             "image": "ps4slim.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 66,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
     },
@@ -57,6 +51,7 @@
         "pk": 67,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Sony",
             "series": "PlayStation",
             "model": "4 Pro",
@@ -66,17 +61,13 @@
             "sale": false,
             "sale_price": null,
             "image": "ps4pro.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 67,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "1 TB"
         }
     },
@@ -84,6 +75,7 @@
         "pk": 68,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Sony",
             "series": "PlayStation",
             "model": "5 (digital edition)",
@@ -93,17 +85,13 @@
             "sale": false,
             "sale_price": null,
             "image": "ps5digital.jpg",
-            "image_url": null,
-            "stock_acceptable": 0,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 68,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "1 TB"
         }
     },
@@ -111,6 +99,7 @@
         "pk": 69,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Sony",
             "series": "PlayStation",
             "model": "5",
@@ -120,17 +109,13 @@
             "sale": false,
             "sale_price": null,
             "image": "ps5.jpg",
-            "image_url": null,
-            "stock_acceptable": 0,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 69,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "1 TB"
         }
     },
@@ -138,6 +123,7 @@
         "pk": 70,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Microsoft",
             "series": "Xbox",
             "model": "One",
@@ -147,17 +133,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xboxone.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 70,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
 
@@ -166,6 +148,7 @@
         "pk": 71,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Microsoft",
             "series": "Xbox",
             "model": "One S",
@@ -175,17 +158,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xboxones.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 71,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
     },
@@ -193,6 +172,7 @@
         "pk": 72,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Microsoft",
             "series": "Xbox",
             "model": "One X",
@@ -202,17 +182,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xboxonex.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 72,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
     },
@@ -220,6 +196,7 @@
         "pk": 73,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Microsoft",
             "series": "Xbox",
             "model": "Series S",
@@ -229,17 +206,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xboxseriess.jpg",
-            "image_url": null,
-            "stock_acceptable": 0,
-            "stock_good": 1,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 73,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "500 GB"
         }
     },
@@ -247,6 +220,7 @@
         "pk": 74,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Microsoft",
             "series": "Xbox",
             "model": "Series X",
@@ -256,17 +230,13 @@
             "sale": false,
             "sale_price": null,
             "image": "xboxseriesx.jpg",
-            "image_url": null,
-            "stock_acceptable": 2,
-            "stock_good": 2,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 74,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "1 TB"
         }
     },
@@ -274,6 +244,7 @@
         "pk": 75,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Nintendo",
             "series": "Switch",
             "model": "(standard)",
@@ -283,17 +254,13 @@
             "sale": false,
             "sale_price": null,
             "image": "nintendoswitch.jpg",
-            "image_url": null,
-            "stock_acceptable": 0,
-            "stock_good": 0,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 75,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "32 GB"
         }
     },
@@ -301,6 +268,7 @@
         "pk": 76,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Nintendo",
             "series": "Switch",
             "model": "Lite",
@@ -310,17 +278,13 @@
             "sale": false,
             "sale_price": null,
             "image": "nintendoswitchlite.jpg",
-            "image_url": null,
-            "stock_acceptable": 1,
-            "stock_good": 0,
-            "stock_excellent": 2
+            "image_url": null
         }
     },
     {
         "pk": 76,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "32 GB"
         }
     },
@@ -328,6 +292,7 @@
         "pk": 77,
         "model": "products.product",
         "fields": {
+            "category": 4,
             "brand": "Nintendo",
             "series": "Switch",
             "model": "Oled",
@@ -337,17 +302,13 @@
             "sale": false,
             "sale_price": null,
             "image": "nintendoswitcholed.jpg",
-            "image_url": null,
-            "stock_acceptable": 0,
-            "stock_good": 1,
-            "stock_excellent": 1
+            "image_url": null
         }
     },
     {
         "pk": 77,
         "model": "products.console",
         "fields": {
-            "category": 4,
             "storage_size": "64 GB"
         }
     }

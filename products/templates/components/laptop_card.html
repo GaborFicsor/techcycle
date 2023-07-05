@@ -42,7 +42,6 @@
                                         <li>{{ laptop.ram }}</li>
                                         <li>{{ laptop.storage_size}}</li>
                                         <li>{{ laptop.screen_size }}"</li>
-                                        <li>{{ laptop.get_stock_status }}</li>
                                     </ul>
 
                                     <!-- if laptop is on sale show discounted price, else show regular price -->
@@ -113,7 +112,6 @@
 
                                     <!-- if laptop is on sale show discounted price, else show regular price -->
                                     <div class="d-flex justify-content-between">
-                                        <span>{{ laptop.get_stock_status }}</span>
                                         {% if laptop.sale %}
                                         <span class="lead text-red">{{ laptop.sale_price }}</span>
                                         {% else %}
