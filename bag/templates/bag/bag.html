@@ -2,30 +2,82 @@
 {% load static %}
 
 {% block content%}
-<div class="container mb-2">
-    <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Shopping Bag</h2>
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            {% if bag_items %}
-                <div class="table-responsive rounded">
-                    {{ bag_items }}
+<section class="text-dark-b">
+    <div class="container p-4 bg-white">
+    <div class="container p-4 bg-white">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="logo-font mb-4">Cart</h2>
                 </div>
-            {% else %}
-                <p class="lead.mb-5">Your bag is empty.</p>
-                <a href="btn btn-outline-black rounded-0 btn-lg" class="btn btn-clear btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
-            {% endif %}
+            </div>
+            <div class="row">
+                <div class="col">
+                    {% if bag_items %}
+                    <div class="table-responsive rounded">
+                        <table class="table table-sm table-borderless">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col">Details</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Condition</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            {% for item in bag_items %}
+                            <tr>
+                                <td class="p-3 w-25">
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                    <p class="my-0 small text-muted"><strong>color: {{ item.product.color }}</strong>
+                                    </p>
+                                </td>
+                                <td class="py-3 w-25">
+                                    <p class="my-0">{{ item.condition }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">€{{ item.product.price }}</p>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right">
+                                    <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
+                                    <h6>Shipping Included</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <a href="" class="btn btn-dark btn-lg">
+                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span class="icon">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="lead.mb-5">Your bag is empty.</p>
+                    <a href="btn btn-outline-black rounded-0 btn-lg" class="btn btn-clear btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 {% endblock %}

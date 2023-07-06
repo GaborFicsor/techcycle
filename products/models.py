@@ -35,6 +35,9 @@ class Product(models.Model):
     sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
+
+    def name(self):
+        return f"{self.brand} {self.series} {self.model}"
     
     def save(self, *args, **kwargs):
             is_new = self.pk is None  # Check if it's a new object being created
