@@ -41,6 +41,13 @@
                                         <li>{{ phone.ram }}</li>
                                         <li>{{ phone.storage_size}}</li>
                                         <li>{{ phone.screen_size }}"</li>
+                                        <li>
+                                            {% if phone.available %}
+                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                                {% else %}
+                                                Out of stock
+                                            {% endif %}
+                                        </li>
                                     </ul>
 
                                     <!-- if phone is on sale show discounted price, else show regular price -->
@@ -112,6 +119,18 @@
                                         <span class="lead text-red">{{ phone.sale_price }}</span>
                                         {% else %}
                                         <span class="lead">{{ phone.price }}</span>
+                                        {% endif %}
+                                        {% if console.sale %}
+                                        <span class="lead text-red">{{ console.sale_price }}</span>
+                                        {% else %}
+                                        <span class="lead">{{ console.price }}</span>
+                                        {% endif %}
+                                        {% if phone.available %}
+                                        <span>
+                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                            {% else %}
+                                            Out of stock
+                                            </span>
                                         {% endif %}
 
                                     </div>

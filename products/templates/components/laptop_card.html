@@ -42,6 +42,13 @@
                                         <li>{{ laptop.ram }}</li>
                                         <li>{{ laptop.storage_size}}</li>
                                         <li>{{ laptop.screen_size }}"</li>
+                                        <li>
+                                            {% if laptop.available %}
+                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                                {% else %}
+                                                Out of stock
+                                            {% endif %}
+                                        </li>
                                     </ul>
 
                                     <!-- if laptop is on sale show discounted price, else show regular price -->
@@ -117,7 +124,14 @@
                                         {% else %}
                                         <span class="lead">{{ laptop.price }}</span>
                                         {% endif %}
-                                        
+                                        {% if laptop.available %}
+                                        <span>
+                                        In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                        {% else %}
+                                        Out of stock
+                                        </span>
+                                    {% endif %}
+
                                     </div>
                                 </div>
                             </div>

@@ -40,6 +40,13 @@
                                     <ul class="list-unstyled text-muted d-none d-md-block">
                                         <li>{{ console.storage_size }}</li>
                                         <li>{{ console.color }}</li>
+                                        <li>
+                                            {% if console.available %}
+                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                                {% else %}
+                                                Out of stock
+                                            {% endif %}
+                                        </li>
                                     </ul>
 
                                     <!-- if console is on sale show discounted price, else show regular price -->
@@ -112,6 +119,13 @@
                                         <span class="lead text-red">{{ console.sale_price }}</span>
                                         {% else %}
                                         <span class="lead">{{ console.price }}</span>
+                                        {% endif %}
+                                        {% if console.available %}
+                                        <span>
+                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                            {% else %}
+                                            Out of stock
+                                            </span>
                                         {% endif %}
 
                                     </div>
