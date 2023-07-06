@@ -79,6 +79,16 @@ class Product(models.Model):
 
     def excellent(self):
         return self.inventory.excellent_amount
+
+    def conditions(self):
+        conditions = []
+        if self.inventory.acceptable_amount > 0:
+            conditions.append("Acceptable")
+        if self.inventory.good_amount > 0:
+            conditions.append("Good")
+        if self.inventory.excellent_amount > 0:
+            conditions.append("Excellent")
+            return conditions
     
 
 

@@ -19,7 +19,24 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 shadow mb-4">
-                    <h2>{{ smartwatch.brand }} {{ smartwatch.series }} {{ smartwatch.model }}</h2>
+                    <h2>{{ smartwatch.name }}</h2>
+                    <ul class="list-unstyled text-muted">
+                        <li>
+                            {% if smartwatch.available %}
+                            In stock&nbsp;
+                            <i class="fa-solid fa-check stock">
+                                &nbsp;</i>
+                            {% if smartwatch.in_stock <= 2 %} 
+                                (only a few left)
+                                {% endif %}
+                            </li>
+                        <li>
+                            Available in:&nbsp;
+                            {{ smartwatch.conditions|join:", " }}
+                        </li> 
+                        {% else %}
+                            This item is not available
+                            {% endif %}
                 </div>
             </div>
         </div>

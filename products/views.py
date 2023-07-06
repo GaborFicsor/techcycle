@@ -92,11 +92,9 @@ def laptop_detail(request, laptop_id):
     """A view to show an individual detailed page for laptops"""
 
     laptop = get_object_or_404(Laptop, pk=laptop_id)
-    inventory = laptop.inventory_set.all()
 
     context = {
         'laptop': laptop,
-        'inventory': inventory,
     }
 
     return render(request, 'laptops/laptop_detail.html', context)

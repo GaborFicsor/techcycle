@@ -19,27 +19,25 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 mb-4">
-                    <h2>Inventory</h2>
-                    <ul>
-                      {% for inventory in inventory %}
-
-                        {{ inventory.stock }}
-
-                      {% empty %}
-                        <li>This item is out of stock</li>
-                      {% endfor %}
+                    <h2>{{ laptop.name }}</h2>
+                    <ul class="list-unstyled text-muted">
+                        <li>
+                            {% if laptop.available %}
+                            In stock&nbsp;
+                            <i class="fa-solid fa-check stock">
+                                &nbsp;</i>
+                            {% if laptop.in_stock <= 2 %} 
+                                (only a few left)
+                                {% endif %}
+                            </li>
+                        <li>
+                            Available in:&nbsp;
+                            {{ laptop.conditions|join:", " }}
+                        </li> 
+                        {% else %}
+                            This item is not available
+                            {% endif %}
                     </ul>
-                    <br>
-                    <p>
-                        <a href="{% url 'laptops' %}">
-                            {{ laptop.category.friendly_name }}
-                        </a>
-                    </p>
-                    <p>
-                        <a href="{% url 'laptops'%}?label={{ laptop.label }}">
-                            {{ laptop.label }}
-                        </a>
-                    </p>
                 </div>
             </div>
         </div>
@@ -54,8 +52,7 @@
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="/media/noimage.png"
-                            alt="">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                     </a>
                     {% endif %}
                 </div>

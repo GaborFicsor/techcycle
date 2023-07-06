@@ -19,7 +19,24 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 shadow mb-4">
-                    <h2>{{ console.brand }} {{ console.series }} {{ console.model }}</h2>
+                    <h2>{{ console.name }}</h2>
+                    <ul class="list-unstyled text-muted">
+                        <li>
+                            {% if console.available %}
+                            In stock&nbsp;
+                            <i class="fa-solid fa-check stock">
+                                &nbsp;</i>
+                            {% if console.in_stock <= 2 %} 
+                                (only a few left)
+                                {% endif %}
+                            </li>
+                        <li>
+                            Available in:&nbsp;
+                            {{ console.conditions|join:", " }}
+                        </li> 
+                        {% else %}
+                            This item is not available
+                            {% endif %}
                 </div>
             </div>
         </div>
@@ -34,8 +51,7 @@
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="/media/noimage.png"
-                            alt="">
+                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
                     </a>
                     {% endif %}
                 </div>

@@ -19,7 +19,25 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white p-4 shadow mb-4">
-                    <h2>{{ phone.brand }} {{ phone.series }} {{ phone.model }}</h2>
+                    <h2>{{ phone.name }}</h2>
+                    <ul class="list-unstyled text-muted">
+                        <li>
+                            {% if phone.available %}
+                            In stock&nbsp;
+                            <i class="fa-solid fa-check stock">
+                                &nbsp;</i>
+                            {% if phone.in_stock <= 2 %} 
+                                (only a few left)
+                                {% endif %}
+                            </li>
+                        <li>
+                            Available in:&nbsp;
+                            {{ phone.conditions|join:", " }}
+                        </li> 
+                        {% else %}
+                            This item is not available
+                            {% endif %}
+                    </ul>
                 </div>
             </div>
         </div>
