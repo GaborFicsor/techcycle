@@ -1,0 +1,66 @@
+[
+    {
+        "pk": 1,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "How long does shipping take?",
+            "answer": "We strive to deliver your order as quickly as possible. Shipping usually takes 3-5 business days within the country."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept major credit cards, PayPal, and bank transfers for secure and convenient payments."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "Can I return or exchange a product?",
+            "answer": "Yes, we have a hassle-free return policy. If you are not satisfied with your purchase, you can return it within 30 days for a full refund or exchange."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "Are your products environmentally friendly?",
+            "answer": "Absolutely! We prioritize sustainability and eco-friendliness in our product selection."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "How do I contact customer support?",
+            "answer": "If you have any questions or concerns, our customer support team is here to help. You can reach us via email or phone."
+        }
+    },
+    {
+        "pk": 6,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "Do you offer international shipping?",
+            "answer": "Unfortunately not at the moment, but we're working on expanding our services to more countries!"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "Are your products covered by warranty?",
+            "answer": "Yes, all our products come with a standard 12 months warranty."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "home.FAQ",
+        "fields": {
+            "question": "Can I track my order?",
+            "answer": "Absolutely! Once your order is shipped, you will receive a tracking number via email. You can use this tracking number to monitor the progress of your delivery."
+        }
+    }
+]

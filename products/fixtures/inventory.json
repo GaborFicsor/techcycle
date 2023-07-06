@@ -4,2078 +4,770 @@
         "model": "products.inventory",
         "fields": {
             "product": 1,
-            "condition": "acceptable",
-            "stock_count": 2
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 2,
         "model": "products.inventory",
         "fields": {
-            "product": 1,
-            "condition": "good",
-            "stock_count": 2
+            "product": 2,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 3,
         "model": "products.inventory",
         "fields": {
-            "product": 1,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 3,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 4,
         "model": "products.inventory",
         "fields": {
-            "product": 2,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 4,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 5,
         "model": "products.inventory",
         "fields": {
-            "product": 2,
-            "condition": "good",
-            "stock_count": 2
+            "product": 5,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 6,
         "model": "products.inventory",
         "fields": {
-            "product": 2,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 6,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 7,
         "model": "products.inventory",
         "fields": {
-            "product": 3,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 7,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 8,
         "model": "products.inventory",
         "fields": {
-            "product": 3,
-            "condition": "good",
-            "stock_count": 2
+            "product": 8,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 9,
         "model": "products.inventory",
         "fields": {
-            "product": 3,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 9,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 10,
         "model": "products.inventory",
         "fields": {
-            "product": 4,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 10,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 11,
         "model": "products.inventory",
         "fields": {
-            "product": 4,
-            "condition": "good",
-            "stock_count": 2
+            "product": 11,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 12,
         "model": "products.inventory",
         "fields": {
-            "product": 4,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 12,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 13,
         "model": "products.inventory",
         "fields": {
-            "product": 5,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 13,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 14,
         "model": "products.inventory",
         "fields": {
-            "product": 5,
-            "condition": "good",
-            "stock_count": 2
+            "product": 14,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 15,
         "model": "products.inventory",
         "fields": {
-            "product": 5,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 15,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 16,
         "model": "products.inventory",
         "fields": {
-            "product": 6,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 16,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 17,
         "model": "products.inventory",
         "fields": {
-            "product": 6,
-            "condition": "good",
-            "stock_count": 2
+            "product": 17,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 18,
         "model": "products.inventory",
         "fields": {
-            "product": 6,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 18,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 19,
         "model": "products.inventory",
         "fields": {
-            "product": 7,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 19,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 20,
         "model": "products.inventory",
         "fields": {
-            "product": 7,
-            "condition": "good",
-            "stock_count": 2
+            "product": 20,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 21,
         "model": "products.inventory",
         "fields": {
-            "product": 7,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 21,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 22,
         "model": "products.inventory",
         "fields": {
-            "product": 8,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 22,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 23,
         "model": "products.inventory",
         "fields": {
-            "product": 8,
-            "condition": "good",
-            "stock_count": 2
+            "product": 23,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 24,
         "model": "products.inventory",
         "fields": {
-            "product": 8,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 24,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 25,
         "model": "products.inventory",
         "fields": {
-            "product": 9,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 25,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 26,
         "model": "products.inventory",
         "fields": {
-            "product": 9,
-            "condition": "good",
-            "stock_count": 2
+            "product": 26,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 27,
         "model": "products.inventory",
         "fields": {
-            "product": 9,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 27,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 28,
         "model": "products.inventory",
         "fields": {
-            "product": 10,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 28,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 29,
         "model": "products.inventory",
         "fields": {
-            "product": 10,
-            "condition": "good",
-            "stock_count": 2
+            "product": 29,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 30,
         "model": "products.inventory",
         "fields": {
-            "product": 10,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 30,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 31,
         "model": "products.inventory",
         "fields": {
-            "product": 11,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 31,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 32,
         "model": "products.inventory",
         "fields": {
-            "product": 11,
-            "condition": "good",
-            "stock_count": 2
+            "product": 32,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 33,
         "model": "products.inventory",
         "fields": {
-            "product": 11,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 33,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 34,
         "model": "products.inventory",
         "fields": {
-            "product": 12,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 34,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 35,
         "model": "products.inventory",
         "fields": {
-            "product": 12,
-            "condition": "good",
-            "stock_count": 2
+            "product": 35,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 36,
         "model": "products.inventory",
         "fields": {
-            "product": 12,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 36,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 37,
         "model": "products.inventory",
         "fields": {
-            "product": 13,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 37,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 38,
         "model": "products.inventory",
         "fields": {
-            "product": 13,
-            "condition": "good",
-            "stock_count": 2
+            "product": 38,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 39,
         "model": "products.inventory",
         "fields": {
-            "product": 13,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 39,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 40,
         "model": "products.inventory",
         "fields": {
-            "product": 14,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 40,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 41,
         "model": "products.inventory",
         "fields": {
-            "product": 14,
-            "condition": "good",
-            "stock_count": 2
+            "product": 41,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 42,
         "model": "products.inventory",
         "fields": {
-            "product": 14,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 42,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 43,
         "model": "products.inventory",
         "fields": {
-            "product": 15,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 43,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 44,
         "model": "products.inventory",
         "fields": {
-            "product": 15,
-            "condition": "good",
-            "stock_count": 2
+            "product": 44,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 45,
         "model": "products.inventory",
         "fields": {
-            "product": 15,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 45,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 46,
         "model": "products.inventory",
         "fields": {
-            "product": 16,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 46,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 47,
         "model": "products.inventory",
         "fields": {
-            "product": 16,
-            "condition": "good",
-            "stock_count": 2
+            "product": 47,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 48,
         "model": "products.inventory",
         "fields": {
-            "product": 16,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 48,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 49,
         "model": "products.inventory",
         "fields": {
-            "product": 17,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 49,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 50,
         "model": "products.inventory",
         "fields": {
-            "product": 17,
-            "condition": "good",
-            "stock_count": 2
+            "product": 50,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 51,
         "model": "products.inventory",
         "fields": {
-            "product": 17,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 51,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 52,
         "model": "products.inventory",
         "fields": {
-            "product": 18,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 52,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 53,
         "model": "products.inventory",
         "fields": {
-            "product": 18,
-            "condition": "good",
-            "stock_count": 2
+            "product": 53,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 54,
         "model": "products.inventory",
         "fields": {
-            "product": 18,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 54,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 55,
         "model": "products.inventory",
         "fields": {
-            "product": 19,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 55,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 56,
         "model": "products.inventory",
         "fields": {
-            "product": 19,
-            "condition": "good",
-            "stock_count": 2
+            "product": 56,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 57,
         "model": "products.inventory",
         "fields": {
-            "product": 19,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 57,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 58,
         "model": "products.inventory",
         "fields": {
-            "product": 20,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 58,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 59,
         "model": "products.inventory",
         "fields": {
-            "product": 20,
-            "condition": "good",
-            "stock_count": 2
+            "product": 59,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 60,
         "model": "products.inventory",
         "fields": {
-            "product": 20,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 60,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 61,
         "model": "products.inventory",
         "fields": {
-            "product": 21,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 61,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 62,
         "model": "products.inventory",
         "fields": {
-            "product": 21,
-            "condition": "good",
-            "stock_count": 2
+            "product": 62,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 63,
         "model": "products.inventory",
         "fields": {
-            "product": 21,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 63,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 64,
         "model": "products.inventory",
         "fields": {
-            "product": 22,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 64,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 65,
         "model": "products.inventory",
         "fields": {
-            "product": 22,
-            "condition": "good",
-            "stock_count": 2
+            "product": 65,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 66,
         "model": "products.inventory",
         "fields": {
-            "product": 22,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 66,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 67,
         "model": "products.inventory",
         "fields": {
-            "product": 23,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 67,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 68,
         "model": "products.inventory",
         "fields": {
-            "product": 23,
-            "condition": "good",
-            "stock_count": 2
+            "product": 68,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 69,
         "model": "products.inventory",
         "fields": {
-            "product": 23,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 69,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 70,
         "model": "products.inventory",
         "fields": {
-            "product": 24,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 70,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 71,
         "model": "products.inventory",
         "fields": {
-            "product": 24,
-            "condition": "good",
-            "stock_count": 2
+            "product": 71,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 72,
         "model": "products.inventory",
         "fields": {
-            "product": 24,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 72,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 73,
         "model": "products.inventory",
         "fields": {
-            "product": 25,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 73,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 74,
         "model": "products.inventory",
         "fields": {
-            "product": 25,
-            "condition": "good",
-            "stock_count": 2
+            "product": 74,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 75,
         "model": "products.inventory",
         "fields": {
-            "product": 25,
-            "condition": "excellent",
-            "stock_count": 2
+            "product": 75,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 76,
         "model": "products.inventory",
         "fields": {
-            "product": 26,
-            "condition": "acceptable",
-            "stock_count": 2
+            "product": 76,
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     },
     {
         "pk": 77,
         "model": "products.inventory",
         "fields": {
-            "product": 26,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 78,
-        "model": "products.inventory",
-        "fields": {
-            "product": 26,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 79,
-        "model": "products.inventory",
-        "fields": {
-            "product": 27,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 80,
-        "model": "products.inventory",
-        "fields": {
-            "product": 27,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 81,
-        "model": "products.inventory",
-        "fields": {
-            "product": 27,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 82,
-        "model": "products.inventory",
-        "fields": {
-            "product": 28,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 83,
-        "model": "products.inventory",
-        "fields": {
-            "product": 28,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 84,
-        "model": "products.inventory",
-        "fields": {
-            "product": 28,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 85,
-        "model": "products.inventory",
-        "fields": {
-            "product": 29,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 86,
-        "model": "products.inventory",
-        "fields": {
-            "product": 29,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 87,
-        "model": "products.inventory",
-        "fields": {
-            "product": 29,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 88,
-        "model": "products.inventory",
-        "fields": {
-            "product": 30,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 89,
-        "model": "products.inventory",
-        "fields": {
-            "product": 30,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 90,
-        "model": "products.inventory",
-        "fields": {
-            "product": 30,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 91,
-        "model": "products.inventory",
-        "fields": {
-            "product": 31,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 92,
-        "model": "products.inventory",
-        "fields": {
-            "product": 31,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 93,
-        "model": "products.inventory",
-        "fields": {
-            "product": 31,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 94,
-        "model": "products.inventory",
-        "fields": {
-            "product": 32,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 95,
-        "model": "products.inventory",
-        "fields": {
-            "product": 32,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 96,
-        "model": "products.inventory",
-        "fields": {
-            "product": 32,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 97,
-        "model": "products.inventory",
-        "fields": {
-            "product": 33,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 98,
-        "model": "products.inventory",
-        "fields": {
-            "product": 33,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 99,
-        "model": "products.inventory",
-        "fields": {
-            "product": 33,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 100,
-        "model": "products.inventory",
-        "fields": {
-            "product": 34,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 101,
-        "model": "products.inventory",
-        "fields": {
-            "product": 34,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 102,
-        "model": "products.inventory",
-        "fields": {
-            "product": 34,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 103,
-        "model": "products.inventory",
-        "fields": {
-            "product": 35,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 104,
-        "model": "products.inventory",
-        "fields": {
-            "product": 35,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 105,
-        "model": "products.inventory",
-        "fields": {
-            "product": 35,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 106,
-        "model": "products.inventory",
-        "fields": {
-            "product": 36,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 107,
-        "model": "products.inventory",
-        "fields": {
-            "product": 36,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 108,
-        "model": "products.inventory",
-        "fields": {
-            "product": 36,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 109,
-        "model": "products.inventory",
-        "fields": {
-            "product": 37,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 110,
-        "model": "products.inventory",
-        "fields": {
-            "product": 37,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 111,
-        "model": "products.inventory",
-        "fields": {
-            "product": 37,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 112,
-        "model": "products.inventory",
-        "fields": {
-            "product": 38,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 113,
-        "model": "products.inventory",
-        "fields": {
-            "product": 38,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 114,
-        "model": "products.inventory",
-        "fields": {
-            "product": 38,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 115,
-        "model": "products.inventory",
-        "fields": {
-            "product": 39,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 116,
-        "model": "products.inventory",
-        "fields": {
-            "product": 39,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 117,
-        "model": "products.inventory",
-        "fields": {
-            "product": 39,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 118,
-        "model": "products.inventory",
-        "fields": {
-            "product": 40,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 119,
-        "model": "products.inventory",
-        "fields": {
-            "product": 40,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 120,
-        "model": "products.inventory",
-        "fields": {
-            "product": 40,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 121,
-        "model": "products.inventory",
-        "fields": {
-            "product": 41,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 122,
-        "model": "products.inventory",
-        "fields": {
-            "product": 41,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 123,
-        "model": "products.inventory",
-        "fields": {
-            "product": 41,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 124,
-        "model": "products.inventory",
-        "fields": {
-            "product": 42,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 125,
-        "model": "products.inventory",
-        "fields": {
-            "product": 42,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 126,
-        "model": "products.inventory",
-        "fields": {
-            "product": 42,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 127,
-        "model": "products.inventory",
-        "fields": {
-            "product": 43,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 128,
-        "model": "products.inventory",
-        "fields": {
-            "product": 43,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 129,
-        "model": "products.inventory",
-        "fields": {
-            "product": 43,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 130,
-        "model": "products.inventory",
-        "fields": {
-            "product": 44,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 131,
-        "model": "products.inventory",
-        "fields": {
-            "product": 44,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 132,
-        "model": "products.inventory",
-        "fields": {
-            "product": 44,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 133,
-        "model": "products.inventory",
-        "fields": {
-            "product": 45,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 134,
-        "model": "products.inventory",
-        "fields": {
-            "product": 45,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 135,
-        "model": "products.inventory",
-        "fields": {
-            "product": 45,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 136,
-        "model": "products.inventory",
-        "fields": {
-            "product": 46,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 137,
-        "model": "products.inventory",
-        "fields": {
-            "product": 46,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 138,
-        "model": "products.inventory",
-        "fields": {
-            "product": 46,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 139,
-        "model": "products.inventory",
-        "fields": {
-            "product": 47,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 140,
-        "model": "products.inventory",
-        "fields": {
-            "product": 47,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 141,
-        "model": "products.inventory",
-        "fields": {
-            "product": 47,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 142,
-        "model": "products.inventory",
-        "fields": {
-            "product": 48,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 143,
-        "model": "products.inventory",
-        "fields": {
-            "product": 48,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 144,
-        "model": "products.inventory",
-        "fields": {
-            "product": 48,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 145,
-        "model": "products.inventory",
-        "fields": {
-            "product": 49,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 146,
-        "model": "products.inventory",
-        "fields": {
-            "product": 49,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 147,
-        "model": "products.inventory",
-        "fields": {
-            "product": 49,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 148,
-        "model": "products.inventory",
-        "fields": {
-            "product": 50,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 149,
-        "model": "products.inventory",
-        "fields": {
-            "product": 50,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 150,
-        "model": "products.inventory",
-        "fields": {
-            "product": 50,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 151,
-        "model": "products.inventory",
-        "fields": {
-            "product": 51,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 152,
-        "model": "products.inventory",
-        "fields": {
-            "product": 51,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 153,
-        "model": "products.inventory",
-        "fields": {
-            "product": 51,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 154,
-        "model": "products.inventory",
-        "fields": {
-            "product": 52,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 155,
-        "model": "products.inventory",
-        "fields": {
-            "product": 52,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 156,
-        "model": "products.inventory",
-        "fields": {
-            "product": 52,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 157,
-        "model": "products.inventory",
-        "fields": {
-            "product": 53,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 158,
-        "model": "products.inventory",
-        "fields": {
-            "product": 53,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 159,
-        "model": "products.inventory",
-        "fields": {
-            "product": 53,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 160,
-        "model": "products.inventory",
-        "fields": {
-            "product": 54,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 161,
-        "model": "products.inventory",
-        "fields": {
-            "product": 54,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 162,
-        "model": "products.inventory",
-        "fields": {
-            "product": 54,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 163,
-        "model": "products.inventory",
-        "fields": {
-            "product": 55,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 164,
-        "model": "products.inventory",
-        "fields": {
-            "product": 55,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 165,
-        "model": "products.inventory",
-        "fields": {
-            "product": 55,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 166,
-        "model": "products.inventory",
-        "fields": {
-            "product": 56,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 167,
-        "model": "products.inventory",
-        "fields": {
-            "product": 56,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 168,
-        "model": "products.inventory",
-        "fields": {
-            "product": 56,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 169,
-        "model": "products.inventory",
-        "fields": {
-            "product": 57,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 170,
-        "model": "products.inventory",
-        "fields": {
-            "product": 57,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 171,
-        "model": "products.inventory",
-        "fields": {
-            "product": 57,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 172,
-        "model": "products.inventory",
-        "fields": {
-            "product": 58,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 173,
-        "model": "products.inventory",
-        "fields": {
-            "product": 58,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 174,
-        "model": "products.inventory",
-        "fields": {
-            "product": 58,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 175,
-        "model": "products.inventory",
-        "fields": {
-            "product": 59,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 176,
-        "model": "products.inventory",
-        "fields": {
-            "product": 59,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 177,
-        "model": "products.inventory",
-        "fields": {
-            "product": 59,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 178,
-        "model": "products.inventory",
-        "fields": {
-            "product": 60,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 179,
-        "model": "products.inventory",
-        "fields": {
-            "product": 60,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 180,
-        "model": "products.inventory",
-        "fields": {
-            "product": 60,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 181,
-        "model": "products.inventory",
-        "fields": {
-            "product": 61,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 182,
-        "model": "products.inventory",
-        "fields": {
-            "product": 61,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 183,
-        "model": "products.inventory",
-        "fields": {
-            "product": 61,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 184,
-        "model": "products.inventory",
-        "fields": {
-            "product": 62,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 185,
-        "model": "products.inventory",
-        "fields": {
-            "product": 62,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 186,
-        "model": "products.inventory",
-        "fields": {
-            "product": 62,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 187,
-        "model": "products.inventory",
-        "fields": {
-            "product": 63,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 188,
-        "model": "products.inventory",
-        "fields": {
-            "product": 63,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 189,
-        "model": "products.inventory",
-        "fields": {
-            "product": 63,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 190,
-        "model": "products.inventory",
-        "fields": {
-            "product": 64,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 191,
-        "model": "products.inventory",
-        "fields": {
-            "product": 64,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 192,
-        "model": "products.inventory",
-        "fields": {
-            "product": 64,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 193,
-        "model": "products.inventory",
-        "fields": {
-            "product": 65,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 194,
-        "model": "products.inventory",
-        "fields": {
-            "product": 65,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 195,
-        "model": "products.inventory",
-        "fields": {
-            "product": 65,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 196,
-        "model": "products.inventory",
-        "fields": {
-            "product": 66,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 197,
-        "model": "products.inventory",
-        "fields": {
-            "product": 66,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 198,
-        "model": "products.inventory",
-        "fields": {
-            "product": 66,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 199,
-        "model": "products.inventory",
-        "fields": {
-            "product": 67,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 200,
-        "model": "products.inventory",
-        "fields": {
-            "product": 67,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 201,
-        "model": "products.inventory",
-        "fields": {
-            "product": 67,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 202,
-        "model": "products.inventory",
-        "fields": {
-            "product": 68,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 203,
-        "model": "products.inventory",
-        "fields": {
-            "product": 68,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 204,
-        "model": "products.inventory",
-        "fields": {
-            "product": 68,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 205,
-        "model": "products.inventory",
-        "fields": {
-            "product": 69,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 206,
-        "model": "products.inventory",
-        "fields": {
-            "product": 69,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 207,
-        "model": "products.inventory",
-        "fields": {
-            "product": 69,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 208,
-        "model": "products.inventory",
-        "fields": {
-            "product": 70,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 209,
-        "model": "products.inventory",
-        "fields": {
-            "product": 70,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 210,
-        "model": "products.inventory",
-        "fields": {
-            "product": 70,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 211,
-        "model": "products.inventory",
-        "fields": {
-            "product": 71,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 212,
-        "model": "products.inventory",
-        "fields": {
-            "product": 71,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 213,
-        "model": "products.inventory",
-        "fields": {
-            "product": 71,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 214,
-        "model": "products.inventory",
-        "fields": {
-            "product": 72,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 215,
-        "model": "products.inventory",
-        "fields": {
-            "product": 72,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 216,
-        "model": "products.inventory",
-        "fields": {
-            "product": 72,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 217,
-        "model": "products.inventory",
-        "fields": {
-            "product": 73,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 218,
-        "model": "products.inventory",
-        "fields": {
-            "product": 73,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 219,
-        "model": "products.inventory",
-        "fields": {
-            "product": 73,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 220,
-        "model": "products.inventory",
-        "fields": {
-            "product": 74,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 221,
-        "model": "products.inventory",
-        "fields": {
-            "product": 74,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 222,
-        "model": "products.inventory",
-        "fields": {
-            "product": 74,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 223,
-        "model": "products.inventory",
-        "fields": {
-            "product": 75,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 224,
-        "model": "products.inventory",
-        "fields": {
-            "product": 75,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 225,
-        "model": "products.inventory",
-        "fields": {
-            "product": 75,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 226,
-        "model": "products.inventory",
-        "fields": {
-            "product": 76,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 227,
-        "model": "products.inventory",
-        "fields": {
-            "product": 76,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 228,
-        "model": "products.inventory",
-        "fields": {
-            "product": 76,
-            "condition": "excellent",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 229,
-        "model": "products.inventory",
-        "fields": {
             "product": 77,
-            "condition": "acceptable",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 230,
-        "model": "products.inventory",
-        "fields": {
-            "product": 77,
-            "condition": "good",
-            "stock_count": 2
-        }
-    },
-    {
-        "pk": 231,
-        "model": "products.inventory",
-        "fields": {
-            "product": 77,
-            "condition": "excellent",
-            "stock_count": 2
+            "acceptable_amount": 1,
+            "good_amount": 1,
+            "excellent_amount": 1
         }
     }
+
 ]
