@@ -21,10 +21,12 @@
                                     <th scope="col">Details</th>
                                     <th scope="col"></th>
                                     <th scope="col">Condition</th>
+                                    <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
                             {% for item in bag_items %}
+
                             <tr>
                                 <td class="p-3 w-25">
                                     <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
@@ -36,6 +38,9 @@
                                 </td>
                                 <td class="py-3 w-25">
                                     <p class="my-0">{{ item.condition }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">{{ item.quantity }}</p>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">€{{ item.product.price }}</p>

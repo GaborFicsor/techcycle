@@ -40,7 +40,7 @@ class Product(models.Model):
         return f"{self.brand} {self.series} {self.model}"
     
     def save(self, *args, **kwargs):
-            is_new = self.pk is None  # Check if it's a new object being created
+            is_new = self.pk is None 
             super().save(*args, **kwargs)
             
             if is_new:
@@ -93,8 +93,6 @@ class Product(models.Model):
             conditions.append("Excellent")
             return conditions
     
-
-
 
 class Laptop(Product):
 
