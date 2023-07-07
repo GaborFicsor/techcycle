@@ -137,6 +137,9 @@ class Laptop(Product):
 
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
+    
+    def cpu(self):
+        return f"{self.cpu_brand} {self.cpu_name} {self.cpu_variant}"
 
 
 class Phone(Product):
