@@ -1,8 +1,19 @@
 from django.shortcuts import render, redirect
+from products.models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 
 
 def view_bag(request):
-    """ A view to return the bag contents page """
+    laptops = Laptop.objects.all()
+    phones = Phone.objects.all()
+    smartwatches = Smartwatch.objects.all()
+    consoles = Console.objects.all()
+
+    context = {
+        'laptops': laptops,
+        'phones': phones,
+        'smartwatches': smartwatches,
+        'consoles': consoles,
+    }
 
     return render(request, 'bag/bag.html')
 
