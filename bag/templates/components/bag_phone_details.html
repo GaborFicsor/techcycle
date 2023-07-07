@@ -1,0 +1,16 @@
+<td class="p-3 w-25">
+    <a href="{% url 'phone_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+    </a>
+</td>
+<td class="py-3">
+    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+    <ul class="list-unstyled small text-muted">
+        <li>{{ item.product.phone.sim }}</li>
+        <li>{{ item.product.phone.cpu }}</li>
+        <li>{{ item.product.phone.storage_size }} storage</li>
+        <li>{{ item.product.phone.camera_rear }} (front)</li>
+        <li>{{ item.product.phone.camera_front }} (rear)</li>
+        <li>{{ item.product.phone.screen_size }}"</li>
+    </ul>
+</td>

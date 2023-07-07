@@ -1,0 +1,14 @@
+<td class="p-3 w-25">
+    <a href="{% url 'smartwatch_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+    </a>
+</td>
+<td class="py-3">
+    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+    <ul class="list-unstyled small text-muted">
+        <li>{{ item.product.smartwatch.display }}</li>
+        <li>{{ item.product.smartwatch.screen_size }}"</li>
+        <li>{{ item.product.smartwatch.resolution }}</li>
+        <li>{{ item.product.smartwatch.os }}</li>
+    </ul>
+</td>

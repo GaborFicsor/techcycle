@@ -1,0 +1,11 @@
+<td class="p-3 w-25">
+    <a href="{% url 'console_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+    </a>
+</td>
+<td class="py-3">
+    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+    <ul class="list-unstyled small text-muted">
+        <li>{{ item.product.console.storage_size }}</li>
+    </ul>
+</td>

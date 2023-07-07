@@ -1,0 +1,15 @@
+<td class="p-3 w-25">
+    <a href="{% url 'laptop_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+    </a>
+</td>
+<td class="py-3">
+    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+    <ul class="list-unstyled small text-muted">
+        <li>{{ item.product.laptop.cpu }}</li>
+        <li>{{ item.product.laptop.gpu }}</li>
+        <li>{{ item.product.laptop.ram }} RAM</li>
+        <li>{{ item.product.laptop.storage_size }}{% if item.product.laptop.ssd %} SSD{% else %} HDD{% endif %}</li>
+        <li>{{ item.product.laptop.screen_size }}"</li>
+    </ul>
+</td>

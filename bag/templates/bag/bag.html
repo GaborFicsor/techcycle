@@ -4,7 +4,6 @@
 {% block content%}
 <section class="text-dark-b">
     <div class="container p-4 bg-white">
-    <div class="container p-4 bg-white">
 
             <div class="row">
                 <div class="col">
@@ -21,40 +20,52 @@
                                     <th scope="col">Details</th>
                                     <th scope="col"></th>
                                     <th scope="col">Condition</th>
+                                    <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
                             {% for item in bag_items %}
-
                             <tr>
-                                <td class="p-3 w-25">
-                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0 small text-muted"><strong>color: {{ item.product.color }}</strong>
-                                    </p>
+                                    {% if item.product.category.name == 'laptops' %}
+                                        {% include 'components/bag_laptop_details.html' %}
+                                    {% endif %}
+                                    {% if item.product.category.name == 'phones' %}
+                                        {% include 'components/bag_phone_details.html' %}
+                                    {% endif %}
+                                    {% if item.product.category.name == 'smartwatches' %}
+                                        {% include 'components/bag_smartwatch_details.html' %}
+                                    {% endif %}
+                                    {% if item.product.category.name == 'gaming_consoles' %}
+                                        {% include 'components/bag_console_details.html' %}
+                                    {% endif %}
                                 </td>
                                 <td class="py-3 w-25">
                                     <p class="my-0">{{ item.condition }}</p>
                                 </td>
                                 <td class="py-3">
+                                    <p class="my-0">€{{ item.product.price }}</p>
+                                </td>
+                                <td class="py-3">
                                     <p class="my-0">{{ item.quantity }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">€{{ item.product.price }}</p>
+                                    <p class="my-0">€{{ item.item_total }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <a class="remove-item text-red" id="remove_{{ item.item_id }}" condition="{{ item.condition }}">&#x2715</a>
                                 </td>
                             </tr>
+                            
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
+                                <td colspan="7" class="pt-5 text-right">
                                     <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
                                     <h6>Shipping Included</h6>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="5" class="text-right">
+                                <td colspan="7" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
@@ -83,6 +94,26 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        // Remove item and reload on click
+        $('.remove-item').click(function(e) {
+            var csrfToken = "{{ csrf_token }}"
+            var itemId = $(this).attr("id").split('remove_')[1];
+            var condition = $(this).data('size');
+            var url = `/bag/remove/${itemId}`
+            var data = {'csrfmiddlewaretoken': csrfToken, 'condition': condition};
+
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+        });
+    </script>
+
 {% endblock %}
