@@ -344,6 +344,15 @@ body {
 
 /* custom height */
 
+.remove-item {
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    color:#ed254e;
+    text-decoration: none;
+}
+
 
 /* from Bulma */
 
@@ -394,9 +403,7 @@ body {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
 
-}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
