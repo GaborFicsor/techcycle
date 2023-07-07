@@ -1,25 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page.header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
 
 {% block content %}
 <section>
 
     <!-- container -->
-    <div class="container p-4">
+    <div class="container p-3 p-md-4 bg-white">
 
         <!-- row for the name for the phone -->
         <div class="row">
             <div class="col-12">
-                <div class="bg-white p-4 shadow mb-4">
-                    <h2>{{ phone.name }}</h2>
+                <div class="p-3 p-md-4 mb-4">
+                    <div class="d-md-flex justify-content-between">
+                        <dt><h2>{{ phone.name }}</h2></dt>
+                        <dd><h2>€{{ phone.price }}</h2></dd>
+                    </div>
                     <ul class="list-unstyled text-muted">
                         <li>
                             {% if phone.available %}
@@ -45,7 +41,7 @@
         <!-- row for the image and specifications -->
         <div class="row mb-4">
             <div class="col-12 col-lg-6 text-center">
-                <div class="bg-white shadow">
+                <div class="shadow">
                     {% if phone.image %}
                     <a href="{{ phone.img.url }}" target="_blank">
                         <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="">
@@ -59,98 +55,92 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="shadow">
-                    <div class="dark-b text-white p-4">
+                <div>
+                    <div class="dark-b text-white p-3 p-md-4">
                         <h3>Specifications</h3>
                     </div>
 
-                    <div class="bg-white p-4">
+                    <div class="p-3 p-md-4">
                         <dl>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt class="font-weight-bold">CPU:</dt>
                                 <dd>{{ phone.cpu }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>RAM:</dt>
                                 <dd>{{ phone.ram }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>Storage:</dt>
                                 <dd>{{ phone.storage_size }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>OS:</dt>
                                 <dd>{{ phone.os }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>Resolution:</dt>
                                 <dd>{{ phone.resolution }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>Screen Size:</dt>
                                 <dd>{{ phone.screen_size }}"</dd>
                             </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- row for the button -->
-        <div class="row">
-            <div class="col-12">
-                <div class="bg-white p-4 shadow mb-4">
-                    button
-                </div>
-            </div>
-        </div>
-
-        <!-- row for the features and extra details -->
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="shadow">
-                    <div class="dark-b text-white p-4">
-                        <h3>Camera</h3>
-                    </div>
-                    <div class="bg-white p-4">
-                        <dl>
-                            <div class="d-flex justify-content-between">
-                                <dt>Front:</dt>
+                            <div class="d-md-flex justify-content-between">
+                                <dt>Front Camera:</dt>
                                 <dd>{{ phone.camera_front }}"</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <dt>Rear:</dt>
+                            <div class="d-md-flex justify-content-between">
+                                <dt>Rear Camera:</dt>
                                 <dd>{{ phone.camera_rear }}"</dd>
                             </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="shadow">
-                    <div class="dark-b text-white p-4">
-                        <h3>Extras</h3>
-                    </div>
-                    <div class="bg-white p-4">
-                        <dl>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>SIM:</dt>
                                 <dd>{{ phone.sim }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>Battery:</dt>
                                 <dd>{{ phone.battery }}</dd>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <dt>Color:</dt>
                                 <dd>{{ phone.color }}</dd>
                             </div>
                         </dl>
                     </div>
+                    <div class="p-3 p-md-4">
+                        <form class="form" action="{% url 'add_to_bag' phone.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <p class="mt-3"><strong>Quantity:</strong></p>
+                                    <div class="form-group">
+                                            <input class="form-control" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                            <label for="">Condition:</label>
+                                            <select class="form-control" id="" name="condition" data-item_id="{{ phone.id }}" id="id_qty_{{ phone.id }}">
+                                                {% for condition in phone.conditions %}
+                                                <option value="{{ condition }}">{{ condition }}</option>
+                                            {% endfor %}
+                                            </select>
+                                        </div>
+                                </div>
+                                
+                                <div class="col-12 text-right">
+                                    <a href="{% url 'products' %}" class="btn btn-clear mt-2">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Add to Bag">
+                                </div>
+                        </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </form>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 {% endblock %}
