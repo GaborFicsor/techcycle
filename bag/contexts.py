@@ -29,5 +29,5 @@ def bag_contents(request):
         'total': total,
         'product_count': product_count,
     }
-
+    # print(bag)
     return context

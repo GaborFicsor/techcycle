@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from products.models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 
 
@@ -38,3 +38,17 @@ def add_to_bag(request, item_id):
     print(request.session['bag'])
     return redirect(redirect_url)
 
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+
+    product = get_object_or_404(Product, pk=item_id)
+    condition = request.POST['condition']
+    bag = request.session.get('bag', {})
+
+
+    del bag[item_id][condition]
+
+
+    request.session['bag'] = bag
+    return HttpResponse(status=200)

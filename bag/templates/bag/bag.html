@@ -53,7 +53,7 @@
                                     <p class="my-0">€{{ item.item_total }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <a class="remove-item text-red" id="remove_{{ item.item_id }}" condition="{{ item.condition }}">&#x2715</a>
+                                    <a class="remove-item text-red" id="remove_{{ item.item_id }}" data-condition="{{ item.condition }}">&#x2715</a>
                                 </td>
                             </tr>
                             
@@ -102,18 +102,21 @@
 
     <script type="text/javascript">
         // Remove item and reload on click
-        $('.remove-item').click(function(e) {
-            var csrfToken = "{{ csrf_token }}"
-            var itemId = $(this).attr("id").split('remove_')[1];
-            var condition = $(this).data('size');
-            var url = `/bag/remove/${itemId}`
-            var data = {'csrfmiddlewaretoken': csrfToken, 'condition': condition};
 
-            $.post(url, data)
-            .done(function() {
-                location.reload();
-            });
-        });
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr("id").split('remove_')[1];
+        var condition = $(this).data('condition')
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'condition': condition};
+        
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+         
+
     </script>
 
 {% endblock %}
