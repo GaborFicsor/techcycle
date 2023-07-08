@@ -7,7 +7,40 @@
             </button>
         </div>
         <div class="toast-body bg-white">
-            {{ message }}
+            <div class="row">
+                <div class="col">
+                    {{ message }}
+                    <hr class="mt-1 mb-3">
+                </div>
+            </div>
+            {% if total %}
+                <p class="logo-font bg-white text-black py-1">Your Cart ({{ product_count }})</p>
+                <div class="bag-notification-wrapper">
+                {% for item in bag_items %}
+                    <div class="row">
+                        <div class="col-3 my-1">
+                            <img class="w-100" src="{{ item.product.image.url }}" alt="">
+                        </div>
+                        <div class="col-9">
+                            <p class="my-0">{{ item.product.name }}</p>
+                            <p class="my-0 small text-muted">Condition: {{ item.condition }}</p>
+                            <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong><p class="mt-3 mb-1">
+                        Total:
+                        <span class="float-right">€{{ total|floatformat:2 }}</span>
+                    </p></strong>
+                    <a href="{% url 'view_bag' %}" class="btn btn-dark btn-block">
+                        <span class="text-uppercase">View Cart</span>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
