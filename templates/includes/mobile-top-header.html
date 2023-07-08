@@ -43,5 +43,13 @@
         <div class="text-center">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
+
     </a>
+    {% if messages %}
+    <div class="message-container text-dark-b shadow">
+        {% for message in messages %}
+            {% include 'includes/toasts/toast_success.html' %}
+        {% endfor %}
+    </div>
+    {% endif %}
 </li>

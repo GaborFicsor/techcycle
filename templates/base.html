@@ -93,7 +93,10 @@
                         <a href="{% url 'view_bag' %}"
                             class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link">
                             <div class="text-center">
-                                <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
+                                <div><i class="fa-solid fa-cart-shopping fa-lg">
+  
+                                </i>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -327,14 +330,6 @@
             <p class="text-muted">This project is for educational purposes only | © Gabor Ficsor, 2023 </p>
         </div>
     </footer>
-
-    {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% include 'includes/toasts/toast_success.html' %}
-            {% endfor %}
-        </div>
-    {% endif %}
 
     {% block postloadjs %}
         <script type="text/javascript">

@@ -400,9 +400,9 @@ body {
 }
 
 .message-container {
-    position: fixed;
-    top: 150px;
-    right: 15px;
+    position: absolute;
+    top: 50px;
+    right: 28px;
     z-index: 999999999;
 }
 
@@ -439,6 +439,15 @@ body {
 
     .custom-margin {
         margin-left: 7.5%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .message-container {
+        top: 0;
+        right: 21px;
     }
 
 }
