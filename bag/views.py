@@ -18,22 +18,28 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+
 def add_to_bag(request, item_id):
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     condition = request.POST.get('condition')
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
+    item = bag.get(item_id, {})
 
     if item_id in bag:
         item = bag[item_id]
+
         if condition in item:
+            current_quantity = item[condition]['quantity']
             item[condition]['quantity'] += quantity
+            messages.success(request, f'Added ({quantity}) {product} ({condition}) to your cart ({current_quantity + quantity} in the cart)')
         else:
             item[condition] = {'quantity': quantity}
+            messages.success(request, f'Added ({quantity}) {product} ({condition}) to your cart')
     else:
-        item = {condition: {'quantity': quantity}}
-        message.success(request, f'Added {product.name} to your bag')
+        item[condition] = {'quantity': quantity}
+        messages.success(request, f'Added ({quantity}) {product} ({condition}) to your cart')
 
     bag[item_id] = item
     request.session['bag'] = bag

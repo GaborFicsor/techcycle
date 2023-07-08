@@ -399,6 +399,21 @@ body {
     border: 1px solid black !important;
 }
 
+.message-container {
+    position: fixed;
+    top: 150px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 
 /* -------------------------------- Media Queries */
 

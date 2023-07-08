@@ -54,7 +54,7 @@ class Product(models.Model):
             super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.brand} {self.series} {self.model} | id:{self.id}"
+        return f"{self.brand} {self.series} {self.model}"
 
     def available(self):
         if self.inventory.in_stock() > 0:
