@@ -20,7 +20,7 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     condition = request.POST.get('condition')
     redirect_url = request.POST.get('redirect_url')
@@ -33,7 +33,7 @@ def add_to_bag(request, item_id):
         if condition in item:
             current_quantity = item[condition]['quantity']
             item[condition]['quantity'] += quantity
-            messages.success(request, f'Added ({quantity}) {product} ({condition}) to your cart ({current_quantity + quantity} in the cart)')
+            messages.success(request, f'Added (+{quantity}) {product} ({condition}) to your cart ({current_quantity + quantity} in cart)')
         else:
             item[condition] = {'quantity': quantity}
             messages.success(request, f'Added ({quantity}) {product} ({condition}) to your cart')
@@ -50,14 +50,20 @@ def add_to_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-
-    product = get_object_or_404(Product, pk=item_id)
-    condition = request.POST['condition']
-    bag = request.session.get('bag', {})
-
-
-    del bag[item_id][condition]
+    try:
+        product = get_object_or_404(Product, pk=item_id)
+        condition = request.POST['condition']
+        bag = request.session.get('bag', {})
+        quantity = bag[item_id][condition]['quantity']
 
 
-    request.session['bag'] = bag
-    return HttpResponse(status=200)
+        del bag[item_id][condition]
+        messages.success(request, f'Removed ({quantity}) {product} ({condition}) from your cart')
+
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+    
+    except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
+        return HttpResponse(status=500)
