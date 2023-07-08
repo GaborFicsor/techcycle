@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from products.models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
+from django.contrib import messages
 
 
 def view_bag(request):
@@ -18,6 +19,7 @@ def view_bag(request):
     return render(request, 'bag/bag.html')
 
 def add_to_bag(request, item_id):
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     condition = request.POST.get('condition')
     redirect_url = request.POST.get('redirect_url')
@@ -31,6 +33,7 @@ def add_to_bag(request, item_id):
             item[condition] = {'quantity': quantity}
     else:
         item = {condition: {'quantity': quantity}}
+        message.success(request, f'Added {product.name} to your bag')
 
     bag[item_id] = item
     request.session['bag'] = bag
