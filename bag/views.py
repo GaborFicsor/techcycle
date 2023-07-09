@@ -15,7 +15,6 @@ def view_bag(request):
         'smartwatches': smartwatches,
         'consoles': consoles,
     }
-    print(request.session['bag'])
     return render(request, 'bag/bag.html')
 
 
