@@ -15,7 +15,7 @@ def view_bag(request):
         'smartwatches': smartwatches,
         'consoles': consoles,
     }
-
+    print(request.session['bag'])
     return render(request, 'bag/bag.html')
 
 
@@ -44,7 +44,6 @@ def add_to_bag(request, item_id):
     bag[item_id] = item
     request.session['bag'] = bag
 
-    print(request.session['bag'])
     return redirect(redirect_url)
 
 
@@ -56,10 +55,11 @@ def remove_from_bag(request, item_id):
         bag = request.session.get('bag', {})
         quantity = bag[item_id][condition]['quantity']
 
-
-        del bag[item_id][condition]
-        messages.success(request, f'Removed ({quantity}) {product} ({condition}) from your cart')
-
+        if condition:
+            del bag[item_id][condition]
+            if not bag[item_id]:
+                bag.pop(item_id)
+            messages.success(request, f'Removed ({quantity}) {product} ({condition}) from your cart')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
