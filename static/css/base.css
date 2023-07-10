@@ -416,6 +416,19 @@ body {
     overflow-y: auto;
 }
 
+/* allauth */
+
+
+.allauth {
+    width: 50%;
+}
+
+
+/* allauth */
+
+/* .allauth {
+    height: 100%;
+} */
 
 
 /* -------------------------------- Media Queries */
