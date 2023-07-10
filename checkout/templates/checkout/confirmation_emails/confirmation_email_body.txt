@@ -1,0 +1,25 @@
+Hello {{ order.full_name }}
+
+This is a confirmation email of your recent order from TechCycle. Please find your order details below.
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+
+Shipping Address:
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.country }}
+
+Contact Information:
+Phone Number: {{ order.phone_number }}
+
+
+If you have any questions or require further assistance, please do not hesitate to reach out to us at {{ contact_email }}. Our dedicated team is ready to assist you.
+
+Thank you for choosing TechCycle!
+
+Best regards,
+
+TechCycle team
