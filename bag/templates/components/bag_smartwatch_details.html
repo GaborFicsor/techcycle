@@ -1,7 +1,9 @@
 <td class="p-3 w-25">
-    <a href="{% url 'smartwatch_detail' item.product.id %}">
-        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
-    </a>
+    {% if item.product.image %}
+    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="">
+    {% else %}
+    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="">
+    {% endif %}
 </td>
 <td class="py-3">
     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
