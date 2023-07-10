@@ -3,8 +3,10 @@ from django.http import HttpResponse
 from .models import Order, OrderLineItem
 from products.models import Product
 
+import stripe
 import json
 import time
+
 
 
 class StripeWH_Handler:
@@ -21,6 +23,7 @@ class StripeWH_Handler:
             status=200
         )
 
+
     def handle_payment_intent_succeeded(self, event):
         """Handle the payment_intent.succeeded webhook from Stripe"""
         intent = event.data.object
@@ -28,12 +31,17 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-        billing_details = stripe_charge.billing_details
+        # Get the Charge object
+        stripe_charge = stripe.Charge.retrieve(
+            intent.latest_charge
+        )
+
+        billing_details = stripe_charge.billing_details # updated
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2)
+        grand_total = round(stripe_charge.amount / 100, 2) # updated
 
         for field, value in shipping_details.address.items():
-            if value =='':
+            if value == '':
                 shipping_details.address[field] = None
 
         order_exists = False
@@ -47,8 +55,8 @@ class StripeWH_Handler:
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
                     town_or_city__iexact=shipping_details.address.city,
-                    street_address1__iexact=shipping_details.address.line2,
-                    street_address2__iexact=shipping_details.address.state,
+                    street_address1__iexact=shipping_details.address.line1,
+                    street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_bag=bag,
@@ -74,8 +82,8 @@ class StripeWH_Handler:
                     country=shipping_details.address.country,
                     postcode=shipping_details.address.postal_code,
                     town_or_city=shipping_details.address.city,
-                    street_address1=shipping_details.address.line2,
-                    street_address2=shipping_details.address.state,
+                    street_address1=shipping_details.address.line1,
+                    street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
                     original_bag=bag,
                     stripe_pid=pid,
@@ -93,15 +101,18 @@ class StripeWH_Handler:
             except Exception as e:
                 if order:
                     order.delete()
-                return HttpResponse(content=f'Webhook received: {event["type"]} | ERROR: {e}',
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | ERROR: {e}',
                 status=500)
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            status=200)
 
-    def handle_payment_intent_failed(self, event):
+    def handle_payment_intent_payment_failed(self, event):
         """Handle the payment_intent.failed webhook from Stripe"""
 
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
-            status=200
-        )
+            content=f'Webhook received: {event["type"]}',
+            status=200)
 
 
