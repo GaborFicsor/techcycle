@@ -12,4 +12,5 @@ urlpatterns = [
     path('consoles/<int:console_id>/', views.console_detail, name='console_detail'),
     path('', views.all_products, name='products'),
     path('add/', views.add_product, name='add_product'),
+    path('edit/<int:product_id>/', views.edit_product, name='edit_product'),
 ]
