@@ -88,7 +88,25 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY
         )
 
-    order_form = OrderForm()
+    if request.user.is_authenticated:
+        try:
+            profile = UserProfile.objects.get(user=request.user)
+            order_form = OrderForm(initial={
+                'full_name': profile.user.get_full_name(),
+                'email': profile.user.email,
+                'phone_number': profile.default_phone_number,
+                'country': profile.default_country,
+                'postcode': profile.default_postcode,
+                'town_or_city': profile.default_town_or_city,
+                'street_address1': profile.default_street_address1,
+                'street_address2': profile.default_street_address2,
+                'county': profile.default_county,
+            })
+        except UserProfile.DoesNotExist:
+            order_form = OrderForm()
+    else:
+        order_form = OrderForm()
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
@@ -125,8 +143,6 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-                print(user_profile_form)
-                print(profile_data)
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
