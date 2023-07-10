@@ -33,7 +33,13 @@
 
                                     <!-- laptop name -->
                                     <h5 class="card-title h-3 text-sm">
-                                        {{ laptop.name }} 
+                                        {{ laptop.name }}
+                                        {% if request.user.is_superuser %}
+                                            <small class="ml-3">
+                                                <a href="">Edit</a>
+                                                <a class="text-danger" href="">Delete</a>
+                                            </small>
+                                        {% endif %}
                                     </h5>
 
                                     <!-- laptop specifiactions and details -->

@@ -33,7 +33,13 @@
 
                                     <!-- smartwatch name -->
                                     <h5 class="card-title h-3 text-sm">
-                                        {{ smartwatch.brand }} {{ smartwatch.series}} {{ smartwatch.model }}
+                                        {{ smartwatch.name }}
+                                        {% if request.user.is_superuser %}
+                                        <small class="ml-3">
+                                            <a href="">Edit</a>
+                                            <a class="text-danger" href="">Delete</a>
+                                        </small>
+                                    {% endif %}
                                     </h5>
 
                                     <!-- smartwatch specifiactions and details -->
