@@ -19,4 +19,5 @@ urlpatterns = [
     path('edit/phone/<int:product_id>/', views.edit_phone, name='edit_phone'),
     path('edit/smartwatch/<int:product_id>/', views.edit_smartwatch, name='edit_smartwatch'),
     path('edit/console/<int:product_id>/', views.edit_console, name='edit_console'),
+    path('delete/<int:product_id>/', views.delete_product, name='delete_product'),
 ]
