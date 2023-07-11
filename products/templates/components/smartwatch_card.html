@@ -36,7 +36,7 @@
                                         {{ smartwatch.name }}
                                         {% if request.user.is_superuser %}
                                         <small class="ml-3">
-                                            <a href="">Edit</a>
+                                            <a href="{% url 'edit_smartwatch' smartwatch.id %}">Edit</a>
                                             <a class="text-danger" href="">Delete</a>
                                         </small>
                                     {% endif %}

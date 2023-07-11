@@ -317,32 +317,113 @@ def add_console(request):
 
     return render(request, template, context)
 
-@login_required
-def edit_product(request, product_id):
+def edit_laptop(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    """ Edit a product in the store """
-    product = get_object_or_404(Product, pk=product_id)
+    
+    laptop = get_object_or_404(Laptop, pk=product_id)
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            product = form.save()
-            messasges.success(request, 'Successfully updated product')
-            return redirect(reverse('product_detail', args=[product.id]))
+        laptop_form = LaptopForm(request.POST, request.FILES, instance=laptop)
+        if laptop_form.is_valid():
+            laptop = laptop_form.save()  # Update the existing instance
+            messages.success(request, f'Successfully updated {laptop}')
+            return redirect(reverse('laptop_detail', args=[laptop.id]))
+
         else:
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
-        form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
-
-    template = 'products/edit_product.html'
+        laptop_form = LaptopForm(instance=laptop)
+        messages.info(request, f'You are editing {laptop}')
+    
+    template = 'products/edit_laptop.html'
     context = {
-        'form': form,
-        'product': product,
+        'laptop_form': laptop_form,
+        'laptop': laptop
     }
 
-    return render(request, template, context)
+    return render (request, template, context)
+
+def edit_phone(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    phone = get_object_or_404(Phone, pk=product_id)
+    if request.method == 'POST':
+        phone_form = PhoneForm(request.POST, request.FILES, instance=phone)
+        if phone_form.is_valid():
+            phone = phone_form.save()  # Update the existing instance
+            messages.success(request, f'Successfully updated {phone}')
+            return redirect(reverse('phone_detail', args=[phone.id]))
+
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        phone_form = PhoneForm(instance=phone)
+        messages.info(request, f'You are editing {phone}')
+    
+    template = 'products/edit_phone.html'
+    context = {
+        'phone_form': phone_form,
+        'phone': phone
+    }
+
+    return render (request, template, context)
+
+def edit_smartwatch(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    smartwatch = get_object_or_404(Smartwatch, pk=product_id)
+    if request.method == 'POST':
+        smartwatch_form = SmartwatchForm(request.POST, request.FILES, instance=smartwatch)
+        if smartwatch_form.is_valid():
+            smartwatch = smartwatch_form.save()  # Update the existing instance
+            messages.success(request, f'Successfully updated {smartwatch}')
+            return redirect(reverse('smartwatch_detail', args=[smartwatch.id]))
+
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        smartwatch_form = SmartwatchForm(instance=smartwatch)
+        messages.info(request, f'You are editing {smartwatch}')
+    
+    template = 'products/edit_smartwatch.html'
+    context = {
+        'smartwatch_form': smartwatch_form,
+        'smartwatch': smartwatch
+    }
+
+    return render (request, template, context)
+
+def edit_console(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    console = get_object_or_404(Console, pk=product_id)
+    if request.method == 'POST':
+        console_form = ConsoleForm(request.POST, request.FILES, instance=console)
+        if console_form.is_valid():
+            console = console_form.save()  # Update the existing instance
+            messages.success(request, f'Successfully updated {console}')
+            return redirect(reverse('console_detail', args=[console.id]))
+
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        console_form = ConsoleForm(instance=console)
+        messages.info(request, f'You are editing {console}')
+    
+    template = 'products/edit_console.html'
+    context = {
+        'console_form': console_form,
+        'console': console
+    }
+
+    return render (request, template, context)
 
 @login_required
 def delete_product(request, product_id):

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content%}
+<section class="text-dark-b">
+    <div class="container p-4 bg-white">
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="logo-font mb-4">Edit {{ phone }}</h2>
+            </div>
+        </div>
+
+        <!-- form for adding a phone -->
+        <form method="POST" action="{% url 'edit_phone' phone.id %}" class="form mb-2" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <!-- main phone details -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-sub-group mb-5">
+                        <span class="form-sub-group-title">Product details</span>
+                        {{ phone_form.category|as_crispy_field }}
+                        {{ phone_form.brand|as_crispy_field }}
+                        {{ phone_form.series|as_crispy_field }}
+                        {{ phone_form.model|as_crispy_field }}
+                        {{ phone_form.color|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-sub-group mb-07">
+                        <span class="form-sub-group-title">Price</span>
+                        {{ phone_form.price|as_crispy_field }}
+                        {{ phone_form.sale |as_crispy_field}}
+                        {{ phone_form.sale_price |as_crispy_field}}
+
+                    </div>
+                    <div class="form-sub-group">
+                        <span class="form-sub-group-title">Image</span>
+                        {{ phone_form.image|as_crispy_field }}
+                        {{ phone_form.image_url|as_crispy_field }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- secondary phone details -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-sub-group mb-5">
+                        <span class="form-sub-group-title">Specifications</span>
+                        {{ phone_form.sim |as_crispy_field}}
+                        {{ phone_form.cpu |as_crispy_field}}
+                        {{ phone_form.ram |as_crispy_field}}
+                        {{ phone_form.storage_size |as_crispy_field}}
+                        {{ phone_form.battery |as_crispy_field}}
+                        {{ phone_form.screen_size |as_crispy_field}}
+                        {{ phone_form.resolution |as_crispy_field}}
+                        {{ phone_form.camera_front |as_crispy_field}}
+                        {{ phone_form.camera_rear |as_crispy_field}}
+                        {{ phone_form.os |as_crispy_field}}
+                    </div>
+
+                    <!-- form submit and cancel buttons -->
+                    <div class="text-right mt-5">
+                        <a class="btn btn-clear btn-lg" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-dark btn-lg" type="submit">Update Product</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#id_category').val(2);
+    })
+
+
+</script>
+{% endblock %}

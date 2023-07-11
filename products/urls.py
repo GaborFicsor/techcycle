@@ -15,5 +15,8 @@ urlpatterns = [
     path('add/phone/', views.add_phone, name='add_phone'),
     path('add/smartwatch/', views.add_smartwatch, name='add_smartwatch'),
     path('add/console/', views.add_console, name='add_console'),
-    path('edit/<int:product_id>/', views.edit_product, name='edit_product'),
+    path('edit/laptop/<int:product_id>/', views.edit_laptop, name='edit_laptop'),
+    path('edit/phone/<int:product_id>/', views.edit_phone, name='edit_phone'),
+    path('edit/smartwatch/<int:product_id>/', views.edit_smartwatch, name='edit_smartwatch'),
+    path('edit/console/<int:product_id>/', views.edit_console, name='edit_console'),
 ]
