@@ -455,6 +455,25 @@ body {
 }
 /* product form */
 
+.form-sub-group {
+    border:1px solid #011936;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.form-sub-group-title {
+    position: absolute;
+    top: -12px;
+    z-index: 1;
+    left: 25px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.mb-07 {
+    margin-bottom: 0.7rem;
+}
 
 /* -------------------------------- Media Queries */
 

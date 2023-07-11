@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 from django.db.models import Sum
-from .forms import ProductForm
+from .forms import LaptopForm, PhoneForm, SmartwatchForm, ConsoleForm
 
 
 def all_products(request):
@@ -232,24 +232,87 @@ def console_detail(request, console_id):
 
     return render(request, 'consoles/console_detail.html', context)
 
+
 @login_required
-def add_product(request):
+def add_laptop(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+        laptop_form = LaptopForm(request.POST)
+        if laptop_form.is_valid():
+            product = laptop_form.save()
+            messages.success(request, 'Successfully added laptop!')
+            return redirect(reverse('laptop_detail', args=[product.id]))
     else:
-        form = ProductForm()
-    template = 'products/add_product.html'
+        laptop_form = LaptopForm()
+
+    template = 'products/add_laptop.html'
     context = {
-        'form': form,
+        'laptop_form': laptop_form,
+    }
+
+    return render(request, template, context)
+
+@login_required
+def add_phone(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    if request.method == 'POST':
+        phone_form = PhoneForm(request.POST)
+        if phone_form.is_valid():
+            product = phone_form.save()
+            messages.success(request, 'Successfully added Phone!')
+            return redirect(reverse('phone_detail', args=[product.id]))
+    else:
+        phone_form = PhoneForm()
+
+    template = 'products/add_phone.html'
+    context = {
+        'phone_form': phone_form,
+    }
+
+    return render(request, template, context)
+
+@login_required
+def add_smartwatch(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    if request.method == 'POST':
+        smartwatch_form = SmartwatchForm(request.POST)
+        if smartwatch_form.is_valid():
+            product = smartwatch_form.save()
+            messages.success(request, 'Successfully added Smartwatch!')
+            return redirect(reverse('smartwatch_detail', args=[product.id]))
+    else:
+        smartwatch_form = SmartwatchForm()
+
+    template = 'products/add_smartwatch.html'
+    context = {
+        'smartwatch_form': smartwatch_form,
+    }
+
+    return render(request, template, context)
+
+@login_required
+def add_console(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    if request.method == 'POST':
+        console_form = ConsoleForm(request.POST)
+        if console_form.is_valid():
+            product = console_form.save()
+            messages.success(request, 'Successfully added Console!')
+            return redirect(reverse('console_detail', args=[product.id]))
+    else:
+        console_form = ConsoleForm()
+
+    template = 'products/add_console.html'
+    context = {
+        'console_form': console_form,
     }
 
     return render(request, template, context)
