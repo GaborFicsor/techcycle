@@ -108,15 +108,13 @@
                                     <div class="form-group">
                                             <input class="form-control" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                             <label for="">Condition:</label>
-                                            <select class="form-control" id="" name="condition" data-item_id="{{ smartwatch.id }}" id="id_qty_{{ smartwatch.id }}">
-                                                {% for condition in smartwatch.conditions %}
-                                                <option value="{{ condition }}">{{ condition }}</option>
-                                            {% endfor %}
+                                            <select class="form-control" id="id_condition" name="condition">
+                                                {% for inventory in smartwatch.inventory_set.all %}
+                                                    <option value="{{ inventory.condition }}" data-price="{{ inventory.price }}">{{ inventory.get_condition_display }} - {{ inventory.price }} inventory id: {{ inventory.id }} product id: {{ inventory.product.id }}</option>
+                                                {% endfor %}
                                             </select>
                                         </div>
-
                                 </div>
-                                
                                 <div class="col-12 text-right">
                                     <a href="{% url 'products' %}" class="btn btn-clear mt-2">
                                         <span class="icon">
@@ -129,7 +127,6 @@
                         </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </form>
-                            <a href="remove-item text-danger float-right" id="remove_{{ item.item_id }}" condition="{{ item.condition }}">Remove</a>
                     </div>
                 </div>
             </div>

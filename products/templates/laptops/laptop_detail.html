@@ -97,9 +97,9 @@
                                     <div class="form-group">
                                             <input class="form-control" type="number" name="quantity" value="1" min="1" max="{{ laptop.inventory.good_amount }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                             <label for="">Condition:</label>
-                                            <select class="form-control" name="condition" data-item_id="id_condition" id="id_qty_{{ laptop.id }}">
-                                                {% for condition in laptop.conditions %}
-                                                    <option value="{{ condition }}">{{ condition }}</option>
+                                            <select class="form-control" id="id_condition" name="condition">
+                                                {% for inventory in laptop.inventory_set.all %}
+                                                    <option value="{{ inventory.condition }}" data-price="{{ inventory.price }}">{{ inventory.get_condition_display }} - {{ inventory.price }} inventory id: {{ inventory.id }} product id: {{ inventory.product.id }}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>

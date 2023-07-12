@@ -58,6 +58,9 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 product = Product.objects.get(id=item_id)
                 for condition, quantity in item_data.items():
+                    item = get_object_or_404(Product, pk=item_id)
+                    inventory = item.inventory_set.get(condition=condition)
+                    price = inventory.price
                     quantity = quantity['quantity']
                     
                     order_line_item = OrderLineItem(
@@ -65,6 +68,7 @@ def checkout(request):
                         product=product,
                         quantity=quantity,
                         condition=condition,
+                        price=price
                     )
                     order_line_item.save()
 
