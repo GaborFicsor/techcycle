@@ -13,7 +13,10 @@ def bag_contents(request):
         for condition, quantity in item_data.items():
             item = get_object_or_404(Product, pk=item_id)
             inventory = item.inventory_set.get(condition=condition)
-            price = inventory.price
+            if item.sale:
+                price=inventory.sale_price
+            else:
+                price = inventory.price
             quantity = quantity['quantity']
             product = get_object_or_404(Product, pk=item_id)
             item_total = quantity * price
