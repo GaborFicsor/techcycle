@@ -18,10 +18,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class InventoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'acceptable_amount',
-        'good_amount',
-        'excellent_amount',
-        'in_stock',
+        'condition',
     )
 
 
@@ -32,12 +29,6 @@ class LaptopAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'label',
-        'available',
-        'in_stock',
-        'acceptable',
-        'good',
-        'excellent',
-        'on_sale',
         'price',
     )
 
@@ -48,12 +39,6 @@ class PhoneAdmin(admin.ModelAdmin):
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
-        'available',
-        'in_stock',
-        'acceptable',
-        'good',
-        'excellent',
-        'on_sale',
         'price',
     )
 
@@ -69,26 +54,26 @@ class SmartwatchAdmin(admin.ModelAdmin):
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
-        'available',
-        'in_stock',
-        'acceptable',
-        'good',
-        'excellent',
-        'on_sale',
         'price',
     )
 
+class ProductAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'name',
+    )
+    
+class InventoryAdminInline(admin.TabularInline):
+    model = Inventory
+    readonly_fields = ('condition', 'price', 'sale_price')
+
+
 class ConsoleAdmin(admin.ModelAdmin):
+    inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
-        'available',
-        'in_stock',
-        'acceptable',
-        'good',
-        'excellent',
-        'on_sale',
         'price',
     )
 
@@ -98,3 +83,4 @@ admin.site.register(Phone, PhoneAdmin)
 admin.site.register(Smartwatch, SmartwatchAdmin)
 admin.site.register(Console, ConsoleAdmin)
 admin.site.register(Inventory, InventoryAdmin)
+admin.site.register(Product, ProductAdmin)
