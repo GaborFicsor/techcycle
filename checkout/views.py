@@ -75,6 +75,14 @@ def checkout(request):
                     )
                     order_line_item.save()
 
+                    # this is where I subtract the quantity of the item from the stock_count of the item's condition
+                    # and save it so the stock count is reflected correctly
+                    inventory.stock_count = inventory.stock_count - quantity
+                    inventory.save()
+                    
+                    
+
+
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:

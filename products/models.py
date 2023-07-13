@@ -35,6 +35,16 @@ class Product(models.Model):
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
 
+    def lowest_price(self):
+            prices = self.inventory_set.filter(stock_count__gt=0).values_list('price', flat=True)
+            lowest_price = min(prices)
+            return Decimal(lowest_price)
+
+    def lowest_sale_price(self):
+            sale_prices = self.inventory_set.filter(stock_count__gt=0).values_list('sale_price', flat=True)
+            lowest_sale_price = min(sale_prices)
+            return Decimal(lowest_sale_price)
+
     def save(self, *args, **kwargs):
         is_new_product = not self.pk
         if is_new_product:
@@ -245,3 +255,4 @@ class Inventory(models.Model):
 
     def in_stock(self):
         return self.acceptable_amount + self.good_amount + self.excellent_amount
+

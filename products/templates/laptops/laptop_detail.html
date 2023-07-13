@@ -4,67 +4,89 @@
 
 {% block content %}
 <section>
-
-    <!-- container -->
     <div class="container p-3 p-md-4 bg-white">
 
-        <!-- row for the name for the laptop -->
+        <!-- first row -->
         <div class="row">
+
+            <!-- product name and price-->
             <div class="col-12">
                 <div class="p-3 p-md-4 mb-4">
-
                     <div class="d-md-flex justify-content-between">
                         <dt><h2>{{ laptop.name }}</h2></dt>
-                        <dd><h2>€{{ laptop.price }}</h2></dd>
+                        {% if laptop.available %}
+                            {% if laptop.sale %}
+                                <dd>
+                                    <h3 class="text-red">
+                                        From €{{ laptop.lowest_sale_price }}
+                                        <del class="text-muted">
+                                            (€{{ laptop.lowest_price }})
+                                        </del>
+                                    </h3>
+                                </dd>
+                            {% else %}
+                                <dd>
+                                    <h3>From €{{ laptop.lowest_price }}</h3>
+                                </dd>
+                            {% endif %}
+                        {% else %}
+                            <dd>
+                                <h3>Out of stock</h3>
+                            </dd>
+                        {% endif %}
                     </div>
+
+                    <!-- product stock information -->
                     <ul class="list-unstyled text-muted">
-                        <li>
-                            {% if laptop.available %}
-                            In stock&nbsp;
-                            <i class="fa-solid fa-check stock">
-                                &nbsp;</i>
+                        {% if laptop.available %}
+                        <li>In stock&nbsp;
+                            <i class="fa-solid fa-check stock">&nbsp;</i>
                             {% if laptop.in_stock <= 2 %} 
                                 (only a few left)
-                                {% endif %}
-                            </li>
-                        <li>
-                            Available in:&nbsp;
-                            {{ laptop.conditions|join:", " }}
-                        </li> 
-                        {% else %}
-                            This item is not available
                             {% endif %}
+                        </li>
+                        <li>
+                            Available in:&nbsp;{{ laptop.conditions|join:", " }}
+                        </li>
+                        {% else %}
+                            <li id="stock">
+                                This item is currently out of stock
+                            </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- row for the image and specifications -->
+        <!-- second row-->
         <div class="row mb-4">
+
+            <!-- product image -->
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if laptop.image %}
-                    <a href="{{ laptop.img.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
-                    </a>
+                        <a href="{{ laptop.img.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
+                        </a>
                     {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                    </a>
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                        </a>
                     {% endif %}
                 </div>
             </div>
+
+            <!-- laptop specifications -->
             <div class="col-12 col-lg-6">
                 <div>
                     <div class="dark-b text-white p-3 p-md-4">
                         <h3>Specifications</h3>
                     </div>
-
                     <div class="p-3 p-md-4">
                         <dl>
                             <div class="d-md-flex justify-content-between">
                                 <dt class="font-weight-bold">CPU:</dt>
-                                <dd>{{ laptop.cpu_brand }} {{ laptop.cpu_name }} {{ laptop.cpu_variant }}</dd>
+                                <dd>{{ laptop.cpu }}</dd>
                             </div>
                             <div class="d-md-flex justify-content-between">
                                 <dt>Cores:</dt>
@@ -88,24 +110,38 @@
                             </div>
                         </dl>
                     </div>
+
+                    <!-- form for adding a product to the bag -->
                     <div class="p-3 p-md-4">
                         <form class="form" action="{% url 'add_to_bag' laptop.id %}" method="POST">
                             {% csrf_token %}
                             <div class="form-row">
                                 <div class="col-12">
-                                    <p class="mt-3"><strong>Quantity:</strong></p>
                                     <div class="form-group">
-                                            <input class="form-control" type="number" name="quantity" value="1" min="1" max="{{ laptop.inventory.good_amount }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
-                                            <label for="">Condition:</label>
+                                        {% if laptop.available %}
+                                            <label for="quantity">Quantity:</label>
+                                            <input class="form-control" type="number" name="quantity" value="1" min="1" max="{{ 3 }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                            <label for="condition">Condition:</label>
                                             <select class="form-control" id="id_condition" name="condition">
                                                 {% for inventory in laptop.inventory_set.all %}
-                                                    <option value="{{ inventory.condition }}" data-price="{{ inventory.price }}">{{ inventory.get_condition_display }} - {{ inventory.price }} inventory id: {{ inventory.id }} product id: {{ inventory.product.id }}</option>
-                                                {% endfor %}
+                                                    {% if inventory.stock_count > 0 %}
+                                                        <option value="{{ inventory.condition }}" data-price="{{ inventory.price }}">
+                                                            {{ inventory.get_condition_display }} - {% if laptop.sale %}€{{ inventory.sale_price }} (sale) {% else %}€{{ inventory.price }}{% endif %}</option>
+                                                    {% else %}
+                                                        <option disabled>{{ inventory.get_condition_display }} - out of stock</option>
+                                                    {% endif %}
+                                                {% endfor%}
                                             </select>
-                                        </div>
-
+                                        {% else %}
+                                            <label for="quantity">Quantity:</label>
+                                            <input class="form-control" name="quantity" id="disabled" placeholder="This item is currently out of stock" disabled>
+                                            <label for="condition">Condition:</label>
+                                            <select class="form-control" name="condition" disabled>
+                                                <option>This item is currently out of stock</option>
+                                            </select>
+                                        {% endif %}
+                                    </div>
                                 </div>
-                                
                                 <div class="col-12 text-right">
                                     <a href="{% url 'products' %}" class="btn btn-clear mt-2">
                                         <span class="icon">
@@ -113,20 +149,26 @@
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Add to Bag">
+                                    {% if laptop.available %}
+                                        <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Add to Cart">
+                                    {% else %}
+                                        <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Out of stock" disabled>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    {% endif %}
                                 </div>
-                        </div>
-                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            </form>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- row for the features and extra details -->
+        <!-- third row -->
         <div class="row">
+
+            <!-- laptop features -->
             <div class="col-12 col-lg-6">
-                <div class="">
+                <div>
                     <div class="dark-b text-white p-3 p-md-4">
                         <h3>Features</h3>
                     </div>
@@ -156,8 +198,10 @@
                     </div>
                 </div>
             </div>
+
+            <!-- laptop extras -->
             <div class="col-12 col-lg-6 mb-4">
-                <div class="">
+                <div>
                     <div class="dark-b text-white p-3 p-md-4">
                         <h3>Extras</h3>
                     </div>
@@ -173,19 +217,19 @@
                             </div>
                             <div class="d-md-flex justify-content-between">
                                 <dt>SSD:</dt>
-                                <dd>{{ laptop.ssd }}</dd>
+                                <dd>{{ laptop.ssd | yesno:"Yes, No" }}</dd>
                             </div>
                             <div class="d-md-flex justify-content-between">
                                 <dt>Touchscreen:</dt>
-                                <dd>{{ laptop.touchscreen }}</dd>
+                                <dd>{{ laptop.touchscreen | yesno:"Yes, No" }}</dd>
                             </div>
                             <div class="d-md-flex justify-content-between">
                                 <dt>Backlit Keyboard:</dt>
-                                <dd>{{ laptop.backlit }}</dd>
+                                <dd>{{ laptop.backlit | yesno:"Yes, No" }}</dd>
                             </div>
                             <div class="d-md-flex justify-content-between">
                                 <dt>Finger Print Sensor: </dt>
-                                <dd>{{ laptop.finger_print_sensor }}</dd>
+                                <dd>{{ laptop.finger_print_sensor | yesno:"Yes, No" }}</dd>
                             </div>
                         </dl>
                     </div>
@@ -194,4 +238,26 @@
         </div>
     </div>
 </section>
+{% block postloadjs %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        // Script for making the product image greyscale
+        // if the product is out of stock(not available)
+        // this function is based on the innerhtml of the
+        // list item with id="stock"
+    $(document).ready(function(){
+        var selector = $('#disabled')
+        var selectedVal = selector.val()
+        var image = $('.card-img-top')
+        var stock = $("#stock").html();
+
+        if(stock){
+            image.addClass('saturation')
+        }
+    });
+    </script>
+
+{% endblock %}
+
 {% endblock %}

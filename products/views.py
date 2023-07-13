@@ -5,6 +5,7 @@ from django.db.models import Q
 from .models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 from django.db.models import Sum
 from .forms import LaptopForm, PhoneForm, SmartwatchForm, ConsoleForm
+from decimal import Decimal
 
 
 def all_products(request):

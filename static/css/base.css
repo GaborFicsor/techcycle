@@ -88,17 +88,19 @@ body {
     border-color: #011936;
 }
 
+
 .btn-dark {
     color: #fff;
     background-color: #011936;
     border-color: #011936;
 }
 
-.btn-dark:hover {
+.btn-dark:hover:enabled {
     color: #fff;
     background-color: #0091AD;
     border-color: #0091AD;
 }
+
 
 .brands {
     margin: 0.2rem;
@@ -185,6 +187,10 @@ body {
 /* offer */
 
 /* footer mishmash */
+
+.saturation {
+    filter: saturate(0);
+}
 
 .payment-icon {
     width: 50px;
