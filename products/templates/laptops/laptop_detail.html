@@ -120,7 +120,7 @@
                                     <div class="form-group">
                                         {% if laptop.available %}
                                             <label for="quantity">Quantity:</label>
-                                            <input class="form-control" type="number" name="quantity" value="1" min="1" max="{{ 3 }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                            <input class="form-control" type="number" name="quantity" value="1" min="1" max="{{ laptop.inventory.stock_count }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                             <label for="condition">Condition:</label>
                                             <select class="form-control" id="id_condition" name="condition">
                                                 {% for inventory in laptop.inventory_set.all %}

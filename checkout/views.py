@@ -77,6 +77,9 @@ def checkout(request):
 
                     # this is where I subtract the quantity of the item from the stock_count of the item's condition
                     # and save it so the stock count is reflected correctly
+                    if quantity > inventory.stock_count:
+                        messages.error(request, f"the amount({quantity}) you're trying to purchase for {item} in ({condition}) condition is more than we currently have in stock ({inventory.stock_count}) for that item")
+                        return redirect('view_bag')
                     inventory.stock_count = inventory.stock_count - quantity
                     inventory.save()
                     
