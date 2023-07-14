@@ -1,150 +1,155 @@
 {% for phone in phones %}
-        <div class="d-none d-md-block col-12 col-lg-6">
-            <div class="row custom-margin">
-                <div class="container p-4">
+<div class="d-none d-md-block col-12 col-lg-6">
+    <div class="row custom-margin">
+        <div class="container p-4">
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
-                        <div class="row g-0">
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-3">
+                <div class="row g-0">
 
-                            <!-- phone image -->
-                            <div class="col-6 text-center">
-                                {% if phone.image %}
+                    <!-- phone image -->
+                    <div class="col-6 text-center">
+                        {% if phone.image %}
+                            {% if phone.available %}
+                            <a href="{% url 'phone_detail' phone.id %}">
+                                <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="{{ phone.name }}">
+                            </a>
+                            {% else %}
                                 <a href="{% url 'phone_detail' phone.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="">
+                                    <img class="card-img-top img-fluid saturation" src="{{ phone.image.url }}" alt="{{ phone.name }}">
                                 </a>
-                                {% else %}
-                                <a href="{% url 'phone_detail' phone.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                                </a>
-                                {% endif %}
-                            </div>
-
-                            <!-- if the phone is on sale display a red box -->
-                            {% if phone.sale %}
-                            <div class="sale">
-                                sale
-                            </div>
                             {% endif %}
-
-                            <!-- card body for phone details -->
-                            <div class="col-6 position-relative border-left">
-                                <div class="card-body">
-
-                                    <!-- phone name -->
-                                    <h5 class="card-title h-3 text-sm">
-                                        {{ phone.name }}
-                                        {% if request.user.is_superuser %}
-                                        <small class="ml-3">
-                                            <a href="{% url 'edit_phone' phone.id %}">Edit</a>
-                                            <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
-                                        </small>
-                                    {% endif %}
-                                    </h5>
-
-                                    <!-- phone specifications and details -->
-                                    <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ phone.ram }}</li>
-                                        <li>{{ phone.storage_size}}</li>
-                                        <li>{{ phone.screen_size }}"</li>
-                                        <li>
-                                            {% if phone.available %}
-                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                                {% else %}
-                                                Out of stock
-                                            {% endif %}
-                                        </li>
-                                    </ul>
-
-                                    <!-- if phone is on sale show discounted price, else show regular price -->
-                                    {% if phone.sale %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right text-red">€{{ phone.sale_price }}</p>
-                                    </div>
-                                    {% else %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ phone.price }}</p>
-                                    </div>
-                                    {% endif %}
-
-                                </div>
-                            </div>
-                        </div>
+                        {% else %}
+                            <a href="{% url 'phone_detail' phone.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ phone.name }}">
+                            </a>
+                        {% endif %}
                     </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
 
-        <!-- phone card for each phone on screens below medium -->
-        {% for phone in phones %}
-        <div class="d-md-none col-12 col-lg-6">
-            <div class="row">
-                <div class="container p-4">
+                    <!-- if the phone is on sale display a red box -->
+                    {% if phone.available and phone.sale %}
+                    <div class="sale">
+                        sale
+                    </div>
+                    {% endif %}
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-4" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-12 text-center">
+                    <!-- card body for phone details -->
+                    <div class="col-6 position-relative border-left">
+                        <div class="card-body">
 
-                                <!-- phone image -->
-                                {% if phone.image %}
-                                <a href="{% url 'phone_detail' phone.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'phone_detail' phone.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                                </a>
-                                {% endif %}
+                            <!-- phone name -->
+                            <h5 class="card-title h-3 text-sm">
+                                {{ phone.name }}
+                                {% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="{% url 'edit_phone' phone.id %}">Edit</a>
+                                    <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
+                                </small>
+                            {% endif %}
+                            </h5>
 
-                                <!-- if phone is on sale display a red box -->
+                            <!-- phone specifications and details -->
+                            <ul class="list-unstyled text-muted d-none d-md-block">
+                                <li>{{ phone.ram }}</li>
+                                <li>{{ phone.storage_size}}</li>
+                                <li>{{ phone.screen_size }}"</li>
+                                <li>
+                                    {% if phone.available %}
+                                        In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                    {% endif %}
+                                </li>
+                            </ul>
+
+                            <!-- if phone is on sale show discounted price, else show regular price -->
+                            {% if phone.available %}
                                 {% if phone.sale %}
-                                <div class="sale">
-                                    sale
-                                </div>
-                                {% endif %}
-
-                                <!-- card body for phone details -->
-                            </div>
-                            <div class="col-12 position-relative">
-                                <div class="card-body">
-
-                                    <!-- phone name -->
-                                    <h5 class="card-title h-3 border-bottom text-truncate">
-                                        {{ phone.brand }} {{ phone.series}} {{ phone.model }}
-                                    </h5>
-
-                                    <!-- phone specifications and details -->
-                                    <p class="text-muted border-bottom h-3 text-truncate">
-                                        {{ phone.ram }} | {{ phone.storage_size}} | {{ phone.screen_size }}"</p>
-
-                                    <!-- if phone is on sale show discounted price, else show regular price -->
-                                    <div class="d-flex justify-content-between">
-                                        {% if phone.sale %}
-                                        <span class="lead text-red">{{ phone.sale_price }}</span>
-                                        {% else %}
-                                        <span class="lead">{{ phone.price }}</span>
-                                        {% endif %}
-                                        {% if console.sale %}
-                                        <span class="lead text-red">{{ console.sale_price }}</span>
-                                        {% else %}
-                                        <span class="lead">{{ console.price }}</span>
-                                        {% endif %}
-                                        {% if phone.available %}
-                                        <span>
-                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                            {% else %}
-                                            Out of stock
-                                            </span>
-                                        {% endif %}
-
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right text-red">€{{ phone.lowest_sale_price }}</p>
                                     </div>
+                                {% else %}
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">€{{ phone.lowest_price }}</p>
+                                    </div>
+                                {% endif %}
+                            {% else %}
+                                <div class="price">
+                                    <p class="lead font-weight-bold text-right">Out of stock</p>
                                 </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- phone card for each phone on screens below medium -->
+{% for phone in phones %}
+<div class="d-md-none col-12 col-lg-6">
+    <div class="row">
+        <div class="container p-4">
+
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-12 text-center">
+
+                        <!-- phone image -->
+                        {% if phone.image %}
+                            {% if phone.available %}
+                                <a href="{% url 'phone_detail' phone.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="{{ phone.name }}">
+                                </a>
+                            {% else %}
+                                <a href="{% url 'phone_detail' phone.id %}">
+                                    <img class="card-img-top img-fluid saturation" src="{{ phone.image.url }}" alt="{{ phone.name }}">
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            <a href="{% url 'phone_detail' phone.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ phone.name }}">
+                            </a>
+                        {% endif %}
+
+                        <!-- card body for phone details -->
+                    </div>
+                    <div class="col-12 position-relative">
+                        <div class="card-body">
+
+                            <!-- phone name -->
+                            <h5 class="card-title h-3 border-bottom text-truncate">
+                                {{ phone.brand }} {{ phone.series}} {{ phone.model }}
+                            </h5>
+
+                            <!-- phone specifications and details -->
+                            <p class="text-muted border-bottom h-3 text-truncate">
+                                {{ phone.ram }} | {{ phone.storage_size}} | {{ phone.screen_size }}"</p>
+
+                            <!-- if phone is on sale show discounted price, else show regular price -->
+                            <div class="d-flex justify-content-between">
+                                {% if phone.available %}
+                                    {% if phone.sale %}
+                                        <span class="lead text-red">€{{ phone.lowest_sale_price }}</span>
+                                    {% else %}
+                                        <span class="lead">€{{ phone.lowest_price }}</span>
+                                    {% endif %}
+                                {% else %}
+                                    <span class="lead">Out of stock</span>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3 lead">
+                                        <a href="{% url 'edit_phone' phone.id %}">Edit</a>
+                                        <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+</div>
+{% endfor %}

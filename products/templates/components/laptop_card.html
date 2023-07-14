@@ -1,147 +1,166 @@
 {% for laptop in laptops %}
-        <div class="d-none d-md-block col-12 col-lg-6">
-            <div class="row custom-margin">
-                <div class="container p-4">
+<div class="d-none d-md-block col-12 col-lg-6">
+    <div class="row custom-margin">
+        <div class="container p-4">
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
-                        <div class="row g-0">
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-3">
+                <div class="row g-0">
 
-                            <!-- laptop image -->
-                            <div class="col-6 text-center">
-                                {% if laptop.image %}
+                    <!-- laptop image -->
+                    <div class="col-6 text-center">
+                        {% if laptop.image %}
+                            {% if laptop.available %}
                                 <a href="{% url 'laptop_detail' laptop.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
+                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
                                 </a>
-                                {% else %}
+                            {% else %}
                                 <a href="{% url 'laptop_detail' laptop.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                    <img class="card-img-top img-fluid saturation" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
                                 </a>
-                                {% endif %}
-                            </div>
-
-                            <!-- if the laptop is on sale display a red box-->
-                            {% if laptop.available and laptop.sale %}
-                            <div class="sale">
-                                sale
-                            </div>
                             {% endif %}
+                        {% else %}
+                            <a href="{% url 'laptop_detail' laptop.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ laptop.name }}">
+                            </a>
+                        {% endif %}
+                    </div>
 
-                            <!-- card body for laptop details -->
-                            <div class="col-6 position-relative border-left">
-                                <div class="card-body">
+                    <!-- if the laptop is on sale display a red box-->
+                    {% if laptop.available and laptop.sale %}
+                    <div class="sale">
+                        sale
+                    </div>
+                    {% endif %}
 
-                                    <!-- laptop name -->
-                                    <h5 class="card-title h-3 text-sm">
-                                        {{ laptop.name }}
-                                        {% if request.user.is_superuser %}
-                                            <small class="ml-3">
-                                                <a href="{% url 'edit_laptop' laptop.id %}">Edit</a>
-                                                <a class="text-danger" href="{% url 'delete_product' laptop.id %}">Delete</a>
-                                            </small>
-                                        {% endif %}
-                                    </h5>
+                    <!-- card body for laptop details -->
+                    <div class="col-6 position-relative border-left">
+                        <div class="card-body">
 
-                                    <!-- laptop specifiactions and details -->
-                                    <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ laptop.cpu_brand }} {{ laptop.cpu_name}}</li>
-                                        <li>{{ laptop.ram }}</li>
-                                        <li>{{ laptop.storage_size}}</li>
-                                        <li>{{ laptop.screen_size }}"</li>
-                                        <li>
-                                            {% if laptop.available %}
-                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                            {% endif %}
-                                        </li>
-                                    </ul>
+                            <!-- laptop name -->
+                            <h5 class="card-title h-3 text-sm">
+                                {{ laptop.name }}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_laptop' laptop.id %}">Edit</a>
+                                        <a class="text-danger" href="{% url 'delete_product' laptop.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
+                            </h5>
 
-                                    <!-- if laptop is on sale show discounted price, else show regular price -->
-                                    {% if laptop.available and laptop.sale %}
+                            <!-- laptop specifiactions and details -->
+                            <ul class="list-unstyled text-muted d-none d-md-block">
+                                <li>{{ laptop.cpu_brand }} {{ laptop.cpu_name}}</li>
+                                <li>{{ laptop.ram }}</li>
+                                <li>{{ laptop.storage_size}}</li>
+                                <li>
+                                    {% if laptop.available %}
+                                        In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                    {% endif %}
+                                </li>
+                            </ul>
+
+                            <!-- if laptop is on sale show discounted price, else show regular price -->
+                            {% if laptop.available %}
+                                {% if laptop.sale %}
                                     <div class="price">
                                         <p class="lead font-weight-bold text-right text-red">
-                                            {{ laptop.lowest_sale_price }}
+                                            from €{{ laptop.lowest_sale_price }}
                                         </p>
                                     </div>
-                                    {% else %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right">{{ laptop.lowest_price }}</p>
-                                    </div>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-
-        <!-- laptop card for each laptop on screens below medium -->
-        {% for laptop in laptops %}
-        <div class="d-md-none col-12 col-lg-6">
-            <div class="row">
-                <div class="container p-4">
-
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-4" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-12 text-center">
-
-                                <!-- laptop image -->
-                                {% if laptop.image %}
-                                <a href="{% url 'laptop_detail' laptop.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
-                                </a>
                                 {% else %}
-                                <a href="{% url 'laptop_detail' laptop.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                                </a>
-                                {% endif %}
-
-                                <!-- if the laptop is on sale display a red box-->
-                                {% if laptop.available and laptop.sale %}
-                                <div class="sale">
-                                    sale
-                                </div>
-                                {% endif %}
-                            </div>
-
-                            <!-- card body for laptop details -->
-                            <div class="col-12 position-relative">
-                                <div class="card-body">
-
-                                    <!-- laptop name -->
-                                    <h5 class="card-title h-3 border-bottom text-truncate">
-                                        {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
-                                    </h5>
-
-
-                                    <!-- laptop specifiactions and details -->
-                                    <p class="text-muted border-bottom h-3 text-truncate">{{ laptop.cpu_brand }} {{ laptop.cpu_name}} |
-                                        {{ laptop.ram }} | {{ laptop.storage_size}} | {{ laptop.screen_size }} </p>
-
-
-                                    <!-- if laptop is on sale show discounted price, else show regular price -->
-                                    <div class="d-flex justify-content-between">
-                                        {% if laptop.available and laptop.sale %}
-                                        <span class="lead text-red">{{ laptop.sale_price }}</span>
-                                        {% else %}
-                                        <span class="lead">{{ laptop.price }}</span>
-                                        {% endif %}
-                                        {% if laptop.available %}
-                                        <span>
-                                        In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                        {% else %}
-                                        Out of stock
-                                        </span>
-                                    {% endif %}
-
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">from €{{ laptop.lowest_price }}</p>
                                     </div>
+                                {% endif %}
+                            {% else %}
+                                <div class="price">
+                                    <p class="lead font-weight-bold text-right">Out of stock</p>
                                 </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- laptop card for each laptop on screens below medium -->
+{% for laptop in laptops %}
+<div class="d-md-none col-12 col-lg-6">
+    <div class="row">
+        <div class="container p-4">
+
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-12 text-center">
+
+                        <!-- laptop image -->
+                        {% if laptop.image %}
+                            {% if laptop.available %}
+                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
+                                </a>
+                            {% else %}
+                                <a href="{% url 'laptop_detail' laptop.id %}">
+                                    <img class="card-img-top img-fluid saturation" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            <a href="{% url 'laptop_detail' laptop.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ laptop.name }}">
+                            </a>
+                        {% endif %}
+
+                        <!-- if the laptop is on sale display a red box-->
+                        {% if laptop.available and laptop.sale %}
+                        <div class="sale">
+                            sale
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <!-- card body for laptop details -->
+                    <div class="col-12 position-relative">
+                        <div class="card-body">
+
+                            <!-- laptop name -->
+                            <h5 class="card-title h-3 border-bottom text-truncate">
+                                {{ laptop.brand }} {{ laptop.series}} {{ laptop.model }}
+                            </h5>
+
+
+                            <!-- laptop specifiactions and details -->
+                            <p class="text-muted border-bottom h-3 text-truncate">{{ laptop.cpu_brand }} {{ laptop.cpu_name}} |
+                                {{ laptop.ram }} | {{ laptop.storage_size}}</p>
+
+
+                            <!-- if laptop is on sale show discounted price, else show regular price -->
+                            <div class="d-flex justify-content-between">
+                                {% if laptop.available %}
+                                    {% if laptop.sale %}
+                                        <span class="lead text-red">€{{ laptop.lowest_sale_price }}</span>
+                                    {% else %}
+                                        <span class="lead">€{{ laptop.lowest_price }}</span>
+                                    {% endif %}
+                                {% else %}
+                                    <span class="lead">Out of stock</span>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3 lead">
+                                        <a href="{% url 'edit_laptop' laptop.id %}">Edit</a>
+                                        <a class="text-danger" href="{% url 'delete_product' laptop.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+</div>
+{% endfor %}
