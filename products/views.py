@@ -7,6 +7,10 @@ from django.db.models import Sum
 from .forms import LaptopForm, PhoneForm, SmartwatchForm, ConsoleForm
 from decimal import Decimal
 
+from django.db.models.functions import Concat
+from django.db.models import Value
+
+
 
 def all_products(request):
 
@@ -15,6 +19,7 @@ def all_products(request):
     direction = None
     categories = Category.objects.values_list('friendly_name', flat=True).distinct()
 
+    products = Product.objects.all()
     laptops = Laptop.objects.all()
     phones = Phone.objects.all()
     smartwatches = Smartwatch.objects.all()
@@ -28,7 +33,7 @@ def all_products(request):
             phones = Phone.objects.filter(sale=True)
             smartwatches = Smartwatch.objects.filter(sale=True)
             consoles = Console.objects.filter(sale=True)
-        
+
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -37,18 +42,22 @@ def all_products(request):
                 return redirect(reverse('products'))
 
             queries = Q(brand__icontains=query) | Q(model__icontains=query) | Q(series__icontains=query) | Q(color__icontains=query)
-            laptops = laptops.filter(Q(category__name__icontains=query) | queries)
+            laptops = laptops.filter(Q(category__name__icontains=query) | Q(label__icontains=query) | queries)
             phones = phones.filter(Q(category__name__icontains=query) | queries)
             smartwatches = smartwatches.filter(Q(category__name__icontains=query) | queries)
             consoles = consoles.filter(Q(category__name__icontains=query) | queries)
-    
+            products = products.filter(queries)
+
+
     context = {
+        'products': products,
         'laptops': laptops,
         'phones': phones,
         'smartwatches': smartwatches,
         'consoles': consoles,
         'search_term': query,
         'categories': categories,
+        'current_categories': categories,
     }
 
     return render(request, 'products/products.html', context)

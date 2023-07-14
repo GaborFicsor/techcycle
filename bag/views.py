@@ -26,6 +26,7 @@ def add_to_bag(request, item_id):
     bag = request.session.get('bag', {})
     item = request.session.get('item_id', {})
     selected_price = None
+    print(f'redirect url:{redirect_url}')
 
     for inventory in product.inventory_set.all():
         if inventory.condition == condition:
