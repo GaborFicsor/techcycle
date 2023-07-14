@@ -161,9 +161,9 @@
                                     </a>
                                     {% if smartwatch.available %}
                                         <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Add to Cart">
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% else %}
                                         <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Out of stock" disabled>
-                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% endif %}
                                 </div>
                             </div>
