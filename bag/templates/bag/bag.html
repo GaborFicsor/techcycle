@@ -80,13 +80,15 @@
                         </table>
                     </div>
                     {% else %}
-                    <p class="lead.mb-5">Your bag is empty.</p>
-                    <a href="btn btn-outline-black rounded-0 btn-lg" class="btn btn-clear btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    <div class="vh-50">
+                        <p class="lead.mb-5">Your cart is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                    </div>
                     {% endif %}
                 </div>
             </div>
