@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    // Script for making the product image greyscale
+    // if the product is out of stock(not available)
+    // this function is based on the innerhtml of the
+    // list item with id="stock"
+    $(document).ready(function(){
+        var selector = $('#disabled')
+        var selectedVal = selector.val()
+        var image = $('.card-img-top')
+        var stock = $("#stock").html();
+
+        if(stock){
+            image.addClass('saturation')
+        }
+
+        $('#disabled-button').click(function(event) {
+        event.preventDefault();
+        });
+    });
+</script>

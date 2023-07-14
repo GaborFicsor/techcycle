@@ -21,7 +21,7 @@
                             </div>
 
                             <!-- if the laptop is on sale display a red box-->
-                            {% if laptop.sale %}
+                            {% if laptop.available and laptop.sale %}
                             <div class="sale">
                                 sale
                             </div>
@@ -51,24 +51,22 @@
                                         <li>
                                             {% if laptop.available %}
                                                 In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                                {% else %}
-                                                Out of stock
                                             {% endif %}
                                         </li>
                                     </ul>
 
                                     <!-- if laptop is on sale show discounted price, else show regular price -->
-                                    {% if laptop.sale %}
+                                    {% if laptop.available and laptop.sale %}
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right text-red">€{{ laptop.sale_price }}
+                                        <p class="lead font-weight-bold text-right text-red">
+                                            {{ laptop.lowest_sale_price }}
                                         </p>
                                     </div>
                                     {% else %}
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ laptop.price }}</p>
+                                        <p class="lead font-weight-bold text-right">{{ laptop.lowest_price }}</p>
                                     </div>
                                     {% endif %}
-
                                 </div>
                             </div>
                         </div>
@@ -101,7 +99,7 @@
                                 {% endif %}
 
                                 <!-- if the laptop is on sale display a red box-->
-                                {% if laptop.sale %}
+                                {% if laptop.available and laptop.sale %}
                                 <div class="sale">
                                     sale
                                 </div>
@@ -125,7 +123,7 @@
 
                                     <!-- if laptop is on sale show discounted price, else show regular price -->
                                     <div class="d-flex justify-content-between">
-                                        {% if laptop.sale %}
+                                        {% if laptop.available and laptop.sale %}
                                         <span class="lead text-red">{{ laptop.sale_price }}</span>
                                         {% else %}
                                         <span class="lead">{{ laptop.price }}</span>

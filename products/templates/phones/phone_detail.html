@@ -174,7 +174,7 @@
                                         <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Add to Cart">
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% else %}
-                                        <input type="submit" class="btn btn-dark text-uppercase mt-2" value="Out of stock" disabled>
+                                    <input id="disabled-button" type="submit" class="btn btn-dark text-uppercase mt-2" value="Out of stock" disabled>
                                     {% endif %}
                                 </div>
                             </div>
@@ -185,26 +185,10 @@
         </div>
     </div>
 </section>
+{% endblock %}
 {% block postloadjs %}
     {{ block.super }}
 
-    <script type="text/javascript">
-        // Script for making the product image greyscale
-        // if the product is out of stock(not available)
-        // this function is based on the innerhtml of the
-        // list item with id="stock"
-    $(document).ready(function(){
-        var selector = $('#disabled')
-        var selectedVal = selector.val()
-        var image = $('.card-img-top')
-        var stock = $("#stock").html();
-
-        if(stock){
-            image.addClass('saturation')
-        }
-    });
-    </script>
-
-{% endblock %}
+    {% include 'components/disabling_script.html' %}
 
 {% endblock %}

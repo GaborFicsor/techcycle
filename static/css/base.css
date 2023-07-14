@@ -88,6 +88,11 @@ body {
     border-color: #011936;
 }
 
+.btn-grey {
+    color: #fff;
+    background-color: #011936;
+    border-color: #011936;
+}
 
 .btn-dark {
     color: #fff;
