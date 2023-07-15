@@ -7,7 +7,7 @@ from .models import FAQ
 def index(request):
     """A view to return the index page"""
 
-    laptops = list(Laptop.objects.all())
+    laptops = list(Laptop.objects.filter(label='Gaming Laptop'))
     faqs = list(FAQ.objects.all())
 
     laptops = random.sample(laptops, 4)
