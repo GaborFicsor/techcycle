@@ -12,10 +12,23 @@
 
 
     <div class="row">
+        {% if laptops %}
         {% include 'components/laptop_card.html' %}
+        {% endif %}
+        {% if phones %}
         {% include 'components/phone_card.html' %}
+        {% endif %}
+        {% if smartwatches %}
         {% include 'components/console_card.html' %}
+        {% endif %}
+        {% if consoles %}
         {% include 'components/smartwatch_card.html' %}
+        {% endif %}
+        {% if not laptops and not phones and not consoles and not smartwatches %}
+            <div class="vh-50">
+                <h4>No result matches the search criteria</h4>
+            </div>
+        {% endif %}
     </div>
 
 </div>
