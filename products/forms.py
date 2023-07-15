@@ -35,6 +35,12 @@ class InventoryForm(forms.ModelForm):
             'stock_count',
         ]
 
+    def clean_stock_count(self):
+        stock_count = self.cleaned_data.get('stock_count')
+        if stock_count > 99:
+            raise forms.ValidationError('Stock count can only be 0-99')
+        return stock_count
+
 class LaptopForm(forms.ModelForm):
 
     class Meta:
@@ -76,6 +82,12 @@ class LaptopForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+    def clean_price(self):
+        price = self.cleaned_data.get('price')
+        if price > 2999:
+            raise forms.ValidationError('Price should not be over 2999.')
+        return price
+
 
 class PhoneForm(forms.ModelForm):
 
@@ -109,6 +121,12 @@ class PhoneForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+    def clean_price(self):
+        price = self.cleaned_data.get('price')
+        if price > 1499:
+            raise forms.ValidationError('Price should not be over 1499.')
+        return price
+
 
 class SmartwatchForm(forms.ModelForm):
 
@@ -141,6 +159,12 @@ class SmartwatchForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+    def clean_price(self):
+        price = self.cleaned_data.get('price')
+        if price > 999:
+            raise forms.ValidationError('Price should not be over 999.')
+        return price
+
 
 class ConsoleForm(forms.ModelForm):
 
@@ -164,3 +188,9 @@ class ConsoleForm(forms.ModelForm):
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+    def clean_price(self):
+        price = self.cleaned_data.get('price')
+        if price > 599:
+            raise forms.ValidationError('Price should not be over 599.')
+        return price
