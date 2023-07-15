@@ -54,6 +54,13 @@
                         </li>
                     {% endif %}
                 </ul>
+                {% if request.user.is_superuser %}
+                <small class="ml-3 lead">
+                    <a href="{% url 'edit_phone' phone.id %}">Edit</a>
+                        /
+                    <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
+                </small>
+            {% endif %}
             </div>
         </div>
     </div>

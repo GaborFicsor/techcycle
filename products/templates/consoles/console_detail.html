@@ -14,6 +14,7 @@
                 <div class="p-3 p-md-4 mb-4">
                     <div class="d-md-flex justify-content-between">
                         <dt><h2>{{ console.name }}</h2></dt>
+
                         {% if console.available %}
                             {% if console.sale %}
                                 <dd>
@@ -54,6 +55,13 @@
                             </li>
                         {% endif %}
                     </ul>
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3 lead">
+                        <a href="{% url 'edit_console' console.id %}">Edit</a>
+                            /
+                        <a class="text-danger" href="{% url 'delete_product' console.id %}">Delete</a>
+                    </small>
+                {% endif %}
                 </div>
             </div>
         </div>

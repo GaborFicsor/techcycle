@@ -157,9 +157,9 @@
         </div>
         {% for faq in faqs %}
         <div class="col-12">
-            <div id="accordion">
+            <div id="accordion_{{ faq.id }}">
                 <div class="accordion-item">
-                    <div class="accordion-header" id="heading{{ faq.id }}">
+                    <div class="accordion-header" id="heading_{{ faq.id }}">
                         <h5 class="mb-0">
                             <a class="btn btn-accordion stretched-link collapsed" data-toggle="collapse"
                                 data-target="#collapse{{ faq.id }}" aria-expanded="true"
@@ -256,5 +256,18 @@
             });
         }, 3000)
     })();
+
+    (function() {
+        var activeAccordian = null;
+        var $accordions = $(".accordion").on('click', function() {
+            activeAccordian = this;
+        }).accordion({
+            collapsible: true,
+            active: false,
+            icons: false
+        }).on('accordionchange', function(event, ui) {
+            $accordions.not(activeAccordian).accordion('activate', false);
+        });
+    });
 </script>
 {% endblock %}
