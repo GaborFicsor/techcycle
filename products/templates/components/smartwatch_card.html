@@ -40,12 +40,6 @@
                                 <!-- smartwatch name -->
                                 <h5 class="card-title h-3 text-sm">
                                     {{ smartwatch.name }}
-                                    {% if request.user.is_superuser %}
-                                    <small class="ml-3">
-                                        <a href="{% url 'edit_smartwatch' smartwatch.id %}">Edit</a>
-                                        <a class="text-danger" href="{% url 'delete_product' smartwatch.id %}">Delete</a>
-                                    </small>
-                                {% endif %}
                                 </h5>
 
                                 <!-- smartwatch specifiactions and details -->
@@ -144,12 +138,6 @@
                                         {% endif %}
                                     {% else %}
                                         <span class="lead">Out of stock</span>
-                                    {% endif %}
-                                    {% if request.user.is_superuser %}
-                                        <small class="ml-3 lead">
-                                            <a href="{% url 'edit_smartwatch' smartwatch.id %}">Edit</a>
-                                            <a class="text-danger" href="{% url 'delete_product' smartwatch.id %}">Delete</a>
-                                        </small>
                                     {% endif %}
                                 </div>
                             </div>

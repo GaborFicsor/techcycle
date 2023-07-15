@@ -40,12 +40,6 @@
                             <!-- phone name -->
                             <h5 class="card-title h-3 text-sm">
                                 {{ phone.name }}
-                                {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_phone' phone.id %}">Edit</a>
-                                    <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
-                                </small>
-                            {% endif %}
                             </h5>
 
                             <!-- phone specifications and details -->
@@ -137,12 +131,6 @@
                                     {% endif %}
                                 {% else %}
                                     <span class="lead">Out of stock</span>
-                                {% endif %}
-                                {% if request.user.is_superuser %}
-                                    <small class="ml-3 lead">
-                                        <a href="{% url 'edit_phone' phone.id %}">Edit</a>
-                                        <a class="text-danger" href="{% url 'delete_product' phone.id %}">Delete</a>
-                                    </small>
                                 {% endif %}
                             </div>
                         </div>

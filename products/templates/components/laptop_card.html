@@ -40,12 +40,6 @@
                             <!-- laptop name -->
                             <h5 class="card-title h-3 text-sm">
                                 {{ laptop.name }}
-                                {% if request.user.is_superuser %}
-                                    <small class="ml-3">
-                                        <a href="{% url 'edit_laptop' laptop.id %}">Edit</a>
-                                        <a class="text-danger" href="{% url 'delete_product' laptop.id %}">Delete</a>
-                                    </small>
-                                {% endif %}
                             </h5>
 
                             <!-- laptop specifiactions and details -->
@@ -149,12 +143,6 @@
                                 {% else %}
                                     <span class="lead">Out of stock</span>
                                 {% endif %}
-                                {% if request.user.is_superuser %}
-                                    <small class="ml-3 lead">
-                                        <a href="{% url 'edit_laptop' laptop.id %}">Edit</a>
-                                        <a class="text-danger" href="{% url 'delete_product' laptop.id %}">Delete</a>
-                                    </small>
-                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -163,4 +151,16 @@
         </div>
     </div>
 </div>
+{% empty %}
+
+<div class="vh-50">
+    <h4 class="lead.mb-5">No product matches the search criteria</h4>
+    <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+        <span class="icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="text-uppercase">Back to all products</span>
+    </a>
+</div>
+
 {% endfor %}
