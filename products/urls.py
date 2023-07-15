@@ -19,5 +19,9 @@ urlpatterns = [
     path('edit/phone/<int:product_id>/', views.edit_phone, name='edit_phone'),
     path('edit/smartwatch/<int:product_id>/', views.edit_smartwatch, name='edit_smartwatch'),
     path('edit/console/<int:product_id>/', views.edit_console, name='edit_console'),
+    path('edit/laptop/<int:product_id>/inventory/', views.edit_laptop_inventory, name='edit_laptop_inventory'),
+    path('edit/phone/<int:product_id>/inventory/', views.edit_phone_inventory, name='edit_phone_inventory'),
+    path('edit/smartwatch/<int:product_id>/inventory/', views.edit_smartwatch_inventory, name='edit_smartwatch_inventory'),
+    path('edit/console/<int:product_id>/inventory/', views.edit_console_inventory, name='edit_console_inventory'),
     path('delete/<int:product_id>/', views.delete_product, name='delete_product'),
 ]

@@ -4,8 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Laptop, Phone, Smartwatch, Console, Category, Product, Inventory
 from django.db.models import Sum
-from .forms import LaptopForm, PhoneForm, SmartwatchForm, ConsoleForm
+from .forms import LaptopForm, PhoneForm, SmartwatchForm, ConsoleForm, InventoryForm
 from decimal import Decimal
+from django.forms import inlineformset_factory
 
 from django.db.models.functions import Concat
 from django.db.models import Value
@@ -354,6 +355,28 @@ def edit_laptop(request, product_id):
 
     return render (request, template, context)
 
+def edit_laptop_inventory(request, product_id):
+    laptop = get_object_or_404(Laptop, pk=product_id)
+    InventoryFormSet = inlineformset_factory(Product, Inventory, form=InventoryForm, extra=0, can_delete=False)
+
+    if request.method == 'POST':
+        formset = InventoryFormSet(request.POST, instance=laptop)
+        if formset.is_valid():
+            formset.save()
+            messages.success(request, f'Successfully updated inventory of {laptop}')
+            return redirect(reverse('laptop_detail', args=[laptop.id]))
+    else:
+        formset = InventoryFormSet(instance=laptop)
+
+    template = 'products/edit_laptop_inventory.html'
+    context = {
+        'formset': formset,
+        'laptop': laptop,
+    }
+
+    return render(request, template, context)
+
+
 def edit_phone(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -380,6 +403,27 @@ def edit_phone(request, product_id):
     }
 
     return render (request, template, context)
+
+def edit_phone_inventory(request, product_id):
+    phone = get_object_or_404(Phone, pk=product_id)
+    InventoryFormSet = inlineformset_factory(Product, Inventory, form=InventoryForm, extra=0, can_delete=False)
+
+    if request.method == 'POST':
+        formset = InventoryFormSet(request.POST, instance=phone)
+        if formset.is_valid():
+            formset.save()
+            messages.success(request, f'Successfully updated inventory of {phone}')
+            return redirect(reverse('phone_detail', args=[phone.id]))
+    else:
+        formset = InventoryFormSet(instance=phone)
+
+    template = 'products/edit_phone_inventory.html'
+    context = {
+        'formset': formset,
+        'phone': phone,
+    }
+
+    return render(request, template, context)
 
 def edit_smartwatch(request, product_id):
     if not request.user.is_superuser:
@@ -408,6 +452,27 @@ def edit_smartwatch(request, product_id):
 
     return render (request, template, context)
 
+def edit_smartwatch_inventory(request, product_id):
+    smartwatch = get_object_or_404(Smartwatch, pk=product_id)
+    InventoryFormSet = inlineformset_factory(Product, Inventory, form=InventoryForm, extra=0, can_delete=False)
+
+    if request.method == 'POST':
+        formset = InventoryFormSet(request.POST, instance=smartwatch)
+        if formset.is_valid():
+            formset.save()
+            messages.success(request, f'Successfully updated inventory of {smartwatch}')
+            return redirect(reverse('smartwatch_detail', args=[smartwatch.id]))
+    else:
+        formset = InventoryFormSet(instance=smartwatch)
+
+    template = 'products/edit_smartwatch_inventory.html'
+    context = {
+        'formset': formset,
+        'smartwatch': smartwatch,
+    }
+
+    return render(request, template, context)
+
 def edit_console(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -434,6 +499,27 @@ def edit_console(request, product_id):
     }
 
     return render (request, template, context)
+
+def edit_console_inventory(request, product_id):
+    console = get_object_or_404(Console, pk=product_id)
+    InventoryFormSet = inlineformset_factory(Product, Inventory, form=InventoryForm, extra=0, can_delete=False)
+
+    if request.method == 'POST':
+        formset = InventoryFormSet(request.POST, instance=console)
+        if formset.is_valid():
+            formset.save()
+            messages.success(request, f'Successfully updated inventory of {console}')
+            return redirect(reverse('console_detail', args=[console.id]))
+    else:
+        formset = InventoryFormSet(instance=console)
+
+    template = 'products/edit_console_inventory.html'
+    context = {
+        'formset': formset,
+        'console': console,
+    }
+
+    return render(request, template, context)
 
 
 @login_required
