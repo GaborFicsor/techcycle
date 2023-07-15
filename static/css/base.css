@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700&display=swap');
+
+
 html {
     height: 100%;
 }
@@ -5,8 +8,17 @@ html {
 body {
     padding-top: 56px;
     color: #011936;
-    font-family: 'Lato';
+    font-family: Lato, Arial, sans-serif;
     background-color: #F5F5F5;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 /* colours */
@@ -256,7 +268,7 @@ body {
         to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 1)
-      ), url(/media/clouds.jpg);
+      ), url(/media/forest.jpg);
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
