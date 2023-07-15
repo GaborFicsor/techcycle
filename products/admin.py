@@ -15,14 +15,14 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
-class InventoryAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'condition',
-    )
-
+class InventoryAdminInline(admin.TabularInline):
+    """Inventory inline fields to display the inventory for the products"""
+    model = Inventory
+    readonly_fields = ('condition', 'price', 'sale_price')
 
 class LaptopAdmin(admin.ModelAdmin):
+    """Laptop admin"""
+    inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
     search_fields = ('brand','model','series', 'label')
     list_filter = ('sale', 'brand', 'label')
@@ -30,51 +30,55 @@ class LaptopAdmin(admin.ModelAdmin):
         'name',
         'label',
         'price',
+        'available',
+        'sale',
+        'in_stock',
     )
 
             
 
 class PhoneAdmin(admin.ModelAdmin):
+    """Phone admin"""
+    inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
+    search_fields = ('brand','model','series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
         'price',
+        'available',
+        'sale',
+        'in_stock',
     )
-
-    @admin.action(description="Add selected items to sale")
-    def add_to_sale(self, request, queryset):
-        for product in queryset:
-            product.sale = not product.sale
-            product.save()
     
 
 class SmartwatchAdmin(admin.ModelAdmin):
+    """Smartwatch admin"""
+    inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
+    search_fields = ('brand','model','series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
         'price',
+        'available',
+        'sale',
+        'in_stock',
     )
-
-class ProductAdmin(admin.ModelAdmin):
-    list_display = (
-        'id',
-        'name',
-    )
-    
-class InventoryAdminInline(admin.TabularInline):
-    model = Inventory
-    readonly_fields = ('condition', 'price', 'sale_price')
 
 
 class ConsoleAdmin(admin.ModelAdmin):
+    """Console admin"""
     inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
+    search_fields = ('brand','model','series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
         'price',
+        'available',
+        'sale',
+        'in_stock',
     )
 
 admin.site.register(Category, CategoryAdmin)
@@ -82,5 +86,3 @@ admin.site.register(Laptop, LaptopAdmin)
 admin.site.register(Phone, PhoneAdmin)
 admin.site.register(Smartwatch, SmartwatchAdmin)
 admin.site.register(Console, ConsoleAdmin)
-admin.site.register(Inventory, InventoryAdmin)
-admin.site.register(Product, ProductAdmin)
