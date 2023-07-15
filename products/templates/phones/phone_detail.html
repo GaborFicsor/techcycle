@@ -72,14 +72,10 @@
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if phone.image %}
-                    <a href="{{ phone.img.url }}" target="_blank">
                         <img class="card-img-top img-fluid" src="{{ phone.image.url }}" alt="">
-                    </a>
                     {% else %}
-                    <a href="">
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
                             alt="">
-                    </a>
                     {% endif %}
                 </div>
             </div>

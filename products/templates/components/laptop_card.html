@@ -151,16 +151,5 @@
         </div>
     </div>
 </div>
-{% empty %}
-
-<div class="vh-50">
-    <h4 class="lead.mb-5">No product matches the search criteria</h4>
-    <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
-        <span class="icon">
-            <i class="fas fa-chevron-left"></i>
-        </span>
-        <span class="text-uppercase">Back to all products</span>
-    </a>
-</div>
 
 {% endfor %}

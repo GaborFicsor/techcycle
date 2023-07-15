@@ -24,8 +24,8 @@
                 <img class="d-block w-100" src="/media/slide-console.png" alt="">
             </picture>
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <a class="btn btn-large btn-dark" href="{% url 'consoles' %}">Shop Now</a>
+                <p>Discover a variety of consoles.</p>
             </div>
         </div>
         <div class="carousel-item">
@@ -35,9 +35,6 @@
                 <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="">
             </picture>
             <div class="carousel-caption d-none d-md-block">
-                <a href="https://www.google.co.uk/" target="_blank"><button type="button" class="btn btn-default">Read
-                        More</button></a>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 
             </div>
         </div>
@@ -48,8 +45,8 @@
                 <img class="d-block w-100" src="/media/slide-sale.png" alt="">
             </picture>
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <a class="btn btn-large btn-dark" href="{% url 'products' %}?sale=true">Shop Now</a>
+                <p>Save even more on selected products now with additional -5% discount</p>
             </div>
         </div>
     </div>
@@ -155,13 +152,13 @@
         <div class="col-12">
             <h2 class="index-h2">Frequently asked questions</h2>
         </div>
-        {% for faq in faqs %}
         <div class="col-12">
-            <div id="accordion_{{ faq.id }}">
+            <div id="accordion">
+                {% for faq in faqs %}
                 <div class="accordion-item">
                     <div class="accordion-header" id="heading_{{ faq.id }}">
                         <h5 class="mb-0">
-                            <a class="btn btn-accordion stretched-link collapsed" data-toggle="collapse"
+                            <a class="btn btn-accordion accordion-toggle stretched-link collapsed" data-toggle="collapse"
                                 data-target="#collapse{{ faq.id }}" aria-expanded="true"
                                 aria-controls="collapse{{ faq.id }}">
                                 {{ faq.question }}
@@ -171,15 +168,14 @@
                     </div>
                     <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}"
                         data-parent="#accordion">
-                        <div class="accordion-body">
+                        <div class="accordion-body text-white">
                             {{ faq.answer }}
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-
         </div>
-        {% endfor %}
     </div>
 </section>
 <!-- faq section -->
@@ -216,7 +212,7 @@
                 <div class="col-4">
                     <i class="circle-icon dark-b fa-solid fa-heart"></i>
                     <h4 class="p-3">Pre-loved products</h4>
-                    <p class="px-3">Pre-loved products: Discover a curated selection of gently used items, ready to find
+                    <p class="px-3">Discover a curated selection of gently used items, ready to find
                         a
                         new home.
                     </p>
@@ -257,17 +253,16 @@
         }, 3000)
     })();
 
-    (function() {
-        var activeAccordian = null;
-        var $accordions = $(".accordion").on('click', function() {
-            activeAccordian = this;
-        }).accordion({
-            collapsible: true,
-            active: false,
-            icons: false
-        }).on('accordionchange', function(event, ui) {
-            $accordions.not(activeAccordian).accordion('activate', false);
-        });
+    $(document).ready(function () {
+    $('.accordion-toggle').on('click', function(event){
+        event.preventDefault();
+        var accordion = $(this);
+        var accordionContent = accordion.next('.accordion-content');
+
+        accordion.toggleClass("open");
+        accordionContent.slideToggle(250);
+
     });
+});
 </script>
 {% endblock %}

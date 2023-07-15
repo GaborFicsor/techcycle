@@ -73,13 +73,9 @@
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if console.image %}
-                        <a href="{{ console.img.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
-                        </a>
+                        <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
                     {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
-                        </a>
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
                     {% endif %}
                 </div>
             </div>
