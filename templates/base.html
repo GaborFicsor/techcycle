@@ -81,7 +81,10 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_laptop' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_laptop' %}" class="dropdown-item">Add laptop</a>
+                            <a href="{% url 'add_phone' %}" class="dropdown-item">Add phone</a>
+                            <a href="{% url 'add_smartwatch' %}" class="dropdown-item">Add smartwatch</a>
+                            <a href="{% url 'add_console' %}" class="dropdown-item">Add console</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>

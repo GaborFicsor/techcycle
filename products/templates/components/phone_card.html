@@ -21,7 +21,7 @@
                             {% endif %}
                         {% else %}
                             <a href="{% url 'phone_detail' phone.id %}">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ phone.name }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ phone.name }}">
                             </a>
                         {% endif %}
                     </div>
@@ -58,11 +58,11 @@
                             {% if phone.available %}
                                 {% if phone.sale %}
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right text-red">€{{ phone.lowest_sale_price }}</p>
+                                        <p class="lead font-weight-bold text-right text-red">From €{{ phone.lowest_sale_price }}</p>
                                     </div>
                                 {% else %}
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ phone.lowest_price }}</p>
+                                        <p class="lead font-weight-bold text-right">From €{{ phone.lowest_price }}</p>
                                     </div>
                                 {% endif %}
                             {% else %}
@@ -103,7 +103,7 @@
                             {% endif %}
                         {% else %}
                             <a href="{% url 'phone_detail' phone.id %}">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ phone.name }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ phone.name }}">
                             </a>
                         {% endif %}
 
@@ -125,9 +125,9 @@
                             <div class="d-flex justify-content-between">
                                 {% if phone.available %}
                                     {% if phone.sale %}
-                                        <span class="lead text-red">€{{ phone.lowest_sale_price }}</span>
+                                        <span class="lead text-red">From €{{ phone.lowest_sale_price }}</span>
                                     {% else %}
-                                        <span class="lead">€{{ phone.lowest_price }}</span>
+                                        <span class="lead">From €{{ phone.lowest_price }}</span>
                                     {% endif %}
                                 {% else %}
                                     <span class="lead">Out of stock</span>

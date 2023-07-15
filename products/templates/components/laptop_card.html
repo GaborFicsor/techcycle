@@ -21,7 +21,7 @@
                             {% endif %}
                         {% else %}
                             <a href="{% url 'laptop_detail' laptop.id %}">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ laptop.name }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ laptop.name }}">
                             </a>
                         {% endif %}
                     </div>
@@ -105,7 +105,7 @@
                             {% endif %}
                         {% else %}
                             <a href="{% url 'laptop_detail' laptop.id %}">
-                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ laptop.name }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ laptop.name }}">
                             </a>
                         {% endif %}
 
@@ -136,9 +136,9 @@
                             <div class="d-flex justify-content-between">
                                 {% if laptop.available %}
                                     {% if laptop.sale %}
-                                        <span class="lead text-red">€{{ laptop.lowest_sale_price }}</span>
+                                        <span class="lead text-red">From €{{ laptop.lowest_sale_price }}</span>
                                     {% else %}
-                                        <span class="lead">€{{ laptop.lowest_price }}</span>
+                                        <span class="lead">From €{{ laptop.lowest_price }}</span>
                                     {% endif %}
                                 {% else %}
                                     <span class="lead">Out of stock</span>
