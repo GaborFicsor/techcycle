@@ -58,6 +58,12 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 product = Product.objects.get(id=item_id)
                 for condition, quantity in item_data.items():
+                    item = get_object_or_404(Product, pk=item_id)
+                    inventory = item.inventory_set.get(condition=condition)
+                    if item.sale:
+                        price=inventory.sale_price
+                    else:
+                        price = inventory.price
                     quantity = quantity['quantity']
                     
                     order_line_item = OrderLineItem(
@@ -65,8 +71,20 @@ def checkout(request):
                         product=product,
                         quantity=quantity,
                         condition=condition,
+                        price=price
                     )
                     order_line_item.save()
+
+                    # this is where I subtract the quantity of the item from the stock_count of the item's condition
+                    # and save it so the stock count is reflected correctly
+                    if quantity > inventory.stock_count:
+                        messages.error(request, f"the amount({quantity}) you're trying to purchase for {item} in ({condition}) condition is more than we currently have in stock ({inventory.stock_count}) for that item")
+                        return redirect('view_bag')
+                    inventory.stock_count = inventory.stock_count - quantity
+                    inventory.save()
+                    
+                    
+
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))

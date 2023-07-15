@@ -1,145 +1,144 @@
 {% for smartwatch in smartwatches %}
-        <div class="d-none d-md-block col-12 col-lg-6">
-            <div class="row custom-margin">
-                <div class="container p-4">
+    <div class="d-none d-md-block col-12 col-lg-6">
+        <div class="row custom-margin">
+            <div class="container p-4">
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
-                        <div class="row g-0">
+                <!-- card image -->
+                <div class="card border-0 mb-3 p-3">
+                    <div class="row g-0">
 
-                            <!-- smartwatch image -->
-                            <div class="col-6 text-center">
-                                {% if smartwatch.image %}
-                                <a href="{% url 'smartwatch_detail' smartwatch.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="">
-                                </a>
+                        <!-- smartwatch image -->
+                        <div class="col-6 text-center">
+                            {% if smartwatch.image %}
+                                {% if smartwatch.available %}
+                                    <a href="{% url 'smartwatch_detail' smartwatch.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="{{ smartwatch.name }}">
+                                    </a>
                                 {% else %}
+                                    <a href="{% url 'smartwatch_detail' smartwatch.id %}">
+                                        <img class="card-img-top img-fluid saturation" src="{{ smartwatch.image.url }}" alt="{{ smartwatch.name }}">
+                                    </a>
+                                {% endif %}
+                            {% else %}
                                 <a href="{% url 'smartwatch_detail' smartwatch.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ smartwatch.name }}">
                                 </a>
+                            {% endif %}
+                        </div>
+
+                        <!-- if the smartwatch is on sale display a red box-->
+                        {% if smartwatch.available and smartwatch.sale %}
+                        <div class="sale">
+                            sale
+                        </div>
+                        {% endif %}
+
+                        <!-- card body for smartwatch details -->
+                        <div class="col-6 position-relative border-left">
+                            <div class="card-body">
+
+                                <!-- smartwatch name -->
+                                <h5 class="card-title h-3 text-sm">
+                                    {{ smartwatch.name }}
+                                </h5>
+
+                                <!-- smartwatch specifiactions and details -->
+                                <ul class="list-unstyled text-muted d-none d-md-block">
+                                    <li>{{ smartwatch.display }} display</li>
+                                    <li>{{ smartwatch.screen_size }}"</li>
+                                    <li>{{ smartwatch.resolution }}</li>
+                                    <li>
+                                        {% if smartwatch.available %}
+                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
+                                        {% endif %}
+                                    </li>
+                                </ul>
+
+                                <!-- if smartwatch is on sale show discounted price, else show regular price -->
+                                {% if smartwatch.available %}
+                                    {% if smartwatch.sale %}
+                                        <div class="price">
+                                            <p class="lead font-weight-bold text-right text-red">from €{{ smartwatch.lowest_sale_price }}</p>
+                                        </div>
+                                    {% else %}
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">from €{{ smartwatch.lowest_price }}</p>
+                                    </div>
+                                {% endif %}
+                                {% else %}
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">Out of stock</p>
+                                    </div>
                                 {% endif %}
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- smartwatch card for each smartwatch on screens below medium -->
+    {% for smartwatch in smartwatches %}
+    <div class="d-md-none col-12 col-lg-6">
+        <div class="row">
+            <div class="container p-4">
+
+                <!-- card image -->
+                <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                    <div class="row g-0">
+                        <div class="col-12 text-center">
+
+                            <!-- smartwatch image -->
+                            {% if smartwatch.image %}
+                                {% if smartwatch.available %}
+                                    <a href="{% url 'smartwatch_detail' smartwatch.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="{{ smartwatch.name }}">
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'smartwatch_detail' smartwatch.id %}">
+                                        <img class="card-img-top img-fluid saturation" src="{{ smartwatch.image.url }}" alt="{{ smartwatch.name }}">
+                                    </a>
+                                {% endif %}
+                            {% else %}
+                                <a href="{% url 'smartwatch_detail' smartwatch.id %}">
+                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ smartwatch.name }}">
+                                </a>
+                            {% endif %}
 
                             <!-- if the smartwatch is on sale display a red box-->
-                            {% if smartwatch.sale %}
+                            {% if smartwatch.available and smartwatch.sale %}
                             <div class="sale">
                                 sale
                             </div>
                             {% endif %}
-
-                            <!-- card body for smartwatch details -->
-                            <div class="col-6 position-relative border-left">
-                                <div class="card-body">
-
-                                    <!-- smartwatch name -->
-                                    <h5 class="card-title h-3 text-sm">
-                                        {{ smartwatch.name }}
-                                        {% if request.user.is_superuser %}
-                                        <small class="ml-3">
-                                            <a href="{% url 'edit_smartwatch' smartwatch.id %}">Edit</a>
-                                            <a class="text-danger" href="{% url 'delete_product' smartwatch.id %}">Delete</a>
-                                        </small>
-                                    {% endif %}
-                                    </h5>
-
-                                    <!-- smartwatch specifiactions and details -->
-                                    <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ smartwatch.display }} display</li>
-                                        <li>{{ smartwatch.screen_size }}"</li>
-                                        <li>{{ smartwatch.resolution }}</li>
-                                        <li>
-                                            {% if smartwatch.available %}
-                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                                {% else %}
-                                                Out of stock
-                                            {% endif %}
-                                        </li>
-                                    </ul>
-
-                                    <!-- if smartwatch is on sale show discounted price, else show regular price -->
-                                    {% if smartwatch.sale %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right text-red">€{{ smartwatch.sale_price }}</p>
-                                    </div>
-                                    {% else %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ smartwatch.price }}</p>
-                                    </div>
-                                    {% endif %}
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
 
-        <!-- smartwatch card for each smartwatch on screens below medium -->
-        {% for smartwatch in smartwatches %}
-        <div class="d-md-none col-12 col-lg-6">
-            <div class="row">
-                <div class="container p-4">
+                        <!-- card body for smartwatch details -->
+                        <div class="col-12 position-relative">
+                            <div class="card-body">
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-4" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-12 text-center">
+                                <!-- smartwatch name -->
+                                <h5 class="card-title h-3 border-bottom text-truncate">
+                                    {{ smartwatch.brand }} {{ smartwatch.series}} {{ smartwatch.model }}
+                                </h5>
 
-                                <!-- smartwatch image -->
-                                {% if smartwatch.image %}
-                                <a href="{% url 'smartwatch_detail' smartwatch.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'smartwatch_detail' smartwatch.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                                </a>
-                                {% endif %}
+                                <!-- smartwatch specifiactions and details -->
+                                <p class="text-muted border-bottom h-3 text-truncate">
+                                    {{ smartwatch.display }} display | {{ smartwatch.screen_size }}" | {{ smartwatch.resolution }}</p>
 
-                                <!-- if the smartwatch is on sale display a red box-->
-                                {% if smartwatch.sale %}
-                                <div class="sale">
-                                    sale
-                                </div>
-                                {% endif %}
-                            </div>
-
-                            <!-- card body for smartwatch details -->
-                            <div class="col-12 position-relative">
-                                <div class="card-body">
-
-                                    <!-- smartwatch name -->
-                                    <h5 class="card-title h-3 border-bottom text-truncate">
-                                        {{ smartwatch.brand }} {{ smartwatch.series}} {{ smartwatch.model }}
-                                    </h5>
-
-                                    <!-- smartwatch specifiactions and details -->
-                                    <p class="text-muted border-bottom h-3 text-truncate">
-                                        {{ smartwatch.display }} display | {{ smartwatch.screen_size }}" | {{ smartwatch.resolution }}</p>
-
-                                    <!-- if smartwatch is on sale show discounted price, else show regular price -->
-                                    <div class="d-flex justify-content-between">
+                                <!-- if smartwatch is on sale show discounted price, else show regular price -->
+                                <div class="d-flex justify-content-between">
+                                    {% if smartwatch.available %}
                                         {% if smartwatch.sale %}
-                                        <span class="lead text-red">{{ smartwatch.sale_price }}</span>
+                                            <span class="lead text-red">€{{ smartwatch.lowest_sale_price }}</span>
                                         {% else %}
-                                        <span class="lead">{{ smartwatch.price }}</span>
+                                            <span class="lead">€{{ smartwatch.lowest_price }}</span>
                                         {% endif %}
-                                        {% if console.sale %}
-                                        <span class="lead text-red">{{ console.sale_price }}</span>
-                                        {% else %}
-                                        <span class="lead">{{ console.price }}</span>
-                                        {% endif %}
-                                        {% if smartwatch.available %}
-                                        <span>
-                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                            {% else %}
-                                            Out of stock
-                                            </span>
-                                        {% endif %}
-
-                                    </div>
+                                    {% else %}
+                                        <span class="lead">Out of stock</span>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -147,4 +146,5 @@
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+{% endfor %}

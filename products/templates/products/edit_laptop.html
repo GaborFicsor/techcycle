@@ -7,9 +7,10 @@
 <section class="text-dark-b">
     <div class="container p-4 bg-white">
 
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-12">
                 <h2 class="logo-font mb-4">Edit {{ laptop }}</h2>
+                <a href="{% url 'edit_laptop_inventory' laptop.id %}">edit inventory</a>
             </div>
         </div>
 
@@ -79,13 +80,13 @@
 
                     <!-- form submit and cancel buttons -->
                     <div class="text-right mt-5">
-                        <a class="btn btn-clear btn-lg" href="{% url 'products' %}">Cancel</a>
+                        <a class="btn btn-clear btn-lg" href="{% url 'laptop_detail' laptop.id %}">Cancel</a>
                         <button class="btn btn-dark btn-lg" type="submit">Update Product</button>
                     </div>
                 </div>
             </div>
         </form>
-    </div>
+    </div>    
 </section>
 
 {% endblock %}

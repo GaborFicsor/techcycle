@@ -1,145 +1,151 @@
 {% for console in consoles %}
-        <div class="d-none d-md-block col-12 col-lg-6">
-            <div class="row custom-margin">
-                <div class="container p-4">
+<div class="d-none d-md-block col-12 col-lg-6">
+    <div class="row custom-margin">
+        <div class="container p-4">
 
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-3" style="max-width:540px;">
-                        <div class="row g-0">
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-3">
+                <div class="row g-0">
 
-                            <!-- console image -->
-                            <div class="col-6 text-center">
-                                {% if console.image %}
+                    <!-- console image -->
+                    <div class="col-6 text-center">
+                        {% if console.image %}
+                            {% if console.available %}
                                 <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
+                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="{{ console.name }}">
                                 </a>
-                                {% else %}
+                            {% else %}
                                 <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
+                                    <img class="card-img-top img-fluid saturation" src="{{ console.image.url }}" alt="{{ console.name }}">
                                 </a>
-                                {% endif %}
-                            </div>
-
-                            <!-- if the console is on sale display a red box-->
-                            {% if console.sale %}
-                            <div class="sale">
-                                sale
-                            </div>
                             {% endif %}
+                        {% else %}
+                            <a href="{% url 'console_detail' console.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ console.name }}">
+                            </a>
+                        {% endif %}
+                    </div>
 
-                            <!-- card body for console details -->
-                            <div class="col-6 position-relative border-left">
-                                <div class="card-body">
+                    <!-- if the console is on sale display a red box-->
+                    {% if console.available and console.sale %}
+                    <div class="sale">
+                        sale
+                    </div>
+                    {% endif %}
 
-                                    <!-- console name -->
-                                    <h5 class="card-title h-3 text-sm">
-                                        {{ console.name }}
-                                        {% if request.user.is_superuser %}
-                                        <small class="ml-3">
-                                            <a href="{% url 'edit_console' console.id %}">Edit</a>
-                                            <a class="text-danger" href="{% url 'delete_product' console.id %}">Delete</a>
-                                        </small>
+                    <!-- card body for console details -->
+                    <div class="col-6 position-relative border-left">
+                        <div class="card-body">
+
+                            <!-- console name -->
+                            <h5 class="card-title h-3 text-sm">
+                                {{ console.name }}
+                            </h5>
+
+                            <!-- console specifiactions and details -->
+                            <ul class="list-unstyled text-muted d-none d-md-block">
+                                <li>{{ console.storage_size }}</li>
+                                <li>{{ console.color }}</li>
+                                <li>
+                                    {% if console.available %}
+                                        In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
                                     {% endif %}
-                                    </h5>
+                                </li>
+                            </ul>
 
-                                    <!-- console specifiactions and details -->
-                                    <ul class="list-unstyled text-muted d-none d-md-block">
-                                        <li>{{ console.storage_size }}</li>
-                                        <li>{{ console.color }}</li>
-                                        <li>
-                                            {% if console.available %}
-                                                In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                                {% else %}
-                                                Out of stock
-                                            {% endif %}
-                                        </li>
-                                    </ul>
-
-                                    <!-- if console is on sale show discounted price, else show regular price -->
-                                    {% if console.sale %}
+                            <!-- if console is on sale show discounted price, else show regular price -->
+                            {% if console.available %}
+                                {% if console.sale %}
                                     <div class="price">
-                                        <p class="lead font-weight-bold text-right text-red">€{{ console.sale_price }}
+                                        <p class="lead font-weight-bold text-right text-red">
+                                            from €{{ console.lowest_sale_price }}
                                         </p>
                                     </div>
-                                    {% else %}
-                                    <div class="price">
-                                        <p class="lead font-weight-bold text-right">€{{ console.price }}</p>
-                                    </div>
-                                    {% endif %}
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- console card for each console on screens below medium -->
-        {% endfor %}
-        {% for console in consoles %}
-        <div class="d-md-none col-12 col-lg-6">
-            <div class="row">
-                <div class="container p-4">
-
-                    <!-- card image -->
-                    <div class="card border-0 mb-3 p-4" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-12 text-center">
-
-                                <!-- console image -->
-                                {% if console.image %}
-                                <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
-                                </a>
                                 {% else %}
-                                <a href="{% url 'console_detail' console.id %}">
-                                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="">
-                                </a>
-                                {% endif %}
-
-                                <!-- if the console is on sale display a red box-->
-                                {% if console.sale %}
-                                <div class="sale">
-                                    sale
-                                </div>
-                                {% endif %}
-                            </div>
-
-                            <!-- card body for console details -->
-                            <div class="col-12 position-relative">
-                                <div class="card-body">
-
-                                    <!-- console name -->
-                                    <h5 class="card-title h-3 border-bottom text-truncate">
-                                        {{ console.brand }} {{ console.series}} {{ console.model }}
-                                    </h5>
-
-                                    <!-- console specifiactions and details -->
-                                    <p class="text-muted border-bottom h-3 text-truncate">
-                                        {{ console.storage_size }} | {{ console.color }}</p>
-
-                                    <!-- if console is on sale show discounted price, else show regular price -->
-                                    <div class="d-flex justify-content-between">
-                                        {% if console.sale %}
-                                        <span class="lead text-red">{{ console.sale_price }}</span>
-                                        {% else %}
-                                        <span class="lead">{{ console.price }}</span>
-                                        {% endif %}
-                                        {% if console.available %}
-                                        <span>
-                                            In stock&nbsp;<i class="fa-solid fa-check stock">&nbsp;</i>
-                                            {% else %}
-                                            Out of stock
-                                            </span>
-                                        {% endif %}
-
+                                    <div class="price">
+                                        <p class="lead font-weight-bold text-right">from €{{ console.lowest_price }}</p>
                                     </div>
+                                {% endif %}
+                            {% else %}
+                                <div class="price">
+                                    <p class="lead font-weight-bold text-right">Out of stock</p>
                                 </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- console card for each console on screens below medium -->
+{% endfor %}
+{% for console in consoles %}
+<div class="d-md-none col-12 col-lg-6">
+    <div class="row">
+        <div class="container p-4">
+
+            <!-- card image -->
+            <div class="card border-0 mb-3 p-4" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-12 text-center">
+
+                        <!-- console image -->
+                         {% if console.image %}
+                            {% if console.available %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="{{ console.name }}">
+                                </a>
+                            {% else %}
+                                <a href="{% url 'console_detail' console.id %}">
+                                    <img class="card-img-top img-fluid saturation" src="{{ console.image.url }}" alt="{{ console.name }}">
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            <a href="{% url 'console_detail' console.id %}">
+                                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ console.name }}">
+                            </a>
+                        {% endif %}
+
+                        <!-- if the console is on sale display a red box-->
+                        {% if console.available and console.sale %}
+                        <div class="sale">
+                            sale
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <!-- card body for console details -->
+                    <div class="col-12 position-relative">
+                        <div class="card-body">
+
+                            <!-- console name -->
+                            <h5 class="card-title h-3 border-bottom text-truncate">
+                                {{ console.brand }} {{ console.series}} {{ console.model }}
+                            </h5>
+
+                            <!-- console specifiactions and details -->
+                            <p class="text-muted border-bottom h-3 text-truncate">
+                                {{ console.storage_size }} | {{ console.color }}</p>
+
+                            <!-- if console is on sale show discounted price, else show regular price -->
+                            <div class="d-flex justify-content-between">
+                                {% if console.available %}
+                                    {% if console.sale %}
+                                        <span class="lead text-red">€{{ console.lowest_sale_price }}</span>
+                                    {% else %}
+                                        <span class="lead">€{{ console.lowest_price }}</span>
+                                    {% endif %}
+                                {% else %}
+                                    <span class="lead">Out of stock</span>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+</div>
+{% endfor %}

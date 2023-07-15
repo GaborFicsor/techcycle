@@ -44,7 +44,7 @@
                                     <p class="my-0">{{ item.condition }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    <p class="my-0">€{{ item.price }}</p>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">{{ item.quantity }}</p>
@@ -73,23 +73,22 @@
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn btn-dark btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
+                                        <span class="text-uppercase">Checkout</span>
                                     </a>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     {% else %}
-                    <p class="lead.mb-5">Your bag is empty.</p>
-                    <a href="btn btn-outline-black rounded-0 btn-lg" class="btn btn-clear btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    <div class="vh-50">
+                        <p class="lead.mb-5">Your cart is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                    </div>
                     {% endif %}
                 </div>
             </div>

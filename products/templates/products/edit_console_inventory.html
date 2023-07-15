@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content%}
+<section class="text-dark-b">
+    <div class="container p-4 bg-white">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="logo-font mb-4">{{ console }} inventory</h2>
+            </div>
+        </div>
+
+        <!-- form for editing a console's inventory -->
+        <form method="POST" action="{% url 'edit_console_inventory' console.id %}" class="form mb-2" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ formset.management_form }}
+        
+            <div class="row">
+                {% for form in formset %}
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                        <div class="form-sub-group">
+                            <span class="form-sub-group-title">{{ form.condition.value }}</span>
+                        {{ form|crispy }}
+                    </div>
+                    </div>
+                {% endfor %}
+            </div>
+        
+            <div class="text-right mt-5">
+                <a class="btn btn-clear btn-lg" href="{% url 'edit_console' console.id %}">Back</a>
+                <button class="btn btn-dark btn-lg" type="submit">Update Inventory</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

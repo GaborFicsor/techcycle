@@ -1,9 +1,7 @@
 from django import forms
-from .models import Product, Category, Laptop, Phone, Smartwatch, Console
+from .models import Product, Category, Laptop, Phone, Smartwatch, Console, Inventory
 from .widgets import CustomClearableFileInput
 
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Div, Field
 
 class ProductForm(forms.ModelForm):
 
@@ -20,7 +18,22 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = firendly_names
 
+class InventoryForm(forms.ModelForm):
 
+    def __init__(self, *args, **kwargs):
+        super(InventoryForm, self).__init__(*args, **kwargs)
+        self.fields['condition'].disabled = True
+        self.fields['price'].disabled = True
+        self.fields['sale_price'].disabled = True
+
+    class Meta:
+        model = Inventory 
+        fields = [
+            'condition',
+            'price',
+            'sale_price',
+            'stock_count',
+        ]
 
 class LaptopForm(forms.ModelForm):
 

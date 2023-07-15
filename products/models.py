@@ -2,7 +2,6 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from decimal import Decimal
-from django.db.models import Sum
 
 
 class Category(models.Model):
@@ -28,9 +27,6 @@ class Product(models.Model):
     model = models.CharField(max_length=50)
     color = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    acceptable = models.BooleanField(default=False)
-    good = models.BooleanField(default=False)
-    excellent = models.BooleanField(default=False)
     sale = models.BooleanField(default=False)
     sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
@@ -38,41 +34,99 @@ class Product(models.Model):
 
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
-    
+
+    def lowest_price(self):
+        prices = self.inventory_set.filter(stock_count__gt=0).values_list('price', flat=True)
+        if prices:
+            lowest_price = min(prices)
+            return Decimal(lowest_price)
+        else:
+            return 'Out of stock'
+
+    def lowest_sale_price(self):
+        sale_prices = self.inventory_set.filter(stock_count__gt=0).values_list('sale_price', flat=True)
+        if sale_prices:
+            lowest_sale_price = min(sale_prices)
+            return Decimal(lowest_sale_price)
+        else:
+            return 'Out of stock'
+
     def save(self, *args, **kwargs):
-            is_new = self.pk is None 
+        is_new_product = not self.pk
+        if is_new_product:
+            price = Decimal(self.price)
             super().save(*args, **kwargs)
-            
-            if is_new:
-                Inventory.objects.create(
-                    product=self,
-                    acceptable_amount=1 if self.acceptable else 0,
-                    good_amount=1 if self.good else 0,
-                    excellent_amount=1 if self.excellent else 0,
-                )
+            Inventory.objects.create(
+            product=self,
+            condition='acceptable',
+            price = self.price * Decimal('0.8'),
+            sale_price = price * Decimal('0.95'),
+            )
+            Inventory.objects.create(
+            product=self,
+            condition='good',
+            price = self.price * Decimal('0.9'),
+            sale_price = price * Decimal('0.95'),
+            )
+            Inventory.objects.create(
+            product=self,
+            condition='excellent',
+            price=self.price,
+            sale_price=price * Decimal('0.95'),
+            )
+        else:
+            # Update inventory prices
+            old_product = Product.objects.get(pk=self.pk)
+            price_changed = self.price != old_product.price
 
             super().save(*args, **kwargs)
+
+            if price_changed:
+                inventory_objects = Inventory.objects.filter(product=self)
+                for inventory in inventory_objects:
+                    if inventory.condition == 'acceptable':
+                        inventory.price = self.price * Decimal('0.8')
+                        inventory.sale_price = inventory.price * Decimal('0.95')
+                    elif inventory.condition == 'good':
+                        inventory.price = self.price * Decimal('0.9')
+                        inventory.sale_price = inventory.price * Decimal('0.95')
+                    elif inventory.condition == 'excellent':
+                        inventory.price = self.price
+                        inventory.sale_price = inventory.price * Decimal('0.95')
+                    inventory.save()
 
     def __str__(self):
         return f"{self.brand} {self.series} {self.model}"
 
     def available(self):
-        if self.inventory.in_stock() > 0:
-            return True
-        return False
-        
-    available.boolean = True
+        inventory_objects = self.inventory_set.all()
 
+        for inventory in inventory_objects:
+            if inventory.stock_count > 0:
+                return True
+
+        return False
+
+    available.boolean = True
     def on_sale(self):
         if self.sale:
             return True
         return False
-        
+
     on_sale.boolean = True
-
-
     def in_stock(self):
-        return self.inventory.acceptable_amount + self.inventory.good_amount + self.inventory.excellent_amount
+        inventory_objects = self.inventory_set.all()
+        stock_amount = 0
+
+        for inventory in inventory_objects:
+            if inventory.condition == 'acceptable':
+                stock_amount += inventory.stock_count
+            elif inventory.condition == 'good':
+                stock_amount += inventory.stock_count
+            elif inventory.condition == 'excellent':
+                stock_amount += inventory.stock_count
+
+        return stock_amount
 
     def acceptable(self):
         return self.inventory.acceptable_amount
@@ -84,15 +138,14 @@ class Product(models.Model):
         return self.inventory.excellent_amount
 
     def conditions(self):
+        inventory_objects = self.inventory_set.all()
         conditions = []
-        if self.inventory.acceptable_amount > 0:
-            conditions.append("Acceptable")
-        if self.inventory.good_amount > 0:
-            conditions.append("Good")
-        if self.inventory.excellent_amount > 0:
-            conditions.append("Excellent")
-            return conditions
-    
+
+        for inventory in inventory_objects:
+            if inventory.stock_count > 0:
+                conditions.append(inventory.get_condition_display())
+
+        return conditions
 
 class Laptop(Product):
 
@@ -137,10 +190,9 @@ class Laptop(Product):
 
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
-    
+
     def cpu(self):
         return f"{self.cpu_brand} {self.cpu_name} {self.cpu_variant}"
-
 
 class Phone(Product):
 
@@ -148,7 +200,7 @@ class Phone(Product):
         ('Android', 'Android'),
         ('iOS', 'iOS')
     ]
-    
+
     sim = models.CharField(max_length=50)
     cpu = models.CharField(max_length=50)
     ram = models.CharField(max_length=50)
@@ -162,7 +214,6 @@ class Phone(Product):
 
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
-
 
 class Smartwatch(Product):
 
@@ -181,19 +232,23 @@ class Smartwatch(Product):
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
 
-
 class Console(Product):
     storage_size = models.CharField(max_length=50)
 
     def name(self):
         return f"{self.brand} {self.series} {self.model}"
 
-
 class Inventory(models.Model):
-    product = models.OneToOneField(Product, on_delete=models.CASCADE)
-    acceptable_amount = models.PositiveIntegerField(default=0)
-    good_amount = models.PositiveIntegerField(default=0)
-    excellent_amount = models.PositiveIntegerField(default=0)
+    CONDITION_CHOICES = (
+        ('acceptable', 'Acceptable'),
+        ('good', 'Good'),
+        ('excellent', 'Excellent'),
+    )
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    condition = models.CharField(max_length=20, choices=CONDITION_CHOICES)
+    price = models.DecimalField(max_digits=8, decimal_places=2, default=0)
+    sale_price = models.DecimalField(max_digits=8, null=True, blank=True, decimal_places=2, default=0)
+    stock_count = models.PositiveIntegerField(default=0)
 
     class Meta:
         verbose_name_plural = 'Inventories'
