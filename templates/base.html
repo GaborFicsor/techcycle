@@ -188,17 +188,17 @@
             <div class="col-12 text-center mb-3">
 
                 <!-- facebook -->
-                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to facebook">
+                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to facebook" rel="nofollow">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </a>
 
                 <!-- instagram -->
-                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to instagram">
+                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to instagram" rel="nofollow">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
 
                 <!-- linkedin -->
-                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to linkedin">
+                <a class="btn text-white m-1" href="#!" role="button" target="_blank" aria-label="hyperlink to linkedin" rel="nofollow">
                     <i class="fab fa-linkedin-in fa-2x"></i>
                 </a>
             </div>
@@ -289,16 +289,16 @@
                         <h5><strong>Payment options</strong></h5>
 
                         <!-- apple pay logo -->
-                        <img class="payment-icon" src="/media/apple-pay.png" alt="logo of apple pay">
+                        <img class="payment-icon" src="{{ MEDIA_URL }}apple-pay.png" alt="logo of apple pay">
 
                         <!-- visa logo -->
-                        <img class="payment-icon" src="/media/visa.png" alt="logo of visa">
+                        <img class="payment-icon" src="{{ MEDIA_URL }}visa.png" alt="logo of visa">
 
                         <!-- master-card logo -->
-                        <img class="payment-icon" src="/media/master-card.png" alt="logo of mastercard">
+                        <img class="payment-icon" src="{{ MEDIA_URL }}master-card.png" alt="logo of mastercard">
 
                         <!-- paypal logo -->
-                        <img class="payment-icon" src="/media/paypal.png" alt="logo of paypal">
+                        <img class="payment-icon" src="{{ MEDIA_URL }}paypal.png" alt="logo of paypal">
 
                     </div>
 
@@ -309,26 +309,26 @@
 
                     <!-- stripe logo and hyperlink -->
                     <div class="col-12 col-sm-4">
-                        <a href="https://stripe.com/" target="_blank"
+                        <a href="https://stripe.com/" target="_blank" rel="nofollow"
                             aria-label="hyperlink to the official stripe website">
-                            <img class="power-icon stripe" src="/media/stripe.png"
+                            <img class="power-icon stripe" src="{{ MEDIA_URL }}stripe.png"
                                 alt="logo of the Stripe Payment Service">
                         </a>
                     </div>
 
                     <!-- django logo and hyperlink -->
                     <div class="col-12 col-sm-4">
-                        <a href="https://www.djangoproject.com/" target="_blank"
+                        <a href="https://www.djangoproject.com/" target="_blank" rel="nofollow"
                             aria-label="hyperlink to the official django website">
-                            <img class="power-icon django" src="/media/django.png" alt="logo of the Django Framework">
+                            <img class="power-icon django" src="{{ MEDIA_URL }}django.png" alt="logo of the Django Framework">
                         </a>
                     </div>
 
                     <!-- aws logo and hyperlink -->
                     <div class="col-12 col-sm-4">
-                        <a href="https://aws.amazon.com/" target="_blank"
+                        <a href="https://aws.amazon.com/" target="_blank" rel="nofollow"
                             aria-label="hyperlink to the official amazon web services website">
-                            <img class="power-icon aws" src="/media/aws.png" alt="logo of Amazon Web Services">
+                            <img class="power-icon aws" src="{{ MEDIA_URL }}aws.png" alt="logo of Amazon Web Services">
                         </a>
                     </div>
                 </div>
@@ -342,7 +342,7 @@
 
     {% block disclaimer %}
     <div class="text-center black p-3">
-        <p class="text-muted">This project is for educational purposes only | © Gabor Ficsor, 2023 </p>
+        <p class="text-muted">This project is for educational purposes only | © Gabor Ficsor - 2023 </p>
     </div>
     {% endblock %}
 

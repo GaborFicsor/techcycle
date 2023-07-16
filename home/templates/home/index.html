@@ -20,10 +20,10 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <picture>
-                <source media="(max-width: 575px)" srcset="/media/slide-console-small.png">
-                <source media="(max-width: 991px)" srcset="/media/slide-console.png">
-                <source media="(min-width: 992px)" srcset="/media/slide-console-large.png">
-                <img class="d-block w-100" src="/media/slide-console.png" alt="gaming consoles advertisment">
+                <source media="(max-width: 575px)" srcset="{{ MEDIA_URL }}slide-console-small.png">
+                <source media="(max-width: 991px)" srcset="{{ MEDIA_URL }}slide-console.png">
+                <source media="(min-width: 992px)" srcset="{{ MEDIA_URL }}slide-console-large.png">
+                <img class="d-block w-100" src="{{ MEDIA_URL }}slide-console.png" alt="gaming consoles advertisment">
             </picture>
             <div class="carousel-caption text-left text-sm-center">
                 <a class="btn btn-sm btn-dark" href="{% url 'consoles' %}">Shop Now</a>
@@ -31,10 +31,10 @@
         </div>
         <div class="carousel-item">
             <picture>
-                <source media="(max-width: 991px)" srcset="/media/slide-blue-screen-small.png">
-                <!-- <source media="(max-width: 799px)" srcset="/media/slide-blue-screen.png"> -->
-                <source media="(min-width: 992px)" srcset="/media/slide-blue-screen-large.png">
-                <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="reliability statement">
+                <source media="(max-width: 991px)" srcset="{{ MEDIA_URL }}slide-blue-screen-small.png">
+
+                <source media="(min-width: 992px)" srcset="{{ MEDIA_URL }}slide-blue-screen-large.png">
+                <img class="d-block w-100" src="{{ MEDIA_URL }}slide-blue-screen.png" alt="reliability statement">
             </picture>
             <div class="carousel-caption">
 
@@ -42,9 +42,9 @@
         </div>
         <div class="carousel-item">
             <picture>
-                <source media="(max-width: 799px)" srcset="/media/slide-sale.png">
-                <source media="(min-width: 992px)" srcset="/media/slide-sale-large.png">
-                <img class="d-block w-100" src="/media/slide-sale.png" alt="sale advertisment">
+                <source media="(max-width: 799px)" srcset="{{ MEDIA_URL }}slide-sale.png">
+                <source media="(min-width: 992px)" srcset="{{ MEDIA_URL }}slide-sale-large.png">
+                <img class="d-block w-100" src="{{ MEDIA_URL }}slide-sale.png" alt="sale advertisment">
             </picture>
             <div class="carousel-caption">
                 <a class="btn btn-large btn-dark" href="{% url 'products' %}?sale=true">Shop Now</a>
