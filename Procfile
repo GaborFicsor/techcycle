@@ -1,0 +1,1 @@
+web: gunicorn techcycle.wsgi:application
