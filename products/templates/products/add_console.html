@@ -13,6 +13,8 @@
                 <h2 class="logo-font mb-4">Add Console</h2>
             </div>
         </div>
+        
+        {% include 'components/add_notice.html' %}
 
         <!-- form for adding a console -->
         <form method="POST" action="{% url 'add_console' %}" class="form mb-2" enctype="multipart/form-data">
