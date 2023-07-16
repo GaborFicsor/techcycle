@@ -5,7 +5,10 @@ from .models import FAQ
 
 
 def index(request):
-    """A view to return the index page"""
+    """
+    A view to render the index page, the FAQs and also return
+    a list of randomly selected objects from the Laptop model
+    """
 
     laptops = list(Laptop.objects.filter(label='Gaming Laptop'))
     faqs = list(FAQ.objects.all())
