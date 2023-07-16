@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+    )
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -13,8 +15,13 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
+    """
+    A view for caching the checkout data after
+    a checkout is succescfully processed
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -31,6 +38,9 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    View for the checkout process
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -61,11 +71,11 @@ def checkout(request):
                     item = get_object_or_404(Product, pk=item_id)
                     inventory = item.inventory_set.get(condition=condition)
                     if item.sale:
-                        price=inventory.sale_price
+                        price = inventory.sale_price
                     else:
                         price = inventory.price
                     quantity = quantity['quantity']
-                    
+
                     order_line_item = OrderLineItem(
                         order=order,
                         product=product,
@@ -75,26 +85,36 @@ def checkout(request):
                     )
                     order_line_item.save()
 
-                    # this is where I subtract the quantity of the item from the stock_count of the item's condition
-                    # and save it so the stock count is reflected correctly
+                    """this is where I subtract the quantity of
+                    the item from the stock_count of the item's condition
+                    and save it so the stock count is reflected correctly
+                    """
                     if quantity > inventory.stock_count:
-                        messages.error(request, f"the amount({quantity}) you're trying to purchase for {item} in ({condition}) condition is more than we currently have in stock ({inventory.stock_count}) for that item")
+                        messages.error(
+                            request,
+                            f"the amount({quantity})"
+                            f"you're trying to purchase for {item}"
+                            f"in ({condition}) condition is more"
+                            f"than we currently have in stock"
+                            f'({inventory.stock_count}) for that item")'
+                            )
                         return redirect('view_bag')
                     inventory.stock_count = inventory.stock_count - quantity
                     inventory.save()
-                    
-                    
-
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number])
+                )
         else:
             messages.error(request, 'There was an error with your form. \
             Please check your details.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(
+                request, "There's nothing in your bag at the moment"
+                )
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -133,6 +153,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """
