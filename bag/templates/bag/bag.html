@@ -6,39 +6,45 @@
 <section class="text-dark-b">
     <div class="container p-4 bg-white">
 
-            <div class="row">
-                <div class="col">
-                    <h2 class="logo-font mb-4">Cart</h2>
-                </div>
+        <!-- first row / page heading -->
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font mb-4">Cart</h2>
             </div>
-            <div class="row">
-                <div class="col">
-                    {% if bag_items %}
-                    <div class="d-block d-md-none">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
-                                <h6>Shipping Included</h6>
-                            </div>
+        </div>
+
+        <!-- second row / bag items -->
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                <div class="d-block d-md-none">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
+                            <h6>Shipping Included</h6>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <a href="{% url 'checkout' %}" class="btn btn-dark btn-lg">
-                                    <span class="text-uppercase">Checkout</span>
-                                </a>
-                                <p class="text-muted">a summary of your bag contents is below</p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="{% url 'checkout' %}" class="btn btn-dark btn-lg">
+                                <span class="text-uppercase">Checkout</span>
+                            </a>
+                            <p class="text-muted">a summary of your bag contents is below</p>
                         </div>
-                        {% for item in bag_items %}
-                        <div class="row">
-                            <div class="col-12 colsm-6 mb-2">
-                                {% if item.product.category.name == 'laptops' %}
+                    </div>
+
+                    <!-- for each item in bag items check for the item's category
+                    and add the related details on small screen sizes -->
+                    {% for item in bag_items %}
+                    <div class="row">
+                        <div class="col-12 colsm-6 mb-2">
+                            {% if item.product.category.name == 'laptops' %}
                                 {% include 'components/bag_laptop_details.html' %}
                             {% endif %}
                             {% if item.product.category.name == 'phones' %}
@@ -50,127 +56,133 @@
                             {% if item.product.category.name == 'gaming_consoles' %}
                                 {% include 'components/bag_console_details.html' %}
                             {% endif %}
-                            </div>
-                            <div class="col-12 col-sm-6 mb-2">
-                                <p class="my-0">Condition: {{ item.condition }}</p>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <p class="my-0">Quantity: {{ item.quantity }}</p>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <p class="my-0">Price Each: €{{ item.product.price }}</p>
-                                <p><strong>Subtotal: </strong>€{{ item.product.price|calc_subtotal:item.quantity }}</p>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <a class="remove-item text-red" id="remove_{{ item.item_id }}" data-condition="{{ item.condition }}">Remove</a>
-                            </div>
                         </div>
-                        {% endfor %}
-
+                        <div class="col-12 col-sm-6 mb-2">
+                            <p class="my-0">Condition: {{ item.condition }}</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p class="my-0">Quantity: {{ item.quantity }}</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p class="my-0">Price Each: €{{ item.product.price }}</p>
+                            <p><strong>Subtotal: </strong>€{{ item.product.price|calc_subtotal:item.quantity }}</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="remove-item text-red" id="remove_{{ item.item_id }}"
+                                data-condition="{{ item.condition }}">Remove</a>
+                        </div>
                     </div>
-                    <div class="table-responsive rounded d-none d-md-block">
-                        <table class="table table-sm table-borderless">
-                            <thead class="text-black">
-                                <tr>
-                                    <th scope="col">Details</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Condition</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-                            {% for item in bag_items %}
-                            <tr>
-                                    {% if item.product.category.name == 'laptops' %}
-                                        {% include 'components/bag_laptop_details.html' %}
-                                    {% endif %}
-                                    {% if item.product.category.name == 'phones' %}
-                                        {% include 'components/bag_phone_details.html' %}
-                                    {% endif %}
-                                    {% if item.product.category.name == 'smartwatches' %}
-                                        {% include 'components/bag_smartwatch_details.html' %}
-                                    {% endif %}
-                                    {% if item.product.category.name == 'gaming_consoles' %}
-                                        {% include 'components/bag_console_details.html' %}
-                                    {% endif %}
-                                </td>
-                                <td class="py-3 w-25">
-                                    <p class="my-0">{{ item.condition }}</p>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">€{{ item.price }}</p>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">{{ item.quantity }}</p>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">€{{ item.item_total }}</p>
-                                </td>
-                                <td class="py-3">
-                                    <a class="remove-item text-red" id="remove_{{ item.item_id }}" data-condition="{{ item.condition }}">&#x2715</a>
-                                </td>
-                            </tr>
-                            
-                            {% endfor %}
-                            <tr>
-                                <td colspan="7" class="pt-5 text-right">
-                                    <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
-                                    <h6>Shipping Included</h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="7" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-dark btn-lg">
-                                        <span class="text-uppercase">Checkout</span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    {% else %}
-                    <div class="vh-50">
-                        <p class="lead.mb-5">Your cart is empty.</p>
-                        <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Keep Shopping</span>
-                        </a>
-                    </div>
-                    {% endif %}
+                    {% endfor %}
                 </div>
+
+                <!-- for each item in bag items check for the item's category
+                and add the related details on desktop -->
+                <div class="table-responsive rounded d-none d-md-block">
+                    <table class="table table-sm table-borderless">
+                        <thead class="text-black">
+                            <tr>
+                                <th scope="col">Details</th>
+                                <th scope="col"></th>
+                                <th scope="col">Condition</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        {% for item in bag_items %}
+                        {% if item.product.category.name == 'laptops' %}
+                            {% include 'components/bag_laptop_details.html' %}
+                        {% endif %}
+                        {% if item.product.category.name == 'phones' %}
+                            {% include 'components/bag_phone_details.html' %}
+                        {% endif %}
+                        {% if item.product.category.name == 'smartwatches' %}
+                            {% include 'components/bag_smartwatch_details.html' %}
+                        {% endif %}
+                        {% if item.product.category.name == 'gaming_consoles' %}
+                            {% include 'components/bag_console_details.html' %}
+                        {% endif %}
+                        </td>
+                        <td class="py-3 w-25">
+                            <p class="my-0">{{ item.condition }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">€{{ item.price }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">{{ item.quantity }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">€{{ item.item_total }}</p>
+                        </td>
+                        <td class="py-3">
+                            <a class="remove-item text-red" id="remove_{{ item.item_id }}"
+                                data-condition="{{ item.condition }}">&#x2715</a>
+                        </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="7" class="pt-5 text-right">
+                                <h4 class="mt-4"><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
+                                <h6>Shipping Included</h6>
+                            </td>
+                        </tr>
+
+                        <!-- navigation buttons -->
+                        <tr>
+                            <td colspan="7" class="text-right">
+                                <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Keep Shopping</span>
+                                </a>
+                                <a href="{% url 'checkout' %}" class="btn btn-dark btn-lg">
+                                    <span class="text-uppercase">Checkout</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- if the cart is empty -->
+                {% else %}
+                <div class="vh-50">
+                    <p class="lead.mb-5">Your cart is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-clear btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                </div>
+                {% endif %}
             </div>
         </div>
+    </div>
 </section>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
 
-    <script type="text/javascript">
-        // Remove item and reload on click
+<script type="text/javascript">
+    // Remove item and reload on click
 
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr("id").split('remove_')[1];
         var condition = $(this).data('condition')
         var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'condition': condition};
-        
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
-         
+        var data = { 'csrfmiddlewaretoken': csrfToken, 'condition': condition };
 
-    </script>
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+
+
+</script>
 
 {% endblock %}
