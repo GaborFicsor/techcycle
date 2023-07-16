@@ -14,7 +14,13 @@
         }
 
         $('#disabled-button').click(function(event) {
-        event.preventDefault();
+            event.preventDefault();
+        });
+
+        $('#delete').click(function(event) {
+            event.preventDefault();
+            $('#delete-modal').modal('toggle');
         });
     });
+
 </script>
