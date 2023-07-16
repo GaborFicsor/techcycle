@@ -72,9 +72,9 @@
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if smartwatch.image %}
-                        <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="">
+                        <img class="card-img-top img-fluid" src="{{ smartwatch.image.url }}" alt="{{ smartwatch.name }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ smartwatch.name }}">
                     {% endif %}
                 </div>
             </div>

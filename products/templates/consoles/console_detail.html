@@ -74,9 +74,9 @@
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if console.image %}
-                        <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="">
+                        <img class="card-img-top img-fluid" src="{{ console.image.url }}" alt="{{ console.name }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ console.name }}">
                     {% endif %}
                 </div>
             </div>

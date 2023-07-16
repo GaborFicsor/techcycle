@@ -74,9 +74,9 @@
             <div class="col-12 col-lg-6 text-center">
                 <div class="shadow">
                     {% if laptop.image %}
-                        <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
+                        <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ laptop.name }}">
                     {% endif %}
                 </div>
             </div>
