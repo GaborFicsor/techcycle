@@ -11,11 +11,11 @@
 {% endblock %}
 
 {% block content %}
-<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+<div id="indicator" class="carousel slide mb-5" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#indicator" data-slide-to="0" class="active"></li>
+        <li data-target="#indicator" data-slide-to="1"></li>
+        <li data-target="#indicator" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -23,7 +23,7 @@
                 <source media="(max-width: 575px)" srcset="/media/slide-console-small.png">
                 <source media="(max-width: 991px)" srcset="/media/slide-console.png">
                 <source media="(min-width: 992px)" srcset="/media/slide-console-large.png">
-                <img class="d-block w-100" src="/media/slide-console.png" alt="">
+                <img class="d-block w-100" src="/media/slide-console.png" alt="gaming consoles advertisment">
             </picture>
             <div class="carousel-caption text-left text-sm-center">
                 <a class="btn btn-sm btn-dark" href="{% url 'consoles' %}">Shop Now</a>
@@ -34,7 +34,7 @@
                 <source media="(max-width: 991px)" srcset="/media/slide-blue-screen-small.png">
                 <!-- <source media="(max-width: 799px)" srcset="/media/slide-blue-screen.png"> -->
                 <source media="(min-width: 992px)" srcset="/media/slide-blue-screen-large.png">
-                <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="">
+                <img class="d-block w-100" src="/media/slide-blue-screen.png" alt="reliability statement">
             </picture>
             <div class="carousel-caption">
 
@@ -44,18 +44,18 @@
             <picture>
                 <source media="(max-width: 799px)" srcset="/media/slide-sale.png">
                 <source media="(min-width: 992px)" srcset="/media/slide-sale-large.png">
-                <img class="d-block w-100" src="/media/slide-sale.png" alt="">
+                <img class="d-block w-100" src="/media/slide-sale.png" alt="sale advertisment">
             </picture>
             <div class="carousel-caption">
                 <a class="btn btn-large btn-dark" href="{% url 'products' %}?sale=true">Shop Now</a>
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#indicator" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#indicator" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
@@ -77,11 +77,11 @@
                                     <div class="col-12 text-center">
                                         {% if laptop.image %}
                                         <a href="{% url 'laptop_detail' laptop.id %}">
-                                            <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="">
+                                            <img class="card-img-top img-fluid" src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
                                         </a>
                                         {% else %}
                                         <a href="{% url 'laptop_detail' laptop.id %}">
-                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="">
+                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ laptop.name }}">
                                         </a>
                                         {% endif %}
                                     </div>
