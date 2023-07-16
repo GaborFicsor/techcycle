@@ -560,8 +560,15 @@ def edit_laptop_inventory(request, product_id):
                 request,
                 f'Successfully updated inventory of {laptop}')
             return redirect(reverse('laptop_detail', args=[laptop.id]))
+
+        else:
+            messages.error(
+                request,
+                'Failed to update inventory. Please ensure the form is valid.'
+                )
     else:
         formset = InventoryFormSet(instance=laptop)
+        messages.info(request, f'You are editing the inventory of {laptop}.')
 
     template = 'products/edit_laptop_inventory.html'
     context = {
@@ -597,8 +604,16 @@ def edit_phone_inventory(request, product_id):
                 request, f'Successfully updated inventory of {phone}'
                 )
             return redirect(reverse('phone_detail', args=[phone.id]))
+
+        else:
+            messages.error(
+                request,
+                'Failed to update inventory. Please ensure the form is valid.'
+                )
+
     else:
         formset = InventoryFormSet(instance=phone)
+        messages.info(request, f'You are editing the inventory of {phone}.')
 
     template = 'products/edit_phone_inventory.html'
     context = {
@@ -633,8 +648,16 @@ def edit_smartwatch_inventory(request, product_id):
             return redirect(
                 reverse('smartwatch_detail', args=[smartwatch.id])
                 )
+
+        else:
+            messages.error(
+                request,
+                'Failed to update inventory. Please ensure the form is valid.'
+                )
+
     else:
         formset = InventoryFormSet(instance=smartwatch)
+        messages.info(request, f'You are editing the inventory of {smartwatch}.')
 
     template = 'products/edit_smartwatch_inventory.html'
     context = {
@@ -665,8 +688,16 @@ def edit_console_inventory(request, product_id):
             messages.success(
                 request, f'Successfully updated inventory of {console}')
             return redirect(reverse('console_detail', args=[console.id]))
+
+        else:
+            messages.error(
+                request,
+                'Failed to update inventory. Please ensure the form is valid.'
+                )
+
     else:
         formset = InventoryFormSet(instance=console)
+        messages.info(request, f'You are editing the inventory of {console}.')
 
     template = 'products/edit_console_inventory.html'
     context = {
