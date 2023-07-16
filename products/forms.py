@@ -1,33 +1,24 @@
 from django import forms
-from .models import Product, Category, Laptop, Phone, Smartwatch, Console, Inventory
+from .models import (
+    Product, Category, Laptop, Phone, Smartwatch, Console, Inventory
+    )
 from .widgets import CustomClearableFileInput
 
 
-class ProductForm(forms.ModelForm):
-
-    class Meta:
-        model = Product
-        fields = '__all__'
-
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        categories = Category.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
-
-        self.fields['category'].choices = friendly_names
-
 class InventoryForm(forms.ModelForm):
-
-    def __init__(self, *args, **kwargs):
-        super(InventoryForm, self).__init__(*args, **kwargs)
-        self.fields['condition'].disabled = True
-        self.fields['price'].disabled = True
-        self.fields['sale_price'].disabled = True
+    """
+    Inventory form for handling stock count information.
+    The disabled fields are not meant to be changed manually,
+    as those are generated automatically.
+    These are:
+        - condition
+        - price
+        - sale price
+    Form validation was added for the stock_count field
+    """
 
     class Meta:
-        model = Inventory 
+        model = Inventory
         fields = [
             'condition',
             'price',
@@ -35,14 +26,24 @@ class InventoryForm(forms.ModelForm):
             'stock_count',
         ]
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['condition'].disabled = True
+        self.fields['price'].disabled = True
+        self.fields['sale_price'].disabled = True
+
     def clean_stock_count(self):
         stock_count = self.cleaned_data.get('stock_count')
         if stock_count > 99:
             raise forms.ValidationError('Stock count can only be 0-99')
         return stock_count
 
-class LaptopForm(forms.ModelForm):
 
+class LaptopForm(forms.ModelForm):
+    """
+    Laptop form for creating and editing Laptop objects.
+    Form validation was added for the price field.
+    """
     class Meta:
         model = Laptop
         fields = [
@@ -77,7 +78,10 @@ class LaptopForm(forms.ModelForm):
             'screen_size',
         ]
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -90,7 +94,10 @@ class LaptopForm(forms.ModelForm):
 
 
 class PhoneForm(forms.ModelForm):
-
+    """
+    Phone form for creating and editing Phone objects.
+    Form validation was added for the price field.
+    """
     class Meta:
         model = Phone
         fields = [
@@ -116,7 +123,10 @@ class PhoneForm(forms.ModelForm):
             'os',
         ]
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -129,7 +139,10 @@ class PhoneForm(forms.ModelForm):
 
 
 class SmartwatchForm(forms.ModelForm):
-
+    """
+    Smartwatch form for creating and editing Smartwatch objects.
+    Form validation was added for the price field.
+    """
     class Meta:
         model = Smartwatch
         fields = [
@@ -153,8 +166,10 @@ class SmartwatchForm(forms.ModelForm):
             'os',
         ]
 
-
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -167,7 +182,10 @@ class SmartwatchForm(forms.ModelForm):
 
 
 class ConsoleForm(forms.ModelForm):
-
+    """
+    Console form for creating and editing Console objects.
+    Form validation was added for the price field.
+    """
     class Meta:
         model = Console
         fields = [
@@ -184,8 +202,11 @@ class ConsoleForm(forms.ModelForm):
             'storage_size',
         ]
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
-    
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput)
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

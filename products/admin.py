@@ -1,13 +1,28 @@
 from django.contrib import admin
-from .models import Category, Laptop, Phone, Smartwatch, Console, Product, Inventory
+from .models import (
+    Category, Laptop, Phone, Smartwatch, Console, Product, Inventory
+    )
+
 
 @admin.action(description="Add selected items to sale")
 def add_to_sale(self, request, queryset):
+    """
+    This is an additional function added to the admin panel
+    for turning the sale boolean value to true on selected
+    products
+    """
     queryset.update(sale=True)
+
 
 @admin.action(description="Remove selected items from sale")
 def remove_from_sale(self, request, queryset):
+    """
+    This is an additional function added to the admin panel
+    for turning the sale boolean value to false on selected
+    products
+    """
     queryset.update(sale=False)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
@@ -15,16 +30,28 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
 class InventoryAdminInline(admin.TabularInline):
-    """Inventory inline fields to display the inventory for the products"""
+    """
+    Inventory inline fields for displaying the inventory
+    and stock counts for the products.
+    Read only fields are not meant to be changed manually
+    """
     model = Inventory
     readonly_fields = ('condition', 'price', 'sale_price')
 
+
 class LaptopAdmin(admin.ModelAdmin):
-    """Laptop admin"""
+    """
+    Laptop admin with additional functionalities:
+        - Inventory inline fields
+        - Add to sale / remove from sale
+        - Search fields for brand, model, series and label
+        - Filtering for sale, brand and label
+    """
     inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
-    search_fields = ('brand','model','series', 'label')
+    search_fields = ('brand', 'model', 'series', 'label')
     list_filter = ('sale', 'brand', 'label')
     list_display = (
         'name',
@@ -35,13 +62,18 @@ class LaptopAdmin(admin.ModelAdmin):
         'in_stock',
     )
 
-            
 
 class PhoneAdmin(admin.ModelAdmin):
-    """Phone admin"""
+    """
+    Phone admin with additional functionalities:
+        - Inventory inline fields
+        - Add to sale / remove from sale
+        - Search fields for brand, model and series
+        - Filtering for sale and brand
+    """
     inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
-    search_fields = ('brand','model','series')
+    search_fields = ('brand', 'model', 'series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
@@ -50,13 +82,19 @@ class PhoneAdmin(admin.ModelAdmin):
         'sale',
         'in_stock',
     )
-    
+
 
 class SmartwatchAdmin(admin.ModelAdmin):
-    """Smartwatch admin"""
+    """
+    Smartwatch admin with additional functionalities:
+        - Inventory inline fields
+        - Add to sale / remove from sale
+        - Search fields for brand, model and series
+        - Filtering for sale and brand
+    """
     inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
-    search_fields = ('brand','model','series')
+    search_fields = ('brand', 'model', 'series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
@@ -68,10 +106,16 @@ class SmartwatchAdmin(admin.ModelAdmin):
 
 
 class ConsoleAdmin(admin.ModelAdmin):
-    """Console admin"""
+    """
+    Console admin with additional functionalities:
+        - Inventory inline fields
+        - Add to sale / remove from sale
+        - Search fields for brand, model and series
+        - Filtering for sale and brand
+    """
     inlines = (InventoryAdminInline,)
     actions = [add_to_sale, remove_from_sale]
-    search_fields = ('brand','model','series')
+    search_fields = ('brand', 'model', 'series')
     list_filter = ('sale', 'brand')
     list_display = (
         'name',
@@ -80,6 +124,7 @@ class ConsoleAdmin(admin.ModelAdmin):
         'sale',
         'in_stock',
     )
+
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Laptop, LaptopAdmin)
