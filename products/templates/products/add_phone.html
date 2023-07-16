@@ -20,7 +20,7 @@
 
             <!-- main phone details -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-5">
                         <span class="form-sub-group-title">Product details</span>
                         {{ phone_form.category|as_crispy_field }}
@@ -30,7 +30,7 @@
                         {{ phone_form.color|as_crispy_field }}
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-07">
                         <span class="form-sub-group-title">Price</span>
                         {{ phone_form.price|as_crispy_field }}
@@ -38,7 +38,7 @@
                         {{ phone_form.sale_price |as_crispy_field}}
 
                     </div>
-                    <div class="form-sub-group">
+                    <div class="form-sub-group mb-07">
                         <span class="form-sub-group-title">Image</span>
                         {{ phone_form.image|as_crispy_field }}
                         {{ phone_form.image_url|as_crispy_field }}
@@ -48,7 +48,7 @@
 
             <!-- secondary phone details -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-5">
                         <span class="form-sub-group-title">Specifications</span>
                         {{ phone_form.sim |as_crispy_field}}

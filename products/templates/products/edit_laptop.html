@@ -21,7 +21,7 @@
             
             <!-- main laptop details -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-5">
                         <span class="form-sub-group-title">Product details</span>
                         {{ laptop_form.category|as_crispy_field }}
@@ -31,7 +31,7 @@
                         {{ laptop_form.color|as_crispy_field }}
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-07">
                         <span class="form-sub-group-title">Price</span>
                         {{ laptop_form.price|as_crispy_field }}
@@ -48,7 +48,7 @@
 
             <!-- secondary laptop details -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-5">
                         <span class="form-sub-group-title">Specifications</span>
                         {{ laptop_form.label|as_crispy_field }}
@@ -62,14 +62,14 @@
                         {{ laptop_form.os|as_crispy_field }}
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="form-sub-group mb-07">
                         <span class="form-sub-group-title">Features</span>
                         {{ laptop_form.weight|as_crispy_field }}
                         {{ laptop_form.screen_size|as_crispy_field }}
                         {{ laptop_form.dimensions|as_crispy_field }}
                     </div>
-                    <div class="form-sub-group">
+                    <div class="form-sub-group mb-07">
                         <span class="form-sub-group-title">Extras</span>
                         {{ laptop_form.hdmi|as_crispy_field }}
                         {{ laptop_form.usb|as_crispy_field }}
