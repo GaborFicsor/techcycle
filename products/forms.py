@@ -85,7 +85,6 @@ class LaptopForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['sale'].disabled = True
         self.fields['sale_price'].disabled = True
 
     def clean_price(self):
@@ -132,7 +131,6 @@ class PhoneForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['sale'].disabled = True
         self.fields['sale_price'].disabled = True
 
     def clean_price(self):
@@ -177,7 +175,6 @@ class SmartwatchForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['sale'].disabled = True
         self.fields['sale_price'].disabled = True
 
     def clean_price(self):
@@ -215,7 +212,6 @@ class ConsoleForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['sale'].disabled = True
         self.fields['sale_price'].disabled = True
 
     def clean_price(self):
