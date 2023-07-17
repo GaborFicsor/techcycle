@@ -9,1732 +9,1752 @@
 
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/bag/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?label=Gaming%20Laptop</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=Apple</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Samsung</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Apple</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/?brand=Samsung</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/?brand=Apple</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?brand=Nintendo</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?series=PlayStation</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?series=Xbox</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/?sale=true</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/15/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/21/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/14/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/8/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/18/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/28/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/22/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/2/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/inspections</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/sustainability</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/conditions</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/policy</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/1/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/2/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/3/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/4/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/5/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/6/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/7/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/8/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/9/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/10/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/11/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/12/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/13/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/14/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/15/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/16/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/17/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/18/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/19/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/20/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/21/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/22/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/23/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/24/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/25/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/26/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/27/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/28/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/29/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/30/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/31/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/30/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/27/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/32/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/33/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/34/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/35/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/36/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/37/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/38/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/39/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/40/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/41/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/42/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/43/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/44/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/45/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/46/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/47/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/48/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/49/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/50/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/51/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/52/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/53/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/54/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/55/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/56/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/57/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/58/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/52/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/53/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/65/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/66/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/67/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/68/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/69/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/70/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/71/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/72/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/73/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/74/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/75/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/76/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/77/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/67/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/72/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/59/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/60/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/61/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/62/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/63/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/64/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=DELL</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=HP</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=ASUS</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=MSI</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=Lenovo</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=Acer</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/laptops/?brand=Infinix</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Huawei</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Xiaomi</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Oppo</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/phones/?brand=Google</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/smartwatches/?brand=Garmin</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?brand=Microsoft</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/products/consoles/?brand=Sony</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/15/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/21/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/14/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/8/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/18/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/28/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/22/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/2/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/1/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/2/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/3/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/4/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/5/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/6/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/7/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/8/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/9/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/10/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/11/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/12/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/13/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/14/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/15/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/16/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/17/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/18/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/19/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/20/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/21/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/22/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/23/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/24/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/25/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/26/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/27/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/28/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/29/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/30/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/31/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/30/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/27/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/32/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/33/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/34/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/35/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/36/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/37/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/38/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/39/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/40/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/41/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/42/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/43/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/44/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/45/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/46/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/47/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/48/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/49/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/50/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/51/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/52/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/53/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/54/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/55/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/56/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/57/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/58/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/52/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/53/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/65/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/66/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/67/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/68/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/69/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/70/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/71/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/72/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/73/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/74/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/75/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/76/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/77/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/67/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/72/</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/59/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/60/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/61/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/62/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/63/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=/products/delete/64/</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F15%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F21%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F14%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F8%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F22%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F2%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F1%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F2%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F3%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F4%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F5%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F6%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F7%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F8%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F9%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F10%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F11%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F12%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F13%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F14%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F15%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F16%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F17%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F19%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F20%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F21%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F22%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F23%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F24%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F25%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F26%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F29%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F31%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F32%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F33%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F34%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F35%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F36%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F37%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F38%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F39%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F40%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F41%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F42%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F43%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F44%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F45%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F46%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F47%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F48%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F49%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F50%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F51%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F52%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F53%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F54%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F55%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F56%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F57%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F58%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F52%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F53%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F65%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F66%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F67%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F68%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F69%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F70%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F71%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F72%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F73%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F74%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F75%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F76%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F77%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F67%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F72%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F59%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F60%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F61%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F62%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F63%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F64%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F15%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F21%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F14%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F8%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F22%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F2%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F1%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F2%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F3%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F4%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F5%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F6%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F7%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F8%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F9%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F10%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F11%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F12%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F13%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F14%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F15%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F16%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F17%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F19%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F20%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F21%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F22%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F23%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F24%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F25%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F26%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F29%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F31%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F32%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F33%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F34%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F35%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F36%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F37%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F38%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F39%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F40%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F41%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F42%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F43%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F44%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F45%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F46%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F47%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F48%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F49%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F50%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F51%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F52%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F53%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F54%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F55%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F56%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F57%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F58%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F52%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F53%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F65%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F66%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F67%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F68%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F69%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F70%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F71%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F72%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F73%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F74%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F75%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F76%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F77%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F67%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F72%2F</loc>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F59%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F60%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F61%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F62%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F63%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://techcycle-66d1b58854d4.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F64%2F</loc>
-  <lastmod>2023-07-17T04:47:54+00:00</lastmod>
+  <lastmod>2023-07-17T13:55:34+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 
