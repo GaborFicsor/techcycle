@@ -603,11 +603,15 @@ Clicking either one of the Laptop, Phone, Smartwatch or Console navigation links
 
 <hr>
 
+### The product cards
+
 ![cards](/assets/images/cards.png)
 
 On the Laptop page users are quickly able to tell if an item they are looking at is out stock. Items that are out of stock are greyed out and cannot be placed into the bag or purchased, but their detailed page view can still be viewed.
 
 First let's take a look at the detailed page of a Laptop if if it's available
+
+### The detailed product page
 
 ![available](/assets/images/available.png)
 
@@ -621,9 +625,104 @@ Avaialable in good and excellent conditions |On sale with onlt a few left
 :-------------------------:|:-------------------------:
 |![in stock 2](/assets/images/in_stock2.png)|![on sale](/assets/images/on_sale.png)|
 
+The price in the right top corners also reflects the lowest price this item is available for.
+Scrolling down a form is displayed with 2 input fields, one for quantity and another for condition. These input fields also reflect the availability of an item.
+
+Available in good | Available in good and excellent | Out of stock
+:-------------------------:|:-------------------------:|:-------------------------:
+|![condition1](/assets/images/condition1.png)|![condition2](/assets/images/condition2.png)|![condition3](/assets/images/condition3.png)|
+
+If the item is competely out of stock the form can not be submitted and both fields are disabled.
+In stock | Out of stock
+:-------------------------:|:-------------------------:
+|![condition1](/assets/images/in_stock_detail.png)|![condition2](/assets/images/out_of_stock_detail.png)|
+
+### The bag
+
+With all this information I think out of stock items can be easiliy identified and the user has more ways of getting information about the availability on the same page. The information is clear and users can decide what amount and condition they want to put in their bags.
+
+Adding items to the bag will trigger a success message and display the current bag contents to the user with the option to go to the bag page. Navigating to the bag page can also be done by clicking on the cart icon.
+
+Adding item to the bag | Adding same item but in different condition 
+:-------------------------:|:-------------------------:
+![bag1](/assets/images/bag1.png) | ![bag2](/assets/images/bag2.png)
+
+Navigating to the bag we can find our selected items with their information on quantity, condition and price, here we can also remove items from the bag
+
+![bag3](/assets/images/bag3.png)
+
+### The checkout and checkout success
+
+Proceeding to the chekout page the user finds the checkout form and a summary of their items in the bag with the order total displayed.
+
+![checkout1](/assets/images/checkout1.png)
+
+Completing a valid form will take the user to the checkout success page where a detailed overview of order can be viewed. The user now has option to go back to the homepage or navigate elsewhere with the help of the navigation bar
+
+![checkout success](/assets/images/checkout_success.png)
 
 
+### Items on sale
 
+The user can navigate to the sale page where the products that are currently on sale can be viewed. This page can also be reached from the landing page carousel.
+
+![items on sale](/assets/images/items_on_sale.png)
+
+### Registering
+
+Users are able to register to the website and they can do so by navigating to the top right corner of the navigation bar and clickin on the person icon.
+Here we can decide to sign in or sign up if we don't have an account yet.
+
+![sign up](/assets/images/sign_up.png)
+
+For demonstrating purposes I am using a temporary email here because my email is already registered to the website. First we need to fill out the form and then we press the Sign Up button we are taken to a page that tells us that we need to verify our email address and for this purposes a verification link was sent to the email address I added in the form.
+
+![verify email](/assets/images/verify_email.png)
+
+After we click the link provided in the verification email we are taken to the confirm_email page where we have to press confirm to proceed.
+
+![confirm emai](/assets/images/confirm_email.png)
+
+With everything done now we are able to go to our profile page where we can save our default data for autofilling the checkout form for future purchases. We can also see a list of our order history on the right.
+
+![profile](/assets/images/profile.png)
+
+### Superuser capabilites and CRUD
+
+If we are logged in to the website as a superuser we can find navigation links to adding new products to the database. These actions are not available for regular users or site visitors.
+
+![superuser1](/assets/images/superuser1.png)
+
+
+#### Creating a new product
+
+As mentioned earlier, instructions are provided for understanding how the process of adding a new product to the database works.
+
+![add_laptop1](/assets/images/add_laptop1.png)
+
+After we've added a new Laptop to the database, we are redirected to the newly added Laptop's detail view. Here we can edit the Laptop's details and it's inventory.
+
+![add_laptop2](/assets/images/add_laptop2.png)
+
+Here we select edit and we are taken to the Laptop's editing page where the forms is prepopulated with the Laptop's details.
+
+Here are the main details of the Laptop (these fields are inherited from the product model)
+
+![add_laptop3](/assets/images/add_laptop3.png)
+
+And here are the additional details unique for the Laptop model's objects
+
+![add_laptop4](/assets/images/add_laptop4.png)
+
+Here we can save our changes and go back to the Laptop's detailed page or we can navigate back to this page's top where we can find the edit inventory button.
+
+![add_laptop5](/assets/images/add_laptop5.png)
+
+Here we can see that we are only able to modify the stock count numbers because the rest of the fields are auto generated and we must not edit them manually.
+
+We're not only able to create or update existing date but we can also delete from the database on the front end. If we want to delete a Laptop for example, we just have to navigate to a Laptop's detailed page where we can find the previously mentioned edit button and also a red delete button. Pressing the red button won't immediately delete the Laptop but make a modal pop up on the screen that asks us to confirm our intentions. This was implemented as a defensive design and to not to delete products by accident.
+
+![delete_laptop](/assets/images/delete_laptop.png)
 
 ## Defensive design
 
