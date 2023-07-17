@@ -154,13 +154,13 @@
     
             <!-- newsletter form -->
             <div class="col-12">
-                <form action="">
+                <form method="POST" action="{% url 'home' %}">
+                    {% csrf_token %}
                     <div class="row d-flex justify-content-center">
                         <!-- input text bar -->
                         <div class="col-lg-5">
                             <div class="form-outline form-white my-2">
-                                <input type="email" id="newsletter" class="form-control"
-                                    placeholder="Your email address"/>
+                                    {{ form|crispy }}
                             </div>
                         </div>
     
