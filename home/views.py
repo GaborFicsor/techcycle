@@ -45,3 +45,15 @@ def index(request):
         'faqs': faqs,
     }
     return render(request, 'home/index.html', context)
+
+def policy(request):
+    return render(request, 'home/privacy_policy.html')
+
+def conditions(request):
+    return render(request, 'home/conditions.html')
+
+def sustainability(request):
+    return render(request, 'home/sustainability.html')
+
+def inspections(request):
+    return render(request, 'home/inspections.html')

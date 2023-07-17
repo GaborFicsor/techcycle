@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Sustainability{% endblock %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="py-2">
+            <h2 class="text-center display-4 my-5">Sustainability</h2>
+        </div>
+        <div class="py-2">
+            <p>By purchasing second-hand electronics, we contribute to environmental sustainability by
+                minimizing waste, conserving resources, and reducing pollution.</p>
+        </div>
+        <div class="py-2">
+            <h3>Reduced Electronic Waste:</h3>
+            <p> Purchasing second-hand electronics helps in reducing electronic waste by extending the lifespan of existing
+                devices. Instead of discarding them, reusing these products reduces the need for manufacturing new devices
+                and the associated environmental impact.</p>
+        </div>
+        <div class="py-2">
+            <h3>Conservation of Resources:</h3>
+            <p>Opting for second-hand electronics reduces the demand for materials, such as minerals, metals or
+                plastics. This helps minimizing the extraction of natural resources.</p>
+        </div>
+        <div class="py-2">
+            <h3>Energy and Carbon Footprint:</h3>
+            <p>The production of new electronics requires significant energy and resources. By choosing second-hand devices,
+                we reduce the energy consumed in manufacturing, transportation, and packaging and this way we are lowering 
+                the carbon footprint associated with the production process.</p>
+        </div>
+        <div class="py-2">
+            <h3>Reduced Pollution:</h3>
+            <p>Manufacturing new electronics involves harmful processes that contribute
+                to air, water, and soil pollution. By reusing existing devices, we help reduce the pollution associated with
+                manufacturing and disposal procedures.</p>
+        </div>
+        <div>
+            <a class="btn btn-lg btn-dark mb-5" href="{% url 'home' %}">Home</a>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
+

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Inspections{% endblock %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="py-2">
+            <h2 class="text-center display-4 my-5">Product Inspections</h2>
+            <p>Before offering our second-hand products for sale, we do a comprehensive testing process to
+                ensure functionality and performance. Here are some details about the testing process</p>
+        </div>
+        <div class="py-2">
+            <h3>Functionality:</h3>
+            <p>We ensure that all of our products's essential functions are working correctly. Every product undergoes a
+                thorough inspection to test features such as power on/off, screen display, buttons, ports, speakers and
+                microphones.</p>
+        </div>
+        <div class="py-2">
+            <h3>Performance:</h3>
+            <p>We assess the overall performance of each product, icluding their speed, responsiveness and handling
+                various
+                tasks. We want to offer a good standard of products that our customers can trust.</p>
+        </div>
+        <div class="py-2">
+            <h3>Software:</h3>
+            <p>We verify installed softwares on the devices to make sure there are no harmful data or software is
+                present.
+                We make every necessary or possible software updates to make our products as up-to date as possible. If
+                necessary, we perform a factory reset for optimal performance.</p>
+        </div>
+        <div class="py-2">
+            <h3>Hardware:</h3>
+            <p>We carefully inspect every hardware components, including processors, memory, storages and graphics
+                capabilities. Where possible we test connectivity and water resistancy of small devices.</p>
+        </div>
+        <div class="py-2">
+            <h3>Battery:</h3>
+            <p>We examine all of our product's battery health percentage and if possible and necessary, we change the
+                battery to make our devices even more ready to go.</p>
+        </div>
+        <div class="py-2">
+            <h3>Appearance:</h3>
+            <p>We pay attention to our products conditions and appearances as much as we can. Where necessary we replace
+                parts that are weary and clean components that are dusty.</p>
+        </div>
+        <div class="py-2">
+            <p>With all these tests we aim to provide fully functional second-hand products, ready for their next
+                adventure.</p>
+        </div>
+        <div>
+            <a class="btn btn-lg btn-dark mb-5" href="{% url 'home' %}">Home</a>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

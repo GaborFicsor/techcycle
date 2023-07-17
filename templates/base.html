@@ -171,23 +171,28 @@
                     <!-- navigation links column 1 -->
                     <div class="col-lg-3 col-sm-6 p-4">
 
-                        <!-- information -->
-                        <h5><strong>Information</strong></h5>
+                        <!-- links -->
+                        <h5><strong>Links</strong></h5>
                         <ul class="list-unstyled mb-0">
 
-                            <!-- about us -->
+                            <!-- laptops -->
                             <li>
-                                <a href="#!" class="text-white">About Us</a>
+                                <a href="{% url 'laptops' %}" class="text-white">Laptops</a>
                             </li>
 
-                            <!-- returns -->
+                            <!-- phones -->
                             <li>
-                                <a href="#!" class="text-white">Returns</a>
+                                <a href="{% url 'phones' %}" class="text-white">Phones</a>
                             </li>
 
-                            <!-- contact -->
+                            <!-- smartwatches -->
                             <li>
-                                <a href="#!" class="text-white">Contact</a>
+                                <a href="{% url 'smartwatches' %}" class="text-white">Smartwatches</a>
+                            </li>
+
+                            <!-- consoles -->
+                            <li>
+                                <a href="{% url 'consoles' %}" class="text-white">Consoles</a>
                             </li>
 
                         </ul>
@@ -196,23 +201,28 @@
                     <!-- navigation links column 2 -->
                     <div class="col-lg-3 col-sm-6 p-4">
 
-                        <!-- policy -->
-                        <h5><strong>Policy</strong></h5>
+                        <!-- about -->
+                        <h5><strong>About</strong></h5>
                         <ul class="list-unstyled mb-0">
 
-                            <!-- warranty -->
+                            <!-- inspections -->
                             <li>
-                                <a href="#!" class="text-white">Warranty</a>
+                                <a href="{% url 'inspections' %}" class="text-white">Inspections</a>
                             </li>
 
-                            <!-- FAQ -->
+                            <!-- sustainability -->
                             <li>
-                                <a href="#!" class="text-white">FAQ</a>
+                                <a href="{% url 'sustainability' %}" class="text-white">Sustainability</a>
                             </li>
 
                             <!-- conditions -->
                             <li>
-                                <a href="#!" class="text-white">Conditions</a>
+                                <a href="{% url 'conditions' %}" class="text-white">Conditions</a>
+                            </li>
+
+                            <!-- privacy policy -->
+                            <li>
+                                <a href="{% url 'policy' %}" class="text-white">Policy</a>
                             </li>
 
                         </ul>
@@ -227,17 +237,21 @@
 
                             <!-- home -->
                             <li>
-                                <a href="#!" class="text-white">Home</a>
+                                <a href="{% url 'home' %}" class="text-white">Home</a>
                             </li>
 
                             <!-- products -->
                             <li>
-                                <a href="#!" class="text-white">Products</a>
+                                <a href="{% url 'products' %}" class="text-white">Products</a>
                             </li>
 
                             <!-- cart -->
                             <li>
-                                <a href="#!" class="text-white">Cart</a>
+                                <a href="{% url 'view_bag' %}" class="text-white">Cart</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'products' %}?sale=true" class="text-white">Sale</a>
                             </li>
 
                         </ul>

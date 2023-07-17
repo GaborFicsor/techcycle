@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Conditions{% endblock %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="py-2">
+            <h2 class="text-center display-4 my-5">Product Conditions</h2>
+            <p>All of our products are pre-owned, and their condition reflects their previous use. While we make every
+                effort
+                to accurately assess each item, it's important to understand that these devices are not
+                brand new. However, we make sure to inspect as thoroughly as we can to meet our customers
+                standards and provide an affordable alternative to buying brand new products.</p>
+            <p>At TechCycle, we offer products in various conditions to meet the needs of our customers.
+                Each product is thoroughly inspected and categorized into one the following conditions:</p>
+
+        </div>
+        <div class="py-3">
+            <h3>Acceptable</h3>
+            <p>These items have noticeable signs of wear and may show scratches, scuffs, or minor dents. Despite their
+                appearance, they are fully functional and come with all essential features.</p>
+        </div>
+        <div class="py-3">
+            <h3>Good</h3>
+            <p>Items in good condition are in decent shape with some visible wear. They may have light scratches or
+                small
+                dents but are fully functional and ready to use. These itmes come in their original packaging which may
+                show
+                signs of wear.</p>
+        </div>
+        <div class="py-3">
+            <h3>Excellent</h3>
+            <p>These items are in exceptional condition and appear like new. They have very minimal signs of previous
+                use and each come in it's
+                original packaging.</p>
+        </div>
+        <div class="py-3">
+            <p>If you need more specific information about any of our second-hand products,
+                please feel free to reach out to our customer support team. We are here to assist you in making a good
+                decision.</p>
+        </div>
+        <a class="btn btn-lg btn-dark mb-5" href="{% url 'home' %}">Home</a>
+    </div>
+
+</section>
+{% endblock %}
