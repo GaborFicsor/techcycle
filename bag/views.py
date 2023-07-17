@@ -58,7 +58,7 @@ def add_to_bag(request, item_id):
             messages.success(
                 request,
                 f'Added (+{quantity}) {product} ({condition})'
-                'to your cart ({current_quantity + quantity} in cart)')
+                f'to your cart ({current_quantity + quantity} in cart)')
         else:
             item[condition] = {'quantity': quantity}
             messages.success(
