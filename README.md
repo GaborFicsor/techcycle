@@ -1,28 +1,15 @@
 # TechCycle 
 
-***short introduction of the web application***
+TechCycle is an e-commerce platform for selling refurbished electronics. The website is fully responsive and can be navigatig easily and comfortably on every screen sizes. I aimed to make the interface intuitive and engaging. Agile methodology was used for planning and designing throughout the development process. The database schema used for this project was carefully planned to achieve what I envisioned at the initial planning stages. CRUD functionally is implemented and can be done in the front-end. Users of the website are able to register to the website for a faster and more comfortable checkout system, as well as for having the ability to look through their order history. The main functionality is of course the checkout system, which lets people order any product from the website. User actions are reflected throughout the website to make the experience even more flawless.
 
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
+For version control, GitHub was used. The repository can be found here: [GitHub repository](https://github.com/GaborFicsor/techcycle)
 
-![image of the amiresponsive testing]()
+For the admin panel, the default Django admin dashboard was used, where the admin is able to perform CRUD functionalities related to every object.
 
-> **IMPORTANT**
->
-> Amiresponsive image missing
->
-> ***delete this quote before deployment***
+The live website hosted on Heroku, can be found here: [TechCycle](https://techcycle-66d1b58854d4.herokuapp.com/)
 
-The live website can be found here: ***live website link***
+![image of the amiresponsive testing](assets/images/amiresponsive.png)
 
-> **IMPORTANT**
->
-> Live website link missing
->
-> ***delete this quote before deployment***
 
 ## CONTENTS
 
@@ -77,32 +64,22 @@ The live website can be found here: ***live website link***
 
 ## User Experience
 
-***Main goal of the website***
+The main goal of this website is to create an e-commerce platform where people can purchase products to their liking. Navigating the website is straightforward and the users do not have to spend unnecesarrily long amounts of time between selecting a product, putting it to the cart and then purchasing it.
 
-***What users can do on this webiste***
+Users can select more than one item to put in their bag and purchase them, although that amount depends on the inventory stock count. An estimated stock amount is reflected in the front-end to help users with making their decision.
 
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
+Registering to the website will give people the ability to save their checkout information so that the next time they want to purchase something, the checkout process becomes even easier for them. Registered users can save their details at the checkout, or they can add them manually in the profile page. The profile page also holds information for the user's detailed order history.
+
+
 
 ### Client Goals
 
 <hr>
 
-***What should be the goal for usability***
-
-* goal 1
-* goal 2
-* goal 3
-* goal...
-
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
+* To have an immediate understanding of what the website's purpose is.
+* To create the layout enjoyable on every screen sizes without any distortions that would lower the quality or usability of the website
+* To give users the ability to view a range of differnt products
+* To give users the ability to pay for their selected product
 
 ### User Stories
 
@@ -110,48 +87,45 @@ The live website can be found here: ***live website link***
 
 ***As a site User***
 
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
+* I want to be able to view a range of products on the website
+* I want to be able to select an item from a variety of products
+* I want to be able to search for a product I'm interested in
+* I want to be able to filter the products to get the best results to choose from
+* I want to be able to easily identify deals or special offers
+* I want to be able to put items to my shopping cart
+* I want to be able to adjust my shopping cart contents if I changed my mind
+* I want to be able to proceed to checkout when I'm confident with my decision
+* I want to be able to pay for the items in my shopping cart
+* I want to be able to receive feedback for successful actions
+* I want to be able to view a summary of my purchase
 
 ***As a site Admin***
 
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
+* I want to be able to log in to the site admin panel securely
+* I want to be able to manage user accounts with crud functionalities
+* I want to be able to manage inventories and track stock availability for each product
+* I want to be able to be able to communicate with customers through email notifications
+* I want to be able to have decent overview of all the products listed on the website
+* I want to be able to perform actions on more than one item at once
+
 
 ***As a site operator***
 
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
-* I want to be able to...
+* I want to be able to add products easily and conveniently to database
+* I want to be able to edit existing products details if needed
+* I want to be able to delete products if needed
+* I want to be able to add items to the discounted items
+* I want to be able to remove items from the discounted items
+* I want to be able to manually update the stock count of the items
 
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
 
 ### Agile Development
 
-<hr>
+To implement agile development into my Django e-commerce project, I made use of several key agile concepts. I started by breaking down my project into smaller well-defined and more manageable milestones, which helped me to stay focused and organized throughout the development process.
 
-***Agile methodologies used***
+I created user stories with acceptance criteria and added tasks that needed to be completed to fulfil each user story. During development, I made use of the kanban board for my project as it gives a good sense of progression. The issues that did not get closed were moved to a column called future implementations.
 
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
+I think taking the time to create well defined tasks helped putting things into perspective. I spent a lot of time planning the project before I started everything else. The development process was crushing so I had to prioritze usability over everything else. MoSCoW prioritization was laid out at the beginning by attaching different labels to tasks with different priorities and I tried to meet those goals as much as I can.
 
 <br>
 
@@ -159,162 +133,503 @@ The live website can be found here: ***live website link***
 
 ### Design Thinking
 
-<hr>
 
-***What was the idea behind the design?***
+A good amount of design elements have been reused from Code Institute's boutique-ado walkthrough project. These are mainly the bag, checkout and profile pages and parts of the navigation bar.
 
-***What made it feasible to design this website?***
+I spent a good amount of time to look up various e-commerce websites that might be similar to what I wanted to make to gather inspiration and gain an overall idea on what the most important things about the design are.
 
-***What is an accomplishment I'm proud of about the design?***
+I knew the products should be easily noticeable. Initially these items should show only the most important details to catch the user's interest.
 
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
+I also tried to create a project with an environment I'm somewhat familiar with so that I could create a good design that I would appreciate as a site user.
+
+My proudest design elements are the product cards and the footer section. I spent a lot of time planning and executing their design I envisioned. I also came up with my own ideas for the carousel images and I really like the blue slide which meant to resemble the blue screen of death of death, except it's giving an opposite impression.
+
+I would like to further improve the website's overall look and have a more consistent styling with and better use of screen real estate.
 
 ### Colour Scheme
 
 <hr>
 
-***What is the main colour design?***
+For the main colours of the design, I tried picking simple colors that go well together. I picked a dark shade of blue for the main color. The amber is used for highlighting elements on the landing page and the light blue is used for button hover effects.
 
-<details>
-    <summary>Colour Palette</summary>
+![image of the website's colour palette using coolors.co](assets/images/coolors.png)
 
-    ![image of the website's colour palette using coolors.co]()
-
-</details>
-
-> **IMPORTANT**
->
-> Missing colour palette image
->
-> ***delete this quote before deployment***
 
 ### Typography
 
 <hr>
 
-***What are the font styles used for the webiste?***
+For regular text and paragraph elements I used Lato
 
-<details>
-  <summary>Font Styles</summary>
+![image of the Lato font](assets/images/lato.png)
 
-![image of the font styles used]()
+For headings I used Roboto
 
-</details>
+![image of the Roboto font](assets/images/roboto.png)
 
-> **IMPORTANT**
->
-> Font styles need to be included here
->
-> ***delete this quote before deployment***
 
 ### Imagery
 
 <hr>
 
-***What images were used for the website?***
+#### Carousel slides
+
+The carousel images on the landing page were all done by me with the use of gimp software.
+The carousel was a little difficult to pull off because I wanted the images to not stretch beyond the bootstrap containers width so I had to create more iterations of each image and then use the srcset attribute to change them at different breakpoints for better readability.
 
 <details>
-  <summary>Image 1</summary>
+  <summary>The console screen slides</summary>
 
-![image of the ]()
+|> 575px|576px - 991px | 991px+
+:-------------------------:|:-------------------------:|:-------------------------:
+![small](assets/images/slide-console-small.png)| ![default](assets/images/slide-console.png)|![large](assets/images/slide-console-large.png)
 
 </details>
 
 <details>
-  <summary>Image 2</summary>
+  <summary>The blue screen slides</summary>
 
-![image of the ]()
+|> 991px| 992px+
+:-------------------------:|:-------------------------:
+![small](assets/images/slide-blue-screen-small.png)|![large](assets/images/slide-blue-screen-large.png)
+</details>
+
+<details>
+  <summary>The sale slides</summary>
+
+|> 991px| 992px+
+:-------------------------:|:-------------------------:
+![small](assets/images/slide-sale.png)|![large](assets/images/slide-sale-large.png)
+
+</details>
+
+#### Forest background
+
+<details>
+  <summary>Image of a forest used as background</summary>
+
+![forest](/assets/images/forest.jpg)
+
+</details>
+
+#### Product images and sources
+
+For the products I looked up images for each item individually and then saved them with screenshots. I needed to find images that are somewhat similar in size, but most importantly have white background around them.
+
+In order to make them similar to each other I needed to crop every single one to square shaped and then resized all of them to the same 500x500 px size to make them easier to work with.
+
+<details>
+  <summary>Laptop images and sources</summary>
+
+<p float="left">
+  <img src="../techcycle/media/asusvivobook15m515.jpg" width="100" />
+  <img src="../techcycle/media/dellg155511.jpg" width="100" /> 
+  <img src="../techcycle/media/asusexpertbookp15.jpg" width="100" />
+  <img src="../techcycle/media/asusvivobook13slateoled.jpg" width="100" />
+  <img src="../techcycle/media/lenovoideapad14itl6.jpg" width="100" />
+  <img src="../techcycle/media/msimodern14b4mw.jpg" width="100" />
+  <img src="../techcycle/media/dellvostro3400i3.jpg" width="100" />
+  <img src="../techcycle/media/msigf63thin.jpg" width="100" />
+  <img src="../techcycle/media/applemacbookprom1.jpg" width="100" />
+  <img src="../techcycle/media/applemacbookairm1.jpg" width="100" />
+  <img src="../techcycle/media/lenovothinkpade15.jpg" width="100" />
+  <img src="../techcycle/media/dellinspiron5518.jpg" width="100" />
+  <img src="../techcycle/media/hppaviliongaming15ec2048.jpg" width="100" />
+  <img src="../techcycle/media/asustufgamingf15.jpg" width="100" />
+  <img src="../techcycle/media/hppaviliongaming15ec2150.jpg" width="100" />
+  <img src="../techcycle/media/dellinspiron3511.jpg" width="100" />
+  <img src="../techcycle/media/asusvivobookx413ea.jpg" width="100" />
+  <img src="../techcycle/media/dellg155515.jpg" width="100" />
+  <img src="../techcycle/media/lenovoideapadslim3i.jpg" width="100" />
+  <img src="../techcycle/media/asustufgaminga15.jpg" width="100" />
+  <img src="../techcycle/media/hp15sdu3060tx.jpg" width="100" />
+  <img src="../techcycle/media/dellinspiron7501.jpg" width="100" />
+  <img src="../techcycle/media/lenovoideapad315iml05.jpg" width="100" />
+  <img src="../techcycle/media/aceraspirea3a315.jpg" width="100" />
+  <img src="../techcycle/media/asusvivobookk15oled.jpg" width="100" />
+  <img src="../techcycle/media/acerpredatorhelios300.jpg" width="100" />
+  <img src="../techcycle/media/asusrogstrixg513qe.jpg" width="100" />
+  <img src="../techcycle/media/lenovoideapadslim5.jpg" width="100" />
+  <img src="../techcycle/media/infinixx1xl12.jpg" width="100" />
+  <img src="../techcycle/media/asusvivobookpro16xoled.jpg" width="100" />
+  <img src="../techcycle/media/dellvostro3400i5.jpg" width="100" />
+</p>
+<details open>
+<summary>Laptop image sources</summary>
+
+* [ASUS VivoBook 15 M515DA-BQ722WS](https://cdn.mall.adeptmind.ai/https%3A%2F%2Fmultimedia.bbycastatic.ca%2Fmultimedia%2Fproducts%2F500x500%2F163%2F16345%2F16345249.jpg_large.webp)
+* [DELL G15 5511 SE](https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1983509-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNDU3NTV8aW1hZ2UvanBlZ3xhRFl4TDJneE5DOHhORFEwTmpFME5qZzNPVFV4T0M4eE9UZ3pOVEE1TFRBeExtcHdaMTh4TWpBd1YzZ3hNakF3U0F8ODA2MjFmNjg3Mzc4NTYyNDNiN2FhNzQxNWNlOTY2NmY3ODc4MzI4MGU0NmIyYzE1ZDhjODQxMzhhYWIyM2ExYw)
+* [ASUS ExpertBook P1511CEA](https://www.tradeinn.com/f/13896/138967032_2/asus-expertbook-p15-15.6-i5-1135g7-16gb-512gb-ssd-%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA.jpg)
+* [ASUS VivoBook 13 Slate OLED](https://storage.googleapis.com/stateless-creative-it-ie/2023/03/02e7889a-e2e360713c184abdba8c14d87d076d3d-scaled.jpg)
+* [Lenovo IdeaPad 14ITL6](https://www.notebookcheck.net/fileadmin/Notebooks/Lenovo/IdeaPad_3_14ITL6-82H700CCGE/4zu3_Lenovo_Ideapad3_14ITL6.jpg)
+* [MSI Modern 14 B4MW-423IN](https://www.notebookcheck.net/uploads/tx_nbc2/MSIModern14-B4MW__1_.JPG)
+* [DELL Vostro 3400 (i5)](https://www.buyitdirect.ie/Images/VOSTRO-11THGEN_1_LargeProductImage.jpg?v=1)
+* [MSI GF63 Thin 10SCXR-1616IN](https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537558_sd.jpg;maxHeight=640;maxWidth=550)
+* [Apple Macbook Pro M1 2021](https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-mbp16-space-m1-2021_GEO_IE?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1643239921000)
+* [Apple MacBook Air M1 2020](https://www.stapletonselectrical.ie/wp-content/uploads/2021/04/48194806546462_800x.jpg)
+* [Lenovo ThinkPad E15](https://storage.googleapis.com/stateless-creative-it-ie/2022/04/7113ae1c592e54329c6fdaf16adb2bf3.jpg)
+* [DELL Inspiron 5518](https://www.notebookcheck.net/fileadmin/Notebooks/Dell/Inspiron_15_5518-2X3JR/4zu3_Dell_Inspiron_15_5518.jpg)
+* [HP Pavilion Gaming 15-EC2048AX](https://hniesfp.imgix.net/8/images/detailed/298/15-dk2017na-win11.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [ASUS TUF Gaming F15 FX506LH-HN258T](https://cdn11.bigcommerce.com/s-8ek7z3h3jn/images/stencil/590x590/products/8962/49737/asus-asus-tuf-gaming-f15-or-intel-core-i5-or-8gb-ram-or-512-ssd-or-fx506hf-hn001w__57482.1687842196.jpg?c=1)
+* [HP Pavilion Gaming 15-EC2150AX](https://m.media-amazon.com/images/I/51D0RrFXFEL._AC_UF1000,1000_QL80_.jpg)
+* [DELL Inspiron 3511](https://m.media-amazon.com/images/I/611fjdipEeL.jpg)
+* [ASUS VivoBook X413EA-EB532WS](https://m.media-amazon.com/images/I/71-Cn2ER3BL._AC_UF894,1000_QL80_.jpg)
+* [DELL G15 5515](https://www.notebookcheck.net/fileadmin/Notebooks/Dell/G15_5515/4zu3_Dell_G15_5515.jpg)
+* [Acer Aspire 3 A315-57G](https://static2-ecemea.acer.com/media/catalog/product/_/_/___a__aspire-3-a315-58-a315-58g-sv_1000main_nx.addek.00m.png?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg)
+* [ASUS VivoBook K15 OLED](https://images-eu.ssl-images-amazon.com/images/I/71vTtY1qJXL._AC_UL600_SR600,600_.jpg)
+* [Acer Predator Helios 300](https://m.media-amazon.com/images/I/81g7AiqWrtL.jpg)
+* [ASUS ROG Strix G513QE-HN108T](https://www.buyitdirect.ie/Images/G513QE-HN029T_12_Supersize.jpg?v=2)
+* [Lenovo Ideapad Slim 3i](https://images-na.ssl-images-amazon.com/images/I/61s7sJEpsVL.jpg)
+* [ASUS VivoBook Pro 16X OLED](https://storage.googleapis.com/stateless-creative-it-ie/2022/07/a4dcf1de-aa41543def44cb53b06ab67724c659e9.jpg)
+* [DELL Vostro 3400 (i3)](https://m.media-amazon.com/images/I/51jjwxcW1pL._AC_UF1000,1000_QL80_.jpg)
+* [Infinix X1 XL12](https://m.media-amazon.com/images/I/61DVZ7M+9FL._AC_UF1000,1000_QL80_.jpg)
+* [ASUS TUF Gaming A15 FA566IC-HN008T](https://www.greenit.ie/wp-content/uploads/2022/12/ASUS-TUF-Gaming-A15-2.png)
+* [HP 15s du3060TX](https://m.media-amazon.com/images/I/51VnPUGPCXS._AC_UF1000,1000_QL80_.jpg)
+* [Lenovo Ideapad 3 15IML05](https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482927cv1d.jpg)
+* [DELL Inpiron 7501](https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482927cv1d.jpg)
+* [Lenovo Ideapad Slim 5](https://files.refurbed.com/pi/lenovo-ideapad-3-15iml05-6405u-1625031290.jpg?t=resize&h=630&w=1200)
+
+</details>
+</details>
+
+<details>
+  <summary>Phone images and sources</summary>
+
+<p float="left">
+  <img src="../techcycle/media/appleiphonese2022.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone11.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone11promax.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone12.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone12mini.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone12pro.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone13mini.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone13.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone13pro.jpg" width="100" />
+  <img src="../techcycle/media/appleiphone14.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxys22.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxys22ultra.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxya53.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxys23.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxya54.jpg" width="100" />
+  <img src="../techcycle/media/xiaomiredminote12pro.jpg" width="100" />
+  <img src="../techcycle/media/xiaomi12lite.jpg" width="100" />
+  <img src="../techcycle/media/xiaomiredmi10.jpg" width="100" />
+  <img src="../techcycle/media/xiaomiredmik60.jpg" width="100" />
+  <img src="../techcycle/media/opporeno8pro.jpg" width="100" />
+  <img src="../techcycle/media/oppofindx5pro.jpg" width="100" />
+  <img src="../techcycle/media/googlepixel7.jpg" width="100" />
+  <img src="../techcycle/media/huaweimate50pro.jpg" width="100" />
+  <img src="../techcycle/media/huaweinova10se.jpg" width="100" />
+<p>
+
+<details open>
+<summary>Phone image sources</summary>
+
+* [Apple iPhone se 2022](https://files.refurbed.com/ii/iphone-se-2022-1646894013.jpg)
+* [Apple iPhone 11](https://m.media-amazon.com/images/I/61cnmobWl4L._AC_SY679_.jpg)
+* [Apple iPhone 11 pro max](https://files.refurbed.com/pi/iphone-11-pro-max-1568194439.jpg)
+* [Apple iPhone 12](https://hniesfp.imgix.net/8/images/detailed/284/iphone_Apple_MGJ53BA.JPG?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [Apple iPhone 12 mini](https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-12-mini-black-2020?wid=2000&hei=1897&fmt=jpeg&qlt=95&.v=1635202794000)
+* [Apple iPhone 12 pro](https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-12-pro-graphite-2020?wid=2000&hei=1897&fmt=jpeg&qlt=95&.v=1635202842000)
+* [Apple iPhone 13 mini](https://med.csmobiles.com/549537-large_default/apple-iphone-13-mini-128gb-negro.jpg)
+* [Apple iPhone 13](https://med.csmobiles.com/549507-large_default/apple-iphone-13-128gb-negro.jpg)
+* [Apple iPhone 13 pro](https://www.smartcellular.ie/media/catalog/product/cache/cfaa1692031f009488d1cfea5ce7e1ee/6/1/61neahtarzl._ac_sx679__4.jpg)
+* [Apple iPhone 14](https://files.refurbed.com/ii/iphone-14-1662616454.jpg?t=fitdesign&h=600&w=800)
+* [samsung galaxy s22](https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/gallery/e0486885949c4dbda1caeffcfce32b69?version=0)
+* [samsung galaxy s22 ultra](https://www.backmarket.ie/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/619009_6a7fc2aa-e5c9-4a40-80b9-0760bb5a267f.jpg)
+* [samsung galaxy a53](https://m.media-amazon.com/images/I/71p7LLxLjKL._AC_SX679_.jpg)
+* [samsung galaxy s23](https://hniesfp.imgix.net/8/images/detailed/370/Mobile_Samsung_SM-S911BZKGEUB.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [samsung galaxy a54](https://hniesfp.imgix.net/8/images/detailed/379/A54_FrontBack_Logo_AwesomeGraphite_2000x2000.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [xiaomi redmi note 12 pro](https://bsimg.nl/images/xiaomi-redmi-note-12-pro-6gb-128gb-zwart_2.jpg/LXXKWpnPuWh29uTtN-nqr0G2ks0%3D/fit-in/0x0/filters%3Aupscale%28%29)
+* [xiaomi 12 lite](https://www.mytrendyphone.ie/images/Xiaomi-12-Lite-128GB-Black-6934177781155-08082022-01-p.webp)
+* [xiaomi redmi 10](https://hniesfp.imgix.net/8/images/detailed/328/K19A-black-%E6%AD%A3_1.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [xiaomi redmi k60](https://phonesdata.com/files/models/Xiaomi-Redmi-K60-193.jpg)
+* [xiaomi mi 11t pro](https://i0.wp.com/www.xiaomi.ie/wp-content/uploads/2021/10/xiaomi-10T-pro-in-grey.png?fit=800%2C800&ssl=1)
+* [oppo reno 8 pro](https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/reno8-pro-5g-en/navigation/reno8-pro-glazed-black-427_600-pc.png)
+* [oppo find x5 pro](https://files.refurbed.com/ii/oppo-find-x5-pro-1657003075.jpg)
+* [google pixel 7](https://lh3.googleusercontent.com/p4nZ7P33U5gsofMhFc-3zC0_5NlfV8hn_XbQDQ2zLbNnct4zqVttDmTusEnN-aP9VIJJ-ur9oaSDsPuqnYqTtywtnccj63Bv3jE)
+* [google pixel 7 pro](https://lh3.googleusercontent.com/p4nZ7P33U5gsofMhFc-3zC0_5NlfV8hn_XbQDQ2zLbNnct4zqVttDmTusEnN-aP9VIJJ-ur9oaSDsPuqnYqTtywtnccj63Bv3jE)
+* [google pixel 7a](https://lh3.googleusercontent.com/p4nZ7P33U5gsofMhFc-3zC0_5NlfV8hn_XbQDQ2zLbNnct4zqVttDmTusEnN-aP9VIJJ-ur9oaSDsPuqnYqTtywtnccj63Bv3jE)
+* [huawei mate 50 pro](https://files.refurbed.com/ii/huawei-mate-50-pro-1672133804.jpg?t=fitdesign&h=600&w=800)
+* [huawei nova 10 se](https://www.mytrendyphone.ie/images/Huawei-Nova-10-SE-128GB-Starry-Black-6941487275816-08022023-01-p.webp)
+
+</details>
+</details>
+
+<details>
+  <summary>Smartwatch images and sources</summary>
+
+<p float="left">
+  <img src="../techcycle/media/applewatchse.jpg" width="100" />
+  <img src="../techcycle/media/applewatchseries7.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxywatch4.jpg" width="100" />
+  <img src="../techcycle/media/samsunggalaxywatchactive2.jpg" width="100" />
+  <img src="../techcycle/media/garminforerunner945.jpg" width="100" />
+  <img src="../techcycle/media/garminvenu2.jpg" width="100" />
+<p>
+
+<details open>
+<summary>Smartwatch image sources</summary>
+
+* [apple watch se](https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKU83_VW_34FR+watch-40-alum-midnight-nc-se_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1683237043713)
+* [apple watch series 7](https://www.stapletonselectrical.ie/wp-content/uploads/2021/11/nk4e73fmdez8ru7x1sjkbm-mkmx3ba_apple_watch7_m_p.jpg)
+* [samsung galaxy watch 4](https://hniesfp.imgix.net/8/images/detailed/281/Watch_Samsung_SM-R860NZKAEUA_1.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [samsung galaxy watch active 2](https://d1eh9yux7w8iql.cloudfront.net/product_images/None_2ee1b559-60b6-424a-994c-41e68f67c55c.jpg)
+* [garmin forerunner 945](https://www.sportsdirect.com/images/imgzoom/91/91553903_xxl.jpg)
+* [garmin venu 2](https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_400,q_auto,w_400/c_pad,h_400,w_400/v1/Product_Images/en/products/010-02430-11/v/cf-xl-0a9c2c63-93a7-476a-8b93-e52886a0f52c?pgw=1)
+</details>
+</details>
+
+<details>
+  <summary>Console images and sources</summary>
+
+<p float="left">
+  <img src="../techcycle/media/ps4fat.jpg" width="100" />
+  <img src="../techcycle/media/ps4slim.jpg" width="100" />
+  <img src="../techcycle/media/ps4pro.jpg" width="100" />
+  <img src="../techcycle/media/ps5digital.jpg" width="100" />
+  <img src="../techcycle/media/ps5.jpg" width="100" />
+  <img src="../techcycle/media/xboxone.jpg" width="100" />
+  <img src="../techcycle/media/xboxones.jpg" width="100" />
+  <img src="../techcycle/media/xboxonex.jpg" width="100" />
+  <img src="../techcycle/media/xboxseriess.jpg" width="100" />
+  <img src="../techcycle/media/xboxseriesx.jpg" width="100" />
+  <img src="../techcycle/media/nintendoswitch.jpg" width="100" />
+  <img src="../techcycle/media/nintendoswitchlite.jpg" width="100" />
+  <img src="../techcycle/media/nintendoswitcholed.jpg" width="100" />
+</p>
+
+<details open>
+<summary>Console image sources</summary>
+
+* [Playstation 4](https://gamessspot.com/public/uploads/all/BTbkzimgVfOspn2rIqlNuL5VcdPjZmVYVOz1ncTn.jpg)
+* [Playstation 4 Slim](https://www.theioutlet.com/ie/wp-content/uploads/sites/5/2023/01/PS4-Slim-Black.png)
+* [Playstation 4 Pro](https://www.theioutlet.com/ie/wp-content/uploads/sites/5/2023/01/PS4-Pro-1.png?w=400)
+* [Playstation 5 (digital)](https://image.smythstoys.com/original/desktop/191430.jpg)
+* [Playstation 5](https://media.currys.biz/i/currysprod/10203370?$l-large$&fmt=auto)
+* [Xbox One](https://cdn.awsli.com.br/600x1000/1417/1417526/produto/56092654/4037a32fe7.jpg)
+* [Xbox One S](https://ie.static.webuy.com/product_images/Gaming/Xbox%20One%20Consoles/SXB1S500GW002_l.jpg)
+* [Xbox One X](https://d1eh9yux7w8iql.cloudfront.net/product_images/255424_3dd39246-75cb-449d-b7a2-366b9c0593dd.jpg)
+* [Xbox Series S](https://hniesfp.imgix.net/8/images/detailed/237/Xbox_Series_S.jpg?fit=fill&bg=0FFF&w=833&h=555&auto=format,compress)
+* [Xbox Series X](https://hniesfp.imgix.net/8/images/detailed/325/Microsoft_Xbox_SeriesX_RRT-00007_dl2c-yj.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+* [Nintendo Switch](https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/bundle_color_portable_1.jpg)
+* [Nintendo Switch Lite](https://files.refurbed.com/pi/nintendo-switch-lite-1624274417.jpg?t=resize&h=630&w=1200)
+* [Nintendo Switch Oled](https://hniesfp.imgix.net/8/images/detailed/298/Nintendo_10007456.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress)
+
+</details>
+</details>
+
+
+#### Miscellaneous
+
+<details>
+  <summary>Icons</summary>
+
+Stripe|Django|AWS
+:-------------------------:|:-------------------------:|:-------------------------:
+![stripe icon](/assets/images/stripe.png)|![django icon](/assets/images/django.png)|![amazon aws icon](/assets/images/aws.png)
 
 </details>
 
 <details>
-  <summary>Image 3</summary>
+  <summary>Payment options icons</summary>
 
-![image of the ]()
+MasterCard|Visa|PayPal|Apple Pay
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![mastercard](/assets/images/master-card.png)|![visa](/assets/images/visa.png)|![paypal](/assets/images/paypal.png)|![apple pay](/assets/images/apple-pay.png)
 
 </details>
 
-> **IMPORTANT**
->
-> Any images used throughout the application need to be presented here
->
-> ***delete this quote before deployment***
+<details>
+  <summary>Default image if a product's image is missing</summary>
+
+![noimage](../techcycle/media/noimage.png)
+
+</details>
 
 ### Wireframes
 
 <hr>
 
-***What wireframes were created for the design?***
-
 <details>
-  <summary>Wireframe</summary>
+  <summary>Initial desktop wireframe</summary>
 
-![image of the ]()
+![desktop wireframe](/assets/images/desktop.png)
 
 </details>
 
-> **IMPORTANT**
->
-> This section needs editing
-> Wireframe images need to be added
->
-> ***delete this quote before deployment***
+<details>
+  <summary>Initial phone wireframe</summary>
+
+![phone wireframe](/assets/images/phone.png)
+
+</details>
+
+<details>
+  <summary>Initial cards wireframe</summary>
+
+![cards wireframe](/assets/images/cards.png)
+
+</details>
+
+<details>
+  <summary>Initial product detail wireframe</summary>
+
+![product detail wireframe](/assets/images/product_detail.png)
+
+</details>
+
+<details>
+  <summary>Initial footer detail wireframe</summary>
+
+![footer wireframe](/assets/images/footer.png)
+
+</details>
+
 
 ### Database and ERD
 
 <hr>
 
-***Relational database***
+![image of the ERD diagram](/assets/images/erd.png)
 
-<details>
-  <summary>ERD diagram</summary>
+During the development one of the most difficult part was definitely figuring out how the models should be related. I knew I wanted to have four different kind of products in my database. At the beginning I tried creating
+a single product model with including every field I could think of. I have tried recreating my database schema several times until I figured that the model inheritance would maybe what I am looking for. So I created the Product model
+as the parent class for the Laptop, Phone, Smartwatch and Console models. The parent class holds all the fields that each child class share. For a really long time this worked, even though the more I worked on my models and templates the
+more complicated and tedious the whole process got. Eventually I got the point where I knew I had to implement a working inventory model to the database but I didn't know how. I recreated my database schema and dropped the local database
+several times. Eventually I stumbled upon [a question on stackoverflow](https://stackoverflow.com/questions/70974656/add-products-with-different-sizes-and-price-to-cart-django) which got me creating the database the way it is now.
+This question made me realize that if I want to render a selected condition's price in the bag correctly, I have to pass in the inventory.id not the laptop.id.
 
-![image of the ]()
+The way the Products app's models work is the following:
 
-> **IMPORTANT**
->
-> This section needs editing
-> ERD diagran needs to be added
->
-> ***delete this quote before deployment***
+ * Creating an object instance is made through the Laptop, Phone, Smartwatch and Console models
+ * Whenever one of these model's object is being created, they inherit fields from the product model
+ * After a new instance is added to the database, the Inventory model generates 3 objects for that newly created instance
+   * One Inventory for the object's acceptable condition
+   * One Inventory for the object's good condition
+   * One Inventory for the object's excellent condition
 
-</details>
+Inventory objects are not meant to be created or deleted manually, as those are done automatically.
+When the Inventory object are created the price and sale_price fields are automatically generated based on the Product's price field
+The Inventory objects do not generate stock_counts however.
+When a user is creating a new Laptop for example on the front end he needs to specify the price field for that Laptop which is then assigned as the best condition's price and the rest of the prices are calculated based on that. So when an item is created initially that item has no stock amount. To add stock_count numbers to a Laptop object, the user has to update that Laptop objects inventory objects.
+
+Thankfully the inheritance between the models allowed me to define class methods that I was able to use in the templates, so this is why there are a lot of functions in the Product model.
+
+This is hard and it made production even harder because I am not sure if this is a good approach. I needed to create individual views urls and a lot of templates for everything. This also made it very difficult to handle all product cards at once.
+I could not filter the all_products view effectively. So that is why each Product category has their own template for displaying all objects. The all products view is used for searching and displaying items on sale in my case. 
+
+I've tried really hard to at least making it possible that I could search for a class method and got so far that I was able to at least print out the query that I entered and the print out the results for that query and it worked in the terminal, but I could not make it work in the template.
+
+![search_query2](/assets/images/search_query2.png)
+
+![search_query1](/assets/images/search_query1.png)
+
+I will definitely try to find a better way for doing this because I genuinely want to find a solution. Despite all of this I think the database schema of the Products app work well. I added information notices to the front end forms to make the process understandable.
+
+My entirely custom made models are:
+ - Product
+ - Laptop
+ - Phone
+ - Smartwatch
+ - Console
+ - Inventory
+ - FAQ
+ - Newsletter
+
+ It is worth mentioning that data for my models was taken from kaggle.com. For the Laptop, Phone, Smartwatch and Console models I found JSON fixtures that I was ablo to modify to my own needs. These databases were stuffed with items and fields and I decided to create my own fixtures
+ based on them. This was really handy because as I mentioned I had to recreate my database schema a lot of times, so having a ready set of fixtures was good because I was able to loaddata within seconds. This is the reason I decided to create the FAQ model because I did not want to type every FAQ every time I had to create a new database.
+
+ I don't know if this is a good way, but it works. The most obvious flaw is obviously the all_products view and how it is rendering the products. I could have made searching easier by adding a name field instead of brand, series and model, but that way I would not have been able to filter the objects by brand for example. I don't know what else to say.
+
 
 ## Features
 
 ***What are the main features of the website?***
+The main features of the website:
+* Viewing a list of products
+* Filtering products
+* Sorting products
+* Searching products
+* Viewing a detailed template for any product
+* Creating an account
+* Email verification on first login
+* Logging in to the account
+* Editing a profile view
+* Rendering order history in the profile view
+* Ability to subscribe to newsletter
+* Message toasts are reflecting user actions
+* Being able to select a condition and quantity for a product
+* The product's price is reflected according to it's condition and quantity
+* Adding and removing items from the bag
+* Being able to proceed from the bag to the checkout page
+* Filling out a validated form for placing an order
+* Checkout process is done with integrated Stripe functionality
+* Recieveing order confirmation and email
+* Site operators are able to perform CRUD functionalities
+* Site opeartors are able to add to or remove items from sale
+* The website reflects the several ways if an item is out of stock
+* Out of stock items can not be placed into the bag or purchased
+* Navigating to a page that does not exist will render a custom 404 error page
+* Each page can be accessed from another page and each page has a button to navigate elsewhere
 
-***Are they responsive?***
+### The landing page
 
-***Authorization pages***
+![landing1](/assets/images/landing1.png)
 
-***Is the login state reflected?***
+The landing page features a bootstrap carousel with custom images that are made responsive for readability. Every slide of the carousel has a button to navigate to a different page of the website.
+Below the carousel a random sample of the Laptop model's gaming laptops are displayed. These cards are clickable and will take the user to their corresponding detailed page.
 
-***Secure payment***
+<hr>
 
-***Password reset***
+![landing2](/assets/images/landing2.png)
 
-***Forms***
+Scrolling down on the landing page will take the users to a small section explaining why this website offers a good service. I made sure that the text is readable. Below this section a FAQ section can be found. This is a customized bootstrap accordion. Rendering the faq section with django for loops made less clutter on the website but I had to implement jquery functionality for closing the accordion tabs if another one opens. For this I found a solution on [stackoverflow](https://stackoverflow.com/questions/29096037/how-to-open-and-collapse-the-same-jquery-accordion-with-click-on-it-only) which helped achieve the desired functionality.
 
-***Form validation***
+<hr>
+
+![landing3](/assets/images/landing3.png)
+
+Immediately after the FAQ section there is a small section of information icons that display some of the benefits of purchasing from this website, such as free delivery, 12 month warranty and sustainability. For smaller screen sizes this section displays a dynamic text below the icons.
+Navigating to the bottom of the landing page the users can found a form for joining the website's newsletter with their email addresses. Upon successfully submitting the form, the user will receive a confirmation email as well as a success toast.
+At the bottom of the page is the footer section which I am really proud of, although originally I had better ideas to make it more sophisticated, I had to prioritize functionality over appearance. The footer section has links to all Laptops, Phones, Smartwatches and Consoles pages.
+Users can read about the inspection procedures, conditions of the items, sustainability and the privacy policy of the website.
+Navigation links are also included to take the user to the different pages of the website. On the right hand side small icons are displayed for letting the user know about the available payment options.
+The last row of the footer displays the official icons for Stripe, Django and Amazon Web Services. These are the main technologies used during development. (These icons glow when hovered and I'm so proud on the design of this section)
+
+Scrolling back to the top of the page the user has the ability to navigate easily with the help of the navigation bar.
+
+Clicking either one of the Laptop, Phone, Smartwatch or Console navigation links will open a dropdown box that offers a way for sorting and filtering products. Choosing the all laptops link will take the user to a page where all the laptops are displayed with a detailed, custom-made product card.
+
+<hr>
+
+![cards](/assets/images/cards.png)
+
+On the Laptop page users are quickly able to tell if an item they are looking at is out stock. Items that are out of stock are greyed out and cannot be placed into the bag or purchased, but their detailed page view can still be viewed.
+
+First let's take a look at the detailed page of a Laptop if if it's available
+
+![available](/assets/images/available.png)
+
+This page offers several ways to let the user know that this laptop is available for purchasing.
+
+A few left (if the overall stock_count is 2 or less)|Available in all conditions
+:-------------------------:|:-------------------------:
+![few left](/assets/images/few_left.png)|![in stock](/assets/images/in_stock.png)
+
+Avaialable in good and excellent conditions |On sale with onlt a few left
+:-------------------------:|:-------------------------:
+|![in stock 2](/assets/images/in_stock2.png)|![on sale](/assets/images/on_sale.png)|
+
+
+
+
 
 ## Defensive design
 
-***Defensive design for changing user details***
+For defensive design purposes deleting an item from the database will alert the user with a modal. The model needs to be confirmed to proceed with the removal of the item.
 
-***Defensive design for adding products***
 
-***...***
-
-> **IMPORTANT**
->
-> This section needs editing
->
-> ***delete this quote before deployment***
 
 ## Future Implementations
 
@@ -662,3 +977,5 @@ Accessibility testing, responsiveness testing validating and manual testing can 
 > ***delete this quote before deployment***
 
 <hr>
+
+Those were to create a website that sells a variety of products with each having more type of conditions. The end result came pretty close to what I originally wanted, though I feel like there's still room for learning and this project has made me a lot more confident in my understanding of how the django web framework works.
