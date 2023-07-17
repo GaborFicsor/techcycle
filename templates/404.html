@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| 404{% endblock %}
+{% block content %}
+
+<div class="col-12 text-center">
+    <p class="display-1">404</p>
+    <p class="display-5">The page that you're looking for does not exist or unavailable.</p>
+    <a class="btn btn-dark" href="{% url 'products' %}">head back</a>
+</div>
+
+{% endblock %}
