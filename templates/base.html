@@ -139,50 +139,6 @@
 
     {% block content %}
     {% endblock %}
-
-    {% block newsletter %}
-    <!-- newsletter section -->
-    <section class="bg-warning">
-        <div class="container p-4">
-    
-            <!-- newsletter heading title -->
-            <div class="col-12 text-center">
-                <h4 class="pt-2">
-                    <strong>Be the First to Hear About Our Newest Offers - Sign Up Today!</strong>
-                </h4>
-            </div>
-    
-            <!-- newsletter form -->
-            <div class="col-12">
-                <form method="POST" action="{% url 'home' %}">
-                    {% csrf_token %}
-                    <div class="row d-flex justify-content-center">
-                        <!-- input text bar -->
-                        <div class="col-lg-5">
-                            <div class="form-outline form-white my-2">
-                                    {{ form|crispy }}
-                            </div>
-                        </div>
-    
-                        <!-- submit button -->
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-clear my-2">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-    
-            <!-- newsletter subtext -->
-            <div class="col-12 text-center">
-                <p class="mt-2">
-                    Stay up-to-date with the latest trends, exclusive offers, and exciting product releases.
-                </p>
-            </div>
-        </div>
-    </section>
-    {% endblock %}
     
     {% block footer %}
     <!-- footer -->
