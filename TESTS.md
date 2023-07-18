@@ -1,6 +1,6 @@
 # TechCycle -- TESTS.md
 
-[Back to README.md]()
+[Back to README.md](../techcycle/README.md)
 
 [GitHub repository of this project]()
 
@@ -10,55 +10,55 @@
 
 ## CONTENTS
 
-* [AUTOMATED TESTING](#automated-testing)
-  * [W3C Markup Validator](#w3c-markup-validator)
-  * [W3C CSS Validator](#w3c-css-validator)
-  * [JSHint JavaScript Validator](#jshint-validator)
-  * [CI Python Linter](#code-institutes-python-linter)
-  * [Lighthouse Extension](#accessibility)
+ * [AUTOMATED TESTING](#automated-testing)
+    * [W3C Markup validator](#w3c-markup-validator)
+    * [W3C CSS validator](#w3c-css-validator)
+    * [Python validator](#python-validator)
+    * [Techcycle app](#techcycle-app)
+    * [Bag app](#the-bag-app)
+    * [Home app](#home-app)
+    * [Products app](#products-app)
+    * [Checkout app](#checkout-app)
+    * [Profiles app](#profiles-app)
+    * [Accessibility](#accessibility)
 
-* [MANUAL TESTING](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
-  * [Testing Responsiveness](#testing-responsiveness)
-  * [Manual Testing of the features](#manual-testing-of-the-features)
-  * [Navbar Responsiveness](#navbar-responsiveness)
-  * [Navbar as Visitor](#navbar-as-visitor)
-  * [Navbar as User](#navbar-as-logged-in-user)
-  * [Navbar as Admin](#navbar-as-admin)
-  * [Home page responsiveness](#home-page-responsiveness)
-  * [Home page as Visitor](#home-page-as-visitor)
-  * [Home page as User](#home-page-as-logged-in-user-and-superuser)
-  * [Footer](#footer)
-  * [Recipe Filter responsiveness](#recipe-filter-responsiveness)
-  * [Recipe Filter elements](#recipe-filter-elements)
-  * [+add your own hyperlink](#add-your-own-hyperlink)
-  * [Recipe cards' responsiveness](#recipe-cards-responsiveness)
-  * [Recipe cards elements](#recipe-cards-elements)
-  * [Pagination's responsiveness](#paginations-responsiveness)
-  * [Pagination elements](#pagination-elements)
-  * [Recipe Detail Page's responsiveness](#recipe-detail-pages-responsiveness)
-  * [Recipe Detail Page elements](#recipe-detail-page-elements)
-  * [Comment section responsiveness](#comments-section-responsiveness)
-  * [Comment section elements](#comment-section-elements)
-  * [My Stuff Page's responsiveness](#my-stuff-pages-responsiveness)
-  * [My Stuff Page's elements](#my-stuff-page-elements)
-     * [My Stuff Page with entries](#if-there-are-entries-in-the-my-stuff-my-recipes-and-my-saved-recipes-tables)
-  * [Authorization Pages testing](#authorization-pages-testing)
-     * [Register page](#register-page)
-     * [Login page](#login-page)
-     * [Logout page](#logout-page)
-  * [Error 404 Page](#error-404-page)
-  * [Forms](#forms)
-     * [Recipe Form and Recipe editing form](#recipe-form-and-recipe-editing-form)
-     * [Comment Form](#comment-form)
-     * [Deletion page](#deletion-page)
-  * [Alert Messages](#alert-messages)
-  * [Admin Panel](#admin-panel)
+ * [MANUAL TESTING](#manual-testing)
+    * [Landing page](#landing-page)
+    * [Navigation bar](#navigation-bar-and-dropdown-links)
+    * [Product cards](#testing-product-cards)
+      * [Laptop](#laptop-card)
+      * [Phone](#phone-card)
+      * [Smartwatch](#smartwatch-card)
+      * [Console](#console-card)
+    
+    * [Detailed page view](#detailed-page-views-testing)
+      * [Laptop](#laptop-detailed-page)
+      * [Phone](#phone-detailed-page)
+      * [Smartwatch](#smartwatch-detailed-page)
+      * [Console](#console-detailed-page)
 
-* [BUGS](#bugs)
-  * [Solved Bugs](#solved-bugs)
+    * [All products views](#all-products-views-testing)
+      * [all Laptops](#all-laptops-views)
+      * [all Phones](#all-phones-views)
+      * [all Smartwatches](#all-smartwatches-views)
+      * [all Consoles](#all-consoles-views)
 
+    * [Placing products in the bag](#placing-products-in-the-bag)
+    * [Checkout page testing](#checkout-page-testing)
+    * [Checkout success page](#checkout-success-page)
+    * [Authorization pages](#authorization-pages)
+    * [Profile pages](#profile-page)
+    * [Adding products](#adding-products)
+      * [Laptop](#laptop)
+      * [Phone](#phone)
+      * [Smartwatch](#smartwatch)
+      * [Console](#console)
+
+    * [Editing views](#editing-views)
+      * [Laptop](#laptop-and-inventory-editing)
+      * [Phone](#phone-and-inventory-editing)
+      * [Smartwatch](#smartwatch-and-inventory-editing)
+      * [Console](#console-and-inventory-editing)
 ---
 
 ## AUTOMATED TESTING
@@ -66,7 +66,6 @@
 For automated testing the following external validators were used:
 * [W3C Markup Validation](https://validator.w3.org/)
 * [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
-* [JSHint](https://jshint.com/)
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
 
 ###  W3C Markup Validator
@@ -75,88 +74,285 @@ For automated testing the following external validators were used:
 
 The deployed project's address was passed for checking, and the result returned with no errors or warnings
 
-![image of the w3c markup validator's result]()
+<details>
+  <summary>W3C validator results</summary>
+
+![image of filters's python linter result](/assets/images/w3c_results.png)
+
+</details>
 
 ### W3C CSS Validator
-
 <hr>
 
-CSS validation was done by direct input and the result returned with no errors or warnings
+CSS validation was done by direct input and the result returned with no errors or warnings. The only errors returned here were the same errors present in the Boutique Ado walkthrough project where the mobile to nav header is included as a direct child of a navigation element. The mobile-top-nav header's outermost element is a list item element. The li element is meant to be a list inline item which pushes the icons in the top nav header to the center.
 
-![image of the w3c css validator's result]()
+<details>
+  <summary>Jigsaw results</summary>
 
-### JSHint Validator
+![image of filters's python linter result](/assets/images/jigsaw_result.png)
 
-<hr>
+</details>
 
-JSHint Validator was used to validate JavaScript code written in jQuery framework
-
- * Bootstrap variable is defined within the project and the function is working as expected
-
-![image of jshint javascript validator's result]()
-
-### Code Institute's Python Linter
-
-<hr>
+### Python validator
 
 * Validating Python code was carried out by manually pasting the code from each Python file manually written for this project
 * No errors were returned 
 
-<details>
-  <summary>filters.py linter result</summary>
+#### Techcycle app
+<hr>
 
-![image of filters's python linter result](static/images/filters_linter.png)
+<details>
+  <summary>settings.py</summary>
+
+![image of filters's python linter result](/assets/images/settings.png)
 
 </details>
 
 <details>
-  <summary>forms.py linter result</summary>
+  <summary>urls.py</summary>
 
-![image of forms's python linter result](static/images/forms_linter.png)
-
-</details>
-
-<details>
-  <summary>urls.py linter result</summary>
-
-![image of urls's python linter result](static/images/urls_linter.png)
+![image of filters's python linter result](/assets/images/urls.png)
 
 </details>
 
 <details>
-  <summary>models.py linter result</summary>
+  <summary>wsgi.py</summary>
 
-![image of models's python linter result](static/images/models_linter.png)
+![image of filters's python linter result](/assets/images/wsgi.png)
+
+</details>
+
+#### The bag app
+<hr>
+<details>
+  <summary>apps.py</summary>
+
+![image of filters's python linter result](/assets/images/bag-app-apps.png)
 
 </details>
 
 <details>
-  <summary>views.py linter result</summary>
+  <summary>bag_tools.py</summary>
 
-![image of views's python linter result](static/images/views_linter.png)
-
-</details>
-
-<details>
-  <summary>settings.py linter result</summary>
-
-![image of settings's python linter result](static/images/settings_linter.png)
+![image of filters's python linter result](/assets/images/bag-app-bag_tools.png)
 
 </details>
 
 <details>
-  <summary>app.py linter result</summary>
+  <summary>contexts.py</summary>
 
-![image of app's python linter result](static/images/app_linter.png)
+![image of filters's python linter result](/assets/images/bag-app-contexts.png)
 
 </details>
 
 <details>
-  <summary>admin.py linter result</summary>
+  <summary>urls.py</summary>
 
-![image of admin's python linter result](static/images/admin_linter.png)
+![image of filters's python linter result](/assets/images/bag-app-urls.png)
 
 </details>
+
+<details>
+  <summary>views.py</summary>
+
+![image of filters's python linter result](/assets/images/bag-app-views.png)
+
+</details>
+
+#### Home app
+<hr>
+<details>
+  <summary>admin.py</summary>
+
+![image of filters's python linter result](/assets/images/home_admin.png)
+
+</details>
+
+<details>
+  <summary>apps.py</summary>
+
+![image of filters's python linter result](/assets/images/home_apps.png)
+
+</details>
+
+<details>
+  <summary>models.py</summary>
+
+![image of filters's python linter result](/assets/images/home_models.png)
+
+</details>
+
+<details>
+  <summary>urls.py</summary>
+
+![image of filters's python linter result](/assets/images/home_urls.png)
+
+</details>
+
+<details>
+  <summary>views.py</summary>
+
+![image of filters's python linter result](/assets/images/home_views.png)
+
+</details>
+
+#### Products app
+<hr>
+<details>
+  <summary>apps.py</summary>
+
+![image of filters's python linter result](/assets/images/products_apps.png)
+
+</details>
+
+<details>
+  <summary>admin.py</summary>
+
+![image of filters's python linter result](/assets/images/products_admin.png)
+
+</details>
+
+<details>
+  <summary>urls.py</summary>
+
+![image of filters's python linter result](/assets/images/products_urls.png)
+
+</details>
+
+<details>
+  <summary>forms.py</summary>
+
+![image of filters's python linter result](/assets/images/products_forms.png)
+
+</details>
+
+<details>
+  <summary>models.py</summary>
+
+![image of filters's python linter result](/assets/images/products_models.png)
+
+</details>
+
+<details>
+  <summary>views.py</summary>
+
+![image of filters's python linter result](/assets/images/products_views.png)
+
+</details>
+
+<details>
+  <summary>widgets.py</summary>
+
+![image of filters's python linter result](/assets/images/products_widgets.png)
+
+</details>
+
+#### Checkout app
+<hr>
+
+<details>
+  <summary>admin.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_admin.png)
+
+</details>
+
+<details>
+  <summary>apps.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_apps.png)
+
+</details>
+
+<details>
+  <summary>forms.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_forms.png)
+
+</details>
+
+<details>
+  <summary>models.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_models.png)
+
+</details>
+
+<details>
+  <summary>signals.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_signals.png)
+
+</details>
+
+<details>
+  <summary>urls.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_urls.png)
+
+</details>
+
+<details>
+  <summary>views.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_views.png)
+
+</details>
+
+<details>
+  <summary>webhook_handler.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_webhook_handler.png)
+
+</details>
+
+<details>
+  <summary>webhooks.py</summary>
+
+![image of filters's python linter result](/assets/images/checkout_webhooks.png)
+
+</details>
+
+#### Profiles app
+<hr>
+
+<details>
+  <summary>apps.py</summary>
+
+![image of filters's python linter result](/assets/images/profiles_apps.png)
+
+</details>
+
+<details>
+  <summary>forms.py</summary>
+
+![image of filters's python linter result](/assets/images/profiles_forms.png)
+
+</details>
+
+<details>
+  <summary>models.py</summary>
+
+![image of filters's python linter result](/assets/images/profiles_models.png)
+
+</details>
+
+<details>
+  <summary>urls.py</summary>
+
+![image of filters's python linter result](/assets/images/profiles_urls.png)
+
+</details>
+
+<details>
+  <summary>views.py</summary>
+
+![image of filters's python linter result](/assets/images/profiles_views.png)
+
+</details>
+
+
+
 
 ## Accessibility
 
@@ -164,40 +360,702 @@ JSHint Validator was used to validate JavaScript code written in jQuery framewor
 
 * With keeping accessibility in mind, I provided aria-label texts to hyperlinks and buttons. Also, an alt-description for each image is present throughout the website.
 
-* I tried using colours that are visually appealing while also maintaining a good contrast so that every text is easily readable
-
-* The current page the user is viewing is reflected in the navigation bar by highlighting
-
 ![image of the lighthouse extension's report](static/images/ligthhouse_report.png)
 
 ## MANUAL TESTING
 
-### Testing User Stories
 
+### Landing page
+
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+|Navbar title| reload home page | clicked |Pass|
+|Search bar| indicate text input | hover |Pass|
+|Search button| submit text input|clicked|Pass|
+|Profile Icon| toggle drop-down |clicked|Pass|
+|Shopping Cart|load cart page|clicked|Pass|
+|All Products|load all products page|clicked|Pass|
+|Laptops|toggle dropdown|clicked|Pass|
+|Phones|toggle dropdown|clicked|Pass|
+|Smartwatches|toggle dropdown|clicked|Pass|
+|Consoles|toggle dropdown|clicked|Pass|
+|Sale|load all products page with items on sale|clicked|Pass|
+|Carousel images|slide content|observed|Pass|
+|Carousel consoles button| load consoles page | clicked |Pass|
+|Carousel sale button| load all products page with items on sale | clicked |Pass|
+|Carousel slider|slide content on click|clicked|Pass|
+|Featured Laptops|display random laptops |refreshed page|Pass|
+|Why choose TechCycle section|display|observed|Pass|
+|Accordion|toggle accordion when another one opens |clicked|Pass|
+|Small Icons|display|observed|Pass|
+|Newsletter|submit form|clicked submit|Pass|
+|Facebook link|opens facebook on new page|clicked|Pass|
+|Instagram Link|opens instagram on new page|clicked|Pass|
+|LinkedIn link|opens linkedin on new page|clicked|Pass|
+|Laptops|open laptops page |clicked|Pass|
+|Phones|open phones page|clicked|Pass|
+|Smartwatches|open smartwatches page|clicked|Pass|
+|Consoles|open consoles page|clicked|Pass|
+|Inspections|open inspections page|clicked|Pass|
+|Sustainability|open sustainability page|clicked|Pass|
+|Conditions|opens conditions page|clicked|Pass|
+|Policy|opens policy page|clicked|Pass|
+|Home|opens home page|clicked|Pass|
+|Products|opens all products page|clicked|Pass|
+|Cart|opens cart page|clicked|Pass|
+|Sale|opens all products page with items on sale|clicked|Pass|
+|Stripe Icon|opens official stripe page on a new tab|clicked|Pass|
+|Django Icon|opens official django page on a new tab|clicked|Pass|
+|AWS Icon|opens official AWS page on a new tab|clicked|Pass|
 <hr>
+<br>
+<br>
 
-`First Time Visitors`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to have an immediate understanding of the website's purpose | Steezy Spatula is a recipe sharing website. Upon arriving at the landing page the first thing the user sees is the logo with a slogan that says 'Cooking made less overwhelming'. There is also a short description of how someone can make sure this website is the right place for them. Further down the bottom of the page, there is also a short description about who this project is dedicated to, so I think the website has a clear message.
-| I want the site to be responsive on the device I am using | The overall design and the logo were developed with responsiveness in mind. |
-| I want the site to be easy to navigate. | Buttons are presented throughout the website with simple and clear labels that tell the user what they can expect after clicking them. The current page viewed is also reflected in the navigation bar with highlighting  |
+### Navigation bar and dropdown links
 
-`Registered Users`
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptops by price | load laptops page with price ascending | clicked | Pass|
+| Asus Laptops | load laptops page with asus laptops| clicked | Pass|
+| All Laptops | load laptops page | clicked | Pass|
+| Phones by price | load phones page with price ascending | clicked | Pass|
+| Samsung Phones | load phones page with samsung phones | clicked | Pass|
+| iPhones | load phones page with iphones | clicked | Pass|
+| All Phones | load phones page | clicked | Pass|
+| Smartwatches by price | load smartwatches page with price ascending| clicked | Pass|
+| Galaxy Watches | load smartwatches page with samsung watches | clicked | Pass|
+| Apple Watch | load smartwawtches page with apple watches | clicked | Pass|
+| All Watches | load smartwatches page | clicked | Pass|
+| Consoles by Price | load consoles with price ascending | clicked | Pass|
+| Nintendo | load consoles page with nintendos | clicked | Pass|
+| Playstation | load consoles page with playstations | clicked | Pass|
+| Xbox | load consoles page with xbox-es | clicked | Pass|
+| All Consoles | load consoles page | clicked | Pass|
+<hr>
+<br>
+<br>
 
-|  Goals | How are they achieved? |
-| :--- | :--- |
-| I want to be able to register on the website to gain access to the full experience provided by the application. | Users can navigate to the page where they can register easily from the home page in 2 ways. There is a green call to action button in the header section of the landing page, and there is also a Register tab on the navigation tab which is present throughout every other page on the website if the user is not logged in. If a user wants to register to the website they need to fill out the register form, they have to choose a name and a password. The password has to be entered twice in 2 different fields for security reasons. Users can register with their email however, at this stage, it is optional and not required to gain access to the website's full features.  |
-| I want to be able to create and share my recipe | Registered users can share their recipes and upload them to the database after filling out the recipe form. This form can be found in multiple places throughout the website's pages. The easiest way to do this is to navigate to the 'Recipes' tab in the navigation bar, where they are directed to the recipes page where all recipes are listed. Here they can find a hyperlink to the form that says '+add your own'. Users can also find this form after navigating to the 'My Stuff' tab where they are presented with 2 empty sections. On the left-hand side the first section that reads 'my recipes+' will hold all the recipes the current user has submitted. the '+' sign is a hyperlink to the recipe form. Furthermore, if the section is empty, meaning there are no entries made by the user yet, a sentence will tell the user that it "Looks like you haven't added anything just yet! Share your recipes with us here". The word 'here' is also a hyperlink to the recipe form. |
-| I want to have the ability to edit the recipes I have created if needed. | Registered users can edit their own recipes at any time, with the use of an editing form, which is a prepopulated form with the recipe's information. Users can edit any field of their recipe and submit their changes. The editing form can be reached from the 'My Stuff' tab's 'my recipes+' section after a recipe has been created. The editing form can also be reached after navigating to the recipe's detailed page. In both places, a clickable pencil icon tells the users that editing is possible. |
-| I want to have the ability to delete the recipes I have created if needed. | Registered users can delete their own recipes. To achieve this, a trash-can icon is placed next to the pencil icon for every recipe the user has created. Clicking the trash-can icon will take the user to a page where they need to confirm their intentions to delete the recipe. |
-| I want to have the ability to view other users' shared recipes. | Visitors and also registered users can view any recipe's detailed page under the 'Recipes' tab, where each recipe is presented with a clickable card that takes the user to the recipe's detailed page. |
-| I want to have the ability to save and 'unsave' the recipes I like, to access them faster and easier anytime. | Registered users can save a recipe to populate a list under the 'My Stuff' tab's 'my saved recipes'. This list is easily accessible and will hold every recipe that the user decides to save. Saving and 'unsaving' a recipe can be done by clicking a flag icon on a recipe's detailed page. 'Unsaving' can also be done in the 'my saved recipes' table after any recipe has been saved and displayed there. |
-| I want to have the ability to engage in conversations regarding a recipe. | Registered users can comment under any recipe's comment section with the use of a comment form. Users can also edit and delete their comments with the pencil icon and trash-can icon respectively |
-| I want to be able to view my recipes in one place to manage them faster and easier. | As mentioned above, registered users are provided with the 'My Stuff' page that gives them easy and convenient access to a list of their own and saved recipes. |
-| I want to be reinforced by the actions I undertake during my time on the website. | Registered users are alerted after every action performed on the website, including authorization. |
-| I want to search and filter recipes to cater for my own needs. | Visitors and also registered users can search recipes with keywords, or filter by difficulty, type and vegan recipes. These filters can also be combined to achieve the best result possible. |
+### Testing product cards
+
+#### Laptop card
+
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptop card | display | observed | Pass|
+| Laptop card image | render image | observed | Pass|
+| Laptop card details | render details | observed | Pass|
+| Laptop card price | render price | observed | Pass|
+| Laptop card sale indicator| render sale price if item on sale | observed | Pass|
+| Laptop card in stock indicator| render in stock if item is not out of stock| observed| Pass|
+| Laptop card out of stock indicator| render if out of stock| observed | Pass|
+| Laptop card image| turn grey when out of stock| observed| Pass |
+| Laptop card image link | load Laptop detailed page| clicked | Pass|
+| Laptop card hover effect| cast shadow| hovered mouse| Pass|
+<hr>
+<br>
+<br>
+
+#### Phone card
+
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Phone card | display | observed | Pass|
+| Phone card image | render image | observed | Pass|
+| Phone card details | render details | observed | Pass|
+| Phone card price | render price | observed | Pass|
+| Phone card sale indicator| render sale price if item on sale | observed | Pass|
+| Phone card in stock indicator| render in stock if item is not out of stock| observed| Pass|
+| Phone card out of stock indicator| render if out of stock| observed | Pass|
+| Phone card image| turn grey when out of stock| observed| Pass |
+| Phone card image link | load Phone detailed page| clicked | Pass|
+| Phone card hover effect| cast shadow| hovered mouse| Pass|
+<hr>
+<br>
+<br>
+
+#### Smartwatch card
+
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Smartwatch card | display | observed | Pass|
+| Smartwatch card image | render image | observed | Pass|
+| Smartwatch card details | render details | observed | Pass|
+| Smartwatch card price | render price | observed | Pass|
+| Smartwatch card sale indicator| render sale price if item on sale | observed | Pass|
+| Smartwatch card in stock indicator| render in stock if item is not out of stock| observed| Pass|
+| Smartwatch card out of stock indicator| render if out of stock| observed | Pass|
+| Smartwatch card image| turn grey when out of stock| observed| Pass |
+| Smartwatch card image link | load Smartwatch detailed page| clicked | Pass|
+| Smartwatch card hover effect| cast shadow| hovered mouse| Pass|
+<hr>
+<br>
+<br>
+
+#### Console card
+
+| Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Console card | display | observed | Pass|
+| Console card image | render image | observed | Pass|
+| Console card details | render details | observed | Pass|
+| Console card price | render price | observed | Pass|
+| Console card sale indicator| render sale price if item on sale | observed | Pass|
+| Console card in stock indicator| render in stock if item is not out of stock| observed| Pass|
+| Console card out of stock indicator| render if out of stock| observed | Pass|
+| Console card image| turn grey when out of stock| observed| Pass |
+| Console card image link | load Console detailed page| clicked | Pass|
+| Console card hover effect| cast shadow| hovered mouse| Pass|
+<hr>
+<br>
+<br>
+
+### Detailed page views testing
+
+#### Laptop detailed page
+
+ Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptop name | rendering | observed | Pass |
+| in stock indicator | displaying if laptop is not out of stock | observed | Pass |
+| This item is out of stock | rendering if item is out of stock | observed | Pass |
+| only a few left indicator | displaying if stock count is less than or equal to 2 | observed | Pass |
+| List of available conditions | display conditions where stock_count is at least 1 | observed | Pass |
+| Laptop image | display | observed | Pass |
+| Laptop image | turns grey if laptop is out stock | observed | Pass |
+| Laptop price | displaying | observed | Pass |
+| Laptop price | displaying lowest available price if all conditions are available | observed | Pass |
+| Laptop price | displaying lowest available price if only 2 conditions are available | observed | Pass |
+| Laptop price | displaying lowest available price if only 1 condition is available | observed | Pass |
+| Laptop price | hidden if out of stock | observed | Pass |
+| Laptop out of stock | displays instead of the price if laptop is out of stock | observed | Pass |
+| Laptop form quantity input | can adjust quantity | tested with input | Pass |
+| Laptop form condition dropdown | displaying available conditions with their prices | observed and selected | Pass |
+| Laptop form condition dropdown | if any of the conditions if out of stock it can not be selected | observed | Pass |
+| Laptop form condition dropdown | if all conditions are out stock all selectable options are disabled | observed | Pass |
+| Laptop form condition dropdown | if all conditions are out of stock display "This item is currently out of stock" | observed | Pass |
+| Laptop form condition quantity input | if all conditions are out of stock quantity input is disabled | observed | Pass | 
+| Laptop form button | render with the text add to cart if laptop is available | observed | Pass | 
+| Laptop form button | disable if out of stock | observed | Pass |
+| Laptop form button | add laptop to bag with selected quantity and condition | clicked | Pass |
+| Keep shopping button | load all products page | clicked | Pass |
+| Laptop specification details | rendering all fields | observed | Pass |
+| Laptop features details | rendering all fields | observed | Pass |
+| Laptop extras details | rendering all fields | observed | Pass |
+<hr>
+<br>
+<br>
+
+#### Phone detailed page
+
+ Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Phone name | rendering | observed | Pass |
+| in stock indicator | displaying if phone is not out of stock | observed | Pass |
+| This item is out of stock | rendering if item is out of stock | observed | Pass |
+| only a few left indicator | displaying if stock count is less than or equal to 2 | observed | Pass |
+| List of available conditions | display conditions where stock_count is at least 1 | observed | Pass |
+| Phone image | display | observed | Pass |
+| Phone image | turns grey if phone is out stock | observed | Pass |
+| Phone price | displaying | observed | Pass |
+| Phone price | displaying lowest available price if all conditions are available | observed | Pass |
+| Phone price | displaying lowest available price if only 2 conditions are available | observed | Pass |
+| Phone price | displaying lowest available price if only 1 condition is available | observed | Pass |
+| Phone price | hidden if out of stock | observed | Pass |
+| Phone out of stock | displays instead of the price if phone is out of stock | observed | Pass |
+| Phone form quantity input | can adjust quantity | tested with input | Pass |
+| Phone form condition dropdown | displaying available conditions with their prices | observed and selected | Pass |
+| Phone form condition dropdown | if any of the conditions if out of stock it can not be selected | observed | Pass |
+| Phone form condition dropdown | if all conditions are out stock all selectable options are disabled | observed | Pass |
+| Phone form condition dropdown | if all conditions are out of stock display "This item is currently out of stock" | observed | Pass |
+| Phone form condition quantity input | if all conditions are out of stock quantity input is disabled | observed | Pass | 
+| Phone form button | render with the text add to cart if phone is available | observed | Pass | 
+| Phone form button | disable if out of stock | observed | Pass |
+| Phone form button | add phone to bag with selected quantity and condition | clicked | Pass |
+| Keep shopping button | load all products page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Smartwatch detailed page
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Smartwatch name | rendering | observed | Pass |
+| in stock indicator | displaying if phone is not out of stock | observed | Pass |
+| This item is out of stock | rendering if item is out of stock | observed | Pass |
+| only a few left indicator | displaying if stock count is less than or equal to 2 | observed | Pass |
+| List of available conditions | display conditions where stock_count is at least 1 | observed | Pass |
+| Smartwatch image | display | observed | Pass |
+| Smartwatch image | turns grey if phone is out stock | observed | Pass |
+| Smartwatch price | displaying | observed | Pass |
+| Smartwatch price | displaying lowest available price if all conditions are available | observed | Pass |
+| Smartwatch price | displaying lowest available price if only 2 conditions are available | observed | Pass |
+| Smartwatch price | displaying lowest available price if only 1 condition is available | observed | Pass |
+| Smartwatch price | hidden if out of stock | observed | Pass |
+| Smartwatch out of stock | displays instead of the price if phone is out of stock | observed | Pass |
+| Smartwatch form quantity input | can adjust quantity | tested with input | Pass |
+| Smartwatch form condition dropdown | displaying available conditions with their prices | observed and selected | Pass |
+| Smartwatch form condition dropdown | if any of the conditions if out of stock it can not be selected | observed | Pass |
+| Smartwatch form condition dropdown | if all conditions are out stock all selectable options are disabled | observed | Pass |
+| Smartwatch form condition dropdown | if all conditions are out of stock display "This item is currently out of stock" | observed | Pass |
+| Smartwatch form condition quantity input | if all conditions are out of stock quantity input is disabled | observed | Pass | 
+| Smartwatch form button | render with the text add to cart if phone is available | observed | Pass | 
+| Smartwatch form button | disable if out of stock | observed | Pass |
+| Smartwatch form button | add phone to bag with selected quantity and condition | clicked | Pass |
+| Keep shopping button | load all products page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Console detailed page
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Console name | rendering | observed | Pass |
+| in stock indicator | displaying if phone is not out of stock | observed | Pass |
+| This item is out of stock | rendering if item is out of stock | observed | Pass |
+| only a few left indicator | displaying if stock count is less than or equal to 2 | observed | Pass |
+| List of available conditions | display conditions where stock_count is at least 1 | observed | Pass |
+| Console image | display | observed | Pass |
+| Console image | turns grey if phone is out stock | observed | Pass |
+| Console price | displaying | observed | Pass |
+| Console price | displaying lowest available price if all conditions are available | observed | Pass |
+| Console price | displaying lowest available price if only 2 conditions are available | observed | Pass |
+| Console price | displaying lowest available price if only 1 condition is available | observed | Pass |
+| Console price | hidden if out of stock | observed | Pass |
+| Console out of stock | displays instead of the price if phone is out of stock | observed | Pass |
+| Console form quantity input | can adjust quantity | tested with input | Pass |
+| Console form condition dropdown | displaying available conditions with their prices | observed and selected | Pass |
+| Console form condition dropdown | if any of the conditions if out of stock it can not be selected | observed | Pass |
+| Console form condition dropdown | if all conditions are out stock all selectable options are disabled | observed | Pass |
+| Console form condition dropdown | if all conditions are out of stock display "This item is currently out of stock" | observed | Pass |
+| Console form condition quantity input | if all conditions are out of stock quantity input is disabled | observed | Pass | 
+| Console form button | render with the text add to cart if phone is available | observed | Pass | 
+| Console form button | disable if out of stock | observed | Pass |
+| Console form button | add phone to bag with selected quantity and condition | clicked | Pass |
+| Keep shopping button | load all products page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+### All products views testing
+
+#### All Laptops views
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptop heading at the top | renders | observed | Pass |
+| Laptop brands displaying as buttons | rendering | observed | Pass |
+| DELL button | filtering the displayed Laptops | clicked | Pass |
+| HP button | filtering the displayed Laptops | clicked | Pass |
+| ASUS button | filtering the displayed Laptops | clicked | Pass |
+| MSI button | filtering the displayed Laptops | clicked | Pass |
+| Lenovo button |filtering the displayed Laptops | clicked | Pass |
+| Acer button |filtering the displayed Laptops | clicked | Pass |
+| Infinix button | filtering the displayed Laptops | clicked | Pass |
+| Apple button | filtering the displayed Laptops | clicked | Pass |
+| Reset button | resetting brand filter to none | clicked | Pass |
+| Result number | updating on filtering | filtered for brands | Pass |
+| Sort by Price | Low dropdown menu | sorts laptops with cheapest firt | clicked | Pass |
+| Sort by Price | High dropdown menu | sorts laptops with most expensive first | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### All Phones
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Phone heading at the top | renders | observed | Pass |
+| Phone brands| displaying as buttons | observed | Pass |
+| Huawei button |filtering the displayed Phones | clicked | Pass |
+| Xiaomi button |filtering the displayed Phones | clicked | Pass |
+| Oppo button |filtering the displayed Phones | clicked | Pass |
+| Samsung button| filtering the displayed Phones | clicked | Pass |
+| Google button |filtering the displayed Phones | clicked | Pass |
+| Apple button| filtering the displayed Phones | clicked | Pass |
+| Reset button |resetting brand filter to none | clicked | Pass |
+| Result number |updating on filtering | filtered for brands | Pass |
+| Sort by Price| Low dropdown menu | sorts Phones with cheapest firt | clicked | Pass |
+| Sort by Price |High dropdown menu | sorts Phones with most expensive first | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### All Smartwatches
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Smartwatch heading at the top | renders | observed | Pass |
+| Smartwatch brands |displaying as buttons | observed | Pass |
+| Garmin button |filtering the displayed Smartwatches | clicked | Pass |
+| Apple button |filtering the displayed Smartwatches | clicked | Pass |
+| Samsung button| filtering the displayed Smartwatches | clicked | Pass |
+| Reset button |resetting brand filter to none | clicked | Pass |
+| Result number| updating on filtering | filtered for brands | Pass |
+| Sort by Price Low dropdown menu | sorts Smartwatches with cheapest firt | clicked | Pass |
+| Sort by Price High dropdown menu | sorts Smartwatches with most expensive first | clicked | Pass |
+<hr>
+<br>
+<br>
+
+
+#### All Consoles
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Console heading at the top | renders | observed | Pass |
+| Console brands| displaying as buttons | observed | Pass |
+| Microsoft button| filtering the displayed Consoles | clicked | Pass |
+| Sony button| filtering the displayed Consoles | clicked | Pass |
+| Nintendo button| filtering the displayed Consoles | clicked | Pass |
+| Reset button |resetting brand filter to none | clicked | Pass |
+| Result number |updating on filtering | filtered for brands | Pass |
+| Sort by Price |Low dropdown menu | sorts Consoles with cheapest firt | clicked | Pass |
+| Sort by Price| High dropdown menu | sorts Consoles with most expensive first | clicked | Pass |
+<hr>
+<br>
+<br>
+
+### Placing products in the bag
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptop in bag| rendering with selected amount and condition in bag | added a laptop to the bag |Pass|
+| Same Laptop in bag| same laptop rendering but with incremented amount | added a laptop with the same condition to the bag |Pass|
+| Same Laptop with different condition| rendering separately | added the same laptop but with in different condition to the bag |Pass|
+| Phone in bag| rendering with selected amount and condition in bag | added a phone to the bag |Pass|
+| Same Phone in bag| same phone rendering but with incremented amount | added a phone with the same condition to the bag |Pass|
+| Same Phone with different condition| rendering separately | added the same phone but with in different condition to the bag |Pass|
+| Smartwatch in bag| rendering with selected amount and condition in bag | added a smartwatch to the bag |Pass|
+| Same Smartwatch in bag| same smartwatch rendering but with incremented amount | added a smartwatch with the same condition to the bag |Pass|
+| Same Smartwatch with different condition| rendering separately | added the same smartwatch but with in different condition to the bag |Pass|
+| Console in bag| rendering with selected amount and condition in bag | added a console to the bag |Pass|
+| Same Console in bag| same console rendering but with incremented amount | added a console with the same condition to the bag |Pass|
+| Same Console with different condition| rendering separately | added the same console but with in different condition to the bag |Pass|
+| Remove button | removes associated products | clicked |Pass|
+| Empty cart | rendering when all products are removed | removed all products from bag| Pass |
+| Keep shopping button | rendering when cart is empty | observed | Pass |
+| Keep shopping button | loads all products page | clicked | Pass |
+| Checkout button | rendering if at least one item is in the bag | observed | Pass |
+| Checkout button | proceeds to checkout page | clicked | Pass |
+| Shipping included | rendering if at least one item is in the bag| observed | Pass |
+| Laptop details | rendering for laptops in the bag | observed | Pass |
+| Phone details | rendering for phone in the bag | observed | Pass |
+| Smartwatch details | rendering for smartwatches in the bag | observed | Pass |
+| Console details | rendering for consoles in the bag | observed | Pass |
+| Condition | rendering the selected condition for each item in the bag | observed | Pass |
+| Price | rendering the selected price for every product | observed | Pass |
+| Quantity | rendering the right amount for each item in the bag | observed | Pass |
+| Subtotal | incrementing if the same condition of an item is added | added same item with same condition to the bag | Pass |
+<hr>
+<br>
+<br>
+
+### Checkout page testing
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Checkout form | rendering | observed | Pass |
+| Order summary | rendering with items from the bag | observeed | Pass |
+| Order total | calculating item prices | added items to the bag | Pass |
+| Checkout form labels | visible | observed | Pass |
+| Adjust Cart button | takes user back to cart | clicked | Pass |
+| Checkout form Full Name field | expects input | added input | Pass |
+| Checkout form Email Address field | excpects email address as input | added input without @ | Pass |
+| Checkout form Phone Number | expects input | added input | Pass |
+| Checkout form Country dropdown box | expects selection | selected random input | Pass |
+| Checkout form Postal Code | expects input | added input | Pass |
+| Checkout form Postal Code | can be left blank | left blank | Pass |
+| Checkout form Town or City | expects input | added input | Pass |
+| Checkout form Street Address1 | expects input | added input | Pass |
+| Checkout form Street Address2 | expects input | added input | Pass |
+| Checkout form Street Address2 | can be left blank | left blank | Pass |
+| Checkout form County | expects input | added input | Pass |
+| Checkout form County | can be left blank | left blank | Pass |
+| Payment form card field | expects seriously valid input | tested with 4242 4242 4242 4242 | Pass |
+| Complete order button | won't proceed if form has missing fields | left required fields black | Pass |
+| Complete order button | proceeds with the checkout if the form is valid | added valid input | Pass |
+| Passing checkout form with valid information | loading overlay pops up |
+<hr>
+<br>
+<br>
+
+### Checkout success page
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Page | Loads if checkout was successful | purchased items | Pass |
+| OrderForm | displays with correct order data | purchased items | Pass |
+| Home button | takes the user back to the landing page | clicked | Pass |
+
+
+### Authorization pages
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Person Icon in the navigation bar | opens drodpown | clicked | Pass |
+| Link for Registering | takes the user the sign up page | clicked | Pass |
+| Link for Logging ig | takes the user to the login page | clicked | Pass |
+| Sign in form | rendering | observed | Pass |
+| Sign up first on sign in page | takes the user to the sign up page | clicked | Pass |
+| Home button on Sign In page | takes the user to the landing page | clicked | Pass |
+| Sign in form | submits only when form is valid | entered invalid input | Pass |
+| Sign in form | submits only when form is valid | entered valid input | Pass |
+| Password reset link | takes the user to the password resetting page | clicked | Pass |
+| Password reset form | takes email field as input | entered wrong input | Pass |
+| Password reset form | works only if the user is registered | tried inexistent email | Pass |
+| Password reset form | submits if the email is valid | tried valid email | Pass |
+| Password reset form | sends email for changing passowrd | checked email address  | Pass |
+| Password reset link | takes the user to the change password page | clicked | Pass |
+| Resetting password form | takes input for new passowrd | added input | Pass |
+| Reset password button | takes the user to the change password page | clicked | Pass |
+| Sign up Form | rendering sign up fields | observed | Pass |
+| Email field | expects email as input | tried wrong input | Pass |
+| Email again field | excepts same value as Email field | added wrong input | Pass |
+| Username field | excpets username as input | added input | Pass |
+| Password field | excpets password | added input | Pass |
+| Password again field | excpets same value as password field | added wrong input | Pass |
+| Sign up button | takes the user to the email verification page | clicked | Pass |
+| Verify You E-mail Address page | loads if form is valid | observed | Pass |
+| Verify You E-mail Address page | sends verification email | email recieved | Pass |
+| Link in email | takes user to the confirm email page | clicked | Pass |
+| Confirm button | sets up account and takes user to landing page | clicked | Pass |
+| Logout link | rendering instead of login link when user is logged in | observed | Pass |
+| Home button | takes to user to the home page | clicked | Pass |
+| Sign out button | signs user out | clicked | Pass |
+<hr>
+<br>
+<br>
+
+### Profile page
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Profile page view | loads when clicking My profile link in the navigation bar | clicked | Pass |
+| My Profile form | rendering empty form | observed | Pass |
+| My Profile form phone number field | expecting input | added input | Pass |
+| My Profile form street address 1 field | expecting input | added input | Pass |
+| My profile form street address 2 field | expecting input | added input | Pass |
+| My profile page Town or City field | expecting input | added input | Pass |
+| My profile page County field | expecting input | added input | Pass |
+| My profile page Postal Code field | expecting input | added input | Pass |
+| My profile page Country field | expecting selection from dropdown | selected | Pass |
+| Update Information | saves my profile form | clicked | Pass |
+| Order History | renders with correct details | observed | Pass |
+| Order Number | blue color suggesting it's a hyperlink | clicked | Pass |
+| Loads previous order details | order details are correct | observed | Pass |
+| Updated information | autofills checkout form | observed | Pass |
+<hr>
+<br>
+<br>
+
+### Adding products
+
+#### Laptop
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Laptopform | rendering | observed | Pass |
+| Stock info notice | rendering | observed | Pass |
+| Price notice | rendering | observed | Pass |
+| Category field | automatically selects laptop | observed | Pass |
+| Brand field | expects input | added input | Pass|
+| Series field | expects input | added input | Pass|
+| Model field | expects input | added input | Pass|
+| Color field | expects input | added input | Pass|
+| Price field | expects input | added input | Pass|
+| Sale field | expects true | clicked checkbox | Pass|
+| Image Field field | expects image | added image | Pass|
+| Image Url field | expects input | added input | Pass|
+| Label field | expects input | added input | Pass|
+| Cpu brand field | expects input | added input | Pass|
+| Cpu name field | expects input | added input | Pass|
+| Cpu variant field | expects input | added input | Pass|
+| Cores field | excpets selection from dropdown menu | selected | Pass |
+| Ram field | expects input | added input | Pass|
+| Storage size field | expects input | added input | Pass|
+| Gpu field | expects input | added input | Pass|
+| Os field | expects input | added input | Pass|
+| Weight field | expects input | added input | Pass|
+| Screen size field | expects selection from dropdown menu | selected | Pass |
+| Dimension field | expects input | added input | Pass|
+| Hdmi field | expects input | added input | Pass|
+| Usb field | expects input | added input | Pass|
+| Keyboard field | expects input | added input | Pass|
+| Touchscreen field | expects true | clicked checkbox | Pass |
+| Backlit field | expects true | clicked checkbox | Pass |
+| Finger print sensor field | expects true | clicked checkbox | Pass |
+| Add product | creates object and loads it's page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Phone
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Phoneform | rendering | observed | Pass |
+| Stock info notice | rendering | observed | Pass |
+| Price notice | rendering | observed | Pass |
+| Category field | automatically selects laptop | observed | Pass |
+| Brand field | expects input | added input | Pass|
+| Series field | expects input | added input | Pass|
+| Model field | expects input | added input | Pass|
+| Color field | expects input | added input | Pass|
+| Price field | expects input | added input | Pass|
+| Sale field | expects true | clicked checkbox | Pass|
+| Image Field field | expects image | added image | Pass|
+| Image Url field | expects input | added input | Pass|
+| Sim field | expects input | added input | Pass|
+| Cpu field | expects input | added input | Pass|
+| Ram field | expects input | added input | Pass|
+| Storage size field | expects input | added input | Pass|
+| Battery field | expects input | added input | Pass|
+| Reolusion field | expects input | added input | Pass|
+| Camera front field | expects input | added input | Pass|
+| Camera rear field | expects input | added input | Pass|
+| Os field | expects selection from dropdown menu | selected | Pass |
+| Add product | creates object and loads it's page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Smartwatch
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Smartwatchform | rendering | observed | Pass |
+| Stock info notice | rendering | observed | Pass |
+| Price notice | rendering | observed | Pass |
+| Category field | automatically selects laptop | observed | Pass |
+| Brand field | expects input | added input | Pass|
+| Series field | expects input | added input | Pass|
+| Model field | expects input | added input | Pass|
+| Color field | expects input | added input | Pass|
+| Price field | expects input | added input | Pass|
+| Sale field | expects true | clicked checkbox | Pass|
+| Image Field field | expects image | added image | Pass|
+| Image Url field | expects input | added input | Pass|
+| Connectivity field | expects input | added input | Pass|
+| Display field | expects input | added input | Pass|
+| Screen Size field | expects input | added input | Pass|
+| Resolution field | expects input | added input | Pass|
+| Water resistance field | expects input | added input | Pass|
+| Heart rate monitor field  field | expects true | clicked checkbox | Pass|
+| Gps  field | expects true | clicked checkbox | Pass |
+| Os field | expects input | added input | Pass|
+| Add product | creates object and loads it's page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Console
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| Consoleform | rendering | observed | Pass |
+| Stock info notice | rendering | observed | Pass |
+| Price notice | rendering | observed | Pass |
+| Category field | automatically selects laptop | observed | Pass |
+| Brand field | expects input | added input | Pass|
+| Series field | expects input | added input | Pass|
+| Model field | expects input | added input | Pass|
+| Color field | expects input | added input | Pass|
+| Price field | expects input | added input | Pass|
+| Sale field | expects true | clicked checkbox | Pass|
+| Image Field field | expects image | added image | Pass|
+| Image Url field | expects input | added input | Pass|
+| Storage size field | expects input | added input | Pass |
+| Add product | creates object and loads it's page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+
+### Editing views
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| edit button on laptop detail page | rendering if user is superuser | observed | Pass |
+| delete button on laptop detail page | rendering if user is superuser | observed | Pass |
+| edit button on phone detail page | rendering if user is superuser | observed | Pass |
+| delete button on phone detail page | rendering if user is superuser | observed | Pass |
+| edit button on smartwatch detail page | rendering if user is superuser | observed | Pass |
+| delete button on smartwatch detail page | rendering if user is superuser | observed | Pass |
+| edit button on console detail page | rendering if user is superuser | observed | Pass |
+| delete button on console detail page | rendering if user is superuser | observed | Pass |
+<hr>
+<br>
+<br>
+
+#### Laptop and inventory editing
+
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| edit button on laptop page | takes the user to the laptops editing view with the laptops details| clicked | Pass |
+| cancel button | takes the user back to the laptop's page | clicked | Pass |
+| update product button | updates product details and reloads laptop detailed page | clicked | Pass |
+| edit inventoty button on laptop editing page | takes the user to the laptop's inventory model's editing page | clicked | Pass |
+| editing inventory page | loads inventory of the laptop we're editing | observed | Pass |
+| inventory stock_count field | only editable field | observed | Pass |
+| Back button | takes the user back to the laptop editing page | clicked | Pass |
+| Update Inventory button | updates inventory and reloads laptop's detailed page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Phone and inventory editing
+
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| edit button on phone page | takes the user to the phones editing view with the phones details| clicked | Pass |
+| cancel button | takes the user back to the phone's page | clicked | Pass |
+| update product button | updates product details and reloads phone detailed page | clicked | Pass |
+| edit inventoty button on phone editing page | takes the user to the phone's inventory model's editing page | clicked | Pass |
+| editing inventory page | loads inventory of the phone we're editing | observed | Pass |
+| inventory stock_count field | only editable field | observed | Pass |
+| Back button | takes the user back to the phone editing page | clicked | Pass |
+| Update Inventory button | updates inventory and reloads phone's detailed page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Smartwatch and inventory editing
+
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| edit button on Smartwatch page | takes the user to the Smartwatchs editing view with the Smartwatchs details| clicked | Pass |
+| cancel button | takes the user back to the Smartwatch's page | clicked | Pass |
+| update product button | updates product details and reloads Smartwatch detailed page | clicked | Pass |
+| edit inventoty button on Smartwatch editing page | takes the user to the Smartwatch's inventory model's editing page | clicked | Pass |
+| editing inventory page | loads inventory of the Smartwatch we're editing | observed | Pass |
+| inventory stock_count field | only editable field | observed | Pass |
+| Back button | takes the user back to the Smartwatch editing page | clicked | Pass |
+| Update Inventory button | updates inventory and reloads Smartwatch's detailed page | clicked | Pass |
+<hr>
+<br>
+<br>
+
+#### Console and inventory editing
+
+
+Element | Excpected outcome | Testing performed | Outcome|
+| :--- | :--- | :--- | :--- |
+| edit button on Console page | takes the user to the Consoles editing view with the Consoles details | clicked | Pass |
+| cancel button | takes the user back to the Console's page | clicked | Pass |
+| update product button | updates product details and reloads Console detailed page | clicked | Pass |
+| edit inventoty button on Console editing page | takes the user to the Console's inventory model's editing page | clicked | Pass |
+| editing inventory page | loads inventory of the Console we're editing | observed | Pass |
+| inventory stock_count field | only editable field | observed | Pass |
+| Back button | takes the user back to the Console editing page | clicked | Pass |
+| Update Inventory button | updates inventory and reloads Console's detailed page | clicked | Pass |
+
+
 
 ### Testing responsiveness
 
@@ -207,522 +1065,10 @@ JSHint Validator was used to validate JavaScript code written in jQuery framewor
    * The website is confirmed to be responsive on every screen size without any distortion
    * Images do not stretch or distort in smaller screen sizes
    * Texts remain readable on every screen size
+   * Pages look nice on as small as 320px wide
 
 
-### Manual Testing of the features  
 
-<hr>
-
-<br>
-
-#### Navbar responsiveness
-
-<hr>
-
- * consistent throughout every page
- * smaller screen sizes will result in a hamburger dropdown menu of navbar tabs
- * currently viewed page is reflected by highlighting 
-
-<br>
-
-#### Navbar as Visitor
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Title | indicate link | hover | Pass|
-| Title | take the visitor to the landing page | click | Pass |
-| Home tab | indicate link | hover | Pass |
-| Home tab | take the visitor to the landing page | click | Pass |
-| Recipes tab | indicate link | hover | Pass |
-| Recipes tab | take the visitor to the Recipes page | click |  Pass |
-| Register tab | indicate link | hover | Pass |
-| Register tab | take the visitor to the Register form | click | Pass |
-| Login tab | indicate link | hover | Pass |
-| Login tab | take the visitor to the Register form | click | Pass |
-
-<br>
-
-#### Navbar as Logged-in User
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Title | indicate link | hover | Pass |
-| Title | take the visitor to the landing page | click |  Pass |
-| Home tab | indicate link | hover | Pass |
-| Home tab | take the visitor to the landing page | click | Pass |
-| Recipes tab | indicate link | hover | Pass |
-| Recipes tab | take the visitor to the Recipes page | click | Pass |
-| My Stuff tab | indicate link | hover | Pass |
-| My Stuff tab | take the visitor to the My Stuff form | click | Pass |
-| Logout tab | indicate link | hover | Pass |
-| Logout tab | take the visitor to the Logout page | click | Pass |
-
-<br>
-
-#### Navbar as Admin
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| title | indicate link | hover | Pass |
-| title | take the visitor to the landing page | click | Pass |
-| Home tab | indicate link | hover | Pass |
-| Home tab | take the visitor to the landing page | click | Pass |
-| Recipes tab | indicate link | hover | Pass |
-| Recipes tab | take the visitor to the Recipes page | click | Pass |
-| My Stuff tab | indicate link | hover | Pass |
-| My Stuff tab | take the visitor to the My Stuff form | click | Pass |
-| Logout tab | indicate link | hover | Pass |
-| Logout tab | take the visitor to the Logout page | click | Pass |
-| Admin tab | indicate link | hover | Pass |
-| Admin tab | take the Admin to the django admin panel  | click | Pass |
-
-<br>
-
-#### Home page responsiveness
-
-<hr>
-
- * is responsive on every screen size
- * logo changes to accomodate available space
- * slogan disappears on smaller screen sizes
- * description disappears on smaller screen sizes
- * call-to action disappears on smaller screen sizes
-
-<br>
-
-#### Home page as Visitor
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Register button | indicate link | hover | Pass |
-| Register button | take the Visitor to the Register form | click | Pass |
-
-<br>
-
-#### Home page as Logged in User and Superuser
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Register button | not visible after login | login | Pass |
-
-<br>
-
-#### Footer 
-
-|  Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| LinkedIn icon | indicate link | hover | Pass |
-| LinkedIn icon | open my LinkedIn page in a new tab | click | Pass |
-| Instagram icon | indicate link | hover | Pass |
-| Instagram icon | open my Instagram page in a new tab | click | Pass |
-| GitHub icon | indicate link | hover | Pass |
-| GitHub icon | open my GitHub page in a new tab | click | Pass |
-
-<br>
-
-#### Recipe Filter responsiveness
-
-<hr>
-
- * is responsive on every screen size
- * each field displays on every screen size
- * the form is available for both Visitors and Users
-
-<br>
-
-#### Recipe Filter elements
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| 'Recipe name contains' field | textfield | input text | Pass |
-| 'Difficulty' field | dropdown menu | click | Pass |
-| 'Type' field | dropdown menu | click | Pass |
-| 'Vegan' field | dropdown menu | click | Pass |
-| Search button | apply filter | click | Pass |
-
- * when using the filter form, more than one filter can be applied at once
- * applying the filter will display only the relevant recipes
- * if there are no results, the user is informed
-
-<br>
-
-#### add your own hyperlink
-
- * only visible to Logged in Users
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| +add your own link | indicate link | hover | Pass |
-| +add your own link | take the user to the recipe creation form | click | Pass |
-
-<br>
-
-#### Recipe cards' responsiveness
-
-<hr>
-
- * Cards stay responsive on every screen size
- * Images do not stretch or distort
- * Maximum 9 cards are displayed per page
- * Paginate if there are more than 9 cards
- * Cards are stretched links, meaning the user can click anywhere on the card to use it as a link
- * Featured images are displayed if the User has uploaded one
- * Placeholder images are displayed if the User did not add an optional image
- * Cooking time is displayed dynamically on every recipe card
- * A dynamic progress bar is displayed with changing color and label based on the recipe's difficulty
- * If a recipe is vegan, a green leaf is displayed at the top left corner of the card
-
-<br>
-
-#### Recipe cards' elements
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Recipe Card | indicate link | hover | Pass |
-| Recipe Card | take the user to the recipe's detailed page | click | Pass |
-
-<br>
-
-#### Pagination's responsiveness
-
-<hr>
-
- * Displays when there are more than 9 recipes
- * Responsive on every screen size
- * 'first' button not visible on smallest screen sizes
- * 'last' button not visible on smallest screen sizes
- * 'first' button only visible after the user moved to the next page
- * 'previous' button only visible after the user moved to the next page
- * 'next' button only visible if there are remaining pages
- * 'last' button only visible if the user is not on the last page
-
-<br>
-
-#### Pagination elements
-
- * if the User has filtered the recipe list, the pagination will work accordingly
-
-<hr>
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| first | indicate function | hover | Pass |
-| first | take user to the first page of the results | click | Pass |
-| first | keep results when filtered | click | Pass |
-| previous | indicate function | hover | Pass |
-| previous | take user to the previous page of the results | click | Pass |
-| previous | keep results when filtered | click | Pass |
-| next | indicate function | hover | Pass |
-| next | take user to the next page of the results | click | Pass |
-| next | keep results when filtered | click | Pass |
-| last | indicate function | hover | Pass |
-| last | take user to the last page of the results | click | Pass |
-| last | keep results when filtered | click | Pass |
-
-<br>
-
-#### Recipe Detail Page's responsiveness
-
-<hr>
-
- * Is responsive on every screen size
- * No element is hidden on smaller screen sizes
- * Pencil icon only visible for recipe author
- * Trash-can icon only visible for recipe author
- * Save icon only visible for logged in Users
- * Save icon changes upon click
- * Green leaf next to the recipe's name indicates if a recipe is vegan
-
-<br>
-
-#### Recipe Detail Page elements
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Save icon - regular | adds recipe to the saved recipes list | click | Pass |
-| Save icon - filled | removes recipe from the saved recipes list | click | Pass |
-| Pencil icon | take user to recipe editing form | click | Pass |
-| Trash-can icon | take user to recipe deletion page | click | Pass |
-
-<br>
-
-#### Comments section responsiveness
-
-<hr>
-
- * Comments section only visible for logged in Users
- * Comment form only visible for logged in Users
- * Pencil icon for editing visible if a comment belongs to the current User
- * Trash-can icon for deletion visible if a comment belongs to the current User
-
-<br>
-
-#### Comment section elements
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Comment text | display | submit input | Pass |
-| Pencil icon | take user to comment editing form | click | Pass |
-| Trash-can icon | take user to comment deletion page | click | Pass |
-
-<br>
-
-#### My Stuff Page's responsiveness
-
-<hr>
-
- * Is responsive on every screen size
- * No element is hidden on smaller screen sizes
- * Display current user's name on top
- * Display current user's date joined
-
-<br>
-
-#### My Stuff Page elements
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| + sign | indicate link | hover | Pass |
-| + sign | take user to the recipe form | click | Pass |
-| 'here' | indicate link | hover | Pass |
-| 'here' | take user to the recipe form | click | Pass |
-| 'recipe' | indicate link | hover | Pass |
-| 'recipe' | take user to the recipes paeg | click | Pass |
-
-<br>
-
-#### If there are entries in the my stuff my recipes and my saved recipes tables
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Recipe-title | indicate link | hover | Pass |
-| Recipe-title | take user to the corresponding recipe's detailed page | click | Pass |
-| Pencil icon | take user to recipe editing form | click | Pass |
-| Trash-can icon | take user to recipe deletion page | click | Pass |
-| Unsave icon | take the user to the corresponding recipe's detailed page | click | Pass |
-| Unsave icon | remove corresponding recipe from the my saved recipes table | click | Pass |
-
-<br>
-
-### Authorization Pages testing
-
-#### Register page
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Username field | indicate textfield | hover | Pass |
-| Username field | validate input | input | Pass |
-| E-mail field | indicate textfield | input | Pass |
-| E-mail field | validate input | input | Pass |
-| Password field | indicate textfield | input | Pass |
-| Password field | validate input | input | Pass |
-| Password field | hide characters | input | Pass |
-| Password (again) field | validate input | input | Pass |
-| Password (again) field | hide characters | input | Pass |
-| Signup button | indicate function | hover | Pass |
-| Signup button | submit form | click | Pass |
-| Signup button | create user instance | click | Pass |
-| Signup button | log in new user | click | Pass |
-| 'here' | indicate link | hover | Pass |
-| 'here' | take user to login page | click | Pass |
-
-<br>
-
-#### Login Page
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Username field | indicate textfield | hover | Pass |
-| Username field | validate input | input | Pass |
-| Password field | indicate textfield | input | Pass |
-| Password field | validate input | input | Pass |
-| Password field | hide characters | input | Pass |
-| Sign in button | indicate function | hover | Pass |
-| Sign in button | submit form | click | Pass |
-| Sign in button | log in user | click | Pass |
-| 'sign up' | indicate link | hover | Pass |
-| 'sign up' | take user to the register page | click | Pass |
-| Remember me | indicate checkbox | hover | Pass |
-| Remember me | auto login returning user | reload page | Pass |
-
-<br>
-
-#### Logout Page
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Sign out button | indicate function | hover | Pass |
-| Sign out button | log out current user | click | Pass |
-| Sign out button | take user back to landing page | click | Pass |
-| Back to recipes button | indicate function | hover | Pass |
-| Back to recipes button | take user back to recipes page | click | Pass |
-| Back to recipes button | user stays logged in | click | Pass |
-
-<br>
-
-#### Error 404 Page
-
- * Is responsive on every screen size
- * Inform the user about the error
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Error404 page | load if entered url does not exist | input wrong url | Pass |
-| Back to recipes button | indicate function | hover | Pass |
-| Back to recipes button | take user back to recipes page | click | Pass |
-
-<br>
-
-
-### Forms 
-
-#### Recipe form and Recipe editing form
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Element | Expected outcome | Testing performed | Pass |
-| Recipe Name field | indicate textfield | hover | Pass |
-| Recipe Name field | validate input | input | Pass |
-| Recipe Name field | raise alert if object exists with the same name | input name of an existing recipe | Pass |
-| Recipe Name field | raise alert if not given | no input | Pass |
-| Recipe Type field | indicate dropdown menu | click | Pass |
-| Recipe Type field | alert if not given | none selected | Pass |
-| Ingredients textarea | validate input | input | Pass |
-| Ingredients textarea | raise alert if not given | no input | Pass |
-| Ingredients textarea | raise alert if too long | input over 1500 characters | Pass |
-| Method textarea | validate input | input | Pass |
-| Method textarea | raise alert if not given | no input | Pass |
-| Method textarea | raise alert if too long | input over 4000 characters | Pass |
-| Preparation Time field | indicate dropdown menu | click | Pass |
-| Preparation Time field | validate input | select | Pass |
-| Preparation Time field | alert if not given | none selected | Pass |
-| Cooking Time field | indicate dropdown menu | click | Pass |
-| Cooking Time field | validate input | select | Pass |
-| Cooking Time field | alert if not given | none selected | Pass |
-| Serving Size field | indicate integerfield | click | Pass |
-| Serving Size field | validate input | input | Pass |
-| Serving Size field | alert if input is negative | input negative numbers | Pass |
-| Serving Size field | raise alert if input is 0 | input 0 | Pass |
-| Serving Size field | raise alert if input is over 99 | input 100 | Pass |
-| Calories Per Serving field | indicate integerfield | click | Pass |
-| Calories Per Serving field | validate input | input | Pass |
-| Calories Per Serving field | alert if input is negative | input negative numbers | Pass |
-| Calories Per Serving field | raise alert if input is under 50 | input 49 | Pass |
-| Calories Per Serving field | raise alert if input is over 5000 | input 5001 | Pass |
-| Difficulty field | indicate dropdown menu | click | Pass |
-| Difficulty field | validate input | select | Pass |
-| Difficulty field | alert if not given | none selected | Pass |
-| Image button | indicate function | click | Pass |
-| Image button | allow user to upload own image | click | Pass |
-| Submit button | indicate function | click | Pass |
-| Submit button | validate form | click | Pass |
-| Submit button | submit recipe | click | Pass |
-| Submit button | take user to recipes page | click | Pass |
-| Cancel button | indicate function | click | Pass |
-| Cancel button | take user back to recipes page  | click | Pass |
-| Cancel button | does not submit form | click | Pass |
-
-<br>
-
-#### Comment form
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Comment textarea | validate input | input | Pass |
-| Comment textarea | raise alert if not given | no input | Pass |
-| Comment textarea | raise alert if too long | input over 300 characters | Pass |
-| Submit button | indicate function | click | Pass |
-| Submit button | validate form | click | Pass |
-| Submit button | submit comment | click | Pass |
-| Submit button | take user back to the same page with comment submitted | click | Pass |
-
-#### Comment editing form
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Comment textarea | validate input | input | Pass |
-| Comment textarea | raise alert if not given | no input | Pass |
-| Comment textarea | raise alert if too long | input over 300 characters | Pass |
-| Submit button | indicate function | click | Pass |
-| Submit button | validate form | click | Pass |
-| Submit button | submit comment | click | Pass |
-| Submit button | take user back to the same page with comment submitted | click | Pass |
-| Cancel button | indicate function | click | Pass |
-| Cancel button | take user back to recipes page  | click | Pass |
-| Cancel button | does not submit form | click | Pass |
-
-#### Deletion Page
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| Delete button | indicate function | click | Pass |
-| Delete button | delete object from database | click | Pass |
-| Delete button | take user back to recipes page | click | Pass |
-| Cancel button | indicate function | click | Pass |
-| Cancel button | take user back to recipes page | click | Pass |
-| Cancel button | does not confirm deletion | click | Pass |
-
-<br>
-
-#### Alert messages
-
-| Element | Expected outcome | Testing performed | Pass |
-| :--- | :--- | :--- | :--- |
-| When | action | expected message | Pass |
-| Successful Login | login / register | Successfully signed in as `username` | Pass |
-| Successful Logout | logout | 'You have signed out!' | Pass |
-| Successful Recipe form | add recipe | 'Your recipe has been created successfully!' | Pass |
-| Successful Recipe edit form | edit recipe | 'Your recipe has been updated successfully!' | Pass |
-| Successful Recipe deletion | delete recipe | 'Recipe has been deleteted successfully!' | Pass |
-| Successful Comment form | add comment | 'Your comment has been added successfully!' | Pass |
-| Successful Comment edit form | edit comment | 'Your comment has been updated successfully!' | Pass |
-| Successful Comment deletion | delete comment | 'Your comment has been deleted succefully' | Pass |
-| Successful Save | save recipe | `recipe_name` has been added to your saved recipes! | Pass |
-| Successful Unsave | unsave recipe | `recipe_name` has been removed from your saved recipes! | Pass |
-
-<br>
-
-#### Admin Panel
-
-| Capability | Available |
-| :--- | :--- |
-| Create User | Yes |
-| Edit User| Yes |
-| Look up a Recipe | Yes |
-| Create Recipe | Yes |
-| Edit Recipe | Yes |
-| Delete Recipe | Yes |
-| Select more recipes at once | Yes |
-| Delete more recipes at once | Yes |
-| Search comment | Yes |
-| Add comment | Yes |
-| Edit comment | Yes |
-| Select more comments at once | Yes |
-| Delete more comments at once | Yes |
-
-<br>
-
-## Bugs
-
-### Solved
-
-<hr>
-
-* Model relation During early development 
-   * I had issues with my models, when I was trying to connect my Recipe model with a many-to-many relationship to a model called Allergens. My lack of understanding of how a many-to-many relationship should work ended me up breaking my models beyond repair. Not even deleting the model from the models.py helped. I had to contact Code Institute Tutor Support where Jason helped me out a lot by giving instructions on how to reset my database.
-
-* Rendering form field in template
-   * At a later stage in development, I was trying to render the filter form in my recipe template. At this stage, it had 3 fields to filter by, of which one was a TextInput field to look up recipes. I wanted to render every field individually to be able to style them easier, rather than using crispy forms, but my text field would not want to render. When I tried to render {{ form.recipe_name|as_crispy_field }} I got an error stating that the field that I am trying to pass is either non-existent or invalid. I had to contact Code Institute Tutor Support where Joshua pointed out that I am using the icontains lookup type the wrong way. Adding lookup_expr='icontains' to the variable inside the RecipeFilter Class solved this problem and the field was rendering as expected. 
-
-* Pagination bug
-   * during manual testing I found that after filtering the recipe list I was able to look through the paginated views in my recipes template, by viewing the next pages, however, when I tried to click on the previous page the filtered list was not working properly and every recipe got listed again without filtering. Replacing the correct url inside the first and previous page-links solved this problem
-
-<hr>
-
-### Note 
- 
- * I would like to mention the following problem within one of my template files. The problem is located in the recipes.html template at line 100. Here I am using a bootstrap progress bar, which I tried turning into a dynamic progress-bar by setting it's inline style as seen in the official [documentation](https://getbootstrap.com/docs/4.0/components/progress/) . I am aware of this being a bad practice in coding, and I am not planning to style my elements this way. However, CSS files do not have access to django template variables, so I could not set the dynamic style from within my CSS file. In my model the difficulty field of the recipe model's key and value pairs for difficulty is the following: 20 : 'Easy', 40 : 'Moderate', 60 : ', 80 : 'Challenging. The reason for this is that I found a way to work with these numbers as django template variables. ```{{ recipe.difficulty }}%``` will result in ```20%```,```40%```,```60%``` or ```80%```, depending on the recipe's difficulty level. Despite the problem that is present, my code is working as I expected. I just wanted to notify the assessor that I am fully aware of this problem, and I hope it's not something that would result in a failed attempt at the project submission.
-![image of a problem](static/images/at_rule_selector.png)
 
 Back to [README.md](https://github.com/GaborFicsor/steezy-spatula/blob/main/README.md)
 
