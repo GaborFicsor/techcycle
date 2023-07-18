@@ -13,50 +13,47 @@ The live website hosted on Heroku, can be found here: [TechCycle](https://techcy
 
 ## CONTENTS
 
-* [User Experience](#user-experience)
-  * [Client Goals](#client-goals)
-  * [User Stories](#user-stories)
-  * [Agile Development](#agile-development)
-
+* [Project Purpose](#project-purpose)
+* [Business Model](#business-model)
+  * [Target audience](#target-audience)
+  * [User experience](#user-experience)
+  * [Secure payments](#marketing)
+  * [Marketing](#marketing)
+* [Client Goals](#client-goals)
+* [User Stories](#user-stories)
+* [Agile Development](#agile-development)
 * [Design](#design)
-  * [Design Thinking](#design-thinking)
-  * [Colour Scheme](#colour-scheme)
+* [Design Thinking](#design-thinking)
+  * [Colour scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
+    * [Carousel Slides](#carousel-slides)
+    * [Forest background](#forest-background)
+    * [Product images](#product-imags)
+    * [Miscellaneous](#miscellaneous)
   * [Wireframes](#wireframes)
   * [Database and ERD](#database-and-erd)
-
 * [Features](#features)
-  * [Landing Page](#landing-page)
-  * [](#)
-
-* [Defensive Design](#defensive-design)
-  * [](#)
-
-* [Future Implementations](#future-implementations)
-  * [Ideas for later](#ideas-for-later)
-  * [Not implemented](#things-did-not-get-implemented-at-this-stage)
-
-* [Technologies Used](#technologies-used)
+  * [The landing page](#the-landing-page)
+  * [The product cards](#the-product-cards)
+  * [The detailed product page](#the-detailed-product-page)
+  * [The bag](#the-bag)
+  * [The checkout and checkout success](#the-checkout-and-checkout-success)
+  * [Items on sale](#items-on-sale)
+  * [Registering](#registering)
+  * [Superuser capabilities and CRUD](#superuser-capabilities-and-crud)
+    * [Creating a new product](#creating-a-new-product)
+* [Future implementations](#future-implementations)
+* [Technologies used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+  * [Frameworks, libraries and other external tools](#frameworks-libraries-and-other-external-tools)
   * [Validators](#validators)
-
 * [Deployment](#deployment)
-
-* [Important Notes](#important-notes)
-
-* [Forking](#forking)
-* [Cloning](#cloning)
-
 * [Testing](#testing)
-
 * [Credits](#credits)
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
-
-
-# Project purpose
+## Project purpose
 
 The fifth and final project of Code Institute's Diploma in Software Development focuses on the development of an E-commerce Application. This comprehensive Full-Stack web application has been designed to incorporate business logic and essential aspects such as search engine optimization and web marketing techniques. A considerable amount of planning and design thinking has been involved during development to achieve a seamless user experience and provide an accessible and intuitive user interface that makes navigating and perfoming the necesearry actions feasible. The project uses Python as a main language with the Django web framework for creating efficient functionality. For providing convenient payment gateway for customers Stripe payments have been integrated. The project also utilizes Amazon Web Services for hosting media files.
 
@@ -88,7 +85,7 @@ For expanding the business model and finding ways to attract customers we can cr
 
 
 
-### Client Goals
+## Client Goals
 
 <hr>
 
@@ -97,7 +94,7 @@ For expanding the business model and finding ways to attract customers we can cr
 * To give users the ability to view a range of different products
 * To give users the ability to pay for their selected product
 
-### User Stories
+## User Stories
 
 <hr>
 
@@ -135,7 +132,7 @@ For expanding the business model and finding ways to attract customers we can cr
 * I want to be able to manually update the stock count of the items
 
 
-### Agile Development
+## Agile Development
 
 To implement agile development into my Django e-commerce project, I made use of several key agile concepts. I started by breaking down my project into smaller well-defined and more manageable milestones, which helped me to stay focused and organized throughout the development process.
 
@@ -506,7 +503,7 @@ With everything done now we are able to go to our profile page where we can save
 
 ![profile](/assets/images/profile.png)
 
-### Superuser capabilites and CRUD
+### Superuser capabilities and CRUD
 
 If we are logged in to the website as a superuser we can find navigation links to adding new products to the database. These actions are not available for regular users or site visitors.
 
@@ -603,6 +600,8 @@ The only validation for the quantity of a product in the bag is performed during
 * [XML sitemaps](https://www.xml-sitemaps.com/) - generating a sitemap for the project
 * [Kaggle](https://www.kaggle.com/) - JSON fixtures
 
+
+Manual testing results are documented in the [TESTS.md](../techcycle/TESTS.md)
 
 ### Validators
 
@@ -850,7 +849,7 @@ The only validation for the quantity of a product in the bag is performed during
 
 ## Testing
 
-Accessibility testing, responsiveness testing validating and manual testing can be found in [TESTS.md]()
+Accessibility testing, responsiveness testing validating and manual testing can be found in [TESTS.md](../techcycle/TESTS.md)
 
 <br>
 

@@ -2,9 +2,9 @@
 
 [Back to README.md](../techcycle/README.md)
 
-[GitHub repository of this project]()
+[GitHub repository of this project](https://github.com/GaborFicsor/techcycle)
 
-[Deployed website on Heroku]()
+[Deployed website on Heroku](https://techcycle-66d1b58854d4.herokuapp.com/)
 
 <hr>
 
