@@ -5,6 +5,12 @@ html {
     height: 100%;
 }
 
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     padding-top: 56px;
     color: #011936;
