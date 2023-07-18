@@ -55,20 +55,36 @@ The live website hosted on Heroku, can be found here: [TechCycle](https://techcy
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
-> **IMPORTANT**
->
-> Table of contents need to be edited to reflect each section properly
-> New sections might need to be added to table of contents as the development goes
->
-> ***delete this quote before deployment***
 
-## User Experience
+# Project purpose
+
+The fifth and final project of Code Institute's Diploma in Software Development focuses on the development of an E-commerce Application. This comprehensive Full-Stack web application has been designed to incorporate business logic and essential aspects such as search engine optimization and web marketing techniques. A considerable amount of planning and design thinking has been involved during development to achieve a seamless user experience and provide an accessible and intuitive user interface that makes navigating and perfoming the necesearry actions feasible. The project uses Python as a main language with the Django web framework for creating efficient functionality. For providing convenient payment gateway for customers Stripe payments have been integrated. The project also utilizes Amazon Web Services for hosting media files.
+
+## Business Model
+
+TechCycle is a B2C e-commerce platform that follows a customer centric business model providing a pleasant shopping experience for it's users. In this type of business model customers are making single payments. The web application connects customers directly with the online marketplace while offering competitive and affordable prices while providing good value in exchange. The website aims to give customers access to more product categories at once. Selecting an item, adding it to the bag and proceeding to the checkout is easy and intuitive. The products sold on this website have clear desciprionts and images to make the user know what they are paying for. While the website meant to be selling 4 categories of products, there is an undeniable emphasis on the laptop product's amount of detail and description. To make the platform even more appealing to customers, free shipping and 12 month warranty comes with each and every product.
+
+### Target audience
+
+This project's target audience are customers who looking to purchase a wide range of products, mainly electronics. The website aims to offer a high quality and variety of products with multiple choices for conditions that can lower the price of the items and making them more affordable. The products are second hand refurbished electronincs that go through careful inspections to meet several criteria such as, functionality, performance, software, hardware, battery and appearance. Customers are made aware of the conditions and possible minor flaws of a product they purchase.
+
+### User Experience
 
 The main goal of this website is to create an e-commerce platform where people can purchase products to their liking. Navigating the website is straightforward and the users do not have to spend unnecesarrily long amounts of time between selecting a product, putting it to the cart and then purchasing it.
 
 Users can select more than one item to put in their bag and purchase them, although that amount depends on the inventory stock count. An estimated stock amount is reflected in the front-end to help users with making their decision.
 
-Registering to the website will give people the ability to save their checkout information so that the next time they want to purchase something, the checkout process becomes even easier for them. Registered users can save their details at the checkout, or they can add them manually in the profile page. The profile page also holds information for the user's detailed order history.
+Registering to the website will give people the ability to save their checkout information so that the next time they want to purchase something, the checkout process becomes even easier for them. Registered users can save their details at the checkout, or they can add them manually in the profile page. The profile page also holds information for the user's detailed order history. Customers visiting this website don't need to rely on any external help or guidance to make their own choice.
+
+### Secure payments
+
+The platform includes a secure checkout system provided by stripe payments. Stripe offers an easy payment gateway and good security measures to make sure the customers payment informations are always protected.
+
+### Marketing
+
+![TechCycle Facebook page](/assets/images/techcycle_facebook.png)
+
+For expanding the business model and finding ways to attract customers we can create our business marketing website where we keep customers updated about our latest price changes, stock availabilities and discounts. This is an easy way to connect with customers and adapt the business model to the trends and make the business even more model profitable. Creating a marketing page for our business also allows our brand to establish an online presence. It makes a convenient solution for keeping in connection with out target audience, and gives us the ability to let customers know about the most up-to-date information.
 
 
 
@@ -240,13 +256,6 @@ MasterCard|Visa|PayPal|Apple Pay
 
 </details>
 
-<details>
-  <summary>Default image if a product's image is missing</summary>
-
-![noimage](../techcycle/media/noimage.png)
-
-</details>
-
 ### Wireframes
 
 <hr>
@@ -409,7 +418,7 @@ Clicking either one of the Laptop, Phone, Smartwatch or Console navigation links
 
 On the Laptop page users are quickly able to tell if an item they are looking at is out stock. Items that are out of stock are greyed out and cannot be placed into the bag or purchased, but their detailed page view can still be viewed.
 
-First let's take a look at the detailed page of a Laptop if if it's available
+First let's take a look at the detailed page of a Laptop if it's available
 
 ### The detailed product page
 
@@ -421,7 +430,7 @@ A few left (if the overall stock_count is 2 or less)|Available in all conditions
 :-------------------------:|:-------------------------:
 ![few left](/assets/images/few_left.png)|![in stock](/assets/images/in_stock.png)
 
-Avaialable in good and excellent conditions |On sale with onlt a few left
+Avilable in good and excellent conditions |On sale with only a few left
 :-------------------------:|:-------------------------:
 |![in stock 2](/assets/images/in_stock2.png)|![on sale](/assets/images/on_sale.png)|
 
@@ -453,11 +462,21 @@ Navigating to the bag we can find our selected items with their information on q
 
 ### The checkout and checkout success
 
-Proceeding to the checkout page the user finds the checkout form and a summary of their items in the bag with the order total displayed.
+Proceeding to the checkout page the user finds the checkout form and a summary of their items in the bag with the order total displayed. The checkout page's security is ensured by several factors, but most importantly, the Stripe payment systems validation methods.
+ - The validation of the credit card number based on length and format can easily determine the validitiy of the entered information.
+ - Checking for the expiry date of the credit card being used.
+ - CVC validation to match the required format and length
+ - Postal code validation based on the associated credit card number
+
+ Any data passed as invalid will result in a failed payment with notifying the user to make sure their entered data is indeed valid. For testing the creation of payment intent and achieveing succesfully processed payments I have used a Visa test card number provided by Stripe.
+ Entering 4242-4242-4242-4242 with any combination of CVC and any combination of future date's are validated and could be trusted and safely used for testing purposes.
+ Additional validation was implement by making sure the product amount placed in the bag can not exceed the amount of that product's stock count. Trying to purchase more that the available product count will result in an unsuccessfull checkout.
 
 ![checkout1](/assets/images/checkout1.png)
 
-Completing a valid form will take the user to the checkout success page where a detailed overview of the order can be viewed. The user now has the option to go back to the homepage or navigate elsewhere with the help of the navigation bar
+Completing a valid form will take the user to the checkout success page where a detailed overview of the order can be viewed. The user now has the option to go back to the homepage or navigate elsewhere with the help of the navigation bar.
+Stripe payment systems has several ways for providing a secure environment for online payments.
+
 
 ![checkout success](/assets/images/checkout_success.png)
 
@@ -520,7 +539,7 @@ Here we can save our changes and go back to the Laptop's detailed page or we can
 
 Here we can see that we are only able to modify the stock count numbers because the rest of the fields are auto-generated and we must not edit them manually.
 
-We're not only able to create or update existing data but we can also delete from the database on the front end. If we want to delete a Laptop for example, we just have to navigate to a Laptop's detailed page where we can find the previously mentioned edit button and also a red delete button. Pressing the red button won't immediately delete the Laptop but make a modal pop up on the screen that asks us to confirm our intentions. This was implemented as a defensive design and to not delete products by accident.
+We're not only able to create or update existing data but we can also delete from the database on the front end. If we want to delete a Laptop for example, we just have to navigate to a Laptop's detailed page where we can find the previously mentioned edit button and also a red delete button. Pressing the red button won't immediately delete the Laptop but make a modal pop up on the screen that asks us to confirm our intentions. This was implemented as a defensive design and to prevent products from removing by accident.
 
 ![delete_laptop](/assets/images/delete_laptop.png)
 
@@ -536,6 +555,7 @@ We're not only able to create or update existing data but we can also delete fro
 I think the most important functionalities have been implemented already but there are a lot that I would like to change, but those are mostly frontend and design related. Some parts of my project feel rushed and I would like to spend more time on this project and come back later to create more efficient code or refactor as much as I can. 
 In the future, I would like to add different variations to the same products where not only the condition but the hardware specifications can be selected as well each selection manipulating the price.
 I would also like to create a more consistent styling for this webpage.
+The only validation for the quantity of a product in the bag is performed during the checkout process. This way I can make sure that customers can not exceed the maximum amount of a product's stock amount, but there needs to be a better way for doing this rather than telling the user in the last minute that what they are trying to buy is not available.
 
 
 ## Technologies Used
@@ -597,17 +617,6 @@ I would also like to create a more consistent styling for this webpage.
 <br>
 
 ## Deployment
-
-> * Initial steps of repository creating
-> * Initial steps of django project setup
-> * Check heroku deployment section for correctness
-> * Check Hosting service section for the database
-> * Section of storing static files with cloudinary or aws is completely missing
-> * Check env.py file creating section
-> * Check heroku deployment steps section
-> * Additional steps might need to be included during development, such as
->   * stripe section
->   * other
 
 1. Navigate to [GitHub](https://github.com/) in the browser
 2. Open the [Code Institute Full Template](https://github.com/Code-Institute-Org/ci-full-template) provided by [Code Institute](https://codeinstitute.net/ie/)
@@ -681,7 +690,7 @@ I would also like to create a more consistent styling for this webpage.
 
 <br>
 
-9. Our Django database is only accessible within gitpod and is not suitable for production enviroment. The deployed project on a hosting service will not be able to access it, so we need to use [ElephantSQL](https://www.elephantsql.com/) To use this service:
+9. Our Django database is only accessible within the local environment and is not suitable for production enviroment. The deployed project on a hosting service will not be able to access it, so we need to use [ElephantSQL](https://www.elephantsql.com/) To use this service:
     1. Create an ElephantSQL account
     2. Click on **'+Create New Instance'**
     3. Set up plan
@@ -700,9 +709,52 @@ I would also like to create a more consistent styling for this webpage.
 
 <br>
 
-10. To store our static files, we need to use [Cloudinary](https://cloudinary.com/) cloud based service. To use this service:
+10. For storing our static files we need to use Amazon Web Services
+    1. Creat a new account after navigating to [AWS](https://aws.amazon.com/)
+    2. Sign in to the AWS Management Console and search for service: S3
+    3. Open S3 and create a bucket which will be used for storing our files
+    4. Select the closest region
+    5. Select ACLs enabled and Bucket owner preferred
+    6. Uncheck block all public access to make our bucket public
+    7. Click creat bucket
+    8. On bucket properties navigate to static website hosting
+    9. Turn on static website hosting
+    10. On the permissions tab
+        1. Set up CORS configuration
+        2. Paste the following into the **Cross-origin resource sharing (CORS)** section:
+        ```
+        [
+          {
+            "AllowedHeaders": [
+                "Authorization"
+            ],
+            "AllowedMethods": [
+                "GET"
+            ],
+            "AllowedOrigins": [
+                "*"
+            ],
+            "ExposeHeaders": []
+          }
+          ]
+        ```
+    11. Create a security policy for our bag with the AWS Policy Generator
+      1. Select S3 Bucket Policy
+      2. Allow all principals by using a * character
+      3. For the actions, select **GetObject**
+      4. Copy Amazon Resource name from the management console
+      5. And paste it into the arn box
+      6. Click add statement, then generate policy
+      7. Copy the policy into the bucket policy generator
+      8. Select list object permissions for everyone in the access control list tab
+    12. Navigate to IAM services and create a group for our project
+    13. Navigate to creating policy and import S3 full access policy
+    14. Copy the bucket arn and paste it in the IAM create policy JSON editor
+    15. Give a name and a description to our policy, then click create policy
+    16. Attach policy to our group
+    17. Create a user and add them programatic access
 
-<br>
+<br>  
 
 11. Create a new file in our local directory and name it **env.py**
       1. Add **env.py** to the **.gitignore** file, to make sure it is not pushed to github as this file holds sensitive data
@@ -771,13 +823,6 @@ I would also like to create a more consistent styling for this webpage.
 
 ## Forking
 
-> **IMPORTANT**
->
-> consider editing the forking section to be more detailed
->
-> ***delete this quote before deployment***
-
-Use forking, when you want to contribute to an existing project, by creating a copy of the original repository
 
 1. Login to GitHub profile
 2. Navigate to [this repository](https://github.com/GaborFicsor/steezy-spatula)
@@ -789,13 +834,6 @@ Use forking, when you want to contribute to an existing project, by creating a c
 
 ## Cloning
 
-> **IMPORTANT**
->
-> consider editing the forking section to be more detailed
->
-> ***delete this quote before deployment***
-
-Use cloning, when you want to work on a project locally and make changes without affecting the remote repository
 
 1. Login to GitHub profile
 2. Navigate to [this repository](https://github.com/GaborFicsor/steezy-spatula)
@@ -810,13 +848,6 @@ Use cloning, when you want to work on a project locally and make changes without
 
 <br>
 
-> **IMPORTANT**
->
-> TESTS.md is yet to be created
-> TESTS.md contains comments like this for what needs to be included
->
-> ***delete this quote before deployment***
-
 ## Testing
 
 Accessibility testing, responsiveness testing validating and manual testing can be found in [TESTS.md]()
@@ -824,17 +855,20 @@ Accessibility testing, responsiveness testing validating and manual testing can 
 <br>
 
 ## Credits
+- [How to open and collapse the same JQuery accordion with click on it only](https://stackoverflow.com/questions/29096037/how-to-open-and-collapse-the-same-jquery-accordion-with-click-on-it-only) - used for collapsing the accordion on the home page
+- [How can I change the way a boolean prints in a django template?](https://stackoverflow.com/questions/845901/how-can-i-change-the-way-a-boolean-prints-in-a-django-template) - used for displaying Yes and No instead of True and False on the product detail views
+- [How do I make a placeholder for a 'select' box?](https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box) - used for disabling the add to bag form on the product detail pages if an item is out of stock
+- [Django: How to reduce stock quantity when an order is made?](https://stackoverflow.com/questions/65216808/django-how-to-reduce-stock-quantity-when-an-order-is-made) - used for reducing the stock_count in the checkout view
+- [Add products with different sizes and price to Cart | Django](https://stackoverflow.com/questions/70974656/add-products-with-different-sizes-and-price-to-cart-django) - helped understanding how my models should work
+- [Advanced Form Rendering with Django Crispy Forms](https://simpleisbetterthancomplex.com/tutorial/2018/11/28/advanced-form-rendering-with-django-crispy-forms.html) - helped setting up the crispy forms the right way
+- [Removing brackets and quotes from list in django template?](https://stackoverflow.com/questions/68658289/removing-brackets-and-quotes-from-list-in-django-template) - helped rendering the conditions in the product detail views without the brackets
+- [Django values_list vs values](https://stackoverflow.com/questions/37205793/django-values-list-vs-values) - helped returning single values instead of tuples in products/models.py
+- [Setting up foreignkeys in loaddata for Django](https://stackoverflow.com/questions/33554401/setting-up-foreignkeys-in-loaddata-for-django) - helped understand how to configure my json fixtures to load them properly
+- [Bootstrap navbar toggler(hamburger) color change [CSS]](https://www.youtube.com/watch?v=K41tQGwijNc) - helped changing color of the navbar icon
+- [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - helped understanding the proper use of the srcset attribute
+- [https://www.letscodemore.com/blog/django-inline-formset-factory-with-examples/](https://www.letscodemore.com/blog/django-inline-formset-factory-with-examples/) - helped understand the proper way to use formsets for creating the inventoryform
+- [https://buildatscale.tech/model-inheritance-in-django/](https://buildatscale.tech/model-inheritance-in-django/) - django model inheritance
 
-> **IMPORTANT**
->
-> Credits need to be included as the development process goes
-> 
-> Things to include:
->  * youtube tutorials
->  * stackoverflow 
->  * any external source of helping material
->
-> ***delete this quote before deployment***
 
 ### Media
 
@@ -932,13 +966,11 @@ Product image sources:
 
 ###  Acknowledgments
 
-> **IMPORTANT**
->
-> Things to include:
->  * credit for mentor and tutor support during development
->
-> ***delete this quote before deployment***
+I would like to express my gratitude to myself for reaching this important milestone and successfully completing my final project. Although it may not be perfect, I am proud of what I have accomplished and the progress I have made. This project has been a great learning experience for me, allowing me to gain valuable insights and improve my skills along the way. I am committed to continuing my learning journey and becoming an even better developer. While creating a README documentation is not my strongest suit, I am determined to work on it and improve. Overall, I am satisfied with what I have achieved and I feel that I have made the most of my time and efforts.
+
+I would like to express how I was finally able to understand stackoverflow questions and take away from them the parts that were applicable to my project. It's giving me hope that one day I will be able to answer someones question.
+
+I am determined to keep learning and improving.
 
 <hr>
-
-Those were to create a website that sells a variety of products with each having more type of conditions. The end result came pretty close to what I originally wanted, though I feel like there's still room for learning and this project has made me a lot more confident in my understanding of how the django web framework works.
+this project was made for educational purposes only
