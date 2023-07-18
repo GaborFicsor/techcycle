@@ -1070,6 +1070,6 @@ Element | Excpected outcome | Testing performed | Outcome|
 
 
 
-Back to [README.md](https://github.com/GaborFicsor/steezy-spatula/blob/main/README.md)
+
 
 Back to [top](#top)
